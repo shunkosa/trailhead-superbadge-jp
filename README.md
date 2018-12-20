@@ -7,5 +7,5 @@
 * [Lightning Experience Specialist](https://developer.salesforce.com/jpblogs/2018/10/lex_specialist_superbadge/)
 
 ## 非公式の日本語訳
-* [WIP] Service Cloud Specialist
-* [WIP] Lightning Reports and Dashboard Specialist 
+* [Service Cloud Specialist](service-cloud-admin-specialist/service-cloud-admin-specialist.md)
+* Lightning Reports and Dashboards Specialist 
