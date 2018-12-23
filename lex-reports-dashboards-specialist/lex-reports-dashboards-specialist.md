@@ -7,10 +7,10 @@
 ---
 ## 事前準備とメモ
 * ペンと紙を準備して、要件を読み進める際にメモを取ってください。
-* このスーパーバッジ用に、新しいTrailhead Playgroundを作成してください。この組織をほかの目的で使用すると、課題について検証する際に問題を引き起こす可能性があります。
+* このスーパーバッジ用に、新しいTrailhead Playgroundを作成してください。この組織をほかの目的で使用すると、課題について検証する際に問題を引き起こす可能性があります。<sup>[1](#footnote1)</sup>
 * 商談オブジェクトの種別(Type)選択リストに、**SolarBot**を追加してください。[このヘルプ記事](https://help.salesforce.com/articleView?id=updating_picklists.htm&type=5)が参考になります。
 * SolarBot社の買収に伴う資産を実装するため、[未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1H0000018iyq)をインストールしてください。管理パッケージ、非管理パッケージ、アプリケーションをAppExchangeからインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
-* 未管理パッケージをインストールした後はSolarBotsアプリケーション内のData Importタブから、Importボタンを選択してください。
+* 未管理パッケージをインストールした後はSolarBotsアプリケーション内のData Importタブから、Importボタンを選択してください。<sup>[2](#footnote2)</sup>
 * 以下の6つの公開グループを作成してください。
   * Executive Team (エグゼクティブチーム)
   * Report and Dashboard Administrators (レポート・ダッシュボード管理者)
@@ -186,7 +186,7 @@ SolarBotが屋上で騒音を発したけれども、誰もそれを聞くこと
 
 ## 補足とヒント
 - <a name="footnote1">[1]</a> : Developer Edition組織を利用する場合は事前に私のドメインの設定を済ませてください。
-- <a name="footnote1">[2]</a> : データインポート後にSolarBotやSolarBot Statusのレコードをいくつか確認しイメージをつかんでおくと良いでしょう。以下に項目の補足を示します。
+- <a name="footnote2">[2]</a> : データインポート後にSolarBotやSolarBot Statusのレコードをいくつか確認しイメージをつかんでおくと良いでしょう。以下に項目の補足を示します。
   - SolarBotオブジェクト
     - Under Warranty? : 保証対象かどうか (True(チェックがある場合)は保証対象)
     - Warranty Expiration : 保証期限
