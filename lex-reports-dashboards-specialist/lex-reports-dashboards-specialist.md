@@ -118,7 +118,7 @@ Adaの最初の仕事は、SolarBotを所有している顧客がサポートを
 * レポートはサポートチームのために作成したフォルダに保存します。
 
 ### SolarBotのステータス平均
-Adaとのミーティングの間、チームの誰かがSolarBotの顧客からの最初の入電を転送します。AdaはSolarBotに関する質問に答えることに問題はありませんが、彼女はレコードにある必要なすべての情報をすばやく見つけることができません。彼女は毎日のKilowatt Hours(発電量)、Panel Temperature(パネル温度)、Percent Obscured(雲に覆われている割合)を見ることができますが、他のSolarBotと比較した最近の平均とパフォーマンスの傾向を推測することしかできません。Adaは、すべてのSolarBotの、平均のPercent Obscured(雲に覆われている割合)、平均のPanel Temperature(パネル温度)、平均Kilowatt Hours(発電量)を、Status Dateごとに表示する、**SolarBot Status Averages**というレポートを作成して欲しいと思っています。サポートチームは毎日の平均だけを知る必要があります。彼らは個々のSolarBotに関する情報、レコードの数、集計を見る必要はありません。このレポートを**Status Reports**(ステータスレポート)フォルダに保存します。
+Adaとのミーティングの間、チームの誰かがSolarBotの顧客からの最初の入電を転送します。AdaはSolarBotに関する質問に答えることに問題はありませんが、彼女はレコードにある必要なすべての情報をすばやく見つけることができません。彼女は毎日のKilowatt Hours(発電量)、Panel Temperature(パネル温度)、Percent Obscured(雲に覆われている割合)を見ることができますが、他のSolarBotと比較した最近の平均とパフォーマンスの傾向を推測することしかできません。Adaは、すべてのSolarBotの、平均のPercent Obscured(雲に覆われている割合)、平均のPanel Temperature(パネル温度)、平均Kilowatt Hours(発電量)を、Status Dateごとに表示する、**SolarBot Status Averages**というレポートを作成して欲しいと思っています。サポートチームは毎日の平均だけを知る必要があります。彼らは個々のSolarBotに関する情報、レコードの数、集計を見る必要はありません。このレポートを**Status Reports**(ステータスレポート)フォルダに保存します。
 
 ### Challenge 4. R&Dレポートを組み立てる
 Usra Majorの研究開発(R&D)チームは、SolarBot社の買収が完了したことを歓迎しています。彼らはSolarBot社の製品の長所と短所を理解したいので、パネル温度と発電量の間の傾向を評価するのに役立つレポート**Temperature to kWh Research**を作成するよう依頼しました。レポートは以下の要件を満たす必要があります。
@@ -143,11 +143,11 @@ Ursa Majorの全体的なビジネスの見通しは既に良かったのです�
 ### Challenge 6. レポートの更新を完了する
 毎日、各SolarBotは落ち葉を掃除し、白カビをこすり落とし、パートナーのパネルをスムーズに動かし続けています。SolarBotのように、レポート管理者は本当に自分の仕事を終えることはありません。ユーザーがデータについて尋ねる新しい質問を思いついたとき、ユーザはあなたにその質問を持ってきます。レポートを更新して、ユーザーが必要とする回答を得られるようにしましょう。
 
-#### セールスレポートの改良
-Gabrielaはセールスチームとともに、チームがあなたの作成したレポートが大好きであると言ってきましたが、いくつかの微修正を要求しています。営業担当者が地域別に通話リストを分割するのを支援するために、Billing State(都道府県(請求先))で**Accounts Without SolarBot Opportunities**レポートを整理する必要があります。また、**SolarBot Warranty Call Sheet**レポートを拡張して、今後45日間に保証期間が終了するSolarBotを保有する顧客をレポートに追加で含めたいと考えています。チームはいくつかの重要な州に集中しているため、このSolarBot Warranty Call Sheetレポートにはネバダ州(NV)、ユタ州(UT)、カリフォルニア州(CA)の顧客だけを含めてください。フィルタ管理のベストプラクティスは、Warranty Status(保証ステータス)や、Billing State(都道府県(請求先))など同様の項目に対するフィルタ条件をグループ化することです。
+#### セールスレポートの改良
+Gabrielaはセールスチームとともに、チームがあなたの作成したレポートが大好きであると言ってきましたが、いくつかの微修正を要求しています。営業担当者が地域別に通話リストを分割するのを支援するために、Billing State(都道府県(請求先))で**Accounts Without SolarBot Opportunities**レポートを整理する必要があります。また、**SolarBot Warranty Call Sheet**レポートを拡張して、今後45日間に保証期間が終了するSolarBotを保有する顧客をレポートに追加で含めたいと考えています。チームはいくつかの重要な州に集中しているため、このSolarBot Warranty Call Sheetレポートにはネバダ州(NV)、ユタ州(UT)、カリフォルニア州(CA)の顧客だけを含めてください。フィルタ管理のベストプラクティスは、Warranty Status(保証ステータス)や、Billing State(都道府県(請求先))など同様の項目に対するフィルタ条件をグループ化することです。
 
 #### サポートレポートの改良
-進行中のサポートチームのChatter会話の中で、ちょうどAdaからサポートレポートについてメンションされました。**Top Case Drivers by SolarBot Ownership**レポートでは、SolarBotの顧客について、原因がEquipment Complexityのケースが増加を示しました。チームは、これらの顧客に手を差し伸べて教育を提供する予定であるため、電話番号とそのケースがオープンかどうかをレポートに追加したいと考えています。また、このレポートにはグラフが必要です。グラフは、Ownershipのカテゴリごとにケースの原因の相対的な割合を示すことによって、SolarBot Ownershipとケースの原因の関係を視覚化するのに役立ちます。たとえば、複数のSolarBotを所有している顧客は、SolarBotを所有していない顧客よりも原因がEquipment Complexityのケースが多いことがわかります。データ分析のベストプラクティスに従うには、Y軸に数値以外のカテゴリを配置して注意を引きます。そのカテゴリの件数をX軸に配置します。すべてのケースの原因を分析に含めます。
+進行中のサポートチームのChatter会話の中で、ちょうどAdaからサポートレポートについてメンションされました。**Top Case Drivers by SolarBot Ownership**レポートでは、SolarBotの顧客について、原因がEquipment Complexityのケースが増加を示しました。チームは、これらの顧客に手を差し伸べて教育を提供する予定であるため、電話番号とそのケースがオープンかどうかをレポートに追加したいと考えています。また、このレポートにはグラフが必要です。グラフは、Ownershipのカテゴリごとにケースの原因の相対的な割合を示すことによって、SolarBot Ownershipとケースの原因の関係を視覚化するのに役立ちます。たとえば、複数のSolarBotを所有している顧客は、SolarBotを所有していない顧客よりも原因がEquipment Complexityのケースが多いことがわかります。データ分析のベストプラクティスに従うには、Y軸に数値以外のカテゴリを配置して注意を引きます。そのカテゴリの件数をX軸に配置します。すべてのケースの原因を分析に含めます。
 
 Adaは、**SolarBot Status Averages**レポートにいくつかの調整が必要であることも伝えています。最初に、サポートチームは時間の経過とともに傾向を把握したいので、レポートでは日単位ではなく週単位でデータを表示する必要があります。次に、**Weekly Panel Temperature and kWh**と呼ばれるこのレポートのグラフが必要で、平均のPanel Temperature(パネル温度)と平均のKilowatt Hours(発電量)を線で、時間の経過に伴い表示します。続いて、彼らはSolarBotの各レコードページでこのグラフを見たいと思っています。**SolarBot Status Page**という名前でそのページを作成してください。グラフには、個々のSolarBotに関する情報だけを含めてください。
 
@@ -178,7 +178,7 @@ SolarBotが屋上で騒音を発したけれども、誰もそれを聞くこと
 
 1. Sitaは、太陽エネルギーの利用促進のためのメタファーとして、またプレゼンテーション、パーカー、アートワークの配色として、夜明け(暗闇から日の出が少しずつ覗く)を利用することを好んでいます。**SolarBot Impact Dashboard**の全体的な配色がSitaの色の好みと一致するように設定しましょう。唯一の例外は、**Opportunity Overview**コンポーネントであり、これらの商談は先が非常に明るいため、コンポーネントも完全に明るくなければなりません。
 
-2. Usra Majorのセールス担当、太陽光の先駆的ユーザであるの2つの侯爵の取引先をよく強調しています。Heinrich Technical InstrumentsまたはBig State Recyclingの情報のみをダッシュ​​ボードで表示する方法を作成します。ビューを改善するこのソリューションには**Marquis Accounts**と名前をつけ、すべてのコンポーネントが設定した条件に従っていることを確認してください。
+2. Usra Majorのセールス担当、太陽光の先駆的ユーザであるの2つの侯爵の取引先をよく強調しています。Heinrich Technical InstrumentsまたはBig State Recyclingの情報のみをダッシュボードで表示する方法を作成します。ビューを改善するこのソリューションには**Marquis Accounts**と名前をつけ、すべてのコンポーネントが設定した条件に従っていることを確認してください。
 
 3. 分析の可視性を高める最も大胆な方法は、ユーザーが毎日データとやり取りするアプリの前面と中央にそれを配置することです。**SolarBot Impact Dashboard**をSolarBot App Pageに配置します。SolarBot App Pageは、SolarBotアプリケーションにアクセスする誰もが最初にアクセスします。MariaはあなたのためにこのLightningページを作成しています。
 
@@ -192,6 +192,6 @@ SolarBotが屋上で騒音を発したけれども、誰もそれを聞くこと
     - Warranty Expiration : 保証期限
   - SolarBot Statusオブジェクト
     - Panel Temperature : パネルの温度
-    - Percent Obscured : 曇りの度合
+    - Percent Obscured : 曇りの度合
     - Kilowatt Hours : 発電量 (キロワット時)
     - Maintenance Requested : 修理依頼が出されているかどうか
