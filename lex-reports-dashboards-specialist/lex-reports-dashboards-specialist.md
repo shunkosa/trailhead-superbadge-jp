@@ -9,7 +9,7 @@
 * ペンと紙を準備して、要件を読み進める際にメモを取ってください。
 * このスーパーバッジ用に、新しいTrailhead Playgroundを作成してください。この組織をほかの目的で使用すると、課題について検証する際に問題を引き起こす可能性があります。<sup>[1](#footnote1)</sup>
 * 商談オブジェクトの種別(Type)選択リストに、**SolarBot**を追加してください。[このヘルプ記事](https://help.salesforce.com/articleView?id=updating_picklists.htm&type=5)が参考になります。
-* SolarBot社の買収に伴う資産を実装するため、[未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1H0000018iyq)をインストールしてください。管理パッケージ、非管理パッケージ、アプリケーションをAppExchangeからインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
+* SolarBot社の買収に伴う資産を実装するため、[未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1H0000018iyq)をインストールしてください。管理パッケージ、未管理パッケージ、アプリケーションをAppExchangeからインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
 * 未管理パッケージをインストールした後はSolarBotsアプリケーション内のData Importタブから、Importボタンを選択してください。<sup>[2](#footnote2)</sup>
 * 以下の6つの公開グループを作成してください。
   * Executive Team (エグゼクティブチーム)
@@ -106,7 +106,7 @@ Ursa Majorの優れたサポートチームが対応するとしても、カス�
 ### Challenge 3: サポートレポートを作成する
 Ursa Majorのサポートチームは買収以来、SolarBotを修理・テスト・改善してきています(その結果、SolarbBotは良いポータブル飲料用コースターを作り出しています)。チームはSolarBotの未来を明るく見ています。顧客はパネルに関する問題が少なくなるため、サポートへの問い合わせは少なくて済みます。しかし、そうであっても、チームはSolarbBotをどう保守していくかを懸念しています。製品サポートスペシャリストのAda Balewaは、サポートチームのSolarBotサポート対応の準備を手伝っています。彼女はあなたにいくつかのレポートを依頼しました。
 
-### SolarBot Ownershipによる上位ケース発生要因
+#### SolarBot Ownershipによる上位ケース発生要因
 Adaの最初の仕事は、SolarBotを所有している顧客がサポートを求めている理由と、その問題がSolarBotを所有していない顧客からのものと異なるかどうかを理解することです。SolarBotsが故障するのですか？彼らは汚れてしまって、それを綺麗にするためにさらに小さなボットを必要としますか？彼らは電気羊の夢を見ていますか？ケースが、SolarBotオーナーのカテゴリ間でどのように分布しているかを調べるため、**Top Case Drivers by SolarBot Ownership**というレポートを作成します。
 * 3つのカテゴリに分かれる**SolarBot Ownership**という分類項目を作成してレポートを整理します。
   * SolarBotを1つも所有していない場合は**No SolarBots**と表示します。
@@ -117,7 +117,7 @@ Adaの最初の仕事は、SolarBotを所有している顧客がサポートを
 * 個々のケースを表示しますが、レコードの合計は表示しません。
 * レポートはサポートチームのために作成したフォルダに保存します。
 
-### SolarBotのステータス平均
+#### SolarBotのステータス平均
 Adaとのミーティングの間、チームの誰かがSolarBotの顧客からの最初の入電を転送します。AdaはSolarBotに関する質問に答えることに問題はありませんが、彼女はレコードにある必要なすべての情報をすばやく見つけることができません。彼女は毎日のKilowatt Hours(発電量)、Panel Temperature(パネル温度)、Percent Obscured(雲に覆われている割合)を見ることができますが、他のSolarBotと比較した最近の平均とパフォーマンスの傾向を推測することしかできません。Adaは、すべてのSolarBotの、平均のPercent Obscured(雲に覆われている割合)、平均のPanel Temperature(パネル温度)、平均Kilowatt Hours(発電量)を、Status Dateごとに表示する、**SolarBot Status Averages**というレポートを作成して欲しいと思っています。サポートチームは毎日の平均だけを知る必要があります。彼らは個々のSolarBotに関する情報、レコードの数、集計を見る必要はありません。このレポートを**Status Reports**(ステータスレポート)フォルダに保存します。
 
 ### Challenge 4: R&Dレポートを組み立てる
