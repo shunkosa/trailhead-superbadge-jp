@@ -9,5 +9,8 @@
 ## 非公式の日本語訳
 * [Service Cloud Specialist](service-cloud-admin-specialist/service-cloud-admin-specialist.md)
 * [Lightning Reports and Dashboards Specialist](lex-reports-dashboards-specialist/lex-reports-dashboards-specialist.md)
-* Process Automation Specialist
+* [Process Automation Specialist](process-automation-specialist/process-automation-specialist.md)
 * Security Specialist
+* LEX Rollout Specialist
+* Business Administration Specialist
+* App Customization Specialist
