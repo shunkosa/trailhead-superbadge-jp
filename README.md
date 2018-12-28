@@ -14,3 +14,7 @@
 * [Lightning Experience Rollout Specialist](lex-rollout-specialist/lex-rollout-specialist.md)
 * Business Administration Specialist
 * App Customization Specialist
+* Einstein Analytics Data Preparation Specialist
+* Einstein Analytics and Discovery Insights Specialist
+* Advanced Apex Specialist
+* Lightning Component Framework Specialist (Aura)
