@@ -11,6 +11,6 @@
 * [Lightning Reports and Dashboards Specialist](lex-reports-dashboards-specialist/lex-reports-dashboards-specialist.md)
 * [Process Automation Specialist](process-automation-specialist/process-automation-specialist.md)
 * [Security Specialist](security-specialist/security-specialist.md)
-* LEX Rollout Specialist
+* [Lightning Experience Rollout Specialist](lex-rollout-specialist/lex-rollout-specialist.md)
 * Business Administration Specialist
 * App Customization Specialist
