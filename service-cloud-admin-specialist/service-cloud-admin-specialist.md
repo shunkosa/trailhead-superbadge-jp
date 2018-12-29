@@ -59,7 +59,7 @@ Usra Majorには、顧客に喜んでいただくにはまず従業員を幸せ�
 -	ユーティリティバーに「ソフトフォン」、「手作業でのタスクの完了を自動化する方法」、「最近のケース5件を迅速に確認するための方法」をそれぞれ追加する。
 - Cloud Team Billing SupportプロファイルとCloud Team Technical Supportプロファイルのユーザがこのコンソールアプリケーションにアクセスできるようする。
 
-生産性を保つために、エージェントがケースのレコード詳細を見ている間にメールを作成するための手段も提供しましょう。また、テストとユーザーの受け入れを促進するために、Adaのログイン情報を追加し、彼女にコンソールへのアクセス権を提供しましょう。
+生産性を保つために、エージェントがケースのレコード詳細を見ている間にメールを作成するための手段も提供しましょう。また、テストとユーザーの受け入れを促進するために、Adaのログイン情報を追加し、彼女に**Cloud Team Technical Support**プロファイルを割り当てましょう。
 
 ### Challenge 2: ケース管理
 コンタクトセンターが人間の体であるとするなら、その目と耳はコンタクトチャネルで、エージェントは筋肉、ケースは血液です。ケースは、顧客を助けるためにエージェントへ重要な情報を運びます。ケース管理により、ビジネス要求に基づいてケースを正しい人に割り当てたり、整理したり、エスカレーションすることができます。Ursa MajorのSalesforceシステム管理者であるMaria Jimenezが、クラウディサポートチームの要件を集めて整理することを手伝ってくれました。
@@ -187,7 +187,7 @@ Adaはケース対応中でないときに、他のサポートエージェン�
 エージェントがそれぞれの顧客に、天候の影響によるパネルの性能低下に関するメールを都度作成しなくても済むよう、再利用可能なメールを作成しましょう。以下の[括弧で囲まれたテキスト]は、ケースの情報を自動的に埋め込む仕組みに置き換えてください。
 
 <table>
-<tr><td width="200">再利用可能なメールアドレス</td><td>Cloudy weather</td></tr>
+<tr><td width="200">再利用可能なメール名</td><td>Cloudy weather</td></tr>
 <tr><td>Subject  (件名)</td><td>Low power generation in cloudy weather</td></tr>
 <tr><td>Body (本文)</td><td>Hey [顧客のファーストネーム], Sorry to hear that your panels aren't generating the power you hoped for. Based on our research, it appears the low power produced is related to the cloudy weather in your area recently. In the worst conditions, Ursa Major panels produce ~25% of maximum power. If you have additional questions, please give us a call and reference case [ケース番号]. Thanks! [エージェントのファーストネーム], Ursa Major Solar</td></tr>
 </table>
@@ -208,14 +208,14 @@ Adaはケース対応中でないときに、他のサポートエージェン�
 
 * 現在作業中のケースを選択する
 * Cloudy weather(作成した再利用可能なメール)を使用して、顧客にメールを送信する。
-* ケースをクローズし、Description(説明)項目にCloudy weather response sent(作成した再利用可能なテキスト)を追記する。
+* ケースをクローズし、Cloudy weather response sent(作成した再利用可能なテキスト)を使用してDescription(説明)項目を追記する。
 
 ### Challenge 7: コンタクトセンターの分析
 これまでに構築してきたケースのルーティング・管理・および自動化により、クラウディサポートチームは素晴らしいスタートを切るはずです。チームがケース管理の効果を評価できるよう、レポートを作成してダッシュボードを更新しましょう。
 
-サポートマネジメントチームが、顧客が助けを求めている理由を理解できるようレポートを作成します。**Case Reason and Type Analysis**(ケース原因とタイプ分析)レポートを作成し、**Cloud Support Reports**フォルダに保存します。最初にType(種別)ごとに、次にReason(原因)でレコードを整理します。最も頻繁に使用される種別が最初に表示され、使用頻度が最も低い種別を最後に表示しましょう。レポートにはケースの所有者、取引先名、件名を含み、クローズしたケースのみを表示します。レポートには、各列がケース種別を表し、ケースの原因が列内に並んでいるようなレポートグラフを含めます。
+サポートマネジメントチームが、顧客が助けを求めている理由を理解できるようレポートを作成します。**Case Reason and Type Analysis**(ケース原因とタイプ分析)レポートを作成し、**Cloud Support Reports**フォルダに保存します。最初にType(種別)ごとに、次にReason(原因)でレコードを整理します。最も頻繁に使用される種別が最初に表示され、使用頻度が最も低い種別を最後に表示しましょう。レポートにはケースの所有者、取引先名、件名を含み、クローズしたケースのみを表示します。レポートには、ケース種別が縦棒グラフの各棒を表し、ケースの原因が縦棒内に並んでいるようなレポートグラフを含めます。
 
-次に、新しいレポートを使用して**Case Performance Dashboard**(ケースパフォーマンスダッシュボード)を作成します。種別が縦棒グラフの各棒となるように、種別でグルーピングした分析結果を表示しましょう。このダッシュボードコンポーネントには、**Case Reason and Types**(ケース原因と種別)というタイトルを設定し、サブタイトルに**Case Distribution Analysis**(ケースディストリビューション分析)を設定します。コンポーネントをダッシュ​​ボードの中央に配置し、幅を最大になるように広げてスペースを利用します。
+次に、新しいレポートを使用して**Case Performance Dashboard**(ケースパフォーマンスダッシュボード)を作成します。種別が縦棒グラフの各棒となるように、種別でグルーピングした分析結果を表示しましょう。このダッシュボードコンポーネントには、**Case Reason and Types**(ケース原因と種別)というタイトルを設定し、サブタイトルに**Case Distribution Analysis**(ケースディストリビューション分析)を設定します。コンポーネントをダッシュボードの中央に配置し、幅を最大になるように広げてスペースを利用します。
 
 ## 補足
 - <a name="footnote1">[1]</a> : [Web、メール、コミュニティからケースへのエンタイトルメントの自動追加](https://help.salesforce.com/articleView?id=entitlements_auto_add.htm&type=5)
