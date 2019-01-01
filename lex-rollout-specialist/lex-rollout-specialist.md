@@ -355,7 +355,7 @@ Sales(セールス)というLightningアプリケーションをSalesforce Class
 Visualforceページへの[Lightning Design System](https://www.lightningdesignsystem.com)の適用については、[開発者ガイド](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/vf_dev_best_practices_slds_apply.htm)や[TrailheadのVisualforceとLightning Experienceの単元](https://trailhead.salesforce.com/ja/content/learn/modules/lex_dev_visualforce/lex_dev_visualforce_design)を参照してください。Account TabsのVisualforceページはテーブルを表示していますので、[apex:pageBlockTableの開発者ガイド](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_compref_pageBlockTable.htm)や、[Lightning Design Ssystemのテーブルコンポーネント](https://www.lightningdesignsystem.com/components/data-tables/)も参考にしてください。
 
 ### Challenge 6
-グループのLightningページを設定する際、そのLightningページのAPI参照名が**Group_Recourd_Page**となっていることを確認してください。
+グループのLightningページを設定する際、そのLightningページのAPI参照名が**Group_Record_Page**となっていることを確認してください。
 
 ### Challenge 10
 Campaign Influence Reportについては、[Lightning ExperienceでのURLパラメータを介したレポートの絞り込み](https://help.salesforce.com/articleView?id=reports_filter_url.htm&type=5)のヘルプ記事が参考になります。

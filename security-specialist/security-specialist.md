@@ -77,7 +77,7 @@ GenZの営業組織構造には3つのコアチームがあります。Field Sal
 ビジネス要件を満たすプロファイルを作成してください。チーム名をプロファイルに含めて、以下の名前でプロファイルを作成してください。**Field Sales User**、**Inside Sales User**、**Sales Executive User**
 
 ### Challenge 2: 項目レベルのセキュリティ設定
-ビジネス要件を満たすようレコードレベルに関連したSalesforceの他の設定を行ってください。Samantha Corderoのユーザを作成し、彼女に**Field Sales User**のプロファイルと**Field Sales**のロールを割り当てます。Samanthaが所有者の商談を作成し、フェーズを**Needs Analysys**に設定します。また、フェーズが**Closed Won**で種別が**Existing Customer - Upgrade**でSamanthaが所有する商談も作成してください。
+ビジネス要件を満たすようレコードレベルに関連したSalesforceの他の設定を行ってください。Samantha Corderoのユーザを作成し、彼女に**Field Sales User**のプロファイルと**Field Sales**のロールを割り当てます。Samanthaが所有者の商談を作成し、フェーズを**Needs Analysis**に設定します。また、フェーズが**Closed Won**で種別が**Existing Customer - Upgrade**でSamanthaが所有する商談も作成してください。
 
 このSecurityスーパーバッジの未管理パッケージをインストール後、以下の手順で全てのApexテストを実行してください。
 1. 設定のクイック検索ボックスで``Apex テスト実行``と検索します。
