@@ -12,7 +12,7 @@
 * [Process Automation Specialist](process-automation-specialist/process-automation-specialist.md)
 * [Security Specialist](security-specialist/security-specialist.md)
 * [Lightning Experience Rollout Specialist](lex-rollout-specialist/lex-rollout-specialist.md)
-* Business Administration Specialist
+* [Business Administration Specialist](business-administration-specialist/business-administration-specialist.md)
 * App Customization Specialist
 * Einstein Analytics Data Preparation Specialist
 * Einstein Analytics and Discovery Insights Specialist
