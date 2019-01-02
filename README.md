@@ -7,12 +7,12 @@
 * [Lightning Experience Specialist](https://developer.salesforce.com/jpblogs/2018/10/lex_specialist_superbadge/)
 
 ## 非公式の日本語訳
-* [Service Cloud Specialist](service-cloud-admin-specialist/service-cloud-admin-specialist.md)
-* [Lightning Reports and Dashboards Specialist](lex-reports-dashboards-specialist/lex-reports-dashboards-specialist.md)
-* [Process Automation Specialist](process-automation-specialist/process-automation-specialist.md)
-* [Security Specialist](security-specialist/security-specialist.md)
-* [Lightning Experience Rollout Specialist](lex-rollout-specialist/lex-rollout-specialist.md)
-* [Business Administration Specialist](business-administration-specialist/business-administration-specialist.md)
+* [Service Cloud Specialist](src/service-cloud-admin-specialist/service-cloud-admin-specialist.md)
+* [Lightning Reports and Dashboards Specialist](src/lex-reports-dashboards-specialist/lex-reports-dashboards-specialist.md)
+* [Process Automation Specialist](src/process-automation-specialist/process-automation-specialist.md)
+* [Security Specialist](src/security-specialist/security-specialist.md)
+* [Lightning Experience Rollout Specialist](src/lex-rollout-specialist/lex-rollout-specialist.md)
+* [Business Administration Specialist](src/business-administration-specialist/business-administration-specialist.md)
 * App Customization Specialist
 * Einstein Analytics Data Preparation Specialist
 * Einstein Analytics and Discovery Insights Specialist
