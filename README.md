@@ -13,7 +13,7 @@
 * [Security Specialist](src/security-specialist/security-specialist.md)
 * [Lightning Experience Rollout Specialist](src/lex-rollout-specialist/lex-rollout-specialist.md)
 * [Business Administration Specialist](src/business-administration-specialist/business-administration-specialist.md)
-* App Customization Specialist
+* [App Customization Specialist](src/app-customization-specialist/app-customization-specialist.md)
 * Einstein Analytics Data Preparation Specialist
 * Einstein Analytics and Discovery Insights Specialist
 * Advanced Apex Specialist
