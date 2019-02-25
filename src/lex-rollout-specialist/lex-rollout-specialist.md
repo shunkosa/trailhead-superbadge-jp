@@ -358,4 +358,5 @@ Visualforceページへの[Lightning Design System](https://www.lightningdesigns
 グループのLightningページを設定する際、そのLightningページのAPI参照名が**Group_Record_Page**となっていることを確認してください。
 
 ### Challenge 10
-Campaign Influence Reportについては、[Lightning ExperienceでのURLパラメータを介したレポートの絞り込み](https://help.salesforce.com/articleView?id=reports_filter_url.htm&type=5)のヘルプ記事が参考になります。
+* Campaign Influence Reportについては、[Lightning ExperienceでのURLパラメータを介したレポートの絞り込み](https://help.salesforce.com/articleView?id=reports_filter_url.htm&type=5)のヘルプ記事が参考になります。
+* URLは[新しい形式](https://releasenotes.docs.salesforce.com/ja-jp/summer18/release-notes/rn_general_new_url_format_lex.htm)を利用しましょう。
