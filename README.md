@@ -3,18 +3,18 @@ SalesforceのTrailhead Superbadge (スーパーバッジ)の日本語訳です�
 
 | スーパーバッジ | キーワード |
 |-|-|
-| Advanced Apex Specialist  | Apex開発全般
+| [Advanced Apex Specialist](src/advanced-apex-specialist/advanced-apex-specialist.md)  | Visualforce全般<br>Apex全般
 | [Apex Specialist](https://developer.salesforce.com/jpblogs/2018/05/apex_specialist_superbadge/) ☁️ | Apex開発全般
 | [App Customization Specialist](src/app-customization-specialist/app-customization-specialist.md) | データモデリング<br>承認プロセス<br>Lightningアプリケーションビルダー
 | Aura Components Specialist | Auraコンポーネント全般 |
-| [Business Administration Specialist](src/business-administration-specialist/business-administration-specialist.md) | データ管理<br>メールテンプレート<br>UI設定<br>Chatter
+| [Business Administration Specialist](src/business-administration-specialist/business-administration-specialist.md) | データ管理<br>メールテンプレート<br>UI設定
 | [Data Integration Specialist](https://developer.salesforce.com/jpblogs/2018/06/data_integration_superbadge/) ☁️ | Apex Webサービス<br>コールアウト
 | Einstein Analytics Data Preparation Specialist | データフロー
 | Einstein Analytics and Discovery Insights Specialist | SAQL<br>動的バインド
 | [Lightning Reports and Dashboards Specialist](src/lex-reports-dashboards-specialist/lex-reports-dashboards-specialist.md) | レポート・ダッシュボード全般
 | [Lightning Experience Rollout Specialist](src/lex-rollout-specialist/lex-rollout-specialist.md) | Lightning移行全般
 | [Lightning Experience Specialist](https://developer.salesforce.com/jpblogs/2018/10/lex_specialist_superbadge/) ☁️ | プロセスビルダー
-| [Process Automation Specialist](src/process-automation-specialist/process-automation-specialist.md) | 入力規則<br>プロセスビルダー<br>クイックアクション<br>フロー
+| [Process Automation Specialist](src/process-automation-specialist/process-automation-specialist.md) | 入力規則<br>プロセスビルダー・フロー<br>クイックアクション
 | ~~[Reports and Dashboards Specialist](https://developer.salesforce.com/jpblogs/2018/04/reports_and_dashboards_superbadge/)~~ ☁️ | レポート・ダッシュボード全般
-| [Security Specialist](src/security-specialist/security-specialist.md) | データセキュリティ、ユーザ認証
+| [Security Specialist](src/security-specialist/security-specialist.md) | データセキュリティ<br>ユーザ認証
 | [Service Cloud Specialist](src/service-cloud-admin-specialist/service-cloud-admin-specialist.md) | Service Cloud全般
