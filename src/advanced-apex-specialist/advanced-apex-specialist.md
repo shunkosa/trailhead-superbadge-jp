@@ -1,14 +1,15 @@
 # Advanced Apex Specialist
-* TrailheadのSuperbadge、[Advanced Apex Specialist](https://trailhead.salesforce.com/en/content/learn/superbadges/superbadge_aap)の日本語訳(**非公式**)です。
+* TrailheadのSuperbadge、[Advanced Apex Specialist](https://trailhead.salesforce.com/ja/content/learn/superbadges/superbadge_aap)の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
-## このスーパーバッジを取得するには何をすれば良いのか？
+---
+## このスーパーバッジを取得するためにすること
 1. Apexコードのデバッグとトラブルシュート
 2. 大規模データセットに対応するApexコードの開発
 3. Visualfordeを用いたカスタムインターフェース開発
 4. コードの品質を保証するテスト戦略のデザイン
 
-## このスーパーバッジでテストされるコンセプト
+## このスーパーバッジでテストする概念
 * Apexコード内のカスタムメタデータ
 * Apex共有
 * Apexトランザクション実行
@@ -276,36 +277,36 @@ Reneeがproduct2Newページでリクエストしたように、彼女は将来�
 **参考情報** : テストカバー率はリリースの要件であり、コードが失敗しないようにするための優れた方法です。前提条件となるのバッジで説明されているように、単体テストの目的は一定のカバー率を達成することそのものではなく、ビジネスロジックが期待どおりに動作することを確認することです。
 
 ## Challenge
-### Challenge 1 - ベストプラクティスを用いてコードベースを更新する
+### Challenge 1: ベストプラクティスを用いてコードベースを更新する
 **PackageTests**という名前のApexクラスを削除します。
 
 新しいカスタム表示ラベル、定数、カスタムメタデータ型、カスタムメタデータレコードを作成してください。
 
-### Challenge 2 - Orderトリガを更新する
+### Challenge 2: Orderトリガを更新する
 * 在庫レベルを計算するビジネスロジックを正して、関連するコードが無駄なく効率的であるようにしてください。
 * ベストプラクティスを用い、関連する必要なトリガーイベントに基づいてのみ実行するように**OrderTrigger**を修正してください。
 * **OrderHelper**内のコードを更新してください。
 
-### Challenge 3 - 新しい商品のVisualforceページを更新する
+### Challenge 3: 新しい商品のVisualforceページを更新する
 **Product2New**のVisualforceページと**Product2Extension**のApexクラスをビジネスを要件を満たすように更新してください。
 
-### Challenge 4 - テストデータファクトリーを作成する
+### Challenge 4: テストデータファクトリーを作成する
 **TestDataFactory**のApexクラスを完成さてください。クラス内のメソッドは単体テストのためのサンプルデータを生成します。メソッドをインスタンスメソッドにしないでください。
 
-### Challenge 5 - 単体テストでテストカバー率を増加させる
+### Challenge 5: 単体テストでテストカバー率を増加させる
 * **TestDataFactory**クラスに、シグネチャに従って新しい**VerifyQuantityOrdered**メソッドを作成してください。
 * **OrderTrigger**および、**OrderHelper**のロジックを検証するために**OrderTests**を更新してください。
 * **Product2Extension_UnitTest**クラスの、**Product2Tests**メソッドを完成させてください。.
 
-### Challenge 6 - 在庫が少ない場合の社内通知を自動化する
+### Challenge 6: 在庫が少ない場合の社内通知を自動化する
 * 「Inventory Announcements」のChatterグループを作成し、正しい説明を設定してください。
 * **AnnouncementQueueable**を完成させQueueableインタフェースを実装してください。
 * **Product2Trigger**と**Product2Helper**をビジネス要件を満たすように修正してください。
 
-### Challenge 7 - 迅速に注文の登録が可能となるVisualforceページのコントローラ拡張を完成させる
+### Challenge 7: 迅速に注文の登録が可能となるVisualforceページのコントローラ拡張を完成させる
 ビジネス要件を満たすように**OrderExtension**の構築を完了させてください。このChallengeのために**OrderEdit**のVisualforceページは修正しないでください。**OrderExtension**に記載されているメソッドや変数は、リネームしたりシグネチャを変更したりすることなく使用してください。
 
-### Challenge 8 - 単体テストを作成する
+### Challenge 8: 単体テストを作成する
 リリースのためにテストカバー率が十分であることを確認し、すべてのテストを実行してください。
 
 ## 訳注
