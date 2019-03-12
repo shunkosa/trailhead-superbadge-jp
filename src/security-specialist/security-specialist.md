@@ -1,9 +1,17 @@
 # Security Specialist
 * TrailheadのSuperbadge、[Security Specialist](https://trailhead.salesforce.com/ja/content/learn/superbadges/superbadge_security)の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
-* フィードバックや質問は大歓迎です。IssueやPR、[Twitter](https://www.twitter.com/shunkosa)までお願いします。
 
 ---
+## このスーパーバッジを取得するためにすること
+1. オブジェクトレベルのセキュリティ設定を設定して、どのユーザーがどのオブジェクトにアクセスできるかを制御する
+2. レコードレベルのセキュリティ設定を設定して、特定のレコードを作成および編集できるユーザーを制御する
+3. セキュリティのベストプラクティスに準拠するように適切なパスワードポリシーを設定する
+4. データ保持要件を満たすために項目レベルの変更を追跡する
+5. レポート、ダッシュボード、および公開リストビューのセキュリティ設定を設定してユーザーに適切な権限を付与する
+6. ユーザーログインのセキュリティを強化するために2要素認証を設定する
+7. Salesforce設定への変更を追跡する機能を説明する
+
 ## このスーパーバッジでテストする概念
 * データセキュリティ
 * ユーザ認証
@@ -73,14 +81,14 @@ GenZの営業組織構造には3つのコアチームがあります。Field Sal
 社内で他のすべての責任を負うため、プロジェクトマネージャの権限は、他のさまざまなユーザ権限で設定されます。たとえば、Carla Rodriquezの主な仕事はシニアフィールドセールスアソシエイトですが、彼女はプロジェクトマネージャも務めています。このため、プロファイルを使用してレコードレベルの権限を設定することはできません。また、プロジェクトマネージャとレコードを共有するためにロールを使用しないでください。 プロジェクトマネージャは、種別がExisting Customer - UpgradeでフェーズがClosed Wonであるすべての商談を参照できますが、他のユーザが所有する他の商談は参照できません。プロジェクトマネージャは、必要に応じてシステム管理者から権限を付与することで、モバイルアクセスが可能です。プロジェクトマネージャに関連するセキュリティの設定に名前を付けるときは、**Project Managers**という名前を使用します。
 
 ## Challenge
-### Challenge 1: オブジェクトレベルのセキュリティ設定
+### Challenge 1: オブジェクトレベルのセキュリティを設定する
 ビジネス要件を満たすプロファイルを作成してください。チーム名をプロファイルに含めて、以下の名前でプロファイルを作成してください。**Field Sales User**、**Inside Sales User**、**Sales Executive User**
 
-### Challenge 2: 項目レベルのセキュリティ設定
+### Challenge 2: レコードレベルのセキュリティを設定する
 ビジネス要件を満たすようレコードレベルに関連したSalesforceの他の設定を行ってください。Samantha Corderoのユーザを作成し、彼女に**Field Sales User**のプロファイルと**Field Sales**のロールを割り当てます。Samanthaが所有者の商談を作成し、フェーズを**Needs Analysis**に設定します。また、フェーズが**Closed Won**で種別が**Existing Customer - Upgrade**でSamanthaが所有する商談も作成してください。
 
 このSecurityスーパーバッジの未管理パッケージをインストール後、以下の手順で全てのApexテストを実行してください。
-1. 設定のクイック検索ボックスで``Apex テスト実行``と検索します。
+1. 設定のクイック検索ボックスで`Apex テスト実行`と検索します。
 2. [テストを選択...]ボタンをクリックします。
 3. ドロップダウンメニューから[すべての名前空間]を選択します。
 4. sb_security.BeAwesomeを選択します。
@@ -88,7 +96,7 @@ GenZの営業組織構造には3つのコアチームがあります。Field Sal
 
 このChallengeをチェックする前に、すべての単体テストが合格していることを確認してください。(テスト名の隣、[状況]に緑色のチェックがつきます)
 
-### Challenge 3: クイズ
+### Challenge 3: クイズ - 適切なパスワードポリシーを設定する
 1. Which password practice creates the most risk for compromising an account? (アカウントを危険にさらすリスクが最も大きいパスワードの習慣はどれですか？)
     - A. Password reuse (パスワードの使いまわし)
     - B. Requiring a minimum password length of 8 characters (パスワードに最低8文字を要求する)
@@ -108,16 +116,16 @@ GenZの営業組織構造には3つのコアチームがあります。Field Sal
     - C. Requiring users to reset their password at least once a year (最低1年に1回パスワードのリセットをユーザに要求すること)
     - D. Users not reusing their Salesforce password on other website and services (他のウェブサイトやサービスにSalesforceのパスワードを使いまわさないこと)
 
-### Challenge 4: 項目レベルの変更のトラッキング
+### Challenge 4: 項目レベルの変更をトラッキングする
 要件の中で特定された項目の変更をトラッキングするよう設定を見直して更新してください。
 
-### Challenge 5: レポート、ダッシュボード、公開リストビューのセキュリティ設定
+### Challenge 5: レポート、ダッシュボード、公開リストビューのセキュリティを設定する
 従業員が適切なデータだけを見られるようにし、レポートのための他のセキュリティ要件を設定してください。
 
 ### Challenge 6: 2要素認証を設定する
 要件に応じて2要素認証を適切に設定してください。2要素認証をSamantha Corderoに割り当ててください。
 
-### Challenge 7: クイズ
+### Challenge 7: クイズ - Salesforce設定の変更を追跡する
 1. What feature would you use to track changes to settings in Salesforce? (Salesforceの設定の変更をトラッキングするにはどの機能を利用しますか？)
     - A. Setup History Tracking (設定変更履歴管理)
     - B. Field Audit Trail (項目監査履歴)

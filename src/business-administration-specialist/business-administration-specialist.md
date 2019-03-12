@@ -1,9 +1,16 @@
 # Business Administration Specialist
 * TrailheadのSuperbadge、[Business Administration Specialist](https://trailhead.salesforce.com/ja/content/learn/superbadges/superbadge_business_specialist)の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
-* フィードバックや質問は大歓迎です。IssueやPR、[Twitter](https://www.twitter.com/shunkosa)までお願いします。
 
 ---
+## このスーパーバッジを取得するためにすること
+1. 取引先のデータをクリーニングしインポートする
+2. ユーザを作成しアクセス権を管理する
+3. 新しいマーケティングのニーズのためにメールテンプレートを作成する
+4. 新しい製品タイプのためのUIツールを設定する
+5. レポートとダッシュボードを作成する
+6. Chatterのツールを管理し適用する
+
 ## このスーパーバッジでテストする概念
 * データのインポート
 * ユーザ権限とユーザ管理
@@ -120,7 +127,7 @@ Ursa Major Solarの住宅向けセールスチームは顧客を愛し、顧客�
 |タイトル|サブタイトル|ソースレポート|グラフの詳細|
 |-|-|-|-|
 |Account Distribution|Number of Accounts by Industry Type|Accounts by Market|<ul><li>ドーナツグラフ</li><li>スライスの基準: Market</li><li>表示ラベルの昇順でソート</li><li>表示する最大件数: 2</li><li>グラフのサイズ:幅5、高さ5</li><li>左上に配置</li>|
-|Top Accounts|Top 10 High Value Residential Accounts|High Value Residential|<ul><li>レガシーテーブル</li><li>値の降順でソート</li><li>表示する最大グループ数: 10</li><li>グラフのサイズ: 幅4、高さ5</li><li>右上に配置</li></ul>|
+|Top Accounts|Top 10 High Value Residential Accounts|High Value Residential|<ul><li>Lightningテーブル</li><li>値の降順でソート</li><li>表示する最大グループ数: 10</li><li>グラフのサイズ: 幅4、高さ5</li><li>右上に配置</li></ul>|
 |Ratings by Stage|Rated Distribution of Accounts by State|Rated Accounts by State|<ul><li>積み上げ縦棒グラフ</li><li>表示する最大グループ数: 15</li><li>グラフのサイズ: 幅9、高さ3</li><li></li>他のコンポーネントの下に配置</ul>|
 
 ##### Rep Scoreboard Dashboard
@@ -128,8 +135,8 @@ Ursa Major Solarの住宅向けセールスチームは顧客を愛し、顧客�
 
 |タイトル|サブタイトル|ソースレポート|グラフの詳細|
 |-|-|-|-|
-|My Top Accounts|Top 5 High Value Residential Accounts|High Value Residential|<ul><li>レガシーテーブル</li><li>値の降順でソート</li><li>表示する最大グループ数: 5</li><li>グラフのサイズ: 幅4、高さ3</li><li>左上に配置</li>|
-|Open Support Cases|My Customers’ Open Support Cases|Open Support Cases|<ul><li>レガシーテーブル</li><li>表示する最大グループ数: 15</li><li>値の降順でソート</li><li>グラフのサイズ: 幅5、高さ7</li><li>右側に配置</li></ul>|
+|My Top Accounts|Top 5 High Value Residential Accounts|High Value Residential|<ul><li>Lightningテーブル</li><li>値の降順でソート</li><li>表示する最大グループ数: 5</li><li>グラフのサイズ: 幅4、高さ3</li><li>左上に配置</li>|
+|Open Support Cases|My Customers’ Open Support Cases|Open Support Cases|<ul><li>Lightningテーブル</li><li>表示する最大グループ数: 15</li><li>値の降順でソート</li><li>グラフのサイズ: 幅5、高さ7</li><li>右側に配置</li></ul>|
 |My Accounts by State|Distribution of My Accounts by State|Rated Accounts by State|<ul><li>積み上げ縦棒グラフ</li><li>表示する最大グループ数: 10</li><li>グラフのサイズ: 幅4、高さ4</li><li>左下に配置</li></ul>|
 
 ### マーケティングの使命
@@ -286,7 +293,7 @@ Utility Opportunity Pageと同様ですが以下の項目を取り除いてく�
 7. コラボレーションスペース内で、多岐選択式の質問を作成して住宅向け市場の製品に対する精通度合いを計りましょう。**Which product are you most comfortable selling?** と質問し、選択肢は**Home Array**、**Home Battery**、**Home Starter Kit**、**Home Starter Kit Deluxe** としてください。
 8. コラボレーションスペース内で、Ada Balewaに@メンションし、**Thank you so much for helping the team out like this. Without your brains, we couldn’t shine so brightly!** と投稿してください。
 
-## 課題
+## Challenge
 ### Challenge 1: データの修正とインポート
 もしまだであれば、事前準備に記載のある未管理パッケージをインストールしてください。そして取引先のType(種別)にResidentialを追加します。April Hansenの取引先データを、インポート前にデータ品質標準に準拠するよう修正してからインポートしてください。
 
@@ -294,7 +301,7 @@ Utility Opportunity Pageと同様ですが以下の項目を取り除いてく�
 記載されているビジネス目標を達成するために、Mariaが名前、役割、ユーザライセンス、プロファイル、およびロケールとともに送ってきたユーザのリストを追加します。ShinjeにLanguage Preference項目へのアクセス権を提供するソリューションを作成して割り当ててください。
 
 ### Challenge 3: レポートとダッシュボードの作成
-住宅向けセールスチームが取引先の価値をより理解しやすくするために、4つのレポートと2つのダッシュボードとそれらの保存場所を作成してください。課題を検証する直前に両方のダッシュボードを更新してください。
+住宅向けセールスチームが取引先の価値をより理解しやすくするために、4つのレポートと2つのダッシュボードとそれらの保存場所を作成してください。Challengeを検証する直前に両方のダッシュボードを更新してください。
 
 ### Challenge 4: 再利用可能なメールを設定する
 住宅向けセールスチームが自己紹介するために、メールの署名を設定し、レターヘッド、事前に設定された2つのメール、それらの保存場所を作成してください。
