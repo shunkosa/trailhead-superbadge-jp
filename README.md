@@ -1,12 +1,11 @@
-SalesforceのTrailhead Superbadge (スーパーバッジ)の日本語訳です。公式の日本語訳(☁️)へのリンクも含みます。
-
+SalesforceのTrailhead Superbadge (スーパーバッジ)の日本語訳です。公式の日本語訳(☁️)へのリンクも含みます。原文のアップデートは予告なく行われるため、翻訳が追いつかない場合がありますがご容赦ください。フィードバックや質問は大歓迎です。IssueやPull Request、[Twitter](https://www.twitter.com/shunkosa)等でお知らせください。
 
 | スーパーバッジ | キーワード |
 |-|-|
 | [Advanced Apex Specialist](src/advanced-apex-specialist/advanced-apex-specialist.md)  | Visualforce全般<br>Apex全般
 | [Apex Specialist](https://developer.salesforce.com/jpblogs/2018/05/apex_specialist_superbadge/) ☁️ | Apex開発全般
 | [App Customization Specialist](src/app-customization-specialist/app-customization-specialist.md) | データモデリング<br>承認プロセス<br>Lightningアプリケーションビルダー
-| Aura Components Specialist | Auraコンポーネント全般 |
+| [Aura Components Specialist](src/aura-components-specialist/aura-components-specialist.md) | Auraコンポーネント全般 |
 | [Business Administration Specialist](src/business-administration-specialist/business-administration-specialist.md) | データ管理<br>メールテンプレート<br>UI設定
 | [Data Integration Specialist](https://developer.salesforce.com/jpblogs/2018/06/data_integration_superbadge/) ☁️ | Apex Webサービス<br>コールアウト
 | Einstein Analytics Data Preparation Specialist | データフロー
