@@ -1,4 +1,6 @@
-SalesforceのTrailhead Superbadge (スーパーバッジ)の日本語訳です。公式の日本語訳(☁️)へのリンクも含みます。原文のアップデートは予告なく行われるため、翻訳が追いつかない場合がありますがご容赦ください。フィードバックや質問は大歓迎です。IssueやPull Request、[Twitter](https://www.twitter.com/shunkosa)等でお知らせください。
+* SalesforceのTrailhead Superbadge (スーパーバッジ)の日本語訳です。公式の日本語訳(☁️)へのリンクも含みます。
+* 原文のアップデートは予告なく行われるため、翻訳が追いつかない場合がありますがご容赦ください。
+* フィードバックや質問は大歓迎です。IssueやPull Request、[Twitter](https://www.twitter.com/shunkosa)等でお知らせください。
 
 | スーパーバッジ | キーワード |
 |-|-|
