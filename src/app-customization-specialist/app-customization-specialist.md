@@ -1,7 +1,14 @@
 # App Customization Specialist
 * TrailheadのSuperbadge、[App Customization Specialist](https://trailhead.salesforce.com/ja/content/learn/superbadges/superbadge_lightning_platform_app_builder)の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
-* フィードバックや質問は大歓迎です。IssueやPR、[Twitter](https://www.twitter.com/shunkosa)までお願いします。
+
+---
+## このスーパーバッジを取得するためにすること
+1. レコードタイプを追加する
+2. 項目を作成する
+3. 承認プロセスを作成する
+4. レポートとダッシュボードを作成する
+5. アプリケーションとそのホームページを作成する
 
 ## このスーパーバッジでテストする概念
 * レコードタイプ
