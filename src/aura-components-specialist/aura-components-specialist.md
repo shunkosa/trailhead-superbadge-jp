@@ -1,23 +1,23 @@
-# Aura Components Specialist
+# Lightning Component Framework Specialist
 - TrailheadのSuperbadge、[Aura Components Specialist](https://trailhead.salesforce.com/ja/content/learn/superbadges/superbadge_lcf)の日本語訳(**非公式**)です。
 - 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。 
 
 ---
 ## このスーパーバッジを取得するためにすること
-1. Salesforce Lightning Design Systemのマークアップを、完全に機能するAuraコンポーネントに変換します。
-2. Lightning Design SystemとカスタムCSSを使用してAuraコンポーネントをテーマに合わせて構成します。
-3. Lightningアプリケーションビルダー、Lightning Experience、Salesforceアプリケーション、およびLightningアプリケーションで、Auraコンポーネントを表示します。
+1. Salesforce Lightning Design Systemのマークアップを、完全に機能するLightningコンポーネントに変換します。
+2. Lightning Design SystemとカスタムCSSを使用してLightningコンポーネントをテーマに合わせて構成します。
+3. Lightningアプリケーションビルダー、Lightning Experience、Salesforceアプリケーション、およびLightningアプリケーションで、Lightningコンポーネントを表示します。
 4. カスタムオブジェクトからデータを読み取るためのApexコントローラメソッドを作成して呼び出します。
 5. 密結合コンポーネント間の通信を可能にするために、コンポーネントイベントとpublicメソッドを使用します。
 6. 疎結合コンポーネント間の通信を可能にするためにアプリケーションイベントを作成して発生させます。
 7. アプリケーションイベントを発生させて、Salesforceのネイティブ機能を呼び出します。
 8. 機能がリリース環境で利用可能かどうかに応じて、アプリケーション機能を動的に有効化または無効化します。
 9. Lightning Data Serviceを使用してカスタムオブジェクトのデータを読み書きします。
-10. Auraコンポーネント内で外部のJavaScriptを作成して使用します。
+10. Lightningコンポーネント内で外部のJavaScriptを作成して使用します。
 11. JavaScriptとCSSをトラブルシューティングします。
 
 ## このスーパーバッジでテストする概念
-* Lightning アプリケーションビルダーで使用するためのAuraコンポーネントの開発
+* Lightning アプリケーションビルダーで使用するためのLightningコンポーネントの開発
 * コンポーネントのテーマに合わせた構成
 * JavaScriptを使用したユーザーインタラクションの処理
 * コンポーネントのトラブルシューティング
@@ -25,7 +25,7 @@
 * カスタムオブジェクトのデータの読み書き
 * コンポーネント間の通信
 * ネイティブのSalesforce機能の活用
-* Auraコンポーネント内での外部JavaScriptの使用
+* Lightningコンポーネント内での外部JavaScriptの使用
 
 所用時間 : 推定10時間 - 12時間  
 
@@ -37,7 +37,7 @@
 - Challenge 1で未管理パッケージのインストールを検証した後、サンプルデータが自動的に組織に追加されます。最初のChallengeを検証後、何らかの理由で組織を変更する場合は、`GenerateData.apxc`の静的メソッド`initData()`を実行してください。
 - リリースを確実に成功させるため、要件ドキュメントに指定される命名規則を利用してください。
 - 以下の詳細な要件を読みながら、設定された組織のデータスキーマを確認してください。
-- Auraコンポーネントのコントローラ関数をコーディングする際、**function foo(cmp, evt, hlp)** ではなく、**function foo(component, event, helper)** という命名規則に従ってください。
+- Lightningコンポーネントのコントローラ関数をコーディングする際、**function foo(cmp, evt, hlp)** ではなく、**function foo(component, event, helper)** という命名規則に従ってください。
 - イベントを実装する際には、ベストプラクティスとアプリケーションでのイベントの利用用途に応じて適切なイベントタイプを選択する必要があります。
 - このスーパーバッジを完了させるにあたり、アナウンスがあるまで、[Lightning Web Component](https://trailhead.salesforce.com/en/content/learn/projects/quick-start-lightning-web-components)ではなく[Auraコンポーネント](https://trailhead.salesforce.com/en/content/learn/modules/lex_dev_lc_basics)を使用・作成してください。
 
@@ -82,7 +82,7 @@ Search(検索)ボタンとNew(新規)ボタンとともに、ボート種別を�
 
 フォームを構築するには、次のコンポーネントを作成してください。図1.1では、各コンポーネントが対応する番号で強調表示されています。
 
-1. **BoatSearchForm.cmp** - ユーザーがドロップダウンメニューを使用してボート種別で結果をフィルタするためのフォーム。最初のデフォルト値として空の文字列を使用し、**All Types** (すべての種別)というラベルを付けます。`<lightning:layout>`コンポーネントと`horizo​​ntalAlign`属性を使用してドロップダウンメニューと中央揃えになる、青いバリアントの`Search` (検索)ボタンと、白いバリアントの`New` (新規)ボタンを含めてください。ユーザーが新規ボタンをクリックすると、コントローラ関数が適切なイベントを発生させて新しいボートのレコードを作成します。ボート種別が選択されている場合は、新しいボートのレコードはデフォルトで選択されたボート種別が設定されます。フォームのコントローラは、ベストプラクティスに従って、e.force:createRecord イベントがスタンドアロンアプリケーションでサポートされているかどうかを確認し、新規ボタンを表示または非表示にします。ユーザーが検索ボタンをクリックしても、「**検索フィルタを実装する**」 のフェーズまで機能が実装されていないため、何も起こりません。
+1. **BoatSearchForm.cmp** - ユーザーがドロップダウンメニューを使用してボート種別で結果をフィルタするためのフォーム。最初のデフォルト値として空の文字列を使用し、**All Types** (すべての種別)というラベルを付けます。`<lightning:layout>`コンポーネントと`horizontalAlign`属性を使用してドロップダウンメニューと中央揃えになる、青いバリアントの`Search` (検索)ボタンと、白いバリアントの`New` (新規)ボタンを含めてください。ユーザーが新規ボタンをクリックすると、コントローラ関数が適切なイベントを発生させて新しいボートのレコードを作成します。ボート種別が選択されている場合は、新しいボートのレコードはデフォルトで選択されたボート種別が設定されます。フォームのコントローラは、ベストプラクティスに従って、e.force:createRecord イベントがスタンドアロンアプリケーションでサポートされているかどうかを確認し、新規ボタンを表示または非表示にします。ユーザーが検索ボタンをクリックしても、「**検索フィルタを実装する**」 のフェーズまで機能が実装されていないため、何も起こりません。
 2. **BoatSearchResults.cmp** - このコンポーネントは、最終的にはマッチするボートをレスポンシブレイアウトで表示しますが、ここでは空のままにします。
 3. **BoatSearch.cmp** - `BoatSearchForm.cmp`と`BoatSearchResults.cmp`の両方を呼び出し、Lightningカードコンポーネントでそれぞれをラップし、タイトルがそれぞれ **Find a Boat** (ボートの検索)と **Matching Boat** (マッチするボート)となるコンテナコンポーネント。BoatSearchFormコンポーネントとBoatSearchResultsコンポーネントを視覚的に区別するために、Find a Boatのカードに**10px**の余白(margin-bottom)を追加します。
 
@@ -265,7 +265,7 @@ HowWeRoll自身がすべてのボートを所有しているわけではない�
 ![](figure6.jpg)<br>図6 : Add Reviewタブのフォーム
 
 ### フォームを構築する
-`BoatDetails`コンポーネントのAdd Reviews (レビューの追加)タブでは、新しいコンポーネント`AddBoatReview`をインスタンス化し、コンポーネントのBoat__c型のpublic属性`boat`を使用してボートのデータを渡します。コンポーネントはSLDSを使用してすべてのフォーム項目が垂直に配置されるようにフォームレイアウトを定義します。Title項目とDescription項目は適切なAuraコンポーネントを使用し、コンポーネントの`BoatReview__c`型のprivate属性`boatReview`の`Name`プロパティと`Comment__c`プロパティにバインドされます。Description項目のリッチテキストエディタでは、フォント選択オプションは表示されないようにしてください。送信ボタンは`utility:save`アイコンを使用してコントローラメソッド`onSave`を呼び出します。Rating(評価)項目は、「**サードパーティスクリプトの統合**」フェーズまで追加しません。
+`BoatDetails`コンポーネントのAdd Reviews (レビューの追加)タブでは、新しいコンポーネント`AddBoatReview`をインスタンス化し、コンポーネントのBoat__c型のpublic属性`boat`を使用してボートのデータを渡します。コンポーネントはSLDSを使用してすべてのフォーム項目が垂直に配置されるようにフォームレイアウトを定義します。Title項目とDescription項目は適切なLightningコンポーネントを使用し、コンポーネントの`BoatReview__c`型のprivate属性`boatReview`の`Name`プロパティと`Comment__c`プロパティにバインドされます。Description項目のリッチテキストエディタでは、フォント選択オプションは表示されないようにしてください。送信ボタンは`utility:save`アイコンを使用してコントローラメソッド`onSave`を呼び出します。Rating(評価)項目は、「**サードパーティスクリプトの統合**」フェーズまで追加しません。
 
 ### 新しいBoatReviewレコードを作成する
 このコンポーネントは、Lightning Data Serviceを利用してBoatReview__cレコードを作成します。データサービスの呼び出しには`force:recordData`のtargetFields構文を使用し、aura:idに`service`と設定し、`boatReview`属性を参照します。boatReview属性の対象の項目はId、Name、Comment__c、Boat__cです。レコードが更新されると、このセクションの後半で詳しく説明するように`onRecordUpdated`という名前のコントローラ関数が呼び出され、`recordError`という名前のprivateコンポーネント属性を使用してデータサービスのエラーを書き込みます。
@@ -365,7 +365,7 @@ Mapコンポーネントとそのコントローラは、このスーパーバ�
 ### Challenge 2: 例示による問合せフォームを作成する
 ビジネス要件で説明されているように、**BoatSearchForm.cmp**、**BoatSearchResults.cmp**、および**BoatSearch.cmp**を使用して、**Search**ボタンと**New**ボタンと共に各ボート種別を一覧表示するドロップダウンを表示するフォームを作成します。
 
-これらのAuraコンポーネントを**Friends with Boats**という名前のLightningページに追加し、そのページをLightning ExperienceおよびSalesforceアプリケーションの新しいタブとしてアクティブにします。最後に、Lightningページに似たレイアウトを持つ**FriendswithBoats.app**という名前のLightningアプリケーションを作成します。
+これらのLightningコンポーネントを**Friends with Boats**という名前のLightningページに追加し、そのページをLightning ExperienceおよびSalesforceアプリケーションの新しいタブとしてアクティブにします。最後に、Lightningページに似たレイアウトを持つ**FriendswithBoats.app**という名前のLightningアプリケーションを作成します。
 
 ### Challenge 3: BoatTileおよびBoatSearchResultsコンポーネントを実装する
 新しい**BoatTile**コンポーネントを作成し、コンテナコンポーネントである**BoatSearchResults**を更新して、Apexコントローラの**BoatSearchResults**から返されたすべての結果をループ処理して、HowWeRollがリースするすべてのボートのフィルタされていないリストを表示します。
