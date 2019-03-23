@@ -323,10 +323,10 @@ Mariaは、ユーザがVolunteer Shiftレコードから直接シフトにサイ
 あなたの善意あるチームメイトは、あなたに尋ねることなく再びあなたをシフトにサインアップしましたか？**My Shifts Pending Approval**レポートには、どのシフトを確認またはキャンセルする必要があるのかが表示されます。ユーザデータとともにカスタムレポートタイプを使用して、Volunteer Shift Worker ID、Shift Start Time(シフト開始時刻)、Volunteer Activity(ボランティア活動)、Volunteer Job(ボランティアの仕事)、Volunteer Organization(ボランティア組織)を表示する表形式のレポートを作成します。このボランティアの保留中(Pending Approval)のシフトのみが表示されます。
 
 #### 私の今後のシフト
-最高のボランティアでさえ、時々リマインダーが必要です。**My Upcoming Shift**レポートは、彼らの確認されたシフトのうちどれが次の30日以内に始まっているかをユーザに示します。 ユーザデータとともにカスタムレポートタイプを使用して、Volunteer Shift Worker ID、Shift Start Time(シフト開始時刻)、Volunteer Activity(ボランティア活動)、Volunteer Job(ボランティアの仕事)、Volunteer Organization(ボランティア組織)を表示する表形式のレポートを作成します。このボランティアについて確認された(Confirmed)シフトのみが表示されます。
+最高のボランティアでさえ、時々リマインダーが必要です。**My Upcoming Shifts**レポートは、彼らの確認されたシフトのうちどれが次の30日以内に始まっているかをユーザに示します。 ユーザデータとともにカスタムレポートタイプを使用して、Volunteer Shift Worker ID、Shift Start Time(シフト開始時刻)、Volunteer Activity(ボランティア活動)、Volunteer Job(ボランティアの仕事)、Volunteer Organization(ボランティア組織)を表示する表形式のレポートを作成します。このボランティアについて確認された(Confirmed)シフトのみが表示されます。
 
 #### トップボランティア組織
-どのボランティア組織が最も多くの時間を獲得できるかを見るために、オフィス内で切磋琢磨しています。**Top Organization Report**レポートとレポートグラフは、この友好的な競争を煽っています。取引先データとともにカスタムレポートタイプを使用すると、サマリーレポートには、組織ごとのAttributed Volunteer Hoursとともに、ボランティア組織の取引先のリストが、時間が長い順に表示されます。詳細は必要ありません。レポートグラフは、**Top Volunteer Organizations**という名前の横棒グラフで、Attributed Volunteer Hoursをx軸に表示します。
+どのボランティア組織が最も多くの時間を獲得できるかを見るために、オフィス内で切磋琢磨しています。**Top Volunteer Organizations**レポートとレポートグラフは、この友好的な競争を煽っています。取引先データとともにカスタムレポートタイプを使用すると、サマリーレポートには、組織ごとのAttributed Volunteer Hoursとともに、ボランティア組織の取引先のリストが、時間が長い順に表示されます。詳細は必要ありません。レポートグラフは、**Top Volunteer Organizations**という名前の横棒グラフで、Attributed Volunteer Hoursをx軸に表示します。
 
 #### トップボランティア
 トップボランティアは、賞賛、愛情、主要な会社のイベントでの表彰、そしてUrsa Majorでのハイファイブによって報われます。**Top Volunteers**レポートとレポートグラフは、それらのボランティアが名声に備えるために役立ちます。サマリーレポートは、カスタムレポートタイプとユーザデータを使用して、ボランティアの名前でグループ化され、ボランティアごとにシフト時間(Shift Hours)を合計します。レポートには、完了した(Completed)シフト時間だけが含まれ、詳細を非表示にし、時間が長い順にソートしてください。レポートグラフは、**Top Volunteers**と呼ばれる横棒グラフで、シフト時間をx軸に表示します。
@@ -509,3 +509,6 @@ Recently Viewed Activities and Jobsというラベル名で表示してくださ
 
 ### Challenge 2
 参照関係または主従関係の親レコードを絞り込むには[ルックアップ検索条件](https://help.salesforce.com/articleView?id=fields_lookup_filters.htm&type=5)が利用できます。
+
+### Challenge 4
+レポートが見つからないというエラーが表示された場合は、レポートのプロパティを参照し、レポートの一意の名前がレポートの名称と一致しているか(半角スペースが_に変わっているだけで末尾に余計な文字が含まれていないか)を確認してください。
