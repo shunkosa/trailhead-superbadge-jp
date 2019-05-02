@@ -1,5 +1,5 @@
 # Business Administration Specialist
-* TrailheadのSuperbadge、[Business Administration Specialist](https://trailhead.salesforce.com/ja/content/learn/superbadges/superbadge_business_specialist)の日本語訳(**非公式**)です。
+* TrailheadのSuperbadge、[Business Administration Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_business_specialist)の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
 ---
