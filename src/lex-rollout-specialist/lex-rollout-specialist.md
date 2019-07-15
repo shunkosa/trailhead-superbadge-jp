@@ -266,35 +266,60 @@ Lightning Experienceのロールアウトの最初のフェーズに備えて、
 [https://help.salesforce.com/articleView?id=compact_layout_overview.htm&type=5](https://help.salesforce.com/articleView?id=compact_layout_overview.htm&type=5)
 
 ### Challenge 5: Sales CloudのLightning Experience (クイズ)
-1. Jorge MarroquinはLusso Scarpeのセールスチームのメンバーです。あなたの組織では、彼は定期的に取引先・取引先責任者、リード、および商談を扱います。彼のマネージャであるSusan Dempseyは、週に1回カスタマイザブル売上予測を使用して、彼女のチームの予測パフォーマンスに関する売上予測を作成します。誰がLightning Experienceに移行する必要がありますか。その理由は何ですか？
+1. Lusso Scarpeのパートナマネージャは、各パートナサイトで連携する取引先責任者を特定するために、取引先責任者の取引先でのロールを使用しています。パートナマネージャは、Lightning Experienceでこのデータを収集するために何をする必要がありますか？
+    - A. Contact Roles (取引先責任者の役割)
+    - B. Contacts to Multiple Accounts (取引先責任者-to-複数取引先)
+    - C. Partners related list (パートナの関連リスト)
+    - D. Groups (グループ)
+
+2. Lusso Scarpeは、正しい部門の採用マネージャを入力するため、Hiring Manager 項目にルックアップ検索条件を設定しています。ルックアップ検索条件の代わりに、Lightning Experienceでは何を使用するべきですか？
+    - A. Lookup search (ルックアップ検索)
+    - B. Grobal search (グローバル検索)
+    - C. Dependent lookup (連動ルックアップ)
+    - D. Enhanced lookup (高度なルックアップ)
+    - E. User-defined lookup filters (ユーザ定義のルックアップ検索条件)
+
+3. ステークホルダと共に、ギャップ分析を実施してLightning Experienceへの移行の影響を評価しています。リスクマトリックスを用いて、見つかったギャップを分類します。どのシナリオが正しいですか？
+    - A. The Sales teams use several JavaScript buttons that open external web pages. Transitioning the Sales teams to Lightning Experience is LOW RISK. (セールスチームは、外部Webページを開くためのJavaScriptボタンを使用しています。セールスチームをLightning Experience に移行するのは低リスクです。)
+    - B. The Training and Enablement teams use Work.com. Transitioning these teams to Lightning Experience is HIGH RISK. (トレーニングチームとイネーブルメントチームはWork.comを使用しています。これらのチームをLightning Experienceに移行するのは高リスクです。)
+    - C. Sales staff use the Similar Opportunities feature to find Closed/Won opportunities that Match the attributes of an opportunity they’re currently working on, They're excited to Use the Lightning Experience equivalent of this feature. Transitioning this team to Lightning Experience is LOW RISK. (セールススタッフは、類似商談の機能を使用して、現在取り組んでいる商談と属性が一致する、成立した商談を見つけています。チームはLightning Experienceで同等の機能を使用できることを楽しみにしています。このチームをLightning Experienceへ移行するのは低リスクです。)
+    - D. The Support teams wants to use the case feed view. Transitioning this team to Lightning Experience is HIGH RISK. (サポートチームはケースフィードビューを使用したいと考えています。このチームをLightning Experienceに移行するのは高リスクです。)
+
+4. Lusso Scarpeは、Lightning Experienceに切り替えることなく、Lightning Experienceが実際のデータでどのように見えるかを確認したいと考えています。この機能を提供するのはどれですか？
+    - A. Lightning Experience
+    - B. Lightning Login
+    - C. My Domain (私のドメイン)
+    - D. Preview (プレビュー)
+
+5. Jorge MarroquinはLusso Scarpeのセールスチームのメンバーです。あなたの組織では、彼は定期的に取引先・取引先責任者、リード、および商談を扱います。彼のマネージャであるSusan Dempseyは、週に1回カスタマイザブル売上予測を使用して、彼女のチームの予測パフォーマンスに関する売上予測を作成します。誰がLightning Experience に移行する必要がありますか。その理由は何ですか？
     - A. Susan Dempsey, because in Lightning Experience, deleting a record type that has a corresponding Sales path also deletes the path (Susan、Lightning Experienceでは、対応するセールスパスのあるレコードタイプを削除するとパスも削除されるため)
     - B. Jorge Marroquin, because the Salesforce Classic page layouts for custom objects and some standard objects are compatible with Lightning Experience (Jorge、カスタムオブジェクトおよび一部の標準オブジェクトのSalesforce ClassicページレイアウトはLightning Experienceと互換性があるため)
     - C. Susan Dempsey, because the dashboards available on the Salesforce Classic home page layout have enhanced functionality in Lightning Experience (Susan、Classicのホームページレイアウトで利用できるダッシュボードはLightning Experienceで機能が強化されているため)
     - D. Both Susan Dempsey and Jorge Marroquin, because Susan can switch back to Salesforce Classic to forecast (両方、Susanは売上予測のためにSalesforce Classicに戻ることができるため)
 
-2. Lusso Scarpeの営業担当者は、商談の金額を商談チームの複数のメンバーに帰属させたいと思っています。どのLightning Experience機能を使用すべきでしょうか？
+6. Lusso Scarpeの営業担当者は、商談の金額を商談チームの複数のメンバーに帰属させたいと思っています。どのLightning Experience機能を使用すべきでしょうか？
     - A. Opportunity splits (商談分割)
     - B. Similar Opportunities (類似商談)
     - C. Groups (グループ)
     - D. Custom Lightning component (カスタムLightningコンポーネント)
 
-3. Lusso Scarpeの営業担当者は、定期的に活動予定および活動履歴の関連リストを使用しています。Lightning Experienceで営業担当者は活動の情報をどのように参照しますか？
+7. Lusso Scarpeの営業担当者は、定期的に活動予定および活動履歴の関連リストを使用しています。Lightning Experienceで営業担当者は活動の情報をどのように参照しますか？
     - A. View the Open Activities and Activity History related lists. (活動予定と活動履歴の関連リストを参照する)
     - B. View the activity timeline on the record detail page. (レコード詳細ページ上の活動タイムラインを参照する)
     - C. View the Next Steps field. (次のステップ項目を参照する)
     - D. View the activity timeline in the related list. (関連リストにある活動タイムラインを参照する)
 
-4. Lusso Scarpeの営業担当者は、関連する取引先を表示するときに特定の項目情報を確認したいと考えています。どのLightning Experience機能を使用すべきでしょうか？
-    - A. Account Hierarchy (取引先階層)
-    - B. Partners (パートナ)
-    - C. Account Site (取引先 部門の項目)
-    - D. Contact Roles (取引先責任者の役割)
-
-5. Lusso Scarpeは、営業担当者が新しい見込み客や重要な取引のフォローアップを見逃さないようにしたいと考えています。営業担当者が参照する必要があるLighting Experienceの機能はどれですか？
+8. Lusso Scarpeは、営業担当者が新しい見込み客や重要な取引のフォローアップを見逃さないようにしたいと考えています。営業担当者が参照する必要があるLighting Experienceの機能はどれですか？
     - A. Top Deals (トップ案件)
     - B. Path (パス)
     - C. Assistant (アシスタント)
     - D. Highlights Panel (強調表示パネル)
+
+9. Lusso Scarpeの営業担当者は、関連する取引先を表示するときに特定の項目情報を確認したいと考えています。どのLightning Experience機能を使用すべきでしょうか？
+    - A. Account Hierarchy (取引先階層)
+    - B. Partners (パートナ)
+    - C. Account Site (取引先 部門の項目)
+    - D. Contact Roles (取引先責任者の役割)
 
 ### Challenge 6: セールスアプリケーションのナビゲーションを改善し、Chatterグループを作成する
 要件に記載されているように、**Sales**(セールス)というLightningアプリケーションを変更して、営業チームにとって最も重要なアイテムだけを含めます。次に、要件に指定されている情報とアクションを含む**Key Sales Data**というページを作成します。ユーザがSalesアプリケーションからKey Sales Dataページにアクセスできるように設定してください。
