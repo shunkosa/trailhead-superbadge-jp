@@ -20,6 +20,18 @@
 | [Security Specialist](src/security-specialist/security-specialist.md) | データセキュリティ<br>ユーザ認証|
 | [Service Cloud Specialist](src/service-cloud-admin-specialist/service-cloud-admin-specialist.md) | Service Cloud全般|
 
+## どのスーパーバッジから取り組むべきか
+資格試験と関連性が高いと思われるスーパーバッジは以下の通りです。
+
+|資格|スーパーバッジ|
+|-|-|
+|認定アドミニストレータ|Lightning Reports and Dashboards Specialist<br>Business Administration Specialist<br>Security Specialist|
+|認定上級アドミニストレータ|認定アドミニストレータの3つ<br>Process Automation Specialist<br>Lightning Experience Rollout Specialist|
+|認定Platform アプリケーションビルダー|Lightning Reports & Dashboards Specialist<br>Security Specialist<br>Process Automation Specialist<br>App Customization Specialist<br>Lightning Experience Specialist|
+|認定Platform デベロッパー|Apex Specialist<br>Process Automation Specialist |
+|認定上級Platform デベロッパー|Apex Specialist<br>Data Integration Specialist<br>Aura Component Framework Specialist<br>Advanced Apex Specialist|
+|認定Service Cloud コンサルタント|Service Cloud Specialist|
+
 ## 謝辞
 以下の皆さまからサポートをいただきました。ありがとうございます！
 * Mark Hammer
