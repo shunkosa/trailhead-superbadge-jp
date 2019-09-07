@@ -19,7 +19,7 @@
 | ~~[Reports and Dashboards Specialist](https://developer.salesforce.com/jpblogs/2018/04/reports_and_dashboards_superbadge/)~~ ☁️ | レポート・ダッシュボード全般|
 | [Security Specialist](src/security-specialist/security-specialist.md) | データセキュリティ<br>ユーザ認証|
 | [Service Cloud Specialist](src/service-cloud-admin-specialist/service-cloud-admin-specialist.md) | Service Cloud全般|
-|Billing Specialist (翻訳中)| Salesforce CPQ<br>Salesforce Billing
+| [Billing Specialist](src/billing-specialist/billing-specialist.md)| Salesforce CPQ<br>Salesforce Billing|
 
 ## どのスーパーバッジから取り組むべきか
 資格試験と関連性が高いと思われるスーパーバッジは以下の通りです。
