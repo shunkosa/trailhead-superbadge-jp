@@ -38,3 +38,4 @@
 * Mark Hammer
 * Ryoya Kodama
 * Kyoko Tachibana
+* Atsushi Kamimura
