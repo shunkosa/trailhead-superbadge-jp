@@ -128,7 +128,7 @@ Ursa Major Solarの住宅向けセールスチームは顧客を愛し、顧客�
 |-|-|-|-|
 |Account Distribution|Number of Accounts by Industry Type|Accounts by Market|<ul><li>ドーナツグラフ</li><li>スライスの基準: Market</li><li>表示ラベルの昇順でソート</li><li>表示する最大件数: 2</li><li>グラフのサイズ:幅5、高さ5</li><li>左上に配置</li>|
 |Top Accounts|Top 10 High Value Residential Accounts|High Value Residential|<ul><li>Lightningテーブル</li><li>値の降順でソート</li><li>表示する最大グループ数: 10</li><li>グラフのサイズ: 幅4、高さ5</li><li>右上に配置</li></ul>|
-|Ratings by Stage|Rated Distribution of Accounts by State|Rated Accounts by State|<ul><li>積み上げ縦棒グラフ</li><li>表示する最大グループ数: 15</li><li>グラフのサイズ: 幅9、高さ3</li><li></li>他のコンポーネントの下に配置</ul>|
+|Ratings by State|Rated Distribution of Accounts by State|Rated Accounts by State|<ul><li>積み上げ縦棒グラフ</li><li>表示する最大グループ数: 15</li><li>グラフのサイズ: 幅9、高さ3</li><li></li>他のコンポーネントの下に配置</ul>|
 
 ##### Rep Scoreboard Dashboard
 「チーム(Team)」という言葉の中には「私(I)」の文字はありませんが、「個人の責任(Individual Responsibility)」の中には6つあります。**Rep Scoreboard**というこのダッシュボードには、評価の高い取引先のリスト、州ごとの評価の分布、オープンのサポートケースのリストがあります。このダッシュボードを表示しているユーザは、以下の3つのコンポーネントに関する自分自身のデータだけが見えている必要があります。
@@ -188,7 +188,7 @@ Contact your Ursa Major Solar Residential Sales Team to learn how you can save m
 </tr>
 <tr>
 <td><b>メールへのアクセス</b></td>
-<td>Residential Sales Letterhead</td>
+<td>すべてのユーザーには、メールを送信する前にそれを使用し、カスタマイズするためのアクセス権を付与する必要がありますが、基本のバージョンを変更するためのアクセス権を付与してはいけません。</td>
 </tr>
 </table>
 
