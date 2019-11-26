@@ -216,343 +216,250 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
 注：表内のすべての列を表示するには、左右にスクロールします。
 
 <table style="display: block !important; overflow-x: auto !important; white-space: nowrap !important;"> 
-    <tbody><tr>
-        <td>Company Name</td>
-        <td>Parent Company</td>
-        <td>Subsidiary Company</td>
-        <td>HQ City</td>
-        <td>HQ State</td>
-        <td>Number of Employees</td>
-        <td>Point of Contact</td>
-        <td>Point of Contact's Phone</td>
-        <td>Point of Contact's Email</td>
-        <td>Deal Size</td>
-        <td>Close Date</td>
-        <td>Notes</td>
-    </tr>
-    <tr> 
-        <td>La Z Tag</td>
-        <td>Funpop</td>
-        <td> </td>
-        <td>Tuscaloosa</td>
-        <td>AL</td>
-        <td>30</td>
-        <td>Mary Zapps</td>
-        <td>415-623-1962</td>
-        <td>maryzapps@laztag.com</td>
-        <td>$10,950</td>
-        <td>Two months from now</td>
-        <td>
-            <br>
-            <br>
-            Next step: on-site eval at 10 a.m. on the 15th of next month
-        </td>
-    </tr>
-    <tr>
-        <td>Veristcorp</td>
-        <td> </td>
-        <td>Monsoon Electric</td>
-        <td>Miami</td>
-        <td>FL</td>
-        <td>715</td>
-        <td>Janis Winchester</td>
-        <td>698-555-3366</td>
-        <td>jwinchester@veristcorp.com</td>
-        <td>$150,000</td>
-        <td>Three months from now</td>
-        <td>Previous Step: Call, no answer, no VM box
-            <br>
-            <br>
-            Next Step: Try Again
-        </td>
-    </tr>
-    <tr>
-        <td>JobSwell</td>
-        <td> </td>
-        <td> </td>
-        <td>Newport News</td>
-        <td>VA</td>
-        <td>35</td>
-        <td>Mannon Mirth</td>
-        <td>388-555-4679</td>
-        <td>Mannon@Jobswell.com</td>
-        <td>$85,000</td>
-        <td>Four months from now</td>
-        <td>
-            <br>
-                        Status: Quote gen + send 
-                        Product: Installation: Industrial - High
-        </td>
-    </tr>
-    <tr>
-        <td>MakeMore</td>
-        <td>LienBank</td>
-        <td> </td>
-        <td>Clemson</td>
-        <td>SC</td>
-        <td>164</td>
-        <td>Jonathan Frieze</td>
-        <td>969-555-2514</td>
-        <td>jonfrieze@yahoo.com</td>
-        <td>$98,900</td>
-        <td>Two months from now</td>
-        <td>Status: Starting Negotiation
-        </td>
-    </tr>
-    <tr>
-        <td>WattAge</td>
-        <td>TYW Industries</td>
-        <td> </td>
-        <td>Gulfport</td>
-        <td>MS</td>
-        <td>62</td>
-        <td>Lara Portis</td>
-        <td>911-555-7382</td>
-        <td>lportis@wattageco.com</td>
-        <td>$10,000</td>
-        <td>Two months from now</td>
-        <td>Status: Ready to start Signing, 12 month contract from close date
-        </td>
-    </tr>
-    <tr>
-        <td>Fiberwear</td>
-        <td> </td>
-        <td> </td>
-        <td>Manassas</td>
-        <td>VA</td>
-        <td>150</td>
-        <td>Polly Esther</td>
-        <td>809-555-1142</td>
-        <td>Polly@fiberwear.com</td>
-        <td> </td>
-        <td>six months from now</td>
-        <td>Previous Step: Web Form
-            <br>
-            <br>
-            Next Step: Info Call
-        </td>
-    </tr>
-    <tr>
-        <td>Bien Venues</td>
-        <td></td>
-        <td> </td>
-        <td>Beechgrove</td>
-        <td>TN</td>
-        <td>40</td>
-        <td>Martin Allo</td>
-        <td>212-555-8825</td>
-        <td>mallo@bienvenues.com</td>
-        <td> </td>
-        <td> </td>
-        <td>Previous Step: Got business card
-            <br>
-            <br>
-            Next Step: Info Call
-        </td>
-    </tr>
-    <tr>
-        <td>Fenomeno Shine</td>
-        <td></td>
-        <td> </td>
-        <td>Seattle</td>
-        <td>WA</td>
-        <td>9</td>
-        <td>Ronaldo Leema</td>
-        <td>200-900-2011</td>
-        <td>rleema@fenomenoshine.com</td>
-        <td> </td>
-        <td>18 months from now</td>
-        <td>Previous Step: Got business card
-            <br>
-            <br>
-            Next Step: Info Call
-        </td>
-    </tr>
-</tbody></table>
+    <tbody>
+        <tr>
+            <td>Company Name</td>
+            <td>Parent Company</td>
+            <td>Subsidiary Company</td>
+            <td>HQ City</td>
+            <td>HQ State</td>
+            <td>Number of Employees</td>
+            <td>Point of Contact</td>
+            <td>Point of Contact's Phone</td>
+            <td>Point of Contact's Email</td>
+            <td>Deal Size</td>
+            <td>Close Date</td>
+            <td>Notes</td>
+        </tr>
+        <tr> 
+            <td>La Z Tag</td>
+            <td>Funpop</td>
+            <td> </td>
+            <td>Tuscaloosa</td>
+            <td>AL</td>
+            <td>30</td>
+            <td>Mary Zapps</td>
+            <td>415-623-1962</td>
+            <td>maryzapps@laztag.com</td>
+            <td>$10,950</td>
+            <td>Two months from now</td>
+            <td>
+                <br>
+                <br>
+                Next step: on-site eval at 10 a.m. on the 15th of next month
+            </td>
+        </tr>
+        <tr>
+            <td>Veristcorp</td>
+            <td> </td>
+            <td>Monsoon Electric</td>
+            <td>Miami</td>
+            <td>FL</td>
+            <td>715</td>
+            <td>Janis Winchester</td>
+            <td>698-555-3366</td>
+            <td>jwinchester@veristcorp.com</td>
+            <td>$150,000</td>
+            <td>Three months from now</td>
+            <td>Previous Step: Call, no answer, no VM box
+                <br>
+                <br>
+                Next Step: Try Again
+            </td>
+        </tr>
+        <tr>
+            <td>JobSwell</td>
+            <td> </td>
+            <td> </td>
+            <td>Newport News</td>
+            <td>VA</td>
+            <td>35</td>
+            <td>Mannon Mirth</td>
+            <td>388-555-4679</td>
+            <td>Mannon@Jobswell.com</td>
+            <td>$85,000</td>
+            <td>Four months from now</td>
+            <td>
+                <br>
+                            Status: Quote gen + send 
+                            Product: Installation: Industrial - High
+            </td>
+        </tr>
+        <tr>
+            <td>MakeMore</td>
+            <td>LienBank</td>
+            <td> </td>
+            <td>Clemson</td>
+            <td>SC</td>
+            <td>164</td>
+            <td>Jonathan Frieze</td>
+            <td>969-555-2514</td>
+            <td>jonfrieze@yahoo.com</td>
+            <td>$98,900</td>
+            <td>Two months from now</td>
+            <td>Status: Starting Negotiation
+            </td>
+        </tr>
+        <tr>
+            <td>WattAge</td>
+            <td>TYW Industries</td>
+            <td> </td>
+            <td>Gulfport</td>
+            <td>MS</td>
+            <td>62</td>
+            <td>Lara Portis</td>
+            <td>911-555-7382</td>
+            <td>lportis@wattageco.com</td>
+            <td>$10,000</td>
+            <td>Two months from now</td>
+            <td>Status: Ready to start Signing, 12 month contract from close date
+            </td>
+        </tr>
+        <tr>
+            <td>Fiberwear</td>
+            <td> </td>
+            <td> </td>
+            <td>Manassas</td>
+            <td>VA</td>
+            <td>150</td>
+            <td>Polly Esther</td>
+            <td>809-555-1142</td>
+            <td>Polly@fiberwear.com</td>
+            <td> </td>
+            <td>six months from now</td>
+            <td>Previous Step: Web Form
+                <br>
+                <br>
+                Next Step: Info Call
+            </td>
+        </tr>
+        <tr>
+            <td>Bien Venues</td>
+            <td></td>
+            <td> </td>
+            <td>Beechgrove</td>
+            <td>TN</td>
+            <td>40</td>
+            <td>Martin Allo</td>
+            <td>212-555-8825</td>
+            <td>mallo@bienvenues.com</td>
+            <td> </td>
+            <td> </td>
+            <td>Previous Step: Got business card
+                <br>
+                <br>
+                Next Step: Info Call
+            </td>
+        </tr>
+        <tr>
+            <td>Fenomeno Shine</td>
+            <td></td>
+            <td> </td>
+            <td>Seattle</td>
+            <td>WA</td>
+            <td>9</td>
+            <td>Ronaldo Leema</td>
+            <td>200-900-2011</td>
+            <td>rleema@fenomenoshine.com</td>
+            <td> </td>
+            <td>18 months from now</td>
+            <td>Previous Step: Got business card
+                <br>
+                <br>
+                Next Step: Info Call
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 この表はCSVファイルで[ダウンロード](https://developer.salesforce.com/files/002_CurrentlyPendingDeals.csv)することができます。
 
 ### 様々な人々: 名刺
 SouthernSolar の セールスアシスタントは、名刺の束で、以下の雑多な人々のリストを提供してきました。 Ursa Major Solar の既存の Salesforce 組織にデータを適切に入力してください。 Solar Resale Solutions の Harry Hawker はディストリビューターであることに注意してください。このレコードが Distributor/Wholesale Team によって所有されるようにしてください。
 
-<table style="border: 0 !important;" border="none">
-    <tbody><tr>
-        <td style="text-align:center; width:50%">
-            名刺の表
-            <table style="height: 1.25in; width:3in; border:1px solid black; margin:auto;">
-                <tbody><tr>
-                    <td align="center">
-                        Felicity Dunn<br>
-                        Facilities Mgr<br>
-                        Tri Mall<br>
-                        <br>
-                        389-555-1388<br>
-                        fdunn@trimall.com<br>
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>        
-        <td align="center" style="text-align:center;">
-            名刺の裏
-            <table style="height: 1.25in; width:3in; border:1px solid black; margin:auto;">
-                <tbody><tr>
-                    <td>
-                        <br>
-                        <i>Wait for new manager to decide whose account this is.</i>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-    </tr>
-    <tr>
-        <td style="text-align:center; width:50%">
-            <table style="height: 1.25in; width:3in; border:1px solid black; margin:auto;" border="1">
-                <tbody><tr>
-                    <td align="center" style="text-align:center;">
-                        Dex Bannon<br>
-                        CEO<br>
-                        MakeMore<br>
-                        <br>
-                        969-555-2520<br>
-                        dexbannon@makemore.com<br>
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-        <td style="text-align:center; width:50%">
-            <table style="height: 1.25in; width: 3in; border:1px solid black; margin:auto;" border="1">
-                <tbody><tr>
-                    <td>
-                        
-                        <i>Met him on flight, directed me to Jon Frieze</i>
-                        
-                        
-                        
-                        <br>
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-    </tr>
-    <tr>
-        <td style="text-align:center; width:50%">
-            <table style="height: 1.25in; width:3in; border:1px solid black; margin:auto;">
-                <tbody><tr>
-                    <td align="center">
-                        Harry Hawker<br>
-                        Vendor Services<br>
-                        Solar Resale Solutions<br>
-                        <br>
-                        915-555-1880<br>
-                        harry@solarsale.com<br>
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-        <td style="text-align:center; width:50%">
-            <table style="height: 1.25in; width:3in; border:1px solid black; margin:auto;">
-                <tbody><tr>
-                    <td>
-                        <br>
-                        <i>Distributor, HQ in Tampa, Florida, 15 employees</i>       
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-    </tr>
-    <tr>
-        <td style="text-align:center; width:50%">
-            <table style="height: 1.25in; width:3in; border:1px solid black; margin:auto;">
-                <tbody><tr>
-                    <td align="center">
-                        Travis Stott<br>
-                        Manager<br>
-                        Carewell Homes<br>
-                        <br>
-                        469-555-7278<br>
-                        tstott@carewellhomes.com<br>
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-        <td style="text-align:center; width:50%">
-            <table style="height: 1.25in; width:3in; border:1px solid black; margin:auto;">
-                <tbody><tr>
-                    <td>
-                        <br>
-                        <i>Trade show - Wants Demo</i>
-                        
-                        
-                        
-                        
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-    </tr>
-    <tr>
-        <td style="text-align:center; width:50%">
-            <table style="height: 1.25in; width:3in; border:1px solid black; margin:auto;">
-                <tbody><tr>
-                    <td align="center">
-                        Lance Roth<br>
-                        Associate<br>
-                        Lunchador Kitchens<br>
-                        <br>
-                        377-555-4138<br>
-                        lroth@lunchador.com<br>
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-        <td style="text-align:center; width:50%">
-            <table style="height: 1.25in; width:3in; border:1px solid black; margin:auto;">
-                <tbody><tr>
-                    <td>
-                        <br>
-                        <i>Whitepaper Lead - Needs to be Qualified</i>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </td>
-                </tr>
-            </tbody></table>
-        </td> 
-    </tr>      
-    <tr>
-        <td style="text-align:center; width:50%">
-            <table style="height: 1.25in; width:3in; border:1px solid black; margin:auto;">
-                <tbody><tr>
-                    <td align="center">
-                        Sam Steel<br>
-                        Operations Mgr<br>
-                        JobSwell<br>
-                        <br>
-                        (388) 555-4678<br>
-                        ssteel@Jobswell.com<br>
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-        <td style="text-align:center; width:50%">
-            <table style="height: 1.25in; width:3in; border:1px solid black; margin:auto;">
-                <tbody><tr>
-                    <td>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-    </tr>
-</tbody></table>
+<table>
+<tr>
+<td>表</td>
+<td>裏</td>
+</tr>
+<tr>
+<td>
+Felicity Dunn</br>
+Facilities Mgr</br>
+Tri Mall</br>
+</br>
+389-555-1388</br>
+fdunn@trimall.com
+</td>
+<td>
+Wait for new manager to decide whose account this is.
+</td>
+</tr>
+<tr>
+<td>
+Dex Bannon</br>
+CEO</br>
+MakeMore</br>
+</br>
+969-555-2520</br>
+dexbannon@makemore.com
+</td>
+<td>
+Met him on flight, directed me to Jon Frieze
+</td>
+</tr>
+<tr>
+<td>
+Harry Hawker</br>
+Vendor Services</br>
+Solar Resale Solutions</br>
+</br>
+915-555-1880</br>
+harry@solarsale.com
+</td>
+<td>
+Distributor, HQ in Tampa, Florida, 15 employees
+</td>
+  </tr>
+<tr>
+<td>
+Travis Stott</br>
+Manager</br>
+Carewell Homes</br>
+</br>
+469-555-7278</br>
+tstott@carewellhomes.com
+</td>
+<td>
+Trade show - Wants Demo
+</td>
+</tr>
+<tr>
+<td>
+Lance Roth</br>
+Associate</br>
+Lunchador Kitchens</br>
+</br>
+377-555-4138</br>
+lroth@lunchador.com
+</td>
+<td>
+Whitepaper Lead - Needs to be Qualified
+</td>
+</tr>
+<tr>
+<td>
+Sam Steel</br>
+Operations Mgr</br>
+JobSwell</br>
+</br>
+(388) 555-4678</br>
+ssteel@Jobswell.com
+</td>
+<td></td>
+</tr>
+</table>
+
 
 ### 付箋のメモ
 フロントの受付係から付箋を渡されました。Ursa Major Solar の既存の Salesforce 組織にデータを適切に入力してください。
