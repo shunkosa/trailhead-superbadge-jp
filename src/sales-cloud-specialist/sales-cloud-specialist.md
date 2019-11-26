@@ -108,16 +108,16 @@ SouthernSolar のセールスマネージャーが、SouthernSolar の顧客で�
 
 <table style="display: block !important; overflow-x: auto !important; white-space: nowrap !important;">
     <tbody><tr>
-        <td>企業名</td>
-        <td>取引先の種類</td>
-        <td>親企業名</td>
-        <td>本部所在地 (市)</td>
-        <td>本部所在地 (州)</td>
-        <td>従業員数</td>
-        <td>連絡先名</td>
-        <td>連絡先電話番号</td>
-        <td>連絡先メールアドレス</td>
-        <td>メモ</td>
+        <td nowrap>会社名</td>
+        <td nowrap>種別</td>
+        <td nowrap>親会社名</td>
+        <td nowrap>本部所在地 (市)</td>
+        <td nowrap>本部所在地 (州)</td>
+        <td nowrap>従業員数</td>
+        <td nowrap>連絡先名</td>
+        <td nowrap>連絡先電話番号</td>
+        <td nowrap>連絡先メールアドレス</td>
+        <td nowrap>メモ</td>
     </tr>
     <tr>
         <td>Monsoon Electric</td>
@@ -218,18 +218,18 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
 <table style="display: block !important; overflow-x: auto !important; white-space: nowrap !important;"> 
     <tbody>
         <tr>
-            <td>Company Name</td>
-            <td>Parent Company</td>
-            <td>Subsidiary Company</td>
-            <td>HQ City</td>
-            <td>HQ State</td>
-            <td>Number of Employees</td>
-            <td>Point of Contact</td>
-            <td>Point of Contact's Phone</td>
-            <td>Point of Contact's Email</td>
-            <td>Deal Size</td>
-            <td>Close Date</td>
-            <td>Notes</td>
+            <td nowrap>会社名</td>
+            <td nowrap>親会社</td>
+            <td nowrap>子会社</td>
+            <td nowrap>本部所在地 (市)</td>
+            <td nowrap>本部所在地 (州)</td>
+            <td nowrap>従業員数</td>
+            <td nowrap>担当者氏名</td>
+            <td nowrap>担当者電話番号</td>
+            <td nowrap>担当者メールアドレス</td>
+            <td nowrap>取引の大きさ</td>
+            <td nowrap>完了予定日</td>
+            <td nowrap>メモ</td>
         </tr>
         <tr> 
             <td>La Z Tag</td>
@@ -379,8 +379,8 @@ SouthernSolar の セールスアシスタントは、名刺の束で、以下�
 
 <table>
 <tr>
-<td>表</td>
-<td>裏</td>
+<td width="250">表</td>
+<td width="250">裏</td>
 </tr>
 <tr>
 <td>
