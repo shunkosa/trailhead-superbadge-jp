@@ -210,7 +210,7 @@ SouthernSolar のセールスマネージャーが、SouthernSolar の顧客で�
 
 この表はCSVファイルで[ダウンロード](https://developer.salesforce.com/files/001_CurrentCustomers_PointsOfContact.csv)することができます。
 
-### 現在の保留中の契約と将来の潜在的な契約
+### 現在の進行中の契約と将来の潜在的な契約
 SouthernSolar のセールスチームは、既存の取引と将来のセールスの可能性を楽しみにしています。以下は、SouthernSolar のセールス担当者が Ursa Major に報告したリストです。Ursa Major Solar の既存の Salesforce 組織で、リードの評価基準に従いデータを適切に入力してください。
 
 見積に関する注意: 実際、税金と送料は場所によって異なります。ここでは複雑さが入り込むことを避けるために、税額には合計価格の10％を使用し、送料と手数料に250ドルの均一料金を使用してください。
@@ -234,13 +234,13 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
             <td nowrap>メモ</td>
         </tr>
         <tr> 
-            <td>La Z Tag</td>
+            <td nowrap>La Z Tag</td>
             <td>Funpop</td>
             <td> </td>
             <td>Tuscaloosa</td>
             <td>AL</td>
             <td>30</td>
-            <td>Mary Zapps</td>
+            <td nowrap>Mary Zapps</td>
             <td>415-623-1962</td>
             <td>maryzapps@laztag.com</td>
             <td>$10,950</td>
@@ -252,13 +252,13 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
             </td>
         </tr>
         <tr>
-            <td>Veristcorp</td>
+            <td nowrap>Veristcorp</td>
             <td> </td>
             <td>Monsoon Electric</td>
             <td>Miami</td>
             <td>FL</td>
             <td>715</td>
-            <td>Janis Winchester</td>
+            <td nowrap>Janis Winchester</td>
             <td>698-555-3366</td>
             <td>jwinchester@veristcorp.com</td>
             <td>$150,000</td>
@@ -270,13 +270,13 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
             </td>
         </tr>
         <tr>
-            <td>JobSwell</td>
+            <td nowrap>JobSwell</td>
             <td> </td>
             <td> </td>
             <td>Newport News</td>
             <td>VA</td>
             <td>35</td>
-            <td>Mannon Mirth</td>
+            <td nowrap>Mannon Mirth</td>
             <td>388-555-4679</td>
             <td>Mannon@Jobswell.com</td>
             <td>$85,000</td>
@@ -288,13 +288,13 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
             </td>
         </tr>
         <tr>
-            <td>MakeMore</td>
+            <td nowrap>MakeMore</td>
             <td>LienBank</td>
             <td> </td>
             <td>Clemson</td>
             <td>SC</td>
             <td>164</td>
-            <td>Jonathan Frieze</td>
+            <td nowrap>Jonathan Frieze</td>
             <td>969-555-2514</td>
             <td>jonfrieze@yahoo.com</td>
             <td>$98,900</td>
@@ -303,13 +303,13 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
             </td>
         </tr>
         <tr>
-            <td>WattAge</td>
+            <td nowrap>WattAge</td>
             <td>TYW Industries</td>
             <td> </td>
             <td>Gulfport</td>
             <td>MS</td>
             <td>62</td>
-            <td>Lara Portis</td>
+            <td nowrap>Lara Portis</td>
             <td>911-555-7382</td>
             <td>lportis@wattageco.com</td>
             <td>$10,000</td>
@@ -318,13 +318,13 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
             </td>
         </tr>
         <tr>
-            <td>Fiberwear</td>
+            <td nowrap>Fiberwear</td>
             <td> </td>
             <td> </td>
             <td>Manassas</td>
             <td>VA</td>
             <td>150</td>
-            <td>Polly Esther</td>
+            <td nowrap>Polly Esther</td>
             <td>809-555-1142</td>
             <td>Polly@fiberwear.com</td>
             <td> </td>
@@ -336,13 +336,13 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
             </td>
         </tr>
         <tr>
-            <td>Bien Venues</td>
+            <td nowrap>Bien Venues</td>
             <td></td>
             <td> </td>
             <td>Beechgrove</td>
             <td>TN</td>
             <td>40</td>
-            <td>Martin Allo</td>
+            <td nowrap>Martin Allo</td>
             <td>212-555-8825</td>
             <td>mallo@bienvenues.com</td>
             <td> </td>
@@ -354,13 +354,13 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
             </td>
         </tr>
         <tr>
-            <td>Fenomeno Shine</td>
+            <td nowrap>Fenomeno Shine</td>
             <td></td>
             <td> </td>
             <td>Seattle</td>
             <td>WA</td>
             <td>9</td>
-            <td>Ronaldo Leema</td>
+            <td nowrap>Ronaldo Leema</td>
             <td>200-900-2011</td>
             <td>rleema@fenomenoshine.com</td>
             <td> </td>
