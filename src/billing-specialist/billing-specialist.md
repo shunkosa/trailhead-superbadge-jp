@@ -23,24 +23,24 @@
 * 見積から支払までのフローを習得する
 
 ## 事前準備とメモ
-* デフォルトの通貨はUSD で、デフォルトのタイムゾーンはPST です。これらは日付とスケジューラに必要です。
+* デフォルトの通貨は USD で、デフォルトのタイムゾーンは PST です。これらは日付とスケジューラに必要です。
 * このスーパーバッジで利用される用語のいくつかは、UIに表示される設定上の名称と完全に一致しない場合があります。これは、Salesforce の機能に関する知識と、ビジネス上のニーズを満たす正しい機能を選択する能力をテストするためです。
 * 最後のChallenge 用に、商談と見積レコード(Q-00015) があらかじめ作成されています。これらのレコードを事前に使用しないでください。使用すると、Challenge が失敗する可能性があります。
 * **ポイント**: メタデータおよびレコードデータを設定するために示されている値は手動で入力せず、コピー・ペーストしてください。これにより、Challenge の失敗を引き起こすタイプミスやスペルミスの可能性が減ります。
 
-### Salesforce Billing  とSalesforce CPQ を備えるDeveloper Edition 組織の作成
-このスーパーバッジを完了するには、Salesforce CPQ、Salesforce Billing、サンプルデータを含む特別なDeveloper Edition 組織が必要です。無料のDeveloper Edition を入手してTrailhead に接続すると、このスーパーバッジのChallenge を完了することができます。
+### Salesforce Billing と Salesforce CPQ を備える Developer Edition 組織の作成
+このスーパーバッジを完了するには、Salesforce CPQ、Salesforce Billing、サンプルデータを含む特別なDeveloper Edition 組織が必要です。無料の Developer Edition を入手してTrailhead に接続すると、このスーパーバッジのChallenge を完了することができます。
 
-特別にSaleseforce Billing が有効化されたDeveloper Edition 組織に最近サインアップした場合でも、このスーパーバッジのために新しい組織にサインアップしてください。常に新しいデータが追加されています。また、管理パッケージは90日後に期限切れになるため、新しい組織が必要になる場合があることにも注意してください。
+特別に Saleseforce Billing が有効化された Developer Edition 組織に最近サインアップした場合でも、このスーパーバッジのために新しい組織にサインアップしてください。常に新しいデータが追加されています。また、管理パッケージは90日後に期限切れになるため、新しい組織が必要になる場合があることにも注意してください。
 
-1. [Salesforce Billing およびSalesforce CPQ を備える無料のDeveloper Edition 組織](https://developer.salesforce.com/promotions/orgs/billingspecialist)にサインアップします。
+1. [Salesforce Billing およびSalesforce CPQ を備える無料の Developer Edition 組織](https://developer.salesforce.com/promotions/orgs/billingspecialist)にサインアップします。
 2. フォームに入力します。Email の欄には、有効な電子メールアドレスを入力します。Username の欄には、メールアドレス形式の一意のユーザー名を入力しますが、有効な電子メールアカウントと一致している必要はありません。(例: yourname@billingcpq4ever.com) 
 3. フォームに入力したら、**Sign Me Up**  (サインアップ) をクリックします。確認メッセージが表示されます。
 4. ようこそメールを受信 (数分かかる場合があります) したら、それを開き、**Verify Account** (アカウントを確認) をクリックします。
 5. パスワードと秘密の質問を設定して、登録を完了します。**ポイント**: 後で簡単にアクセスできるように、ユーザー名、パスワード、およびログインURLを書き留めます。
 6. Developer Edition にログインされた状態になります。
 
-次に、新しいDeveloper Edition 組織をTrailhead に接続します。
+次に、新しい Developer Edition 組織を Trailhead に接続します。
 
 1. Trailhead アカウントにログインしていることを確認してください。
 2. このページの下部にある **Challenge** セクションで、選択リストから **Log into a Developer Edition** (Developer Edition にログイン) を選択します。
