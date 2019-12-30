@@ -21,6 +21,7 @@
 | [Service Cloud Specialist](src/service-cloud-admin-specialist/service-cloud-admin-specialist.md) | Service Cloud全般|
 | [Billing Specialist](src/billing-specialist/billing-specialist.md)| Salesforce CPQ<br>Salesforce Billing|
 | [Selling with Sales Cloud Specialist](src/sales-cloud-specialist/sales-cloud-specialist.md)| Sales Cloud全般|
+| [Advanced Billing Specialist](src/advanced-billing-specialist/advanced-billing-specialist.md)|Salesforce CPQ<br>Salesforce Billing|
 
 ## どのスーパーバッジから取り組むべきか
 資格試験と関連性が高いと思われるスーパーバッジは以下の通りです。
