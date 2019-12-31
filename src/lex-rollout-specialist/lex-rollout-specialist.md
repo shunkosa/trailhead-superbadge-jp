@@ -368,7 +368,7 @@ Lightning Knowledgeという名前のLightningアプリケーションを作成�
     - D. Documents (ドキュメント)
     - E. Files (ファイル)
 
-### Challenge 10: Lightning Experienceの準備状況レポートで特定された問題をより修正する。
+### Challenge 10: Lightning Experienceの準備状況レポートで特定された問題をより修正する
 ロールアウトのフェーズ2で必要であると判断した準備状況レポートの問題を修正しましょう。
 
 Sales(セールス)というLightningアプリケーションをSalesforce ClassicホームページのTrailheaDXサイドバーコンポーネントの機能を含むように設定してください。Lightning Experienceでこの機能を再現するために、**TrailheaDX**というLightningコンポーネントを作成してください。Trailhead Playgroundでは既に私のドメインが有効になっています。私のドメインの設定は編集しないでください。
