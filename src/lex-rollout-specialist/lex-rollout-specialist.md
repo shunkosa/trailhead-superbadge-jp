@@ -26,7 +26,7 @@
 * [この未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0Y0000025Nb3)をインストールしてください。パッケージには、課題を完了するためのスキーマが含まれています。管理パッケージ、未管理パッケージ、アプリケーションをAppExchangeからインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
 * Trailhead PlaygroundはLightning Experienceで開きますが、事前準備の設定作業のため、Salesforce Classicに切り替える必要があります。課題で指定された機能を設定・テストするため、Lightning ExperienceとSalesforce Classicを行ったり来たりする必要があるでしょう。
 * このスーパーバッジの課題のために、Trailhead Playgroundを準備してください。
-  1. Salesforce Classicの設定から, 取引先のタブを、先ほどインストールしたスーパーバッジのパッケージに含まれている、Accounts Tab Visualforceページで上書きします。
+  1. Salesforce Classicの設定から、取引先のタブを、先ほどインストールしたスーパーバッジのパッケージに含まれている、Accounts Tab Visualforceページで上書きします。
   2. Salesforce Classicの設定で、TrailheaDXコンポーネントをDE Defaultホームページレイアウトに追加してください。
   3. Salesforce ClassicまたはLightning Experienceの設定で、John Wisemanという名前のユーザを作成し、SalesforceユーザライセンスとCustom: Sales Profileプロファイルを割り当ててください。
   4. Paloma Espinozaという名前で2人目のユーザを作成し、Salesforce PlatformユーザライセンスとStandard Platform Userプロファイルを割り当ててください。
@@ -150,7 +150,7 @@ Lussoのセールスマネージャは、各取引先の商談のパイプライ
 
 次に、要求されたコンポーネントを含む**Sales Operations**というダッシュボードを作成します。
 
-- フェーズごとに商談の確度を表示する**Opp Probability by Stage**という横棒グラフ、
+- フェーズごとに商談の確度を表示する**Opp Probability by Stage**という横棒グラフ。
 - すべての商談から得られる収益の合計を表示する**Sum of Opportunity Ammount**というゲージコンポーネント。
 - 新規または既存のビジネスによって生み出された収益の合計を表示する**New and Existing Business**というドーナツグラフ。
 
@@ -318,7 +318,7 @@ Lightning Experienceのロールアウトの最初のフェーズに備えて、
 9. Lusso Scarpeの営業担当者は、関連する取引先を表示するときに特定の項目情報を確認したいと考えています。どのLightning Experience機能を使用すべきでしょうか？
     - A. Account Hierarchy (取引先階層)
     - B. Partners (パートナ)
-    - C. Account Site (取引先 部門の項目)
+    - C. Account Site ([取引先 部門] 項目)
     - D. Contact Roles (取引先責任者の役割)
 
 ### Challenge 6: セールスアプリケーションのナビゲーションを改善し、Chatterグループを作成する
@@ -368,7 +368,7 @@ Lightning Knowledgeという名前のLightningアプリケーションを作成�
     - D. Documents (ドキュメント)
     - E. Files (ファイル)
 
-### Challenge 10: Lightning Experienceの準備状況レポートで特定された問題をより修正する。
+### Challenge 10: Lightning Experienceの準備状況レポートで特定された問題をより修正する
 ロールアウトのフェーズ2で必要であると判断した準備状況レポートの問題を修正しましょう。
 
 Sales(セールス)というLightningアプリケーションをSalesforce ClassicホームページのTrailheaDXサイドバーコンポーネントの機能を含むように設定してください。Lightning Experienceでこの機能を再現するために、**TrailheaDX**というLightningコンポーネントを作成してください。Trailhead Playgroundでは既に私のドメインが有効になっています。私のドメインの設定は編集しないでください。

@@ -27,10 +27,10 @@
 * 解約率を測定およびレポートするための多くの計算および指標があります。以降のシナリオとChallengeにおいて、解約率は、現在の四半期の解約数を現在の四半期のサービス加入者数で割ったものとして計算されます。
 * Challengeを検証する際に使用されるため、ステップや項目、射影の名前については、シナリオで指定されている命名規則に慎重に従ってください。
   * Challengeで使用されるダッシュボードにステップを作成したり、ウィジェットを追加したりする際は、検証に必要となるため、ステップの名前をChallengeで指定された名前で更新してください。
-  * 変数と射影の名前にはキャメルケースのスペルを使用します。つまり、``lastName``のように設定します。<sup>[1](#footnote1)</sup>
+  * 変数と射影の名前にはキャメルケースのスペルを使用します。つまり、``lastName``のように設定します<sup>[1](#footnote1)</sup>。
   * 項目名にはタイトルケースを使用します。つまり、``Last Name``のように設定します。
   * スペースを含むステップや項目、データセットのAPI名はアンダースコア(_)を使用します。つまり、``Last_Name``のように設定します。
-* このChallengeに対して[Einstein Analytics Developer Edition (DE)](https://developer.salesforce.com/promotions/orgs/analytics-de)組織を作成します。この環境はEinstein Analyticsが有効になっており、Challengeで使用されるサンプルデータが含まれています。 (注 : このChallengeではDTC Default Appは使用しません。)
+* このChallengeに対して[Einstein Analytics Developer Edition (DE)](https://developer.salesforce.com/promotions/orgs/analytics-de)組織を作成します。この環境はEinstein Analyticsが有効になっており、Challengeで使用されるサンプルデータが含まれています (注 : このChallengeではDTC Default Appは使用しません) 。 
 * [未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000003qbmx)をインストールして、サービス加入者(Subscriber)オブジェクトを実装します。この未管理パッケージはカスタムオブジェクトのタブを作成しないため、[手順](https://help.salesforce.com/articleView?id=creating_custom_object_tabs.htm&type=5&language=ja)に従って、組織にタブを作成しておくことを推奨します。もし管理・未管理パッケージ、またはAppExchangeアプリケーションをインストールする際に問題が発生した場合は、この[記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)の手順に従ってください。
 * Challengeを完了するためには、Beattie Subs.csv、Beattie OEM Survey.csv、Beattie Dashboard.json のファイルをアップロードする必要があります。
 * [data-insights-specialist.zip](https://developer.salesforce.com/files/data-insight-specialist-data.zip)をダウンロードして解凍してください。
@@ -53,12 +53,12 @@
 #### Beattie Subs.csv と Beattie OEM Survey.csv ファイルをそれぞれアップロードする
 1. Analytics Studioで、Challengeのために、Beattieという名前で空白のアプリケーションを作成します。(注 : 作成ボタンが表示されていない場合は、「Einstein Analytics Plusの管理者権限を自分のユーザ ID に割り当てる」セクションに進んでください。)
 2. **作成** ボタンをクリックし、**データセット** を選択します。
-3. 次のページで**CSV ファイル** をクリックします.
+3. 次のページで**CSV ファイル** をクリックします。
 4. **ファイルを選択するか、ここにファイルをドラッグしてください** をクリックし、解凍したCSVファイルを選択します。
 5. **次へ** をクリックします。
 5. アプリケーションがBeattieになっていることを確認します。
 6. **次へ** をクリックします。
-7. 項目属性の編集 はそのままにします。
+7. [項目属性の編集] はそのままにします。
 8. **ファイルをアップロード** ボタンをクリックします。
 9. **閉じる** をクリックします。
 
@@ -200,9 +200,9 @@ Beattie Mediaはあなたを頼りにしています。さあ始めましょう�
 
 | Tenure Length (表示名) | Length of Tenure (対応する値の範囲) |
 |-|-|
-|High Risk|1〜12ヶ月|
-|Medium Risk|13〜24ヶ月|
-|Low Risk|25〜36ヶ月|
+|High Risk|1〜12 か月|
+|Medium Risk|13〜24 か月|
+|Low Risk|25〜36 か月|
 
 Tenure Length 切り替えウィジェットをChurn Tenure グラフにバインドし、Tenure項目をフィルタリングします。作成したソリューションは以下の例のようになるはずです。
 
@@ -233,13 +233,13 @@ Beattie Mediaはこれらの顧客に対して、ストリーミングサービ�
 2. 1つ目のグラフで、``Beattie Survey`` という名前のステップを追加します。
 3. Beattie Subs データセットのTenure (加入期間) 項目を使用して平均のTenureを計算し、Beattie OEM Survey データセットのCSAT項目を使用して平均CSATを計算します。
 4. 2つ目のグラフで、``OEM`` という名前のステップを追加します。
-5. Beattie OEM Survey データセットのデータをOEM項目別にグループ化し、行 計数(Count of Rows) の基準(Measure) を追加してツリーマップグラフとして表示します。
+5. Beattie OEM Survey データセットのデータをOEM項目別にグループ化し、[行 計数](Count of Rows) の基準(Measure) を追加してツリーマップグラフとして表示します。
 6. ファセットを使用して、ピラミッドグラフでの選択によりツリーマップグラフが絞り込まれることを確認します。
 7. 平均CSATスコアが最も低い**最初**の州のBeattie Survey グラフにグラフマーカーを追加します。Challengeを検証する際に作成したソリューションが正しく評価されるように、マーカーはハードコーディングしてください。
 
  **クエリを作成するときには、以下の情報を考慮してください**
  
-* Beattie OEM パートナのファイルのすべての顧客は、Beattie の顧客のファイル内の最低1つのレコードと紐づきます。<sup>[4](#footnote4)</sup>  
+* Beattie OEM パートナのファイルのすべての顧客は、Beattie の顧客のファイル内の最低1つのレコードと紐づきます<sup>[4](#footnote4)</sup>。  
 * Beattie MediaのアカウントマネージャはOEMパートナーに割り当てられ、その関係を管理しています。  
 * Account Manager項目とRegion項目を使用してデータセットをグループ化します。  
 * CSATとTenureの結果を整数に丸めます。  
@@ -251,7 +251,7 @@ Beattie Mediaはこれらの顧客に対して、ストリーミングサービ�
 ![](challenge_4.png)
 
 ### サービスの解約を減らすためのソリューションを提供する
-Beattie Mediaが雇った投資銀行は、少なくとも2年の契約がより安定した収益のイメージにつながり、契約更新につながるであろうと提言しています。Beattie Mediaは、既存顧客および潜在顧客がそれを好んでいないことを知っているので、長期契約にこだわっていませんでした。これまでのプロモーションでは、せいぜい数ヶ月の契約継続を獲得することはありましたが、長期契約に対する勝ち手は見出せていません。
+Beattie Mediaが雇った投資銀行は、少なくとも2年の契約がより安定した収益のイメージにつながり、契約更新につながるであろうと提言しています。Beattie Mediaは、既存顧客および潜在顧客がそれを好んでいないことを知っているので、長期契約にこだわっていませんでした。これまでのプロモーションでは、せいぜい数か月の契約継続を獲得することはありましたが、長期契約に対する勝ち手は見出せていません。
 
 あなたはArnasとOliviaに、Einstein Discoveryと、その高速で・利用しやすい・予測的な洞察について話しました。あなたはこれが繰り返し行うプロセスになるだろうという予想を説明しました。ArnasとOliviaはそれに同意し、あなたが考えついたものを見ることを楽しみにしています。また、Einstein Discoveryからのおすすめ情報がSubscriberのサービスのレコードにどのように表示されるかのモックアップを作成する予定であることも2人に伝えました。ArnasとOliviaは、このアイデアを気に入っていて、この情報をカスタマーサクセスエージェントを支援するために手元に置いておくことを望んでいます。
 

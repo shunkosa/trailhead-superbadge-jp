@@ -20,7 +20,7 @@
 - Lightning レポート
 
 ## 特別な Developer Edition 組織にサインアップする
-このスーパーバッジを完了するには、Sales Cloud とサンプルデータを含む特別な Developer Edition 組織が必要です。無料の Developer Edition を入手してTrailhead に接続すると、このスーパーバッジのChallenge を完了することができます。この Developer Editionは、このスーパーバッジの Challenge に対応するように設計されており、他のバッジでは機能しない可能性があることに注意してください。Trailhead Playground または 推奨される特別な Developer Edition 組織を使用していることを常に確認してください。
+このスーパーバッジを完了するには、Sales Cloud とサンプルデータを含む特別な Developer Edition 組織が必要です。無料の Developer Edition を入手して Trailhead に接続すると、このスーパーバッジの Challenge を完了することができます。この Developer Editionは、このスーパーバッジの Challenge に対応するように設計されており、他のバッジでは機能しない可能性があることに注意してください。Trailhead Playground または、推奨される特別な Developer Edition 組織を使用していることを常に確認してください。
 
 1. [Sales Cloud を備える無料の Developer Edition 組織](https://developer.salesforce.com/promotions/orgs/sellingspecialist)にサインアップします。
 2. フォームに入力します。Email の欄には、有効な電子メールアドレスを入力します。Username の欄には、メールアドレス形式の一意のユーザ名を入力しますが、有効な電子メールアカウントと一致している必要はありません。(例: yourname@test.com) 
@@ -35,7 +35,7 @@
 2. このページの下部にある **Challenge** セクションで、選択リストから **Log into a Developer Edition** (Developer Edition にログイン) を選択します。
 3. ログイン画面で、先ほど設定したDeveloper Edition のユーザ名とパスワードを入力します。
 4. Allow Access? (アクセスを許可しますか？) の画面で、**Allow** (許可) をクリックします。
-5. Want to connect this org for hands-on challenges? (この組織をハンズオンの Challenge 用に保存しますか?) の画面で、**Yes! Save it** (はい、保存します) をクリックします。Challenge のページにリダイレクトされ、新しいDeveloper Edition を使用してこのスーパーバッジを獲得する準備が整います。
+5. Want to connect this org for hands-on challenges? (この組織をハンズオンの Challenge 用に保存しますか？) の画面で、**Yes! Save it** (はい、保存します) をクリックします。Challenge のページにリダイレクトされ、新しいDeveloper Edition を使用してこのスーパーバッジを獲得する準備が整います。
 
 ### 重要な注意点
 Challenge を始める前に、[Selling With Sales Cloud Specialist: Trailhead Challenge Help](https://trailhead.salesforce.com/help?article=Selling-with-Sales-Cloud-Specialist-Superbadge-Challenge-Help) のナレッジ記事(英語) を確認してください。
@@ -73,7 +73,7 @@ Usra Major Solar は以下の標準オブジェクトを使用しています。
 ### Usra Major Solar の販売プロセス
 Ursa Major Solar は、やる気のあるセールスマシンのようです。そのプロセスはよく考えられており、Salesforce 上ですでに設定されています。Ursa Major は、資格のあるリードのみが、取引先と商談に変換されることを望んでいます。取引先がまだ存在しない場合、最終的なリードは変換のために次の基準を満たしている必要があります。
 
-* 完了予定日が12ヶ月以内であること
+* 完了予定日が 12 か月以内であること
 * 取引の金額が入力されていること
 * 担当者の名前、電話、メールアドレスが特定できていること
 
@@ -377,7 +377,7 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
 この表はCSVファイルで[ダウンロード](https://developer.salesforce.com/files/002_CurrentlyPendingDeals.csv)することができます。
 
 ### 様々な人々: 名刺
-SouthernSolar の セールスアシスタントは、名刺の束で、以下の様々な人々のリストを提供してきました。 Ursa Major Solar の既存の Salesforce 組織にデータを適切に入力してください。 Solar Resale Solutions の Harry Hawker はディストリビュータであることに注意してください。このレコードが Distributor/Wholesale Team によって所有されるようにしてください。
+SouthernSolar のセールスアシスタントは、名刺の束で、以下の様々な人々のリストを提供してきました。Ursa Major Solar の既存の Salesforce 組織にデータを適切に入力してください。 Solar Resale Solutions の Harry Hawker はディストリビュータであることに注意してください。このレコードが Distributor/Wholesale Team によって所有されるようにしてください。
 
 <table>
 <tr>
@@ -474,17 +474,19 @@ Splashdown Pools の Jen Floats からアカウントサービスについて
 ```
 
 ### 電話の呼び出し音
+<!-- textlint-disable jtf-style/4.3.3.かぎかっこ「」 -->
 「こんにちは、フロントのジョンです。昼食時にあなたへの伝言をいくつか受け取ったので、準備ができたら教えてください。いいですか？では始めます。
 
 まず、経営陣から。Ursa Major と SouthernSolar がデータを結合したため、経営陣はセールスパイプラインに対して少し『バランス』を取っています。Daily Bakery 社の取引があなたに割り当てられ、フェーズは『Closed Won』になります。Long John's Socks 社の取引があなたにに割り当てられ、確度は75％になります。そして、Enerplus 社の取引があなたに割り当てられました。この取引のフェーズは、『Quote Approved』に更新する必要があります。ディストリビュータとの取引であるため、確度は80％に更新する必要があります。私達はディストリビュータとの取引用に個別の価格表ができたことを本当に気に入っています！
 
-そしてさらに素晴らしいニュースがあります。Fiberwear 社の Polly は、今から6ヶ月の間に、取引を進めたいと考えています。(彼女は100,000ドルと言いました！)
+そしてさらに素晴らしいニュースがあります。Fiberwear 社の Polly は、今から 6 か月の間に、取引を進めたいと考えています。(彼女は100,000ドルと言いました！)
 
 Mannon Mirthという名前の人から、会社の名前は先よく理解できませんでしたが、同じ商談を使って、Installation Industrial - High という名前の商品に対して、別の見積を作成してほしいと依頼がありました。この新しい見積では、数量は1ではなく10になります。彼は、この見積に対して5％の割引を約束してもらえたと言っているので、これに従い調整を行ってください。あっ、そういえば、彼は見積を比較したいと思っているので、元の見積はそのままにしておいてくださいね。
 
 さて、最後に。Sally Helios から電話がありましたが、その情報に一致していると思われる取引先責任者が2つ見つかったため、どこにログを記録すればよいかわかりませんでした。それらのレコードを適切に重複排除し、今日電話をかけ、コールバックを望んでいたメモを追加してください。(そして、折り返し電話してください。)
 
 ありがとう。以上です！あなたの最初の週がうまくいくことを願っています！」
+<!-- textlint-enable jtf-style/4.3.3.かぎかっこ「」 -->
 
 ### レポート
 すべてのデータをクリーンアップして入力しておくのは良いことです。CEO の Solange Pereira は、東部のセールスチームと西部のセールスチームの両方の概要を示すレポートを求めています。要件に従って次のレポートを作成してください。`12 Month Pipeline` など、表示されている通りにレポートに名前を設定してください。

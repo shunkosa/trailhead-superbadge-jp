@@ -1,0 +1,28 @@
+{
+  "name": "trailhead-superbadge-jp",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Japanese localization of Salesforce Trailhead Superbadge",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "textlint": "^11.5.0",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-filter-rule-whitelist": "^2.0.0",
+    "textlint-rule-preset-japanese": "^4.0.4",
+    "textlint-rule-preset-jtf-style": "^2.3.4"
+  },
+  "scripts": {
+    "textlint": "textlint src/**/*.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shunkosa/trailhead-superbadge-jp.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shunkosa/trailhead-superbadge-jp/issues"
+  },
+  "homepage": "https://github.com/shunkosa/trailhead-superbadge-jp#readme"
+}

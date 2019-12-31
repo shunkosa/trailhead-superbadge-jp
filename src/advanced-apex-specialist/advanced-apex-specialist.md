@@ -32,11 +32,13 @@
 * このスーパーのために新しいTrailhead Playgroundを作成してください。既存の組織を使用するとChallengeを検証する際に問題が発生する場合があります。
 * この[未管理スーパーバッジパッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000001O5si)をインストールしてください。このパッケージにはChallengeを完了するためのスキーマとコードが含まれています。もし管理・未管理パッケージ、またはAppExchangeアプリケーションをインストールする際に問題が発生した場合は、[Trailhead Playgroundの管理](https://trailhead.salesforce.com/ja/content/learn/modules/trailhead_playground_management)モジュールの手順に従ってください。
 * [商品オブジェクトとスケジュールオブジェクト](https://developer.salesforce.com/docs/atlas.ja-jp.object_reference.meta/object_reference/sforce_api_erd_products.htm)のドキュメントを参照してください。   
-* 商品オブジェクト(Product2)の商品ファミリ(Product Family)項目を以下の値だけが表示されるように設定してください。
+* 商品オブジェクト (Product2) の商品ファミリ (Product Family) 項目を次の値だけが表示されるように設定してください。
+<!-- textlint-disable jtf-style/1.1.3.箇条書き -->
   * Entree
   * Side
   * Dessert
   * Beverage
+<!-- textlint-enable jtf-style/1.1.3.箇条書き -->
 * 商品のページレイアウトにQuantity OrderedとQuantity Remaining項目を含めてください。
 * 取引先のページレイアウトを注文の関連リストが表示されるように更新してください。
 * 注文のページレイアウトから、もしあればContract Number(契約番号)項目を取り除いてください。
@@ -124,7 +126,7 @@ Challenge 1を完了したら、Playground組織に作成されている次のNe
 ### カスタムメタデータ型を利用する
 在庫管理社はReneeに在庫が少なくなってきたらそのことを知らせてほしいと伝えています。例えば、在庫に残っているデザートの種類が15種類しかない場合に、アラートが表示されてほしいと思っています。つまり、特定の商品の在庫レベルがその商品に関連付けられている商品ファミリのしきい値まで低下した場合、通知が必要になります。
 
-過去数ヶ月間の注文データの分析に基づいて、Reneeは各商品ファミリの在庫しきい値を決定しました。彼女は各商品ファミリの在庫しきい値を保存したいのですが、売上が伸び続けるのに従って、これらのしきい値を簡単に変更したいと考えています。慎重に検討した後、カスタムメタデータ型がこれらの要件を満たすためにぴったりだと判断しました。
+過去数か月間の注文データの分析に基づいて、Reneeは各商品ファミリの在庫しきい値を決定しました。彼女は各商品ファミリの在庫しきい値を保存したいのですが、売上が伸び続けるのに従って、これらのしきい値を簡単に変更したいと考えています。慎重に検討した後、カスタムメタデータ型がこれらの要件を満たすためにぴったりだと判断しました。
 
 以下の属性を使用してカスタムメタデータ型を作成します。
 
@@ -296,7 +298,7 @@ Reneeがproduct2Newページでリクエストしたように、彼女は将来�
 ### Challenge 5: 単体テストでテストカバー率を増加させる
 * **TestDataFactory**クラスに、シグネチャに従って新しい**VerifyQuantityOrdered**メソッドを作成してください。
 * **OrderTrigger**および、**OrderHelper**のロジックを検証するために**OrderTests**を更新してください。
-* **Product2Extension_UnitTest**クラスの、**Product2Tests**メソッドを完成させてください。.
+* **Product2Extension_UnitTest**クラスの、**Product2Tests**メソッドを完成させてください。
 
 ### Challenge 6: 在庫が少ない場合の社内通知を自動化する
 * 「Inventory Announcements」のChatterグループを作成し、正しい説明を設定してください。

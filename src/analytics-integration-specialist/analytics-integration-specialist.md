@@ -22,12 +22,14 @@
 ## 事前準備とメモ
 * ペンや鉛筆を用意して、要件を読み進める際にメモを取ってください。
 * データセットに関するChallengeは、そのデータセットがデータフローを使用して作成および変更されることを前提としています。
+<!-- textlint-disable jtf-style/1.1.3.箇条書き -->
 * Challengeを検証する際に使用されるため、データフローやデータセットの名前について、シナリオで指定されている命名規則に慎重に従ってください。
   * データセットのエイリアスには小文字のスペルを使用してください。
   * 名前にスペースを含むデータセットの場合は、データセットエイリアスにアンダースコア（_）を使用します。
     * データセット名：Seed Bank
     * データセットエイリアス：seed_bank（小文字のスペル）
-* このChallengeに対して[Einstein Analytics Developer Edition (DE)](https://developer.salesforce.com/promotions/orgs/analytics-de)組織を作成します。この環境はEinstein Analyticsが有効になっており、Challengeで使用されるサンプルデータが含まれています。 (注 : このChallengeではDTC Default Appは使用しません。)
+<!-- textlint-enable jtf-style/1.1.3.箇条書き -->
+* このChallengeに対して[Einstein Analytics Developer Edition (DE)](https://developer.salesforce.com/promotions/orgs/analytics-de)組織を作成します。この環境はEinstein Analyticsが有効になっており、Challengeで使用されるサンプルデータが含まれています (注 : このChallengeではDTC Default Appは使用しません) 。 
 * Challengeの一部として、レンズを作成するように依頼されるでしょう。表示される結果数を制限することは上位のN件を分析する際のベストプラクティスであり、SAQLクエリを試したいと思うかもしれません。しかし、このスーパーバッジにおけるChallengeの検証では、単純にデータをフォーカスしたりフィルタすることが要求されます。
 * 以下の詳細な要件を読みながら、エンティティリレーション図を確認してください。
 
@@ -176,7 +178,7 @@ Tonyaは、DanielleとPhilipがフラットなファイルであるAgency Data.t
 1. Analytics Studioのタブから、**データセット** をクリックします。
 2. **Seed Bank Agencies** データセットをクリックします。
 3. 横棒 (Bars)の下にある **+** ボタンをクリックして、**Account Name** (取引先名)を選択します。
-4. グラフのヘッダーにある **行 計数** (Count of Rows) をクリックして、一覧の値を降順に並べます。
+4. グラフのヘッダーにある **[行 計数:]** (Count of Rows) をクリックして、一覧の値を降順に並べます。
 5. 先頭の5件をクリックしてハイライトします。
 6. レンズの右上にある **フォーカス** (Focus) ボタンをクリックします。
 7. **保存** ボタンをクリックし、タイトルに **Top 5 Agencies** を追加し、アプリケーションにMosaicを選択します。
@@ -223,7 +225,7 @@ Hadiqaはまた、種子の間隔を記録するSpacing項目についても教�
 
 1. Analytics Studioのタブから、**データセット** をクリックします。
 2. **Seed Bank** データセットをクリックします。
-3. 棒の長さ (Bar Length)の下にある、**行 計数** (Count of Rows)をクリックして、**合計 | Acreage** (Sum | Acreage)の順に選択します。
+3. 棒の長さ (Bar Length)の下にある、**[行 計数:]** (Count of Rows)をクリックして、**合計 | Acreage** (Sum | Acreage)の順に選択します。
 4. 横棒 (Bars)の下にある **+** ボタンをクリックして、**Seed**を選択します。
 5. グラフのヘッダーにある **Acreage 合計** (Sum of Acreage) をクリックして、一覧の値を降順に並べます。
 6. 先頭の5件をクリックしてハイライトします。
@@ -248,11 +250,11 @@ Hadiqaは、地元の大学で勉強しているDanielleに、彼女が通う大
 
 ![](Global-climate.png)
 
-ベンダーはまた、気温クラスをより単純な代替手段として使用してもよいと述べました。気温クラスには、「Polar (極地)」、「Cool (寒冷)」、「Tropical (熱帯)」、「Continental (大陸) 」があります。混ぜ合わさって、それらのゾーンが地球を覆っています。ほとんどの地域と作物の種子は複数の気温クラスに属します。たとえば、アフガニスタンは1年のほとんどの間がContinentalに属し、冬の間の数ヶ月はCoolに属します。キャベツの種はCool、Continental、Tropicalの地域で育てることができます。
+ベンダーはまた、気温クラスをより単純な代替手段として使用してもよいと述べました。気温クラスには、「Polar (極地)」、「Cool (寒冷)」、「Tropical (熱帯)」、「Continental (大陸)」があります。混ぜ合わさって、それらのゾーンが地球を覆っています。ほとんどの地域と作物の種子は複数の気温クラスに属します。たとえば、アフガニスタンは1年のほとんどの間がContinentalに属し、冬の間の数か月はCoolに属します。キャベツの種は Cool、Continental、Tropical の地域で育てることができます。
 
 Hadiqaは、この方法が気に入っています。なぜなら、それは、代理機関の地域と作物の種子との間の気温範囲を計測することよりも簡単だからです。
 
-|Temperature Class (気温クラス)|Temperature Range (気温の範囲; 華氏)|
+|Temperature Class (気温クラス)|Temperature Range (気温の範囲: 華氏)|
 |-|-|
 |Tropical|85Fより大きい|
 |Continental|51Fから85F|
@@ -293,7 +295,7 @@ Seed Bank Agencies およびSeed Bank データセットを作成するための
 1. Analytics Studioのタブから、**データセット** をクリックします。
 2. **Seed Bank Agencies** データセットをクリックします。
 3. 横棒 (Bars)の下にある **+** ボタンをクリックして、**Climate.TempClass**を選択します。
-4. グラフのヘッダーにある **行 計数** (Count of Rows) をクリックして、一覧の値を降順に並べます。
+4. グラフのヘッダーにある **[行 計数:]** (Count of Rows) をクリックして、一覧の値を降順に並べます。
 5. グラフの一番先頭の棒をクリックしてハイライトします。
 6. レンズの右上にある **フォーカス** (Focus) ボタンをクリックします。
 7. **保存** ボタンをクリックし、タイトルに **Agency Temp Class** を追加し、アプリケーションにMosaicを選択します。
@@ -325,7 +327,7 @@ Seed Bank Agencies およびSeed Bank データセットを作成するための
 1. Analytics Studioのタブから、**データセット** をクリックします。
 2. **Seed Bank** データセットをクリックします。
 3. 横棒 (Bars)の下にある **+** ボタンをクリックして、**Climate.TempClass**を選択します。
-4. グラフのヘッダーにある **行 計数** (Count of Rows) をクリックして、一覧の値を降順に並べます。
+4. グラフのヘッダーにある **[行 計数:]** (Count of Rows) をクリックして、一覧の値を降順に並べます。
 5. グラフの一番先頭の棒をクリックしてハイライトします。
 6. レンズの右上にある **フォーカス** (Focus) ボタンをクリックします。
 7. **保存** ボタンをクリックし、タイトルに **Seed Bank Temp Class** を追加し、アプリケーションにMosaicを選択します。
@@ -363,7 +365,7 @@ TonyaとHadiqaが分析で行うクエリの種類は次のとおりです。
 
 1. Analytics Studioのタブから、**データセット** をクリックします。
 2. **Order History** データセットをクリックします。
-3. 棒の長さ (Bar Length)の下にある、**行 計数** (Count of Rows)をクリックして、**合計 | Quantity Ordered** (Sum | Quantity Ordered)の順に選択します。
+3. 棒の長さ (Bar Length)の下にある、**[行 計数:]** (Count of Rows)をクリックして、**合計 | Quantity Ordered** (Sum | Quantity Ordered)の順に選択します。
 4. 横棒 (Bars)の下にある **+** ボタンをクリックして、**Seed_ID**を選択します。
 5. グラフのヘッダーにある **Quantity Ordered 合計** (Sum of Quantity Ordered) をクリックして、一覧の値を降順に並べます。
 6. 先頭の5件をクリックしてハイライトします。
@@ -395,7 +397,7 @@ Einstein AnalyticsでSeed Bank Agencies とSeed Bank Order オブジェクトに
 
 ## 訳注
 * <a name="footnote1">[1]</a> : インポートウィザードについて、原文には指定がありませんが、文字コードはUTF-8、値の区切り文字はカンマを指定してください。
-* <a name="footnote2">[2]</a> : 6272740は1エーカーを平方インチで表した数です。1 [acre] = 4046.86 [m<sup>2</sup>] = 4046.86 * 1550 [in<sup>2</sup>] ~= 6272740 [in<sup>2</sup>]
+* <a name="footnote2">[2]</a> : 6272740は1エーカーを平方インチで表した数です。1 [acre] = 4046.86 [m<sup>2</sup>] = 4046.86 * 1550 [in<sup>2</sup>] ~= 6272740 [in<sup>2</sup>] となります。
 
 ## 補足とヒント
 ### 全般
