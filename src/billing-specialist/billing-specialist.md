@@ -46,7 +46,7 @@
 2. このページの下部にある **Challenge** セクションで、選択リストから **Log into a Developer Edition** (Developer Edition にログイン) を選択します。
 3. ログイン画面で、先ほど設定したDeveloper Edition のユーザ名とパスワードを入力します。
 4. Allow Access? (アクセスを許可しますか？) の画面で、**Allow** (許可) をクリックします。
-5. Want to connect this org for hands-on challenges? (この組織をハンズオンの Challenge 用に保存しますか?) の画面で、**Yes! Save it** (はい、保存します) をクリックします。Challenge のページにリダイレクトされ、新しいDeveloper Edition を使用してこのスーパーバッジを獲得する準備が整います。
+5. Want to connect this org for hands-on challenges? (この組織をハンズオンの Challenge 用に保存しますか？) の画面で、**Yes! Save it** (はい、保存します) をクリックします。Challenge のページにリダイレクトされ、新しいDeveloper Edition を使用してこのスーパーバッジを獲得する準備が整います。
 
 専用の管理パッケージがインストールおよび有効化されたSalesforce 組織ができたので、準備完了です。
 
