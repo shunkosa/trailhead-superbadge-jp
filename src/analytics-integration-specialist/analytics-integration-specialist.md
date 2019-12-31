@@ -248,11 +248,11 @@ Hadiqaは、地元の大学で勉強しているDanielleに、彼女が通う大
 
 ![](Global-climate.png)
 
-ベンダーはまた、気温クラスをより単純な代替手段として使用してもよいと述べました。気温クラスには、「Polar (極地)」、「Cool (寒冷)」、「Tropical (熱帯)」、「Continental (大陸) 」があります。混ぜ合わさって、それらのゾーンが地球を覆っています。ほとんどの地域と作物の種子は複数の気温クラスに属します。たとえば、アフガニスタンは1年のほとんどの間がContinentalに属し、冬の間の数か月はCoolに属します。キャベツの種はCool、Continental、Tropicalの地域で育てることができます。
+ベンダーはまた、気温クラスをより単純な代替手段として使用してもよいと述べました。気温クラスには、「Polar (極地)」、「Cool (寒冷)」、「Tropical (熱帯)」、「Continental (大陸)」があります。混ぜ合わさって、それらのゾーンが地球を覆っています。ほとんどの地域と作物の種子は複数の気温クラスに属します。たとえば、アフガニスタンは1年のほとんどの間がContinentalに属し、冬の間の数か月はCoolに属します。キャベツの種は Cool、Continental、Tropical の地域で育てることができます。
 
 Hadiqaは、この方法が気に入っています。なぜなら、それは、代理機関の地域と作物の種子との間の気温範囲を計測することよりも簡単だからです。
 
-|Temperature Class (気温クラス)|Temperature Range (気温の範囲 華氏)|
+|Temperature Class (気温クラス)|Temperature Range (気温の範囲: 華氏)|
 |-|-|
 |Tropical|85Fより大きい|
 |Continental|51Fから85F|
