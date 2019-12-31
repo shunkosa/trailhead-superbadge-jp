@@ -14,7 +14,7 @@
     "textlint-rule-preset-jtf-style": "^2.3.4"
   },
   "scripts": {
-    "textlint": "textlint src/**/*.md"
+    "textlint": "textlint"
   },
   "repository": {
     "type": "git",

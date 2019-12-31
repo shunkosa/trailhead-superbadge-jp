@@ -23,4 +23,4 @@ jobs:
         run: npm install
 
       - name: Lint
-        run: npm run textlint
+        run: npm run textlint src/**/*.md
