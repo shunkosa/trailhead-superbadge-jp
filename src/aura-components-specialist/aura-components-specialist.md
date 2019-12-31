@@ -31,7 +31,7 @@
 
 ## 事前準備とメモ
 - 紙とペンを用意して、要件を読み進める際にメモを取ってください。
-- このスーパーバッジのために新しいTrailhead Playgroundを作成してください. この組織を他のモジュールやタスクに利用するとChallengeの検証のために問題を引き起こす可能性があります。Trailhead Playgroundでは既に私のドメインが有効になっていることに注意してください。私のドメインの設定は編集しないでください。Trailhead Playgroundにログインできなくなる可能性があります。
+- このスーパーバッジのために新しいTrailhead Playgroundを作成してください。この組織を他のモジュールやタスクに利用するとChallengeの検証のために問題を引き起こす可能性があります。Trailhead Playgroundでは既に私のドメインが有効になっていることに注意してください。私のドメインの設定は編集しないでください。Trailhead Playgroundにログインできなくなる可能性があります。
 -  **設定 > セキュリティ > セッションの設定** セクションで、**パフォーマンスを向上させるためにブラウザの安全で永続的なキャッシュを有効にする** のチェックをオフにすることで、コンポーネントのキャッシュを無効化してください。
 -  [この未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf40000011Bh4)をインストールしてください。このパッケージには、チャレンジを完了するために必要となるApexロジックに対する全てのスキーマが含まれます。未管理パッケージのインストールに問題が発生した場合は[Trailhead Playground Management](https://trailhead.salesforce.com/modules/trailhead_playground_management)の手順に従ってください。
 - Challenge 1で未管理パッケージのインストールを検証した後、サンプルデータが自動的に組織に追加されます。最初のChallengeを検証後、何らかの理由で組織を変更する場合は、`GenerateData.apxc`の静的メソッド`initData()`を実行してください。

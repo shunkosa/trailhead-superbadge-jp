@@ -26,7 +26,7 @@
 * [この未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0Y0000025Nb3)をインストールしてください。パッケージには、課題を完了するためのスキーマが含まれています。管理パッケージ、未管理パッケージ、アプリケーションをAppExchangeからインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
 * Trailhead PlaygroundはLightning Experienceで開きますが、事前準備の設定作業のため、Salesforce Classicに切り替える必要があります。課題で指定された機能を設定・テストするため、Lightning ExperienceとSalesforce Classicを行ったり来たりする必要があるでしょう。
 * このスーパーバッジの課題のために、Trailhead Playgroundを準備してください。
-  1. Salesforce Classicの設定から, 取引先のタブを、先ほどインストールしたスーパーバッジのパッケージに含まれている、Accounts Tab Visualforceページで上書きします。
+  1. Salesforce Classicの設定から、取引先のタブを、先ほどインストールしたスーパーバッジのパッケージに含まれている、Accounts Tab Visualforceページで上書きします。
   2. Salesforce Classicの設定で、TrailheaDXコンポーネントをDE Defaultホームページレイアウトに追加してください。
   3. Salesforce ClassicまたはLightning Experienceの設定で、John Wisemanという名前のユーザを作成し、SalesforceユーザライセンスとCustom: Sales Profileプロファイルを割り当ててください。
   4. Paloma Espinozaという名前で2人目のユーザを作成し、Salesforce PlatformユーザライセンスとStandard Platform Userプロファイルを割り当ててください。

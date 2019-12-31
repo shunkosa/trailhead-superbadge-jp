@@ -50,15 +50,15 @@ SolarBotのデータが欲しい部署のリーダやユーザに対してイン
 * Maria Jimenez (システム管理者)
 
 ## 標準オブジェクト
-Ursa Majorは以下の標準オブジェクトを利用しています.
-* Account (取引先) — Usra Majorから機器を購入する法人顧客
-* Opportunity (商談) — 顧客やリードに対する潜在的な販売
-* Case (ケース) — 顧客から報告されるサポートに関する問題
+Ursa Majorは以下の標準オブジェクトを利用しています。
+* Account (取引先) - Usra Majorから機器を購入する法人顧客
+* Opportunity (商談) - 顧客やリードに対する潜在的な販売
+* Case (ケース) - 顧客から報告されるサポートに関する問題
 
 ## カスタムオブジェクト
 SolarBot IndustriesはIoTデータを管理するためのシンプルなデータモデルを採用しています。以下のカスタムオブジェクトはUsra Majorのスキーマにマージされます。
-* SolarBot — 取引先に割り当てられたSolarBot
-* SolarBot Status — 各SolarBotからの、パネルの生産性や問題に関する日次のレポート
+* SolarBot - 取引先に割り当てられたSolarBot
+* SolarBot Status - 各SolarBotからの、パネルの生産性や問題に関する日次のレポート
 
 ## エンティティ図
 ![](lerd-entity-diagram.png)

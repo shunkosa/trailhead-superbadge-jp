@@ -83,11 +83,11 @@ Salesforce上で、各チームに対するキューがあれば、到来した�
 他部門を混乱させている他の原因は、顧客の名前が変更されるときにあります。皆がSalesforce上で作成された取引先を参照できることは問題ありませんが、もし取引先の種別が"Customer - Direct"か"Customer - Channel"の場合は、取引先の名前を変更させたくありません。
 
 ああ、それから、営業担当者が見ることができるものついて話すと、彼らが必要とするすべての情報をできるだけ早く見られるようにしてほしいです。例えば、取引先の詳細では、以下の情報を見られるように設定してください。
-* Number of deals (商談の数, API参照名:Number_of_deals__c)
-* Number of won deals (成立した商談の数, API参照名:Number_of_won_deals__c)
-* Last won deal date (最後に商談が成立した日付, API参照名:Last_won_deal_date__c)
-* Deal win percent (商談の成立率, API参照名:Deal_win_percent__c)
-* Amount of won deals(成立した商談の金額合計, API参照名:Amount_of_Won_Deals__c)
+* Number of deals (商談の数。API参照名: Number_of_deals__c)
+* Number of won deals (成立した商談の数。API参照名: Number_of_won_deals__c)
+* Last won deal date (最後に商談が成立した日付。API参照名: Last_won_deal_date__c)
+* Deal win percent (商談の成立率。API参照名: Deal_win_percent__c)
+* Amount of won deals(成立した商談の金額合計。API参照名: Amount_of_Won_Deals__c)
 
 また、取引先の詳細にCall for Serviceという項目を追加したいです。私たちは、ロボットの品質と卓越したサービスに対して素晴らしい評判を頂いています。私はこれを守り続けたいです。もし、その取引先で、最後に商談が成立した日付が2年より昔の場合はCall for ServiceはYESと表示し、そうでない場合はNOと表示してください。これで営業担当者はその取引先に対して、ロボットの調子はどうかと確認するタイミングが分かるでしょう。
 
