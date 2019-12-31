@@ -8,7 +8,7 @@
 * UMS の US 財務帳簿と財務期間の作成 (会計と収益)
 * 総勘定元帳の情報で Salesforce Billing のトランザクションを向上させる
 * 請求書の働きを制御するために請求ルールと請求処理を設定する
-* Major Solar Panel の1回限りの商品およびサブスクリプション商品に対して、完全および按分の収益認識を設定する
+* Major Solar Panel の 1 回限りの商品およびサブスクリプション商品に対して、完全および按分の収益認識を設定する
 * 口座残高スナップショットとカスタムの請求レポートを使用して口座残高情報を評価する
 * 自動化プロセスを作成して、支払期日を過ぎた請求書残高を顧客に警告する
 * Conga Invoice Generation を用いて、UMS の現在の請求書を改善する
@@ -28,17 +28,17 @@
 
 ## 事前準備とメモ
 ### Salesforce Billing と Salesforce CPQ を備えるDeveloper Edition 組織の作成
-このスーパーバッジを完了するには、Salesforce CPQ、Salesforce Billing、Conga Invoice Generation、サンプルデータを含む特別な Developer Edition 組織が必要です。無料のDeveloper Edition を入手してTrailhead に接続すると、このスーパーバッジのChallenge を完了することができます。
+このスーパーバッジを完了するには、Salesforce CPQ、Salesforce Billing、Conga Invoice Generation、サンプルデータを含む特別な Developer Edition 組織が必要です。無料の Developer Edition を入手して Trailhead に接続すると、このスーパーバッジの Challenge を完了することができます。
 
-特別に Saleseforce Billing が有効化された Developer Edition 組織に最近サインアップした場合でも、このスーパーバッジのために新しい組織にサインアップしてください。常に新しいデータが追加されています。また、管理パッケージは90日後に期限切れになるため、新しい組織が必要になる場合があることにも注意してください。
+特別に Saleseforce Billing が有効化された Developer Edition 組織に最近サインアップした場合でも、このスーパーバッジのために新しい組織にサインアップしてください。常に新しいデータが追加されています。また、管理パッケージは 90 日後に期限切れになるため、新しい組織が必要になる場合があることにも注意してください。
 
 * [Salesforce Billing および Salesforce CPQ を備える無料の Developer Edition 組織](https://developer.salesforce.com/promotions/orgs/advbillingspecialist)にサインアップします。
 * フォームに入力します。Email の欄には、有効な電子メールアドレスを入力します。Username の欄には、メールアドレス形式の一意のユーザ名を入力しますが、有効な電子メールアカウントと一致している必要はありません (例: yourname@billingcpq4ever.com) 。
 * フォームに入力したら、**Sign Me Up**  (サインアップ) をクリックします。確認メッセージが表示されます。
 * ようこそメールを受信 (数分かかる場合があります) したら、それを開き、**Verify Account** (アカウントを確認) をクリックします。
-* パスワードと秘密の質問を設定して、登録を完了します。**ポイント**: 後で簡単にアクセスできるように、ユーザ名、パスワード、およびログインURLを書き留めます。
+* パスワードと秘密の質問を設定して、登録を完了します。**ポイント**: 後で簡単にアクセスできるように、ユーザ名、パスワード、およびログイン URL を書き留めます。
 * Developer Edition にログインされた状態になります。
-* 次に、新しい Developer Edition 組織をTrailhead に接続します。
+* 次に、新しい Developer Edition 組織を Trailhead に接続します。
 * Trailhead アカウントにログインしていることを確認してください。
 * このページの下部にある **Challenge** セクションで、選択リストから **Log into a Developer Edition** (Developer Edition にログイン) を選択します。
 * ログイン画面で、先ほど設定した Developer Edition のユーザ名とパスワードを入力します。
@@ -289,11 +289,11 @@ Weimar、Solange、James は、UMS がダウンストリームの収益レポー
 ### 口座残高スナップショットとカスタムレポートを通して顧客の口座残高をモニタリングする
 現在、UMS には未払いの請求書残高や未割り当ての支払い、未割り当てのクレジットおよびデビットノートがある取引先をモニタリングするプロセスがありません。Solange は、チームが支払期日を過ぎている請求書の日数を追跡できるようになることを望んでおり、Cloud Kicks の取引先レコードに対するこの情報の日次スナップショットにアクセスできるようにしたいと考えています。スナップショットは、次の期日超過日数に基づいて、未処理の残高をバケットに分割する必要があります。
 
-* 1から30日
-* 31から60日
-* 61から90日
-* 91から120日
-* 121日以上
+* 1 から 30 日
+* 31 から 60 日
+* 61 から 90 日
+* 91 から 120 日
+* 121 日以上
 
 <table>
    <tbody>
