@@ -34,7 +34,7 @@
 
 * [Salesforce Billing および Salesforce CPQ を備える無料の Developer Edition 組織](https://developer.salesforce.com/promotions/orgs/advbillingspecialist)にサインアップします。
 * フォームに入力します。Email の欄には、有効な電子メールアドレスを入力します。Username の欄には、メールアドレス形式の一意のユーザ名を入力しますが、有効な電子メールアカウントと一致している必要はありません (例: yourname@billingcpq4ever.com) 。
-* フォームに入力したら、**Sign Me Up**  (サインアップ) をクリックします。確認メッセージが表示されます。
+* フォームに入力したら、**Sign Me Up** (サインアップ) をクリックします。確認メッセージが表示されます。
 * ようこそメールを受信 (数分かかる場合があります) したら、それを開き、**Verify Account** (アカウントを確認) をクリックします。
 * パスワードと秘密の質問を設定して、登録を完了します。**ポイント**: 後で簡単にアクセスできるように、ユーザ名、パスワード、およびログイン URL を書き留めます。
 * Developer Edition にログインされた状態になります。

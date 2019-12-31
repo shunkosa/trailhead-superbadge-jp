@@ -29,8 +29,8 @@
 ## 事前準備とメモ
 * Salesforce には 2 つの異なるデスクトップユーザインターフェースがあります。Lightning Experience と Salesforce Classic です。このモジュールは Salesforce Classic 向けにデザインされています。この Trailhead の [Lightning Experience の基本](https://trailhead.salesforce.com/ja/content/learn/modules/lex_migration_introduction) モジュールでは、インタフェース間の切り替え、Lightning Experience の有効化についてなどを学ぶことができます。
 * 要件を読み進める際にメモを取ってください(映像記憶がない限り)。紙とペン(または電子的なものでも)を用意しましょう。
-* このスーパーバッジのために新しいTrailhead Playgroundを作成してください。既存の組織を使用するとChallengeを検証する際に問題が発生する場合があります。
-* この[未管理スーパーバッジパッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000001O5si)をインストールしてください。このパッケージにはChallengeを完了するためのスキーマとコードが含まれています。もし管理・未管理パッケージ、またはAppExchangeアプリケーションをインストールする際に問題が発生した場合は、[Trailhead Playgroundの管理](https://trailhead.salesforce.com/ja/content/learn/modules/trailhead_playground_management)モジュールの手順に従ってください。
+* このスーパーバッジのために新しい Trailhead Playgroundを作成してください。既存の組織を使用すると Challengeを検証する際に問題が発生する場合があります。
+* この[未管理スーパーバッジパッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000001O5si)をインストールしてください。このパッケージには Challengeを完了するためのスキーマとコードが含まれています。もし管理・未管理パッケージ、または AppExchangeアプリケーションをインストールする際に問題が発生した場合は、[Trailhead Playgroundの管理](https://trailhead.salesforce.com/ja/content/learn/modules/trailhead_playground_management)モジュールの手順に従ってください。
 * [商品オブジェクトとスケジュールオブジェクト](https://developer.salesforce.com/docs/atlas.ja-jp.object_reference.meta/object_reference/sforce_api_erd_products.htm)のドキュメントを参照してください。
 <!-- textlint-disable jtf-style/1.1.3.箇条書き -->   
 * 商品オブジェクト (Product2) の商品ファミリ (Product Family) 項目を次の値だけが表示されるように設定してください。
@@ -124,7 +124,7 @@ Challenge 1 を完了したら、Playground 組織に作成されている次の
 
 
 ### カスタムメタデータ型を利用する
-在庫管理社は Renee に在庫が少なくなってきたらそのことを知らせてほしいと伝えています。例えば、在庫に残っているデザートの種類が 15 種類しかない場合に、アラートが表示されてほしいと思っています。つまり、特定の商品の在庫レベルがその商品に関連付けられている商品ファミリのしきい値まで低下した場合、通知が必要になります。
+在庫管理者は Renee に在庫が少なくなってきたらそのことを知らせてほしいと伝えています。例えば、在庫に残っているデザートの種類が 15 種類しかない場合に、アラートが表示されてほしいと思っています。つまり、特定の商品の在庫レベルがその商品に関連付けられている商品ファミリのしきい値まで低下した場合、通知が必要になります。
 
 過去数か月間の注文データの分析に基づいて、Renee は各商品ファミリの在庫しきい値を決定しました。彼女は各商品ファミリの在庫しきい値を保存したいのですが、売上が伸び続けるのに従って、これらのしきい値を簡単に変更したいと考えています。慎重に検討した後、カスタムメタデータ型がこれらの要件を満たすためにぴったりだと判断しました。
 
@@ -190,7 +190,7 @@ Samが提起した問題を調査した後、あなたはこれらの問題の�
 
 在庫管理者は、New Millennium Delivery の商品の需要と供給のバランスを取ろうとしています。彼らは、横棒グラフを Visualforce ページに追加するよう求めました。彼らはグラフに製品ファミリー毎の Quantity Remaining 項目の値を表示することを望んでいます。在庫管理者が **Add** をボタンをクリックしたとき、グラグは正しく再描画される必要があります。
 
-このグラフデータは他の目的にも役立つので、`ChartHelper` という名前の独自の Apex クラスから生成されます。内部のコードが常にシステムとして実行されるように `ChartHelper` を更新してください。`ChartHelper` の `GetInventory`  メソッドを完成させると、Quantity Remaining 項目の値が正で有効な商品の集計が正しく計算され、結果がすべてのユーザにとって正しくなるようにしてください。Renee は、このメソッドが Lightning コンポーネントでも使用できるようにしたいと考えています。
+このグラフデータは他の目的にも役立つので、`ChartHelper` という名前の独自の Apex クラスから生成されます。内部のコードが常にシステムとして実行されるように `ChartHelper` を更新してください。`ChartHelper` の `GetInventory` メソッドを完成させると、Quantity Remaining 項目の値が正で有効な商品の集計が正しく計算され、結果がすべてのユーザにとって正しくなるようにしてください。Renee は、このメソッドが Lightning コンポーネントでも使用できるようにしたいと考えています。
 
 ### テストデータファクトリーを作成する
 いくつかの調査の結果、前任のプログラマが`TestDataFactory`クラスを使って単体テストのためのテストデータをモジュール的かつ効率的に生成することに決めたと分かりました。しかし、そのクラスはまだ完成していないことにも気付きました。メソッド名はありますが、実際のロジックはありません。アプリケーションの単体テストに適用できるサンプルビジネスデータをモデル化する効率的な方法を提供するために、`TestDataFactory`クラスを完成させてください。各メソッドがテストクラスのユーティリティメソッドとして使用できるように、そしてそれらがインスタンスメンバ変数の値に依存しないようにしてください。
@@ -238,7 +238,7 @@ product2Helper クラスの既存のコードを確認した後、それも定�
 
 Chatter グループ用の新しい AnnouncementInput を構築し、`AnnouncementQueuable` の Apex クラスで使用するには、`Product2Helper` の `PostAlerts` メソッドを完成させます。
 
-次に、商品の Quantity_Remaining__c 項目が、以前に作成したカスタムメタデータレコードに記録されているしきい値を下回ったと判断したときに `PostAlerts`  \メソッドを使用するように、`AfterUpdate` メソッドを完成させます。
+次に、商品の Quantity_Remaining__c 項目が、以前に作成したカスタムメタデータレコードに記録されているしきい値を下回ったと判断したときに `PostAlerts` メソッドを使用するように、`AfterUpdate` メソッドを完成させます。
 
 ベストプラクティスでは、ビジネスロジックコードを再利用可能にし、テストを容易にし、デバッグを容易にするために、Apexクラスに格納する必要があります。After Update のイベントでのみ実行され、`Product2Helper` のロジックを呼び出すように `Product2Trigger` を修正してください。
 
