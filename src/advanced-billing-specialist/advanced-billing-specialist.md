@@ -360,7 +360,7 @@ Cloud Kicks は、子会社である Bright Sneakers が請求書を受け取る
    <tbody>
       <tr>
          <td><strong>Amendment Order Start Date</strong><br/>(修正注文の開始日)</td>
-         <td>Original Quote Start Date + 7 months <br/>(元の見積の開始日の 7 ヶ月後)</td>
+         <td>Original Quote Start Date + 7 months <br/>(元の見積の開始日の 7 か月後)</td>
       </tr>
       <tr>
          <td><strong>Order Billing Account</strong><br/>(注文を請求する取引先)</td>
