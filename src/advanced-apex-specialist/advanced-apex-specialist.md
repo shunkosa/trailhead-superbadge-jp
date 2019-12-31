@@ -32,11 +32,13 @@
 * このスーパーのために新しいTrailhead Playgroundを作成してください。既存の組織を使用するとChallengeを検証する際に問題が発生する場合があります。
 * この[未管理スーパーバッジパッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000001O5si)をインストールしてください。このパッケージにはChallengeを完了するためのスキーマとコードが含まれています。もし管理・未管理パッケージ、またはAppExchangeアプリケーションをインストールする際に問題が発生した場合は、[Trailhead Playgroundの管理](https://trailhead.salesforce.com/ja/content/learn/modules/trailhead_playground_management)モジュールの手順に従ってください。
 * [商品オブジェクトとスケジュールオブジェクト](https://developer.salesforce.com/docs/atlas.ja-jp.object_reference.meta/object_reference/sforce_api_erd_products.htm)のドキュメントを参照してください。   
-* 商品オブジェクト(Product2)の商品ファミリ(Product Family)項目を以下の値だけが表示されるように設定してください。
+* 商品オブジェクト (Product2) の商品ファミリ (Product Family) 項目を次の値だけが表示されるように設定してください。
+<!-- textlint-disable jtf-style/1.1.3.箇条書き -->
   * Entree
   * Side
   * Dessert
   * Beverage
+<!-- textlint-enable jtf-style/1.1.3.箇条書き -->
 * 商品のページレイアウトにQuantity OrderedとQuantity Remaining項目を含めてください。
 * 取引先のページレイアウトを注文の関連リストが表示されるように更新してください。
 * 注文のページレイアウトから、もしあればContract Number(契約番号)項目を取り除いてください。

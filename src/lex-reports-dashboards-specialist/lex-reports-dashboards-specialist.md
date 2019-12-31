@@ -26,7 +26,8 @@
 * このスーパーバッジ用に、新しいTrailhead Playgroundを作成してください。この組織をほかの目的で使用すると、課題について検証する際に問題を引き起こす可能性があります。<sup>[1](#footnote1)</sup>
 * 商談オブジェクトの種別(Type)選択リストに、**SolarBot**を追加してください。[このヘルプ記事](https://help.salesforce.com/articleView?id=updating_picklists.htm&type=5)が参考になります。
 * SolarBot社の買収に伴う資産を実装するため、[未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1H0000018iyq)をインストールしてください。管理パッケージ、未管理パッケージ、アプリケーションをAppExchangeからインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
-* 未管理パッケージをインストールした後はSolarBotsアプリケーション内のData Importタブから、Importボタンを選択してください。<sup>[2](#footnote2)</sup>
+* 未管理パッケージをインストールした後はSolarBotsアプリケーション内のData Importタブから、Importボタンを選択してください<sup>[2](#footnote2)</sup>。
+<!-- textlint-disable jtf-style/1.1.3.箇条書き -->
 * 以下の6つの公開グループを作成してください。
   * Executive Team (エグゼクティブチーム)
   * Report and Dashboard Administrators (レポート・ダッシュボード管理者)
@@ -35,7 +36,8 @@
   * Sales Team (セールスチーム)
   * Support Team (サポートチーム)
 * このスーパーバッジのすべてのステップはLightning Experienceで完了してください。
-* このスーパーバッジで利用される用語のいくつかは、UIに表示される設定上の名称名と完全に一致しない場合があります。これは、Salesforceの機能に関する知識と、ビジネス上のニーズを満たす正しい機能を選択する能力をテストするためです
+* このスーパーバッジで利用される用語のいくつかは、UIに表示される設定上の名称名と完全に一致しない場合があります。これは、Salesforceの機能に関する知識と、ビジネス上のニーズを満たす正しい機能を選択する能力をテストするためです。
+<!-- textlint-enable jtf-style/1.1.3.箇条書き -->
 
 ## ユースケース
 Ursa Major Solar, Inc.は、最近、戦略的パートナーであるSolarBot Industriesを買収した太陽光エネルギー機器のサプライヤです。社名から分かるように、SolarBot IndustriesはSolarBotを作ります。SolarBotは自律型のロボット周辺機器で、割り当てられたソーラーパネルにゴミや破片が付着しないようにしたり、パネルのステータス指標に関して日次でIoTフィードバックを提供したり、パネルのメンテナンスを依頼したり追跡したりします。充電クレードルに戻ったときは「ビーッ！ビーッ！ブーン！」と鳴ります。SolarBotはかわいいロボットですが、パフォーマンスへの影響は深刻です。それらに塵、砂、水、苔が蓄積すると太陽光パネルの発電効率が最大で85％も減少してしまいます。Ursa Majorの顧客はSolarBotが好きで、SolarBot IndustriesとUrsa Majorの合併は円滑に進みました。
@@ -143,7 +145,7 @@ Usra Majorの研究開発(R&D)チームは、SolarBot社の買収が完了した
   * 65℃以下は**Low**を表示します。
   * 65℃より大きく80℃までは**Medium**と表示します。
   * 80℃より大きく95℃までは**High**と表示します。
-  * 95℃より大きい場合は**Very High**と表示します。 (人間にもBotにも不快な温度です)
+  * 95℃より大きい場合は**Very High**と表示します (人間にもBotにも不快な温度です) 。 
 * 各Temperature Rangeで、平均のKilowatt Hours(発電量)と平均のPanel Temperature(パネル温度)だけを表示します。
 * R&Dチーム用に作成したフォルダにレポートを格納します。
 

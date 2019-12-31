@@ -27,10 +27,10 @@
 * 解約率を測定およびレポートするための多くの計算および指標があります。以降のシナリオとChallengeにおいて、解約率は、現在の四半期の解約数を現在の四半期のサービス加入者数で割ったものとして計算されます。
 * Challengeを検証する際に使用されるため、ステップや項目、射影の名前については、シナリオで指定されている命名規則に慎重に従ってください。
   * Challengeで使用されるダッシュボードにステップを作成したり、ウィジェットを追加したりする際は、検証に必要となるため、ステップの名前をChallengeで指定された名前で更新してください。
-  * 変数と射影の名前にはキャメルケースのスペルを使用します。つまり、``lastName``のように設定します。<sup>[1](#footnote1)</sup>
+  * 変数と射影の名前にはキャメルケースのスペルを使用します。つまり、``lastName``のように設定します<sup>[1](#footnote1)</sup>。
   * 項目名にはタイトルケースを使用します。つまり、``Last Name``のように設定します。
   * スペースを含むステップや項目、データセットのAPI名はアンダースコア(_)を使用します。つまり、``Last_Name``のように設定します。
-* このChallengeに対して[Einstein Analytics Developer Edition (DE)](https://developer.salesforce.com/promotions/orgs/analytics-de)組織を作成します。この環境はEinstein Analyticsが有効になっており、Challengeで使用されるサンプルデータが含まれています。 (注 : このChallengeではDTC Default Appは使用しません。)
+* このChallengeに対して[Einstein Analytics Developer Edition (DE)](https://developer.salesforce.com/promotions/orgs/analytics-de)組織を作成します。この環境はEinstein Analyticsが有効になっており、Challengeで使用されるサンプルデータが含まれています (注 : このChallengeではDTC Default Appは使用しません) 。 
 * [未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000003qbmx)をインストールして、サービス加入者(Subscriber)オブジェクトを実装します。この未管理パッケージはカスタムオブジェクトのタブを作成しないため、[手順](https://help.salesforce.com/articleView?id=creating_custom_object_tabs.htm&type=5&language=ja)に従って、組織にタブを作成しておくことを推奨します。もし管理・未管理パッケージ、またはAppExchangeアプリケーションをインストールする際に問題が発生した場合は、この[記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)の手順に従ってください。
 * Challengeを完了するためには、Beattie Subs.csv、Beattie OEM Survey.csv、Beattie Dashboard.json のファイルをアップロードする必要があります。
 * [data-insights-specialist.zip](https://developer.salesforce.com/files/data-insight-specialist-data.zip)をダウンロードして解凍してください。
@@ -239,7 +239,7 @@ Beattie Mediaはこれらの顧客に対して、ストリーミングサービ�
 
  **クエリを作成するときには、以下の情報を考慮してください**
  
-* Beattie OEM パートナのファイルのすべての顧客は、Beattie の顧客のファイル内の最低1つのレコードと紐づきます。<sup>[4](#footnote4)</sup>  
+* Beattie OEM パートナのファイルのすべての顧客は、Beattie の顧客のファイル内の最低1つのレコードと紐づきます<sup>[4](#footnote4)</sup>。  
 * Beattie MediaのアカウントマネージャはOEMパートナーに割り当てられ、その関係を管理しています。  
 * Account Manager項目とRegion項目を使用してデータセットをグループ化します。  
 * CSATとTenureの結果を整数に丸めます。  

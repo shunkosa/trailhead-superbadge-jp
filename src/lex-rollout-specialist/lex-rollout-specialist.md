@@ -150,7 +150,7 @@ Lussoのセールスマネージャは、各取引先の商談のパイプライ
 
 次に、要求されたコンポーネントを含む**Sales Operations**というダッシュボードを作成します。
 
-- フェーズごとに商談の確度を表示する**Opp Probability by Stage**という横棒グラフ、
+- フェーズごとに商談の確度を表示する**Opp Probability by Stage**という横棒グラフ。
 - すべての商談から得られる収益の合計を表示する**Sum of Opportunity Ammount**というゲージコンポーネント。
 - 新規または既存のビジネスによって生み出された収益の合計を表示する**New and Existing Business**というドーナツグラフ。
 
