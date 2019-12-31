@@ -252,7 +252,7 @@ Hadiqaは、地元の大学で勉強しているDanielleに、彼女が通う大
 
 Hadiqaは、この方法が気に入っています。なぜなら、それは、代理機関の地域と作物の種子との間の気温範囲を計測することよりも簡単だからです。
 
-|Temperature Class (気温クラス)|Temperature Range (気温の範囲; 華氏)|
+|Temperature Class (気温クラス)|Temperature Range (気温の範囲 華氏)|
 |-|-|
 |Tropical|85Fより大きい|
 |Continental|51Fから85F|
