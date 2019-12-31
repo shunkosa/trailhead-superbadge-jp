@@ -176,7 +176,7 @@ Tonyaは、DanielleとPhilipがフラットなファイルであるAgency Data.t
 1. Analytics Studioのタブから、**データセット** をクリックします。
 2. **Seed Bank Agencies** データセットをクリックします。
 3. 横棒 (Bars)の下にある **+** ボタンをクリックして、**Account Name** (取引先名)を選択します。
-4. グラフのヘッダーにある **行 計数** (Count of Rows) をクリックして、一覧の値を降順に並べます。
+4. グラフのヘッダーにある **[行 計数:]** (Count of Rows) をクリックして、一覧の値を降順に並べます。
 5. 先頭の5件をクリックしてハイライトします。
 6. レンズの右上にある **フォーカス** (Focus) ボタンをクリックします。
 7. **保存** ボタンをクリックし、タイトルに **Top 5 Agencies** を追加し、アプリケーションにMosaicを選択します。
@@ -223,7 +223,7 @@ Hadiqaはまた、種子の間隔を記録するSpacing項目についても教�
 
 1. Analytics Studioのタブから、**データセット** をクリックします。
 2. **Seed Bank** データセットをクリックします。
-3. 棒の長さ (Bar Length)の下にある、**行 計数** (Count of Rows)をクリックして、**合計 | Acreage** (Sum | Acreage)の順に選択します。
+3. 棒の長さ (Bar Length)の下にある、**[行 計数:]** (Count of Rows)をクリックして、**合計 | Acreage** (Sum | Acreage)の順に選択します。
 4. 横棒 (Bars)の下にある **+** ボタンをクリックして、**Seed**を選択します。
 5. グラフのヘッダーにある **Acreage 合計** (Sum of Acreage) をクリックして、一覧の値を降順に並べます。
 6. 先頭の5件をクリックしてハイライトします。
@@ -293,7 +293,7 @@ Seed Bank Agencies およびSeed Bank データセットを作成するための
 1. Analytics Studioのタブから、**データセット** をクリックします。
 2. **Seed Bank Agencies** データセットをクリックします。
 3. 横棒 (Bars)の下にある **+** ボタンをクリックして、**Climate.TempClass**を選択します。
-4. グラフのヘッダーにある **行 計数** (Count of Rows) をクリックして、一覧の値を降順に並べます。
+4. グラフのヘッダーにある **[行 計数:]** (Count of Rows) をクリックして、一覧の値を降順に並べます。
 5. グラフの一番先頭の棒をクリックしてハイライトします。
 6. レンズの右上にある **フォーカス** (Focus) ボタンをクリックします。
 7. **保存** ボタンをクリックし、タイトルに **Agency Temp Class** を追加し、アプリケーションにMosaicを選択します。
@@ -325,7 +325,7 @@ Seed Bank Agencies およびSeed Bank データセットを作成するための
 1. Analytics Studioのタブから、**データセット** をクリックします。
 2. **Seed Bank** データセットをクリックします。
 3. 横棒 (Bars)の下にある **+** ボタンをクリックして、**Climate.TempClass**を選択します。
-4. グラフのヘッダーにある **行 計数** (Count of Rows) をクリックして、一覧の値を降順に並べます。
+4. グラフのヘッダーにある **[行 計数:]** (Count of Rows) をクリックして、一覧の値を降順に並べます。
 5. グラフの一番先頭の棒をクリックしてハイライトします。
 6. レンズの右上にある **フォーカス** (Focus) ボタンをクリックします。
 7. **保存** ボタンをクリックし、タイトルに **Seed Bank Temp Class** を追加し、アプリケーションにMosaicを選択します。
@@ -363,7 +363,7 @@ TonyaとHadiqaが分析で行うクエリの種類は次のとおりです。
 
 1. Analytics Studioのタブから、**データセット** をクリックします。
 2. **Order History** データセットをクリックします。
-3. 棒の長さ (Bar Length)の下にある、**行 計数** (Count of Rows)をクリックして、**合計 | Quantity Ordered** (Sum | Quantity Ordered)の順に選択します。
+3. 棒の長さ (Bar Length)の下にある、**[行 計数:]** (Count of Rows)をクリックして、**合計 | Quantity Ordered** (Sum | Quantity Ordered)の順に選択します。
 4. 横棒 (Bars)の下にある **+** ボタンをクリックして、**Seed_ID**を選択します。
 5. グラフのヘッダーにある **Quantity Ordered 合計** (Sum of Quantity Ordered) をクリックして、一覧の値を降順に並べます。
 6. 先頭の5件をクリックしてハイライトします。

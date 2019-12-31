@@ -318,7 +318,7 @@ Lightning Experienceのロールアウトの最初のフェーズに備えて、
 9. Lusso Scarpeの営業担当者は、関連する取引先を表示するときに特定の項目情報を確認したいと考えています。どのLightning Experience機能を使用すべきでしょうか？
     - A. Account Hierarchy (取引先階層)
     - B. Partners (パートナ)
-    - C. Account Site (取引先 部門の項目)
+    - C. Account Site ([取引先 部門] 項目)
     - D. Contact Roles (取引先責任者の役割)
 
 ### Challenge 6: セールスアプリケーションのナビゲーションを改善し、Chatterグループを作成する

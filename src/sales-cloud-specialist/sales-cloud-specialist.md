@@ -20,7 +20,7 @@
 - Lightning レポート
 
 ## 特別な Developer Edition 組織にサインアップする
-このスーパーバッジを完了するには、Sales Cloud とサンプルデータを含む特別な Developer Edition 組織が必要です。無料の Developer Edition を入手してTrailhead に接続すると、このスーパーバッジのChallenge を完了することができます。この Developer Editionは、このスーパーバッジの Challenge に対応するように設計されており、他のバッジでは機能しない可能性があることに注意してください。Trailhead Playground または 推奨される特別な Developer Edition 組織を使用していることを常に確認してください。
+このスーパーバッジを完了するには、Sales Cloud とサンプルデータを含む特別な Developer Edition 組織が必要です。無料の Developer Edition を入手して Trailhead に接続すると、このスーパーバッジの Challenge を完了することができます。この Developer Editionは、このスーパーバッジの Challenge に対応するように設計されており、他のバッジでは機能しない可能性があることに注意してください。Trailhead Playground または、推奨される特別な Developer Edition 組織を使用していることを常に確認してください。
 
 1. [Sales Cloud を備える無料の Developer Edition 組織](https://developer.salesforce.com/promotions/orgs/sellingspecialist)にサインアップします。
 2. フォームに入力します。Email の欄には、有効な電子メールアドレスを入力します。Username の欄には、メールアドレス形式の一意のユーザ名を入力しますが、有効な電子メールアカウントと一致している必要はありません。(例: yourname@test.com) 
@@ -377,7 +377,7 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
 この表はCSVファイルで[ダウンロード](https://developer.salesforce.com/files/002_CurrentlyPendingDeals.csv)することができます。
 
 ### 様々な人々: 名刺
-SouthernSolar の セールスアシスタントは、名刺の束で、以下の様々な人々のリストを提供してきました。 Ursa Major Solar の既存の Salesforce 組織にデータを適切に入力してください。 Solar Resale Solutions の Harry Hawker はディストリビュータであることに注意してください。このレコードが Distributor/Wholesale Team によって所有されるようにしてください。
+SouthernSolar のセールスアシスタントは、名刺の束で、以下の様々な人々のリストを提供してきました。Ursa Major Solar の既存の Salesforce 組織にデータを適切に入力してください。 Solar Resale Solutions の Harry Hawker はディストリビュータであることに注意してください。このレコードが Distributor/Wholesale Team によって所有されるようにしてください。
 
 <table>
 <tr>
