@@ -31,9 +31,9 @@
 * 要件を読み進める際にメモを取ってください(映像記憶がない限り)。紙とペン(または電子的なものでも)を用意しましょう。
 * このスーパーのために新しいTrailhead Playgroundを作成してください。既存の組織を使用するとChallengeを検証する際に問題が発生する場合があります。
 * この[未管理スーパーバッジパッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000001O5si)をインストールしてください。このパッケージにはChallengeを完了するためのスキーマとコードが含まれています。もし管理・未管理パッケージ、またはAppExchangeアプリケーションをインストールする際に問題が発生した場合は、[Trailhead Playgroundの管理](https://trailhead.salesforce.com/ja/content/learn/modules/trailhead_playground_management)モジュールの手順に従ってください。
-* [商品オブジェクトとスケジュールオブジェクト](https://developer.salesforce.com/docs/atlas.ja-jp.object_reference.meta/object_reference/sforce_api_erd_products.htm)のドキュメントを参照してください。   
+* [商品オブジェクトとスケジュールオブジェクト](https://developer.salesforce.com/docs/atlas.ja-jp.object_reference.meta/object_reference/sforce_api_erd_products.htm)のドキュメントを参照してください。
+<!-- textlint-disable jtf-style/1.1.3.箇条書き -->   
 * 商品オブジェクト (Product2) の商品ファミリ (Product Family) 項目を次の値だけが表示されるように設定してください。
-<!-- textlint-disable jtf-style/1.1.3.箇条書き -->
   * Entree
   * Side
   * Dessert
