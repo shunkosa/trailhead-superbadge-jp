@@ -41,3 +41,4 @@
 * Ryoya Kodama
 * Kyoko Tachibana
 * Atsushi Kamimura
+* Yohei Ichikawa
