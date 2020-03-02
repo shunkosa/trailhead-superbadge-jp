@@ -313,7 +313,7 @@ Mariaは、ユーザが Volunteer Shiftレコードから直接シフトにサ�
 このレポートタイプ、**Users with Volunteer Shift Worker Records**は、ユーザと、少なくとも 1つのそれに関連する Volunteer Shift Workerに対するレポートの作成を可能にします。
 
 #### ボランティアの仕事とボランティア活動が関連する取引先
-このレポートタイプ、**Accounts with Volunteer Activities with Volunteer Jobs**は、取引先と、少なくとも 1つそれに関連する Volunteer Activity(ボランティア活動)と、少なくとも 1つそれに関連する Volunteer Job(ボランティアの仕事)を含みます。
+このレポートタイプ、**Accounts with Vol Activities with Vol Jobs**は、取引先と、少なくとも 1つそれに関連する Volunteer Activity(ボランティア活動)と、少なくとも 1つそれに関連する Volunteer Job(ボランティアの仕事)を含みます。
 
 #### 私のトップボランティア組織
 振り返ってどれだけ遠くまで来たかを見るとき、山に登ることは仕事のようではなく、何かを 1つ達成したかのように感じます。 同様に、**My Top Volunteer Organizations**レポートでは、ユーザごとに、自分がどの組織にボランティアとして参加しているか、ボランティアに参加した時間、合計のボランティア時間が表示されます。カスタムレポートタイプとユーザのデータを使用して、各組織の累積時間を表示し、他の列を表示しない、Volunteer Organization(ボランティア組織)でグループ化されたサマリーレポートを作成します。ボランティア時間の長い順に並べ替えます。詳細は必要ありません。レポートには、ボランティアが確認された(Confirmed)または参加した(Completed)シフトのみを含め、それを表示しているユーザがボランティアであるレコードだけを表示するようにします。

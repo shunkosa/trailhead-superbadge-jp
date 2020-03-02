@@ -45,3 +45,4 @@ https://shunkosa.github.io/trailhead-superbadge-jp
 * Ryoya Kodama
 * Kyoko Tachibana
 * Atsushi Kamimura
+* Yohei Ichikawa
