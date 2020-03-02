@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [トップページ](README.md)
 * [Advanced Apex Specialist](src/advanced-apex-specialist/advanced-apex-specialist.md)
 * [Apex Specialist](https://developer.salesforce.com/jpblogs/2018/05/apex_specialist_superbadge/)
 * [App Customization Specialist](src/app-customization-specialist/app-customization-specialist.md)
