@@ -1,0 +1,29 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: true
+
+      - name: "Install Gitbook CLI"
+        run: |
+          npm install gitbook-cli  -g
+          gitbook -v
+          gitbook install
+
+      - name: Build
+        run: gitbook build . docs
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./docs
