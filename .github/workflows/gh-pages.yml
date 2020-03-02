@@ -15,12 +15,12 @@ jobs:
 
       - name: "Install Gitbook CLI"
         run: |
-          npm install gitbook-cli  -g
-          gitbook -v
-          gitbook install
+          npm install
+          npm run gitbook -v
+          npm run gitbook install
 
       - name: Build
-        run: gitbook build . docs
+        run: npm run gitbook build . docs
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
