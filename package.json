@@ -5,7 +5,8 @@
   "description": "Japanese localization of Salesforce Trailhead Superbadge",
   "main": "index.js",
   "dependencies": {
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-hide-published-with": "^1.0.3"
   },
   "devDependencies": {
     "textlint": "^11.5.0",
