@@ -1,4 +1,5 @@
 # Trailhead Superbadge 日本語訳
+![textlint](https://github.com/shunkosa/trailhead-superbadge-jp/workflows/textlint/badge.svg) ![GitHub Pages](https://github.com/shunkosa/trailhead-superbadge-jp/workflows/github%20pages/badge.svg)
 
 **お知らせ** : **より読みやすくなった [Web サイト版](https://shunkosa.github.io/trailhead-superbadge-jp) をご利用ください**🎉 
 
