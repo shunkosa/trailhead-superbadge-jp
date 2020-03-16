@@ -198,7 +198,7 @@ SolarBotが屋上で騒音を発したけれども、誰もそれを聞くこと
 
 2. Usra Majorのセールス担当、太陽光の先駆的ユーザであるの 2つの著名な取引先をよく強調しています。Heinrich Technical Instrumentsまたは Big State Recyclingの情報のみをダッシュボードで表示する方法を作成します。ビューを改善するこのソリューションには**Marquee Accounts**と名前をつけ、すべてのコンポーネントが設定した条件に従っていることを確認してください。
 
-3. 分析の可視性を高める最も大胆な方法は、が毎日データとやり取りするアプリの前面と中央にそれを配置することです。**SolarBot Impact Dashboard**を SolarBot App Pageに配置します。SolarBot App Pageは、SolarBotアプリケーションにアクセスする誰もが最初にアクセスします。Mariaはあなたのためにこの Lightningページを作成しています。
+3. 分析の可視性を高める最も大胆な方法は、ユーザが毎日データとやり取りするアプリの中心にそれを配置することです。**SolarBot Impact Dashboard**を SolarBot App Pageに配置します。SolarBot App Pageは、SolarBotアプリケーションにアクセスする誰もが最初にアクセスします。Mariaはあなたのためにこの Lightningページを作成しています。
 
 4. 最良のデータは新鮮なデータです。R&Dチームと週に 1回のミーティングがあり、そこでは温度に応じた発電量に関する最新情報を提供しています。毎週火曜日午前 9時にメールで Temperature to kWh Researchのレポートを受け取って、会議前に最新のデータを入手しましょう。(Tips：このスーパーバッジを終えたら、これをオフにして残りの人生でレポートを受け取らないようにしましょう。)
 
