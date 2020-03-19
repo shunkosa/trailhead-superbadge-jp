@@ -23,7 +23,7 @@
 ## 事前準備とメモ
 * 要件を読み進める際にメモを取ってください(映像記憶がない限り)。紙とペン(または電子的なものでも)を用意しましょう。
 * このスーパーバッジ用に、新しい Trailhead Playgroundを作成してください。既存の組織を利用すると、課題について検証する際に問題を引き起こす可能性があります。Trailhead Playgroundでは既に私のドメインが有効化されていることに注意してください。私のドメインの設定は変更しないでください。
-* [この未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0Y0000025Nb3)をインストールしてください。パッケージには、課題を完了するためのスキーマが含まれています。管理パッケージ、未管理パッケージ、アプリケーションを AppExchangeからインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
+* [この未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0Y0000025Nb3)をインストールしてください。(パッケージ ID: 04t0Y0000025Nb3) パッケージには、課題を完了するためのスキーマが含まれています。管理パッケージ、未管理パッケージ、アプリケーションを AppExchangeからインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
 * Trailhead PlaygroundはLightning Experienceで開きますが、事前準備の設定作業のため、Salesforce Classicに切り替える必要があります。課題で指定された機能を設定・テストするため、Lightning ExperienceとSalesforce Classicを行ったり来たりする必要があるでしょう。
 * このスーパーバッジの課題のために、Trailhead Playgroundを準備してください。
   1. Salesforce Classicの設定から、取引先のタブを、先ほどインストールしたスーパーバッジのパッケージに含まれている、Accounts Tab Visualforceページで上書きします。
