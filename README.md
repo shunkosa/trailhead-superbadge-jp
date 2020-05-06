@@ -47,3 +47,4 @@
 * Kyoko Tachibana
 * Atsushi Kamimura
 * Yohei Ichikawa
+* Tomoko Nakayama
