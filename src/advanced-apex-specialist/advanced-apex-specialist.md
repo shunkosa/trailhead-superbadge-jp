@@ -66,7 +66,7 @@ New Millennium Delivery はそのデータを以下の Salesforce 標準オブ�
 * **Orders** (注文) - 配達される食事の注文  
 * **Order Items** (注文商品) - 顧客の注文に含まれる商品 
 
-もし商品に関連する標準オブジェクトのデータモデルに馴染みがない場合は、[このドキュメント]((https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_erd_products.htm).)を参照してください。
+もし商品に関連する標準オブジェクトのデータモデルに馴染みがない場合は、[このドキュメント](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_erd_products.htm)を参照してください。
 
 New Millennium Delivery の新しいビジネスロジックには、カスタム項目、リレーション、カスタムオブジェクトを新しく必要としないことに注意してください。
 
