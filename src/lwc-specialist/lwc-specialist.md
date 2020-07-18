@@ -5,16 +5,16 @@
 ---
 ## このスーパーバッジを取得するためにすること
 1. 機能的な Lightning Web コンポーネントで Salesforce Lightning Design System (SLDS) を使用します。
-2. Visualforce ページを Lightning Web コンポーネント を使用したソリューションに変換します。
+2. Visualforce ページを Lightning Web コンポーネントを使用したソリューションに変換します。
 3. Lightning アプリケーションビルダー、Lightning Experience、Salesforce アプリケーション、および Lightning アプリケーションで、Lightning Web コンポーネントを表示します。
 4. 管理者がカスタムコンポーネントを設定できるようにします。
 5. カスタムオブジェクトからデータを読み取るための Apex コントローラメソッドを作成し呼び出します。
 6. コンポーネントイベントとパブリックメソッドを使用して、密に結合されたコンポーネント間の通信を可能にします。
 7. 疎結合コンポーネント間の通信を可能にします。
-8. Lightning データサービス を使用して、カスタムオブジェクトのデータを読み書きします。
+8. Lightning データサービスを使用して、カスタムオブジェクトのデータを読み書きします。
 9. Lightning Web コンポーネントで外部 JavaScript をカスタマイズして使用します。
 10. JavaScript コードのトラブルシューティングを行います。
-11. Lightning Web コンポーネント をテストする方法を説明します。
+11. Lightning Web コンポーネントをテストする方法を説明します。
 12. モジュールをインポート、エクスポート、継承します。
 
 ## このスーパーバッジでテストする概念
@@ -58,7 +58,7 @@ Tatiana Loyal は HowWeRoll の Salesforce 開発者です。彼女は Lightning
 
 最初からやり直すのではなく、Tatiana が書いたコードから始めます。優れたプログラマーは優れたコードを書き、偉大なプログラマーは優れたコードを再利用します。
 
-最初にカスタム検索エンジンを開発し、HowWeRoll の セールスアソシエイトがボート種別 (釣り船、プレジャーボート、パーティーボート等) に基づいて動的にボートをフィルタリングし、顧客のリクエストとボートの在庫を一致させることができるようにします。
+最初にカスタム検索エンジンを開発し、HowWeRoll のセールスアソシエイトがボート種別 (釣り船、プレジャーボート、パーティーボート等) に基づいて動的にボートをフィルタリングし、顧客のリクエストとボートの在庫を一致させることができるようにします。
 
 次に、現在のユーザの場所に基づいて 10 艇までのボートを表示する地図を作成します。
 
@@ -109,6 +109,7 @@ HowWeRoll の主要なステークホルダとのミーティングに費やし�
 ## ボートのメッセージサービスチャネルを構築する
 Document Object Model (DOM) をまたがる通信を行うためには、Lightning Message Service チャネルを作成します。Salesforce の開発者であれば、Lightning Web コンポーネントが [Lightning Message Service](https://developer.salesforce.com/blogs/2019/10/lightning-message-service-developer-preview.html) チャネルを使用して、Lightning Message Service API にアクセスできることはご存知でしょう。メッセージチャネルには、以下の設定を使用してください。
 
+<!-- textlint-disable jtf-style/1.1.3.箇条書き -->
 * Description (説明) : `This is a sample Lightning Message Channel for the Lightning Web Components Superbadge.`
 * メッセージチャネルを公開 (isExposed) してください。
 * `<lightningMessageFields>` に `recordId` 項目 (ボートのレコード ID)を設定してください。
@@ -156,7 +157,7 @@ import BOATMC from '@salesforce/...';
 
 フォームがボートをロード中にスピナーを表示します。属性 `isLoading` は、以下の 2 つのメソッドで使用します。`handleLoading()` と `handleDoneLoading()` です。
 
-コンポーネント `boatSearch` には、新しいボートを作成するためのボタンも必要です。シンプルなデザインを維持するためにByanca は `actions` という slot の中で `<lightning-button>` を使うように要求しました。これに `New Boat` というラベルを付け、`createNewBoat()` という名前の関数を呼び出して `NavigationMixin` を継承して標準フォームを開き、ユーザが新しいボートレコードを作成できるようにします。
+コンポーネント `boatSearch` には、新しいボートを作成するためのボタンも必要です。シンプルなデザインを維持するために Byanca は `actions` という slot の中で `<lightning-button>` を使うように要求しました。これに `New Boat` というラベルを付け、`createNewBoat()` という名前の関数を呼び出して `NavigationMixin` を継承して標準フォームを開き、ユーザが新しいボートレコードを作成できるようにします。
 
 #### マークアップ (boatSearch.html)
 ```html
@@ -311,7 +312,7 @@ Lightning Web コンポーネント `boatTile` に必要なコードを追加し
 
 この状態は、コンポーネント全体で選択されたボートに依存しなければなりません。そのため、正しい詳細情報を送信するために必要なロジックを `selectBoat()` に追加し、`boat.Id` を `boatId` に代入し、それを `boatselect` というカスタムイベントに追加して、`boatSearchResults` コンポーネントがメッセージサービスを使用してイベントを伝播できるようにしてください。メッセージを公開 (publish) するために `boatSearchResults` コンポーネント内で `messageContext` を wire していることを確認してください。
 
-このため、JavaScriptファイルは、タイルに表示されるボートに関する情報 (`boat`) と現在選択されているボートID (`selectedBoatId`) を受け取るために、2つの異なる属性を必要とします。これらの属性には正しいデコレータを使用するようにしてください。
+このため、JavaScript ファイルは、タイルに表示されるボートに関する情報 (`boat`) と現在選択されているボート ID (`selectedBoatId`) を受け取るために、2つの異なる属性を必要とします。これらの属性には正しいデコレータを使用するようにしてください。
 
 ボート画像は、クラスが `tile` に等しい `<div>` の背景として設定され、関数 `backgroundStyle()` で取得しなければなりません。この関数の戻り値は `background-image:url()` 関数を含む文字列で、`Boat__c` オブジェクト上の項目 `Picture__c` からボートの画像を表示します。
 
@@ -319,7 +320,7 @@ Lightning Web コンポーネント `boatTile` に必要なコードを追加し
 
 * **boat name (ボートの名前)** は `slds-truncate` と `slds-text-heading_medium` クラスを使用した `<h1>` タグ内に表示します。
 * **boat's owner's name (ボートの所有者名)** は `slds-truncate` と `slds-text-heading_small` クラスを使用した `<h2>` タグ内に表示します。
-* **boat price (ボートの価格)** lightning-formatted-number を使用して、小数点は最大2桁まで、`slds-text-body_small` クラスを使用した `<div>` タグ内に表示します。
+* **boat price (ボートの価格)** lightning-formatted-number を使用して、小数点は最大 2 桁まで、`slds-text-body_small` クラスを使用した `<div>` タグ内に表示します。
 * **boat length (ボートの長さ)** は `slds-text-body_small` クラスを使用した `<div>` タグ内に表示します。
 * **boat type (ボートの種類)** は、`slds-text-body_small` クラスを使用した `<div>` タグ内に表示します。
 
@@ -720,7 +721,7 @@ Renata が提供したデザインに基づいて、ユーザがボートレコ�
 * Price (価格)
 * Description (説明)
 
-表示密度が compact の `<lightning-record-view-form>` と各情報に対応する `<lightning-output-field>` を追加します。項目の情報を取得して表示するために、現在選択されているボートの `Id` と オブジェクトに `Boat__c` を使用します。
+表示密度が compact の `<lightning-record-view-form>` と各情報に対応する `<lightning-output-field>` を追加します。項目の情報を取得して表示するために、現在選択されているボートの `Id` と、オブジェクトに `Boat__c` を使用します。
 
 次に、ボートレビューのためにさらに 2 つのタブを作成します。ラベルにカスタム表示ラベル `Reviews` を使用した `<lightning-tab>` の中に、現在選択されているボート `Id` を渡してコンポーネント `boatReviews` をインスタンス化します。このタブの `value` プロパティに `reviews` を使用すると、レビューが作成された後にこのタブに戻る際に参照できるようになります。
 
@@ -824,7 +825,7 @@ Tatiana は入力項目を表示するためのコンポーネントのレイア
 |-|-|-|-|
 |Boat|`Boat__c`|なし (この項目はユーザには表示されません) |Yes (現在選択されているボートの Id)|
 |Name|`Name`|`Review Subject`|Yes|
-|Rating|`Rating__c`|`Rating`|Yes (デフォルト値は0)|
+|Rating|`Rating__c`|`Rating`|Yes (デフォルト値は 0)|
 |Comment|`Comment__c`|`Comment`|Yes|
 
 **Submit** (送信)ボタンは `label` に `Submit` を設定し、 `utility:save` のアイコンを使用します。フォーム項目の上部または下部に自動的にエラーメッセージを表示します。
@@ -1162,7 +1163,7 @@ boatSearchForm と boatSearchResults の両方を呼び出すコンテナコン�
 ユーザが新しいボートレコードを作成できるように、ローディングスピナーとボタンを追加することを忘れないでください。
 
 ### Challenge 10: サードパーティのスクリプトを統合してコンポーネント fiveStarRating を構築する
-fiveStarRating コンポーネントを作成して、ボートに1つ星から5つ星までの評価を与えることができるようにします。コンポーネントには、フォームと出力でそれぞれ使用する、編集モードと読み取り専用モードを実装します。
+fiveStarRating コンポーネントを作成して、ボートに 1 つ星から 5 つ星までの評価を与えることができるようにします。コンポーネントには、フォームと出力でそれぞれ使用する、編集モードと読み取り専用モードを実装します。
 
 ### Challenge 11: コンポーネント boatReviews でボートにレビューを追加する
 ユーザがボートのレビューを作成できるように、コンポーネント boatAddReviewForm を作成します。Add Review タブ内に addBoatReview コンポーネントをインスタンス化し、フォームを表示します。ユーザが Submit (送信) をクリックしたら、レコードを保存し、アクティブなタブを Reviews に切り替えます。
