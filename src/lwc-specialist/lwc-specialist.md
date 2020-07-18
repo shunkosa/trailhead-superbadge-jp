@@ -1072,7 +1072,7 @@ Renata は、各 `boatTile` を格納するために使用される `<lightning-
 
 新しい `similarBoats` コンポーネントをレコードページに 3 回、各プロパティフィルタごとに 1 回ずつ配置することを忘れないでください。
 
-### Markup (similarBoats.html)
+#### マークアップ (similarBoats.html)
 ```html
 <template>
   <lightning-card title={getTitle} icon-name="custom:custom54">
@@ -1092,7 +1092,7 @@ Renata は、各 `boatTile` を格納するために使用される `<lightning-
 </template>
 ```
 
-### Controller (similarBoats.js)
+#### JavaScript ファイル (similarBoats.js)
 ```javascript
 // imports
 // import getSimilarBoats
@@ -1178,7 +1178,7 @@ boatReviews と boatAddReviewForm コンポーネントを boatDetailTabs に追
 既存の Visualforce ページと Visualforce コンポーネントを分析して、Lightning Web コンポーネントに備わる多くのクールな新機能を活用したソリューションを作成し、似たボートを表示します。
 
 ### Challenge 16: ボートの位置と Similar Boats コンポーネントがあるボートの Lightning レコードページを構築する
-similarBoatsコンポーネントを開発したので、システム管理者がボートの Lightning レコードページを設定し、Type、Length、Price で似たのボートを表示できるように修正してください。
+similarBoats コンポーネントを開発したので、システム管理者がボートの Lightning レコードページを設定し、Type、Length、Price で似たのボートを表示できるように修正してください。
 
 ### Challenge 17: Lightning Web Components のクイズ
 
@@ -1187,3 +1187,13 @@ similarBoatsコンポーネントを開発したので、システム管理者�
 ## 訳注
 * <a name="footnote1">[1]</a> : [エアストリーム (Wikipedia日本語版)](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%A2%E3%82%B9%E3%83%88%E3%83%AA%E3%83%BC%E3%83%A0)
 * <a name="footnote2">[2]</a> : 原文は Object ですが Salesforce のオブジェクト (sObject) と混同してしまうので明示的にメタデータと記載しています。
+
+## 補足とヒント
+### Challenge 3
+* ロック解除済みパッケージに含まれるメタデータは [Org Browser](https://developer.salesforce.com/tools/vscode/ja/user-guide/org-browser) でも取得できるようになりました。コマンドからは `sfdx force:source:retrieve -m ApexClass:BoatDataService` として個別に取得するか、 `sfdx force:source:retrieve -n LWCPackage` とするとパッケージに含まれるメタデータをすべて取得することができます。
+
+### Challenge 12
+data- 属性は、JavaScript 上、`dataset` オブジェクトを通して取得することができます。ここでは onclick イベントで起動する関数から参照するので、`event.target.dataset.recordId` となります。HTML 上でケバブケースで表現する属性は `dataset` オブジェクト上はキャメルケースになっていることに注意してください。
+
+### Challenge 13
+要件の表現がやや分かりづらいですが、[コンポーネントリファレンスの Documentation](https://developer.salesforce.com/docs/component-library/bundle/lightning-card/documentation) のように `<div slot="actions">` 〜 `</div>` で `<lightning-button>` を囲むのではなく、`<lightning-button>` そのものに `slot` 属性を適用してください。
