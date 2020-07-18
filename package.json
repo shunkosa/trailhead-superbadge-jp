@@ -6,7 +6,9 @@
   "main": "index.js",
   "dependencies": {
     "gitbook-cli": "^2.3.2",
-    "gitbook-plugin-hide-published-with": "^1.0.3"
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-hide-published-with": "^1.0.3",
+    "gitbook-plugin-intopic-toc": "^1.1.1"
   },
   "devDependencies": {
     "textlint": "^11.5.0",
