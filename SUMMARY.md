@@ -19,3 +19,4 @@
 * [Billing Specialist](src/billing-specialist/billing-specialist.md)
 * [Selling with Sales Cloud Specialist](src/sales-cloud-specialist/sales-cloud-specialist.md)
 * [Advanced Billing Specialist](src/advanced-billing-specialist/advanced-billing-specialist.md)
+* [Lightning Web Components Specialist](src/lwc-specialist/lwc-specialist.md)
