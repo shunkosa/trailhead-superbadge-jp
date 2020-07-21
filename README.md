@@ -1,5 +1,5 @@
 # Trailhead Superbadge 日本語訳
-![textlint](https://github.com/shunkosa/trailhead-superbadge-jp/workflows/textlint/badge.svg) ![GitHub Pages](https://github.com/shunkosa/trailhead-superbadge-jp/workflows/github%20pages/badge.svg)
+![textlint](https://github.com/shunkosa/trailhead-superbadge-jp/workflows/textlint/badge.svg)
 
 * Salesforce の Trailhead Superbadge (スーパーバッジ) の日本語訳です。公式の日本語訳(☁️)へのリンクも含みます。
 * 原文のアップデートは予告なく行われるため、翻訳が追いつかない場合がありますがご容赦ください。
