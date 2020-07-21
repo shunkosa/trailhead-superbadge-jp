@@ -183,8 +183,8 @@ Samが提起した問題を調査した後、あなたはこれらの問題の�
 * ページ上の **Family** 選択リストで使用するための `GetFamilyOptions` という名前の新しいメソッドを作成します。`GetFamilyOptions` メソッドは選択リストの選択肢を生成するために SELECT_ONE と PRODUCT_FAMILY の両方の定数を使用する必要があります。
 
 商品レコードと価格表エントリレコードを互いに関連付ける必要があるため、次の属性を持つ `ProductWrapper` という名前のインナークラスを実装して使用します。
-* **Product2**型の**productRecord**
-* **PriceBookEntry**型の**pricebookEntryRecord**
+* **Product2** 型の **productRecord**
+* **PriceBookEntry** 型の **pricebookEntryRecord**
 
 現在の商品オブジェクトのリストへの参照を `ProductWrapper` のリストへの参照に置き換えるようにしてください。
 
@@ -197,10 +197,10 @@ Samが提起した問題を調査した後、あなたはこれらの問題の�
 
 **参考情報** : 通常、`TestDataFactory`クラスに`@isTest`アノテーションを使用しますが、ビジネスロジックからメソッドを呼び出すことはできず、Challengeの検証時にそれらを呼び出すこともできません。
 
-### OrderTriggerとProduct2Extensionの単体テストを作成する
+### OrderTrigger と Product2Extension の単体テストを作成する
 前任の開発者によって実装された最新の Apex および Visualforce コードは、必要最小限のテストカバー率がないため、リリースできません。あなたは熟練した開発者です、そしてあなたはすべてのコードが十分にテストされなければならないことを知っています。各メソッドがリリースに必要となる最低 75％ のコードカバー率を持ち、新規および既存の単体テストが実際の顧客データを使用しないようにすることを Renee から依頼されました。レガシーの単体テストを確認しした後、既存の `Product2Tests` の Apex クラスを使用して `Product2Extension` をテストでき、そして既存の `OrderTests`の Apex クラスを使用して `OrderTrigger` とそのヘルパークラスをテストできることが分かりました。
 
-#### OrderTriggerのロジックを検証する
+#### OrderTrigger のロジックを検証する
 まず、注文が有効化されたときに **Quantity Ordered** 項目が商品で正しく更新されることを検証するためのテストメソッドで使用できるメソッドを作成します。`TestDataFactory` の Apex クラスに戻り、以下のシグネチャを持つ新しいメソッドを作成してください。
 
 ```java
