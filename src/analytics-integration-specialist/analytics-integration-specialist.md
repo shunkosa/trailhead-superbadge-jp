@@ -46,7 +46,7 @@ Challengeを完了するには、このスーパーバッジに関連してい�
 4. **ウィザードを起動する** をクリックします。
 5. **取引先と取引先責任者** を選択します。
 6. **新規レコードを追加** を選択します。 [取引先責任者の一致条件]および[取引先の一致条件]でそれぞれ、[--なし--]を選択します。
-7. **CSV** をクリックします。**ファイルを選択** を選択して、解凍した Agency Data.txt を選択します。**次へ** をクリックしてください。<sup>[1](#footnote1)</sup>
+7. **CSV** をクリックします。**ファイルを選択** を選択して、解凍した Agency Data.txt を選択します。**次へ** をクリックしてください。<sup>[*1](#footnote1)</sup>
 8. 以下の通り項目マッピングを設定します。
 
 | Salesforceのオブジェクト項目 | Agency Data.txt のタイトル列 |
@@ -216,7 +216,7 @@ Hadiqaはまた、種子の間隔を記録する Spacing項目についても教
 
 |ノード名|説明|
 |-|-|
-|Calculate Acreage|以下の式で新しい項目 Acreage を作成する。<sup>[2](#footnote2)</sup><br>``(Seeds_Pound*Spacing)/6272640``<br>精度 (Precision) を 18に、スケール (Scale) を 6に設定する。
+|Calculate Acreage|以下の式で新しい項目 Acreage を作成する。<sup>[*2](#footnote2)</sup><br>``(Seeds_Pound*Spacing)/6272640``<br>精度 (Precision) を 18に、スケール (Scale) を 6に設定する。
 |Create Seed Bank| Seed Bank データセットを登録する。<br>出力する項目:<br>- Acreage<br>- Seed ID<br>- Seed Type<br>- Seed<br>- Spacing<br>- Seeds_Pound<br>- Quantity_Pounds<br>- Lifecycle<br>- Temperature|
 
 **レンズ**

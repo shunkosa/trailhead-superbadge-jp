@@ -39,7 +39,7 @@ Lusso Scarpeは、卸売事業部門も成功しています。しかし、い�
 
 生産性を向上させる新機能が満載の Salesforce Lightning Experienceは、これらの課題を乗り越えるための Lusso Scarpeの戦略の重要な要素です。
 
-あなたは、Salesforceのすべてのニーズについて Lusso Scarpeにコンサルティングをする幸運なスペシャリストです(そして、非常に人気のある従業員割引を受けられます)。今回の任務は<sup>[1](#footnote1)</sup>、会社の組織を Salesforce Classicから Lightning Experienceに移行することです。
+あなたは、Salesforceのすべてのニーズについて Lusso Scarpeにコンサルティングをする幸運なスペシャリストです(そして、非常に人気のある従業員割引を受けられます)。今回の任務は<sup>[*1](#footnote1)</sup>、会社の組織を Salesforce Classicから Lightning Experienceに移行することです。
 
 会社ができるだけスムーズにロールアウトできるようにするだけでなく、営業担当者とサービス担当者が生産性を向上させる新機能を使用して迅速に対応できるようにします。
 
@@ -196,7 +196,7 @@ Lusso Scarpeの準備状況に対する、新しい Salesforceリリースとあ
 
 ## 課題
 ### Challenge 1: Lussoの組織の準備状況チェック、Optimizer、短期間パイロットプログラムを評価する
-Lightning Experienceをロールアウトするための推奨事項とベストプラクティスに基づいて、Lusso Scarpeの本番組織<sup>[2](#footnote2)</sup>の Lightning Experience準備状況チェックを実行してから、メールで送信されたレポートを分析します。また、Salesforce Optimizerを実行して、Optimizerレポートでフィードバックを確認します。
+Lightning Experienceをロールアウトするための推奨事項とベストプラクティスに基づいて、Lusso Scarpeの本番組織<sup>[*2](#footnote2)</sup>の Lightning Experience準備状況チェックを実行してから、メールで送信されたレポートを分析します。また、Salesforce Optimizerを実行して、Optimizerレポートでフィードバックを確認します。
 
 それから、実態を把握するための短期間パイロットプログラムをキックオフします。あなたは John WisemanとPaloma Espinozaをパイロットプログラムのためのチャンピオンユーザだと識別しました。そして 2人が新しいインターフェースで作業するためにトレーニングを実施しました。両名とも Lightning Experienceにアクセスできるように設定してください。Lusso Scarpeの組織内の既存のプロファイルを変更しないでください。Johnはまだ Salesforce Classicへのアクセスを必要としていますが、PalomaをLightning Experienceでの作業に限定します。Johnの場合は、**LightningExperiencePilotSales**という権限セットを使用してください。Palomaの場合は、**LightningExperiencePilotCommunications**という名前の権限セットを使用してください。
 

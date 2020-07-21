@@ -26,7 +26,7 @@
 * このスーパーバッジ用に、新しい Trailhead Playground を作成してください。この組織をほかの目的で使用すると、課題について検証する際に問題を引き起こす可能性があります。<sup>[1](#footnote1)</sup>
 * 商談オブジェクトの種別 (Type) 選択リストに、**SolarBot**を追加してください。[このヘルプ記事](https://help.salesforce.com/articleView?id=updating_picklists.htm&type=5)が参考になります。
 * SolarBot社の買収に伴う資産を実装するため、[未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1H0000018iyq)をインストールしてください。( パッケージ ID: 04t1H0000018iyq ) 管理パッケージ、未管理パッケージ、アプリケーションを AppExchange からインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
-* 未管理パッケージをインストールした後は SolarBotsアプリケーション内の Data Import タブから、Import ボタンを選択してください<sup>[2](#footnote2)</sup>。
+* 未管理パッケージをインストールした後は SolarBotsアプリケーション内の Data Import タブから、Import ボタンを選択してください<sup>[*2](#footnote2)</sup>。
 <!-- textlint-disable jtf-style/1.1.3.箇条書き -->
 * 以下の 6つの公開グループを作成してください。
   * Executive Team (エグゼクティブチーム)

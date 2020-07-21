@@ -46,7 +46,7 @@
 2. **ウィザードを起動する** をクリックします。
 3. **カスタムオブジェクト** をクリックし、**Subscribers** を選択します。
 4. **新規レコードを追加** を選択します。ドロップダウンメニューの選択肢では、[--なし--] を選択します。
-5. **CSV** をクリックします。**ファイルを選択** を選択して、解凍した Beattie Subs.csv を選択します。**次へ** をクリックしてください。<sup>[2](#footnote2)</sup>
+5. **CSV** をクリックします。**ファイルを選択** を選択して、解凍した Beattie Subs.csv を選択します。**次へ** をクリックしてください。<sup>[*2](#footnote2)</sup>
 6. **次へ** をクリックしてから **インポートの開始** をクリックします。
 7. **OK** をクリックします。
 
@@ -165,7 +165,7 @@ Beattie Mediaはあなたを頼りにしています。さあ始めましょう�
 
 ## ビジネス要件の詳細
 ### 解約率を計算する
-正確に解約率(Churn Rate) を計算することは、Beattie Mediaの株式公開計画には不可欠です。自分のお気に入りの番組(例えば*Keeping Up with the Real Housewives In Paradise* や*The Walking Handmaids*<sup>[3](#footnote3)</sup>) やお気に入りのスポーツイベントがあったときだけに申し込む顧客もいるため、ストリーミングサービスの解約数は高い状態です。
+正確に解約率(Churn Rate) を計算することは、Beattie Mediaの株式公開計画には不可欠です。自分のお気に入りの番組(例えば*Keeping Up with the Real Housewives In Paradise* や*The Walking Handmaids*<sup>[*3](#footnote3)</sup>) やお気に入りのスポーツイベントがあったときだけに申し込む顧客もいるため、ストリーミングサービスの解約数は高い状態です。
 
 収入と利益を守るために、ArnasとOliviaは、四半期ごとの Beattie Mediaの解約率について理解を深めるためのグラフを求めています。
 
@@ -239,7 +239,7 @@ Beattie Mediaはこれらの顧客に対して、ストリーミングサービ�
 
  **クエリを作成するときには、以下の情報を考慮してください**
  
-* Beattie OEM パートナのファイルのすべての顧客は、Beattie の顧客のファイル内の最低 1つのレコードと紐づきます<sup>[4](#footnote4)</sup>。  
+* Beattie OEM パートナのファイルのすべての顧客は、Beattie の顧客のファイル内の最低 1つのレコードと紐づきます<sup>[*4](#footnote4)</sup>。  
 * Beattie Mediaのアカウントマネージャは OEMパートナーに割り当てられ、その関係を管理しています。  
 * Account Manager項目と Region項目を使用してデータセットをグループ化します。  
 * CSATとTenureの結果を整数に丸めます。  
