@@ -1,8 +1,10 @@
 # Trailhead Superbadge 日本語訳
-![textlint](https://github.com/shunkosa/trailhead-superbadge-jp/workflows/textlint/badge.svg) ![last commit](https://img.shields.io/github/last-commit/shunkosa/trailhead-superbadge-jp) ![contributers](https://img.shields.io/badge/contributers-6-orange)
+![textlint](https://github.com/shunkosa/trailhead-superbadge-jp/workflows/textlint/badge.svg) ![contributers](https://img.shields.io/badge/contributers-6-orange)
+
 * Salesforce の Trailhead Superbadge (スーパーバッジ) の日本語訳です。公式の日本語訳(☁️)へのリンクも含みます。
 * 原文のアップデートは予告なく行われるため、翻訳が追いつかない場合がありますがご容赦ください。
-* フィードバックや質問は大歓迎です。[Issue](https://github.com/shunkosa/trailhead-superbadge-jp/issues/new) や Pull Request、[メール](mailto:shun.kosaka.102@gmail.com)等でお知らせください。
+* フィードバックや質問、誤訳やタイプミスなどの報告は大歓迎です。些細なものでも構いません。[Issue](https://github.com/shunkosa/trailhead-superbadge-jp/issues/new) や Pull Request、[メール](mailto:shun.kosaka.102@gmail.com)等でお知らせください。
+
 
 | スーパーバッジ | キーワード |
 |-|-|
