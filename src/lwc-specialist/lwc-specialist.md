@@ -1193,7 +1193,7 @@ similarBoats コンポーネントを開発したので、システム管理者�
 * ロック解除済みパッケージに含まれるメタデータは [Org Browser](https://developer.salesforce.com/tools/vscode/ja/user-guide/org-browser) でも取得できるようになりました。コマンドからは `sfdx force:source:retrieve -m ApexClass:BoatDataService` として個別に取得するか、 `sfdx force:source:retrieve -n LWCPackage` とするとパッケージに含まれるメタデータをすべて取得することができます。
 
 ### Challenge 12
-data- 属性は、JavaScript 上、`dataset` オブジェクトを通して取得することができます。ここでは onclick イベントで起動する関数から参照するので、`event.target.dataset.recordId` となります。HTML 上でケバブケースで表現する属性は `dataset` オブジェクト上はキャメルケースになっていることに注意してください。
+data- 属性は、JavaScript 上、`dataset` オブジェクトを通して取得することができます。ここでは onclick イベントで起動する関数から参照するので、`event.target.dataset.recordId` となります。HTML 上でケバブケースで表現する属性は `dataset` オブジェクト上はキャメルケースになっていることに注意してください。
 
 ### Challenge 13
 要件の表現がやや分かりづらいですが、[コンポーネントリファレンスの Documentation](https://developer.salesforce.com/docs/component-library/bundle/lightning-card/documentation) のように `<div slot="actions">` 〜 `</div>` で `<lightning-button>` を囲むのではなく、`<lightning-button>` そのものに `slot` 属性を適用してください。
