@@ -10,7 +10,7 @@
         <script>
             const currentUrl = document.location.href;
             if (currentUrl.includes('github')) {
-                currentUrl.replace('github','gitbook');
+                document.location.href = currentUrl.replace('github','gitbook');
             }
         </script>
     </head>
