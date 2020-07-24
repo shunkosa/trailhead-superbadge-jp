@@ -1,6 +1,6 @@
 # Einstein Analytics and Discovery Insights Specialist
 [![](https://img.shields.io/badge/-view%20on%20gitbook-blue?logo=markdown)](https://shunkosa.gitbook.io/trailhead-superbadge-jp/analytics-insights-specialist) [![](https://img.shields.io/badge/-view%20on%20github-black?logo=github)](https://github.com/shunkosa/trailhead-superbadge-jp/blob/master/src/analytics-insights-specialist/analytics-insights-specialist.md)
-* Trailhead のスーパーバッジ、[Einstein Analytics and Discovery Insights Specialist](hhttps://trailhead.salesforce.com/content/learn/superbadges/superbadge_analytics_insights_specialist)の日本語訳(**非公式**)です。
+* Trailhead のスーパーバッジ、[Einstein Analytics and Discovery Insights Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_analytics_insights_specialist) の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
 ---
@@ -54,7 +54,7 @@
 #### Beattie Subs.csv と Beattie OEM Survey.csv ファイルをそれぞれアップロードする
 1. Analytics Studio で、Challenge のために、Beattie という名前で空白のアプリケーションを作成します。(注 : 作成ボタンが表示されていない場合は、「Einstein Analytics Plus の管理者権限を自分のユーザ ID に割り当てる」セクションに進んでください。)
 2. **作成** ボタンをクリックし、**データセット** を選択します。
-3. 次のページで**CSV ファイル** をクリックします。
+3. 次のページで **CSV ファイル** をクリックします。
 4. **ファイルを選択するか、ここにファイルをドラッグしてください** をクリックし、解凍した CSV ファイルを選択します。
 5. **次へ** をクリックします。
 5. アプリケーションが Beattie になっていることを確認します。
@@ -66,7 +66,7 @@
 #### Beattie Dashboard.json ファイルをアップロードする
 1. JSON ファイルをテキストエディタで開き、コピーします。
 2. Analytics Studio のホームページで、**作成 | ダッシュボード | 空白のダッシュボードを作成** の順にクリックします。
-3. JSON エディタを開きます。Ctrl+E (MacはCmd+E)キーを押下します。
+3. JSON エディタを開きます。Ctrl+E (Mac は Cmd+E)キーを押下します。
 4. 既存のダッシュボードの JSON を、全選択し削除します。
 5. JSON エディタの 1行目をクリックし、コピーした JSON を貼り付けます。
 6. **完了** ボタンを押下します。
@@ -166,7 +166,7 @@ Beattie Media はあなたを頼りにしています。さあ始めましょう
 
 ## ビジネス要件の詳細
 ### 解約率を計算する
-正確に解約率 (Churn Rate) を計算することは、Beattie Media の株式公開計画には不可欠です。自分のお気に入りの番組(例えば*Keeping Up with the Real Housewives In Paradise* や*The Walking Handmaids*<sup>[*3](#footnote3)</sup>) やお気に入りのスポーツイベントがあったときだけに申し込む顧客もいるため、ストリーミングサービスの解約数は高い状態です。
+正確に解約率 (Churn Rate) を計算することは、Beattie Media の株式公開計画には不可欠です。自分のお気に入りの番組(例えば *Keeping Up with the Real Housewives In Paradise* や *The Walking Handmaids*<sup>[*3](#footnote3)</sup>) やお気に入りのスポーツイベントがあったときだけに申し込む顧客もいるため、ストリーミングサービスの解約数は高い状態です。
 
 収入と利益を守るために、Arnas と Olivia は、四半期ごとの Beattie Media の解約率について理解を深めるためのグラフを求めています。
 
@@ -228,13 +228,13 @@ Arnas と Olivia から、州別の顧客からの収益および、彼らが失
 ### 契約期間と顧客満足度スコアを比較する
 Beattie Media の顧客基盤の大部分は、PC とテレビの製造業者を含む OEMメーカーとの提携によるものです。これらの企業は、自社の機器でストリーミングコンテンツにアクセスするために、自社の機器に Beattie Media のアプリを携帯することに同意しました。
 
-Beattie Media はこれらの顧客に対して、ストリーミングサービスに対する満足度をランク付け(1 = 非常に不満 から 10 = 非常に満足 まで)するように依頼しました。Arnas と Oliviaは、CSAT(顧客満足度) スコアが低かったり、加入期間が短かったりする地域や OEM メーカーを見ることに興味があります。
+Beattie Media はこれらの顧客に対して、ストリーミングサービスに対する満足度をランク付け(1 = 非常に不満 から 10 = 非常に満足 まで)するように依頼しました。Arnas と Oliviaは、CSAT (顧客満足度) スコアが低かったり、加入期間が短かったりする地域や OEM メーカーを見ることに興味があります。
 
 1. ``CHALLENGE 4`` というラベルのダッシュボードセクションを、2つのグラフウィジェットに置き換えます。
 2. 1つ目のグラフで、``Beattie Survey`` という名前のステップを追加します。
 3. Beattie Subs データセットの Tenure (加入期間) 項目を使用して平均の Tenure を計算し、Beattie OEM Survey データセットの CSAT項目を使用して平均 CSAT を計算します。
 4. 2つ目のグラフで、``OEM`` という名前のステップを追加します。
-5. Beattie OEM Survey データセットのデータを OEM 項目別にグループ化し、[行 計数](Count of Rows) の基準(Measure) を追加してツリーマップグラフとして表示します。
+5. Beattie OEM Survey データセットのデータを OEM 項目別にグループ化し、[行 計数] (Count of Rows) の基準 (Measure) を追加してツリーマップグラフとして表示します。
 6. ファセットを使用して、ピラミッドグラフでの選択によりツリーマップグラフが絞り込まれることを確認します。
 7. 平均 CSATスコアが最も低い**最初**の州の Beattie Survey グラフにグラフマーカーを追加します。Challenge を検証する際に作成したソリューションが正しく評価されるように、マーカーはハードコーディングしてください。
 

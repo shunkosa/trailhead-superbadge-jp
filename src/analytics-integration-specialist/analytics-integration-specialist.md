@@ -1,6 +1,6 @@
 # Einstein Analytics Data Preparation Specialist
 [![](https://img.shields.io/badge/-view%20on%20gitbook-blue?logo=markdown)](https://shunkosa.gitbook.io/trailhead-superbadge-jp/analytics-integration-specialist) [![](https://img.shields.io/badge/-view%20on%20github-black?logo=github)](https://github.com/shunkosa/trailhead-superbadge-jp/blob/master/src/analytics-integration-specialist/analytics-integration-specialist.md)
-* Trailhead のスーパーバッジ、[Einstein Analytics Data Preparation Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_analytics_integration_specialist)の日本語訳(**非公式**)です。
+* Trailhead のスーパーバッジ、[Einstein Analytics Data Preparation Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_analytics_integration_specialist) の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
 ---
@@ -41,12 +41,12 @@
 
 Challenge を完了するには、このスーパーバッジに関連しているデータを、取引先オブジェクトに事前に入力する必要があります。Agency Data.txt ファイルを Einstein Analytics DE 組織の取引先オブジェクトにインポートします。取引先オブジェクトへインポートしたら、課題に取り組む準備が整います。
 
-1. [ea-data-preparation-specialist-data.zip](https://developer.salesforce.com/files/ea-data-preparation-specialist-data.zip)をダウンロードしてデスクトップに保存してください。
+1. [ea-data-preparation-specialist-data.zip](https://developer.salesforce.com/files/ea-data-preparation-specialist-data.zip) をダウンロードしてデスクトップに保存してください。
 2. zip ファイルを解凍します。
 3. Salesforce データインポートウィザードを使用します。 設定で、クイック検索ボックスに``データインポートウィザード``と入力し、**データインポートウィザード** を選択します。
 4. **ウィザードを起動する** をクリックします。
 5. **取引先と取引先責任者** を選択します。
-6. **新規レコードを追加** を選択します。 [取引先責任者の一致条件]および[取引先の一致条件]でそれぞれ、[--なし--]を選択します。
+6. **新規レコードを追加** を選択します。 [取引先責任者の一致条件] および [取引先の一致条件] でそれぞれ、[--なし--] を選択します。
 7. **CSV** をクリックします。**ファイルを選択** を選択して、解凍した Agency Data.txt を選択します。**次へ** をクリックしてください。<sup>[*1](#footnote1)</sup>
 8. 以下の通り項目マッピングを設定します。
 
@@ -67,7 +67,7 @@ Challenge を完了するには、このスーパーバッジに関連してい�
 #### Challenge のためのアプリを作成する  
 1. **Analytics Studio** を開きます。  
 2. **作成** | **アプリケーション** | **空白のアプリケーション** | **空白のアプリケーションを作成** をクリックします。(注 : 作成ボタンが表示されていない場合は、「Einstein Analytics Plus の管理者権限を自分のユーザ ID に割り当てる」セクションに進んでください。)
-3. アプリケーションの名前に **Mosaic** と入力して**作成**ボタンをクリックします。 
+3. アプリケーションの名前に **Mosaic** と入力して **作成** ボタンをクリックします。 
 
 #### Einstein Analytics Plus の管理者権限を自分のユーザ ID に割り当てる
 1. 設定で、クイック検索ボックスに``権限セット``と入力し、**権限セット** を選択します。  
@@ -286,7 +286,7 @@ Seed Bank Agencies および Seed Bank データセットを作成するため�
 |-|-|
 |Filter 2015|Global Climates.txt の中で 2015年の気候データを特定する。|
 |Add Temp Class|Global Climates.txt を用いて、新しい TempClass 項目を算出する。TempClass のデフォルト値は Continental とする。|
-|Augment TempClass|TempClass 項目を Seed Bank Agencies データセットに追加する。項目は 1つまたは複数の気温クラスの値を保持している。マッチングのために Country をそれぞれのキーに使用して、リレーションに Climateを設定する。|
+|Augment TempClass|TempClass 項目を Seed Bank Agencies データセットに追加する。項目は 1つまたは複数の気温クラスの値を保持している。マッチングのために Country をそれぞれのキーに使用して、リレーションに Climate を設定する。|
 |Create Seed Bank Agencies|新しい TempClass 項目で Seed Bank Agencies データセットを登録します。<br>- Climate.TempClass<br>- Account Name<br>- Account Number<br>- Account Phone<br>- Shipping City<br>- Shipping Country<br>- Shipping State/Province<br>- Shipping Street<br>- Shipping Postal Code<br>- AgencyDetail.Latitude<br>- AgencyDetail.Longitude<br>- AgencyDetail.Currency<br>- AgencyDetail.Acres<br>- AgencyDetail.SubRegion<br>- AgencyDetail.Region|
 
 **レンズ**
@@ -300,7 +300,7 @@ Seed Bank Agencies および Seed Bank データセットを作成するため�
 5. グラフの一番先頭の棒をクリックしてハイライトします。
 6. レンズの右上にある **フォーカス** (Focus) ボタンをクリックします。
 7. **保存** ボタンをクリックし、タイトルに **Agency Temp Class** を追加し、アプリケーションに Mosaic を選択します。
-8. 完了したら**保存** ボタンをクリックします。**X** をクリックしてタブを閉じます。
+8. 完了したら **保存** ボタンをクリックします。**X** をクリックしてタブを閉じます。
 
 **データフロー名 : Load Seed Bank w/Temperature Classification**
 
@@ -316,7 +316,7 @@ Seed Bank Agencies および Seed Bank データセットを作成するため�
 |-|-|
 |Define Temp Range|Seed Bank の Temperature 項目から気温の下限と上限を特定する。|
 |Add Temp Class|前述の気温クラスのマッピングテーブルを用いて、Temperature Class Mapping ファイルの TempKey 項目と結合するための新しいキー項目を算出する。|
-|Augment Temp Class|Temperature Classes Mapping ファイルの TempClass 項目を Seed Bank データセットに追加します。項目は 1つまたは複数の気温クラスの値を保持している。リレーションに Climate を設定する。|
+|Augment Temp Class|Temperature Classes Mapping ファイルの TempClass 項目を Seed Bank データセットに追加します。項目は 1 つまたは複数の気温クラスの値を保持している。リレーションに Climate を設定する。|
 |CleanUp| このノードで、次の Create Seed Bank ノードの出力項目に含まれない項目を取り除く。|
 |Create Seed Bank|Seed Bank データセットを新しい気温クラスの項目と一緒に登録する。<br>- Climate.TempClass<br>- Acreage<br>- Seed ID<br>- Seed Type<br>- Seed<br>- Spacing<br>- Seeds_Pound<br>- Quantity_Pounds<br>- Lifecycle<br>- Temperature|
 

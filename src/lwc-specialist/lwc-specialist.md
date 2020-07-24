@@ -36,7 +36,7 @@
 - このスーパーバッジのために新しい Trailhead Playground または [Developer 組織](https://developer.salesforce.com/signup) を作成して、Lightning Message Service チャネルをデプロイできるようにします。また、この組織を他のモジュールやタスクに利用すると Challenge の検証のために問題を引き起こす可能性があります。Trailhead Playground では既に私のドメインが有効になっていることに注意してください。私のドメインの設定は編集しないでください。Trailhead Playground にログインできなくなる可能性があります。
 -  **設定 > セキュリティ > セッションの設定** セクションで、**パフォーマンスを向上させるためにブラウザの安全で永続的なキャッシュを有効にする** のチェックをオフにすることで、コンポーネントのキャッシュを無効化してください。これにより、コードをデプロイした直後に変更内容を確認することができ、コンポーネントのキャッシュによる遅延が発生しません。
 -  [このロック解除済みパッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6g000008ar8gAAA)をインストールしてください。( パッケージ ID: 04t6g000008ar8gAAA ) このパッケージには、Challenge を完了するために必要となる全てのスキーマと、Lightning Web コンポーネントと Apex ロジックの最初のコードが含まれます。ロック解除済みパッケージのインストールに問題が発生した場合は[Trailhead Playground の管理](https://trailhead.salesforce.com/ja/content/learn/modules/trailhead_playground_management)の手順に従ってください。
-- Challenge 1 でロック解除済みパッケージのインストールを検証した後、サンプルデータが自動的に組織に追加されます。最初の Challenge を検証後、何らかの理由で組織を変更する場合は、`GenerateData.apxc`の静的メソッド`initData()`を実行してください。
+- Challenge 1 でロック解除済みパッケージのインストールを検証した後、サンプルデータが自動的に組織に追加されます。最初の Challenge を検証後、何らかの理由で組織を変更する場合は、`GenerateData.apxc` の静的メソッド `initData()` を実行してください。
 - デプロイを確実に成功させるため、要件に指定される命名規則に従ってください。
 - 以下の詳細な要件を読みながら、設定された組織のデータスキーマを確認してください。
 - Salesforce DX CLI および Visual Studio Code を含む、Lightning Web コンポーネントの開発ツールを設定してください。

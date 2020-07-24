@@ -161,8 +161,8 @@ Lusso のセールスマネージャは、人々がダッシュボードを見�
 
 最後に、John Wiseman は毎週 Opportunities Pipeline レポートを確認したいと考えています。毎週月曜日の午前 8時に更新されたレポートの結果をメールで受け取るように設定します。
 
-### フェーズ2の要件
-あなたはセールスチームのための Lightning Experience の展開に成功しました。今度はロールアウトのフェーズ 2に取り組む時が来ました。
+### フェーズ 2 の要件
+あなたはセールスチームのための Lightning Experience の展開に成功しました。今度はロールアウトのフェーズ 2 に取り組む時が来ました。
 
 これが、Lusso のサポートチームに Lightning Experience を展開するフェーズです。加えて、セールスチームの成功指標をどれだけ達成できているかをモニタリングしており、営業担当者やマネージャから定期的なフィードバックを集めています。その結果、問題点を取り除き生産性を向上させるのに役立つ一連のアップデートを特定しました。
 #### Lusso のサポートチームの Lightning Experience をカスタマイズする
@@ -193,7 +193,7 @@ Lusso Scarpe の準備状況に対する、新しい Salesforce リリースと�
 2. 準備状況レポートで特定されたカスタムリンクの代替を提供してください。幸いにも、Lusso の Salesforce 開発者は、あなたの生活を楽にするために Apex クラス、テストクラス、Lightning コンポーネントをすでに作成しています。
 
 ## 終了！
-おめでとうございます。ロールアウトのフェーズ 2が正常に完了して、Lusso Scarpe の全員が Lightning Experience で稼働し始めています。
+おめでとうございます。ロールアウトのフェーズ 2 が正常に完了して、Lusso Scarpe の全員が Lightning Experience で稼働し始めています。
 
 ## Challenge
 ### Challenge 1: Lusso の組織の準備状況チェック、Optimizer、短期間パイロットプログラムを評価する
@@ -202,7 +202,7 @@ Lightning Experience をロールアウトするための推奨事項とベス�
 それから、実態を把握するための短期間パイロットプログラムをキックオフします。あなたは John Wiseman と Paloma Espinoza をパイロットプログラムのためのチャンピオンユーザだと識別しました。そして 2人が新しいインターフェースで作業するためにトレーニングを実施しました。両名とも Lightning Experience にアクセスできるように設定してください。Lusso Scarpe の組織内の既存のプロファイルを変更しないでください。John はまだ Salesforce Classic へのアクセスを必要としていますが、Paloma を Lightning Experience での作業に限定します。John の場合は、**LightningExperiencePilotSales** という権限セットを使用してください。Paloma の場合は、**LightningExperiencePilotCommunications** という名前の権限セットを使用してください。
 
 ### Challenge 2: Lightning Experienceの価値提案 (クイズ)
-1. Lightning Experience はなぜ Salesforce Classic よりも生産的なユーザインタフェースなのですか？
+1. Lightning Experience はなぜ Salesforce Classic よりも生産的なユーザインタフェースなのですか？
     - A. Lightning Experience uses custom JavaScript buttons and links to help users focus on relevant actions. (ユーザが関連するアクションに集中できるようにするため、カスタム Javascript ボタン・リンクを用いるため)
     - B. Lightning Experience uses the Force.com App Menu to switch between applications. (アプリケーション間を切り替えるために、Force.comアプリケーションメニューを用いるため)
     - C. Lightning Experience has buttons and links that launch browser windows. (他のブラウザウィンドウを起動するボタンやリンクがあるため)
@@ -332,7 +332,7 @@ Paloma が定期的に使用するアイテムを含む **Communications** と�
 ### Challenge 7: Lightning Experience でセールスマネージャのためのレポートを設定する
 要件に記載されているように、**Oppotunities Pipeline** という名前のレポートを作成し、取引先レコードに**Opps by Stage** のグラフを追加します。レポートは 1つだけ作成し、数式項目は利用しないでください。
 
-以下のコンポーネントを含む **Sales Operations** という名前のダッシュボードを作成してください。**Opp Probability by Stage**、**Sum of Opportunity Amount**、**New and Existing Business** の 3つです。ユーザがダッシュボードをフェーズでフィルタできるよう設定してください。フィルタに **Stage value** という名前をつけます。そして、人々がダッシュボードを参照するとき、正しいデータが見えるようにしてください。Challenge をチェックする直前にダッシュボードをリフレッシュしてください。
+以下のコンポーネントを含む **Sales Operations** という名前のダッシュボードを作成してください。**Opp Probability by Stage**、**Sum of Opportunity Amount**、**New and Existing Business** の 3 つです。ユーザがダッシュボードをフェーズでフィルタできるよう設定してください。フィルタに **Stage value** という名前をつけます。そして、人々がダッシュボードを参照するとき、正しいデータが見えるようにしてください。Challenge をチェックする直前にダッシュボードをリフレッシュしてください。
 
 最後に、**John Wiseman** がリフレッシュされた Opportunities Pipeline レポートを毎週受け取れるように設定してください。彼は毎週月曜の午前 8時にレポートをメールで受け取りたいと思っています。
 
@@ -343,7 +343,7 @@ Lightning Knowledge を有効にしてください。次に、Lusso Scarpe の�
 
 **Question** と **Answer** というカスタム項目を作成してください。**Answer** 項目では、サポート担当者は入力したテキストをフォーマットし、画像を含られるようにする必要があります。
 
-Lussoのサポートチームが使用する 3つの記事の種類を、**FAQ**、**Product**、**Community** という名前で設定します。各種類ごとに、レコードタイプ、Question、Answer項目を含める必要があります。各種類に項目を追加するときには以下の名前を使用します。FAQの記事は **faqpagelayout**、Product の記事は **productpagelayout**、Communityの記事は **communitypagelayout** です。
+Lussoのサポートチームが使用する 3 つの記事の種類を、**FAQ**、**Product**、**Community** という名前で設定します。各種類ごとに、レコードタイプ、Question、Answer項目を含める必要があります。各種類に項目を追加するときには以下の名前を使用します。FAQの記事は **faqpagelayout**、Product の記事は **productpagelayout**、Communityの記事は **communitypagelayout** です。
 
 Lightning Knowledge という名前の Lightning アプリケーションを作成し、要件に記載されているようにカスタマイズします。
 

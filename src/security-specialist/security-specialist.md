@@ -1,6 +1,6 @@
 # Security Specialist
 [![](https://img.shields.io/badge/-view%20on%20gitbook-blue?logo=markdown)](https://shunkosa.gitbook.io/trailhead-superbadge-jp/security-specialist) [![](https://img.shields.io/badge/-view%20on%20github-black?logo=github)](https://github.com/shunkosa/trailhead-superbadge-jp/blob/master/src/security-specialist/security-specialist.md)
-* Trailhead のスーパーバッジ、[Security Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_security)の日本語訳(**非公式**)です。
+* Trailhead のスーパーバッジ、[Security Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_security) の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
 ---
@@ -71,7 +71,7 @@ GenZ の営業組織構造には 3つのコアチームがあります。Field S
 注: フィールドセールスユーザにすべての取引先の参照・編集権限を付与するとき、プロファイルの [すべてのデータの参照] や [すべてのデータの編集] 権限は利用しないでください。
 
 #### インサイドセールスユーザに対する要件
-インサイドセールスユーザは Salesforceにメインオフィスからのみアクセスでき(IPアドレスは 0.0.0.0)、営業時間の間のみアクセスできます(8:00 AM～6:00 PM、太平洋標準時(PST)、月～金)。モバイルアクセスはできません。レポート・ダッシュボードを作成でき、レポート・ダッシュボードフォルダを作成・管理できます。自身または他の人のためのリストビューを作成・管理できます。インサイドセールスユーザは、取引先と商談を作成でき、すべての取引先と商談を参照・編集できます(削除はありません)。
+インサイドセールスユーザは Salesforce にメインオフィスからのみアクセスでき(IPアドレスは 0.0.0.0)、営業時間の間のみアクセスできます(8:00 AM～6:00 PM、太平洋標準時 (PST)、月～金)。モバイルアクセスはできません。レポート・ダッシュボードを作成でき、レポート・ダッシュボードフォルダを作成・管理できます。自身または他の人のためのリストビューを作成・管理できます。インサイドセールスユーザは、取引先と商談を作成でき、すべての取引先と商談を参照・編集できます(削除はありません)。
 
 注: インサイドセールスユーザにすべての取引先と商談の参照・編集権限を付与するとき、プロファイルの [すべてのデータの参照] や [すべてのデータの編集] 権限は利用しないでください。
 
