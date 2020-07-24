@@ -1,5 +1,6 @@
 # Selling with Sales Cloud Specialist
-* Trailheadのスーパーバッジ、[Selling with Sales Cloud Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_selling_sales_cloud_specialist)の日本語訳(**非公式**)です。
+[![](https://img.shields.io/badge/-view%20on%20gitbook-blue?logo=markdown)](https://shunkosa.gitbook.io/trailhead-superbadge-jp/sales-cloud-specialist) [![](https://img.shields.io/badge/-view%20on%20github-black?logo=github)](https://github.com/shunkosa/trailhead-superbadge-jp/blob/master/src/sales-cloud-specialist/sales-cloud-specialist.md)
+* Trailheadのスーパーバッジ、[Selling with Sales Cloud Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_selling_sales_cloud_specialist) の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
 ---
@@ -20,7 +21,7 @@
 - Lightning レポート
 
 ## 特別な Developer Edition 組織にサインアップする
-このスーパーバッジを完了するには、Sales Cloud とサンプルデータを含む特別な Developer Edition 組織が必要です。無料の Developer Edition を入手して Trailhead に接続すると、このスーパーバッジの Challenge を完了することができます。この Developer Editionは、このスーパーバッジの Challenge に対応するように設計されており、他のバッジでは機能しない可能性があることに注意してください。Trailhead Playground または、推奨される特別な Developer Edition 組織を使用していることを常に確認してください。
+このスーパーバッジを完了するには、Sales Cloud とサンプルデータを含む特別な Developer Edition 組織が必要です。無料の Developer Edition を入手して Trailhead に接続すると、このスーパーバッジの Challenge を完了することができます。この Developer Edition は、このスーパーバッジの Challenge に対応するように設計されており、他のバッジでは機能しない可能性があることに注意してください。Trailhead Playground または、推奨される特別な Developer Edition 組織を使用していることを常に確認してください。
 
 1. [Sales Cloud を備える無料の Developer Edition 組織](https://developer.salesforce.com/promotions/orgs/sellingspecialist)にサインアップします。
 2. フォームに入力します。Email の欄には、有効な電子メールアドレスを入力します。Username の欄には、メールアドレス形式の一意のユーザ名を入力しますが、有効な電子メールアカウントと一致している必要はありません。(例: yourname@test.com) 
@@ -43,7 +44,7 @@ Challenge を始める前に、[Selling With Sales Cloud Specialist: Trailhead C
 ## ユースケース
 国際的なソーラーパネルメーカおよびサービスプロバイダである Ursa Major Solar は最近、地域企業の SouthernSolar を買収しましたが、彼らが保有するデータは無秩序でした。Ursa Major の北米地域のセールス担当者として、SouthernSolar のデータを確認し、Ursa Major の Salesforce インスタンスにそのデータを入力し、新しいチームメンバーが新しいシステムの定着化に必要となるツール、知識、情報を得られるようにする責務があなたにはあります。注: 将来、Ursa Major の Salesforce システム管理者は自動化プロセスを追加する可能性がありますが、現時点ではこれらの手順はすべて手動です。
 
-最初のステップは、2社のデータを Ursa Major の Salesforce 組織に統合し、クリーンアップして重複がなく、更新されたすべてのレコードが Ursa Major の確立されたセールスプロセス、レコード階層、および内部プロセスに収まるようにすることです。
+最初のステップは、2 社のデータを Ursa Major の Salesforce 組織に統合し、クリーンアップして重複がなく、更新されたすべてのレコードが Ursa Major の確立されたセールスプロセス、レコード階層、および内部プロセスに収まるようにすることです。
 
 買収される前、SouthernSolar のセールスチームは、そのレコードを 1箇所に管理するシステムを持っておらず、個々の取引、取引先、取引先責任者などを、それぞれが快適だと思うやり方で管理していました。それは多くの場合、Excel シート、メールフォルダー、およびオンラインカレンダーでしたが、手書きのメモ、戦略的に貼られた付箋、および Rolodex に依存するものもありました。
 
@@ -89,17 +90,17 @@ Ursa Major Solar は、やる気のあるセールスマシンのようです。
 8. Closed Lost
 
 ### セールスプロセスにおける追加のルールと要件
-Ursa Major Solar のセールス担当者は、販売プロセスの早い段階で現地訪問評価を実施します。その現地訪問をスケジュールすると、各セールス担当者は、On-Site Evaluations キューへのメンションを含む Chatter投稿を商談レコードに作成し、現地訪問評価の日付と時刻を入力し、関連する行動を、`On-site evaluation for (取引先名) `という件名で、`Demo`  公開カレンダーに追加します。
+Ursa Major Solar のセールス担当者は、販売プロセスの早い段階で現地訪問評価を実施します。その現地訪問をスケジュールすると、各セールス担当者は、On-Site Evaluations キューへのメンションを含む Chatter 投稿を商談レコードに作成し、現地訪問評価の日付と時刻を入力し、関連する行動を、`On-site evaluation for (取引先名) `という件名で、`Demo`  公開カレンダーに追加します。
 
 重要な注意点: このスーパーバッジを完了するには、取引先レコードにも Chatter の投稿を作成する必要がありますが、要件が少し異なります。
 
-商談が Quote Generation フェーズに達すると、セールス担当者は商談から新しい見積を作成し、見積 PDFを生成して商談レコードに見積を保存します。
+商談が Quote Generation フェーズに達すると、セールス担当者は商談から新しい見積を作成し、見積 PDF を生成して商談レコードに見積を保存します。
 
-商談が Negotiation フェーズに入ると、セールス担当者は商談に自動的に作成される「Send Term Sheet for Signature」という件名の ToDoに完了マークをつける必要があります。
+商談が Negotiation フェーズに入ると、セールス担当者は商談に自動的に作成される「Send Term Sheet for Signature」という件名の ToDo に完了マークをつける必要があります。
 
 商談が Signing フェーズに入ると、セールス担当者は商談、取引先、および取引先責任者に紐付いた新しい契約を作成します。その後、担当者はその契約から承認申請を送信する必要があります。
 
-商談が成立すると、セールス担当者は `Notification of Signed Contract `のメールテンプレートを使用して請求部門にメールを送信します。(請求部門のメールアドレスは Challenge では確認されないため、宛先には任意のメールアドレスを使用してください)
+商談が成立すると、セールス担当者は `Notification of Signed Contract` のメールテンプレートを使用して請求部門にメールを送信します。(請求部門のメールアドレスは Challenge では確認されないため、宛先には任意のメールアドレスを使用してください)
 
 ### 現在の顧客と連絡先担当者
 SouthernSolar のセールスマネージャーが、SouthernSolar の顧客である現在の企業とその主な連絡先担当者が印刷された紙を手渡してきました。Ursa Major Solar の既存の Salesforce 組織にデータを適切に入力してください。顧客のメモに Maintanance (メンテナンス) が必要であると記載されている場合は、表示された日程でメンテナンスをフォローアップする ToDo をスケジュールします。メモにその他の役立つ情報が記載されている場合は、その取引先レコードの Chatter 投稿でメモの内容を共有してください。
@@ -208,12 +209,12 @@ SouthernSolar のセールスマネージャーが、SouthernSolar の顧客で�
 </tbody>
 </table>
 
-この表は CSVファイルで[ダウンロード](https://developer.salesforce.com/files/001_CurrentCustomers_PointsOfContact.csv)することができます。
+この表は CSV ファイルで[ダウンロード](https://developer.salesforce.com/files/001_CurrentCustomers_PointsOfContact.csv)することができます。
 
 ### 現在の進行中の契約と将来の潜在的な契約
 SouthernSolar のセールスチームは、既存の取引と将来のセールスの可能性を楽しみにしています。以下は、SouthernSolar のセールス担当者が Ursa Major に報告したリストです。Ursa Major Solar の既存の Salesforce 組織で、リードの評価基準に従いデータを適切に入力してください。
 
-見積に関する注意: 実際、税金と送料は場所によって異なります。ここでは複雑さが入り込むことを避けるために、税額には合計価格の 10％を使用し、送料と手数料に 250ドルの均一料金を使用してください。
+見積に関する注意: 実際、税金と送料は場所によって異なります。ここでは複雑さが入り込むことを避けるために、税額には合計価格の 10％ を使用し、送料と手数料に 250 ドルの均一料金を使用してください。
 
 注: 表内のすべての列を表示するには、左右にスクロールします。
 
@@ -374,7 +375,7 @@ SouthernSolar のセールスチームは、既存の取引と将来のセール
     </tbody>
 </table>
 
-この表は CSVファイルで[ダウンロード](https://developer.salesforce.com/files/002_CurrentlyPendingDeals.csv)することができます。
+この表は CSV ファイルで[ダウンロード](https://developer.salesforce.com/files/002_CurrentlyPendingDeals.csv)することができます。
 
 ### 様々な人々: 名刺
 SouthernSolar のセールスアシスタントは、名刺の束で、以下の様々な人々のリストを提供してきました。Ursa Major Solar の既存の Salesforce 組織にデータを適切に入力してください。 Solar Resale Solutions の Harry Hawker はディストリビュータであることに注意してください。このレコードが Distributor/Wholesale Team によって所有されるようにしてください。
@@ -477,11 +478,11 @@ Splashdown Pools の Jen Floats からアカウントサービスについて
 <!-- textlint-disable jtf-style/4.3.3.かぎかっこ「」 -->
 「こんにちは、フロントのジョンです。昼食時にあなたへの伝言をいくつか受け取ったので、準備ができたら教えてください。いいですか？では始めます。
 
-まず、経営陣から。Ursa Major と SouthernSolar がデータを結合したため、経営陣はセールスパイプラインに対して少し『バランス』を取っています。Daily Bakery 社の取引があなたに割り当てられ、フェーズは『Closed Won』になります。Long John's Socks 社の取引があなたにに割り当てられ、確度は 75％になります。そして、Enerplus 社の取引があなたに割り当てられました。この取引のフェーズは、『Quote Approved』に更新する必要があります。ディストリビュータとの取引であるため、確度は 80％に更新する必要があります。私達はディストリビュータとの取引用に個別の価格表ができたことを本当に気に入っています！
+まず、経営陣から。Ursa Major と SouthernSolar がデータを結合したため、経営陣はセールスパイプラインに対して少し『バランス』を取っています。Daily Bakery 社の取引があなたに割り当てられ、フェーズは『Closed Won』になります。Long John's Socks 社の取引があなたにに割り当てられ、確度は 75％ になります。そして、Enerplus 社の取引があなたに割り当てられました。この取引のフェーズは、『Quote Approved』に更新する必要があります。ディストリビュータとの取引であるため、確度は 80％ に更新する必要があります。私達はディストリビュータとの取引用に個別の価格表ができたことを本当に気に入っています！
 
-そしてさらに素晴らしいニュースがあります。Fiberwear 社の Polly は、今から 6 か月の間に、取引を進めたいと考えています。(彼女は 100,000ドルと言いました！)
+そしてさらに素晴らしいニュースがあります。Fiberwear 社の Polly は、今から 6 か月の間に、取引を進めたいと考えています。(彼女は 100,000 ドルと言いました！)
 
-Mannon Mirthという名前の人から、会社の名前は先よく理解できませんでしたが、同じ商談を使って、Installation Industrial - High という名前の商品に対して、別の見積を作成してほしいと依頼がありました。この新しい見積では、数量は 1ではなく 10になります。彼は、この見積に対して 5％の割引を約束してもらえたと言っているので、これに従い調整を行ってください。あっ、そういえば、彼は見積を比較したいと思っているので、元の見積はそのままにしておいてくださいね。
+Mannon Mirth という名前の人から、会社の名前は先よく理解できませんでしたが、同じ商談を使って、Installation Industrial - High という名前の商品に対して、別の見積を作成してほしいと依頼がありました。この新しい見積では、数量は 1 ではなく 10 になります。彼は、この見積に対して 5％ の割引を約束してもらえたと言っているので、これに従い調整を行ってください。あっ、そういえば、彼は見積を比較したいと思っているので、元の見積はそのままにしておいてくださいね。
 
 さて、最後に。Sally Helios から電話がありましたが、その情報に一致していると思われる取引先責任者が 2つ見つかったため、どこにログを記録すればよいかわかりませんでした。それらのレコードを適切に重複排除し、今日電話をかけ、コールバックを望んでいたメモを追加してください。(そして、折り返し電話してください。)
 
@@ -491,9 +492,9 @@ Mannon Mirthという名前の人から、会社の名前は先よく理解で�
 ### レポート
 すべてのデータをクリーンアップして入力しておくのは良いことです。CEO の Solange Pereira は、東部のセールスチームと西部のセールスチームの両方の概要を示すレポートを求めています。要件に従って次のレポートを作成してください。`12 Month Pipeline` など、表示されている通りにレポートに名前を設定してください。
 
-* **12 Month Pipeline**  - 現在の四半期と次の 3四半期の、各チームのパイプライン予測に関するレポートであり、四半期ごとに期待収益が合計されて表示されます。
-* **Pipeline Type**   - 現在の四半期と次の 3四半期の、既存顧客のパイプライン取引と新規顧客の取引を比較するレポートです。
-* **Pipeline Products** - 現在の四半期および次の 3四半期の、商品名ごとにグループ化された商品価格を合計して表示するレポートです。
+* **12 Month Pipeline**  - 現在の四半期と次の 3 四半期の、各チームのパイプライン予測に関するレポートであり、四半期ごとに期待収益が合計されて表示されます。
+* **Pipeline Type**   - 現在の四半期と次の 3 四半期の、既存顧客のパイプライン取引と新規顧客の取引を比較するレポートです。
+* **Pipeline Products** - 現在の四半期および次の 3 四半期の、商品名ごとにグループ化された商品価格を合計して表示するレポートです。
 * **Sales Rep Scoreboard** - 今年会計年度に成立した取引の金額で、セールス担当者をランク付けするレポートです。
 * **Closed Won by Month** - 月ごとに、成立した (Closed Won フェーズ) の商談の数を表示するレポートです。
 * **Activities To Close** - 会計四半期ごとにグループ化された、成立した商談に紐づく行動の数を示すレポートです。

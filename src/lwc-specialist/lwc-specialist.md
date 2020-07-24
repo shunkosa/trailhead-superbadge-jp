@@ -1,5 +1,6 @@
 # Lightning Web Components Specialist
-- Trailhead の Superbadge、[Lightning Web Components Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_lwc_specialist) の日本語訳(**非公式**)です。
+[![](https://img.shields.io/badge/-view%20on%20gitbook-blue?logo=markdown)](https://shunkosa.gitbook.io/trailhead-superbadge-jp/lwc-specialist) [![](https://img.shields.io/badge/-view%20on%20github-black?logo=github)](https://github.com/shunkosa/trailhead-superbadge-jp/blob/master/src/lwc-specialist/lwc-specialist.md)
+- Trailhead のスーパーバッジ、[Lightning Web Components Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_lwc_specialist) の日本語訳(**非公式**)です。
 - 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。 
 
 ---
@@ -35,7 +36,7 @@
 - このスーパーバッジのために新しい Trailhead Playground または [Developer 組織](https://developer.salesforce.com/signup) を作成して、Lightning Message Service チャネルをデプロイできるようにします。また、この組織を他のモジュールやタスクに利用すると Challenge の検証のために問題を引き起こす可能性があります。Trailhead Playground では既に私のドメインが有効になっていることに注意してください。私のドメインの設定は編集しないでください。Trailhead Playground にログインできなくなる可能性があります。
 -  **設定 > セキュリティ > セッションの設定** セクションで、**パフォーマンスを向上させるためにブラウザの安全で永続的なキャッシュを有効にする** のチェックをオフにすることで、コンポーネントのキャッシュを無効化してください。これにより、コードをデプロイした直後に変更内容を確認することができ、コンポーネントのキャッシュによる遅延が発生しません。
 -  [このロック解除済みパッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6g000008ar8gAAA)をインストールしてください。( パッケージ ID: 04t6g000008ar8gAAA ) このパッケージには、Challenge を完了するために必要となる全てのスキーマと、Lightning Web コンポーネントと Apex ロジックの最初のコードが含まれます。ロック解除済みパッケージのインストールに問題が発生した場合は[Trailhead Playground の管理](https://trailhead.salesforce.com/ja/content/learn/modules/trailhead_playground_management)の手順に従ってください。
-- Challenge 1 でロック解除済みパッケージのインストールを検証した後、サンプルデータが自動的に組織に追加されます。最初の Challenge を検証後、何らかの理由で組織を変更する場合は、`GenerateData.apxc`の静的メソッド`initData()`を実行してください。
+- Challenge 1 でロック解除済みパッケージのインストールを検証した後、サンプルデータが自動的に組織に追加されます。最初の Challenge を検証後、何らかの理由で組織を変更する場合は、`GenerateData.apxc` の静的メソッド `initData()` を実行してください。
 - デプロイを確実に成功させるため、要件に指定される命名規則に従ってください。
 - 以下の詳細な要件を読みながら、設定された組織のデータスキーマを確認してください。
 - Salesforce DX CLI および Visual Studio Code を含む、Lightning Web コンポーネントの開発ツールを設定してください。
@@ -114,7 +115,7 @@ Document Object Model (DOM) をまたがる通信を行うためには、Lightni
 * メッセージチャネルを公開 (isExposed) してください。
 * `<lightningMessageFields>` に `recordId` 項目 (ボートのレコード ID)を設定してください。
 * MasterLabel (表示ラベル) : `BoatMessageChannel`
-
+<!-- textlint-enable jtf-style/1.1.3.箇条書き -->
 [メッセージチャネルを組織にデプロイ](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/message_channel_create.htm)して、Lightning Web コンポーネント内で参照できるようにします。それを新しい `@salesforce/messageChannel` スコープモジュールからインポートし、必要に応じて関数やコンテキスト、スコープを含めてください。
 
 ```xml
@@ -804,9 +805,11 @@ HowWeRoll は全てのボートを所有しているわけではありません�
 
 **Submit** ボタンをクリックすると、次のアクションが実行されます。
 
+<!-- textlint-disable jtf-style/1.1.3.箇条書き -->
 * `BoatReview__c` に新しいレコードを作成します。(Lightning データサービスを使用)
 * 送信が成功したことを示すトーストメッセージを表示します。
 * タブを **Reviews** に切り替え、選択したボートのレビューのリストを表示 (`boatReviews` コンポーネント) します。
+<!-- textlint-enable jtf-style/1.1.3.箇条書き -->
 
 ![](add_review.jpg)
 
@@ -1185,8 +1188,10 @@ similarBoats コンポーネントを開発したので、システム管理者�
 ### Challenge 18: ユニットテストのクイズ
 
 ## 訳注
+<!-- textlint-disable jtf-style/1.1.3.箇条書き -->
 * <a name="footnote1">[1]</a> : [エアストリーム (Wikipedia 日本語版)](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%A2%E3%82%B9%E3%83%88%E3%83%AA%E3%83%BC%E3%83%A0)
 * <a name="footnote2">[2]</a> : 原文は Object ですが Salesforce のオブジェクト (sObject) と混同してしまうので明示的にメタデータと記載しています。
+<!-- textlint-enable jtf-style/1.1.3.箇条書き -->
 
 ## 補足とヒント
 ### Challenge 3
