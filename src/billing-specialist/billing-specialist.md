@@ -1,5 +1,6 @@
 # Billing Specialist
-* Trailheadのスーパーバッジ、[Billing Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_billing_specialist) の日本語訳(**非公式**)です。
+[![](https://img.shields.io/badge/-view%20on%20gitbook-blue?logo=markdown)](https://shunkosa.gitbook.io/trailhead-superbadge-jp/billing-specialist) [![](https://img.shields.io/badge/-view%20on%20github-black?logo=github)](https://github.com/shunkosa/trailhead-superbadge-jp/blob/master/src/billing-specialist/billing-specialist.md)
+* Trailhead のスーパーバッジ、[Billing Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_billing_specialist) の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
 ## このスーパーバッジを取得するためにすること

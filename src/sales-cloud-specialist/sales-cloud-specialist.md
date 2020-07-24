@@ -1,4 +1,5 @@
 # Selling with Sales Cloud Specialist
+[![](https://img.shields.io/badge/-view%20on%20gitbook-blue?logo=markdown)](https://shunkosa.gitbook.io/trailhead-superbadge-jp/sales-cloud-specialist) [![](https://img.shields.io/badge/-view%20on%20github-black?logo=github)](https://github.com/shunkosa/trailhead-superbadge-jp/blob/master/src/sales-cloud-specialist/sales-cloud-specialist.md)
 * Trailheadのスーパーバッジ、[Selling with Sales Cloud Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_selling_sales_cloud_specialist)の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
@@ -43,7 +44,7 @@ Challenge を始める前に、[Selling With Sales Cloud Specialist: Trailhead C
 ## ユースケース
 国際的なソーラーパネルメーカおよびサービスプロバイダである Ursa Major Solar は最近、地域企業の SouthernSolar を買収しましたが、彼らが保有するデータは無秩序でした。Ursa Major の北米地域のセールス担当者として、SouthernSolar のデータを確認し、Ursa Major の Salesforce インスタンスにそのデータを入力し、新しいチームメンバーが新しいシステムの定着化に必要となるツール、知識、情報を得られるようにする責務があなたにはあります。注: 将来、Ursa Major の Salesforce システム管理者は自動化プロセスを追加する可能性がありますが、現時点ではこれらの手順はすべて手動です。
 
-最初のステップは、2社のデータを Ursa Major の Salesforce 組織に統合し、クリーンアップして重複がなく、更新されたすべてのレコードが Ursa Major の確立されたセールスプロセス、レコード階層、および内部プロセスに収まるようにすることです。
+最初のステップは、2 社のデータを Ursa Major の Salesforce 組織に統合し、クリーンアップして重複がなく、更新されたすべてのレコードが Ursa Major の確立されたセールスプロセス、レコード階層、および内部プロセスに収まるようにすることです。
 
 買収される前、SouthernSolar のセールスチームは、そのレコードを 1箇所に管理するシステムを持っておらず、個々の取引、取引先、取引先責任者などを、それぞれが快適だと思うやり方で管理していました。それは多くの場合、Excel シート、メールフォルダー、およびオンラインカレンダーでしたが、手書きのメモ、戦略的に貼られた付箋、および Rolodex に依存するものもありました。
 
@@ -208,12 +209,12 @@ SouthernSolar のセールスマネージャーが、SouthernSolar の顧客で�
 </tbody>
 </table>
 
-この表は CSVファイルで[ダウンロード](https://developer.salesforce.com/files/001_CurrentCustomers_PointsOfContact.csv)することができます。
+この表は CSV ファイルで[ダウンロード](https://developer.salesforce.com/files/001_CurrentCustomers_PointsOfContact.csv)することができます。
 
 ### 現在の進行中の契約と将来の潜在的な契約
 SouthernSolar のセールスチームは、既存の取引と将来のセールスの可能性を楽しみにしています。以下は、SouthernSolar のセールス担当者が Ursa Major に報告したリストです。Ursa Major Solar の既存の Salesforce 組織で、リードの評価基準に従いデータを適切に入力してください。
 
-見積に関する注意: 実際、税金と送料は場所によって異なります。ここでは複雑さが入り込むことを避けるために、税額には合計価格の 10％を使用し、送料と手数料に 250ドルの均一料金を使用してください。
+見積に関する注意: 実際、税金と送料は場所によって異なります。ここでは複雑さが入り込むことを避けるために、税額には合計価格の 10 ％を使用し、送料と手数料に 250 ドルの均一料金を使用してください。
 
 注: 表内のすべての列を表示するには、左右にスクロールします。
 
@@ -477,11 +478,11 @@ Splashdown Pools の Jen Floats からアカウントサービスについて
 <!-- textlint-disable jtf-style/4.3.3.かぎかっこ「」 -->
 「こんにちは、フロントのジョンです。昼食時にあなたへの伝言をいくつか受け取ったので、準備ができたら教えてください。いいですか？では始めます。
 
-まず、経営陣から。Ursa Major と SouthernSolar がデータを結合したため、経営陣はセールスパイプラインに対して少し『バランス』を取っています。Daily Bakery 社の取引があなたに割り当てられ、フェーズは『Closed Won』になります。Long John's Socks 社の取引があなたにに割り当てられ、確度は 75％になります。そして、Enerplus 社の取引があなたに割り当てられました。この取引のフェーズは、『Quote Approved』に更新する必要があります。ディストリビュータとの取引であるため、確度は 80％に更新する必要があります。私達はディストリビュータとの取引用に個別の価格表ができたことを本当に気に入っています！
+まず、経営陣から。Ursa Major と SouthernSolar がデータを結合したため、経営陣はセールスパイプラインに対して少し『バランス』を取っています。Daily Bakery 社の取引があなたに割り当てられ、フェーズは『Closed Won』になります。Long John's Socks 社の取引があなたにに割り当てられ、確度は 75 ％になります。そして、Enerplus 社の取引があなたに割り当てられました。この取引のフェーズは、『Quote Approved』に更新する必要があります。ディストリビュータとの取引であるため、確度は 80 ％に更新する必要があります。私達はディストリビュータとの取引用に個別の価格表ができたことを本当に気に入っています！
 
-そしてさらに素晴らしいニュースがあります。Fiberwear 社の Polly は、今から 6 か月の間に、取引を進めたいと考えています。(彼女は 100,000ドルと言いました！)
+そしてさらに素晴らしいニュースがあります。Fiberwear 社の Polly は、今から 6 か月の間に、取引を進めたいと考えています。(彼女は 100,000 ドルと言いました！)
 
-Mannon Mirthという名前の人から、会社の名前は先よく理解できませんでしたが、同じ商談を使って、Installation Industrial - High という名前の商品に対して、別の見積を作成してほしいと依頼がありました。この新しい見積では、数量は 1ではなく 10になります。彼は、この見積に対して 5％の割引を約束してもらえたと言っているので、これに従い調整を行ってください。あっ、そういえば、彼は見積を比較したいと思っているので、元の見積はそのままにしておいてくださいね。
+Mannon Mirth という名前の人から、会社の名前は先よく理解できませんでしたが、同じ商談を使って、Installation Industrial - High という名前の商品に対して、別の見積を作成してほしいと依頼がありました。この新しい見積では、数量は 1 ではなく 10 になります。彼は、この見積に対して 5 ％の割引を約束してもらえたと言っているので、これに従い調整を行ってください。あっ、そういえば、彼は見積を比較したいと思っているので、元の見積はそのままにしておいてくださいね。
 
 さて、最後に。Sally Helios から電話がありましたが、その情報に一致していると思われる取引先責任者が 2つ見つかったため、どこにログを記録すればよいかわかりませんでした。それらのレコードを適切に重複排除し、今日電話をかけ、コールバックを望んでいたメモを追加してください。(そして、折り返し電話してください。)
 

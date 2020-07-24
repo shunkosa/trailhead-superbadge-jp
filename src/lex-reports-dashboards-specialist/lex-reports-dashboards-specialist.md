@@ -1,5 +1,6 @@
 # Lightning Experience Reports & Dashboards Specialist
-* Trailhead の Superbadge、[Lightning Experience Reports & Dashboards Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge-lex-rd)の日本語訳(**非公式**)です。
+[![](https://img.shields.io/badge/-view%20on%20gitbook-blue?logo=markdown)](https://shunkosa.gitbook.io/trailhead-superbadge-jp/lex-reports-dashboards-specialist) [![](https://img.shields.io/badge/-view%20on%20github-black?logo=github)](https://github.com/shunkosa/trailhead-superbadge-jp/blob/master/src/lex-reports-dashboards-specialist/lex-reports-dashboards-specialist.md)
+* Trailhead のスーパーバッジ、[Lightning Experience Reports & Dashboards Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge-lex-rd) の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
 ---
@@ -40,7 +41,7 @@
 <!-- textlint-enable jtf-style/1.1.3.箇条書き -->
 
 ## ユースケース
-Ursa Major Solar, Inc.は、先日、戦略的パートナーである SolarBot Industries を買収した太陽光エネルギー機器のサプライヤです。社名から分かるように、SolarBot Industries は SolarBot を製造しています。SolarBot とは、自律型のロボット周辺機器で、割り当てられたソーラーパネルにゴミや破片が付着しないようにしたり、パネルのステータス指標に関して IoT フィードバックを毎日提供したり、パネルのメンテナンスを依頼したり追跡したりします。充電クレードルに戻ったときは「ビーッ！ビーッ！ブーン！」と鳴ります。SolarBot はかわいいロボットですが、パフォーマンスへの影響は深刻です。それらに塵、砂、水、苔が蓄積すると太陽光パネルの発電効率が最大で 85％も減少してしまいます。Ursa Major の顧客は SolarBot が好きで、SolarBot Industries と Ursa Major の合併は円滑に進みました。
+Ursa Major Solar, Inc. は、先日、戦略的パートナーである SolarBot Industries を買収した太陽光エネルギー機器のサプライヤです。社名から分かるように、SolarBot Industries は SolarBot を製造しています。SolarBot とは、自律型のロボット周辺機器で、割り当てられたソーラーパネルにゴミや破片が付着しないようにしたり、パネルのステータス指標に関して IoT フィードバックを毎日提供したり、パネルのメンテナンスを依頼したり追跡したりします。充電クレードルに戻ったときは「ビーッ！ビーッ！ブーン！」と鳴ります。SolarBot はかわいいロボットですが、パフォーマンスへの影響は深刻です。それらに塵、砂、水、苔が蓄積すると太陽光パネルの発電効率が最大で 85％も減少してしまいます。Ursa Major の顧客は SolarBot が好きで、SolarBot Industries と Ursa Major の合併は円滑に進みました。
 
 Ursa Major Solar の経営陣は、SolarBot Industries のデータをできるだけ早く理解して適用したいと考えています。ケース、商談、IoT データセットは、既に Ursa Major の Salesforce 組織にロードされています。データ分析や使用にあたってチームに情報を提供するのはあなた次第です。SolarBot の古いレポートを管理し、新しいレポートを設計し、エグゼクティブダッシュボードを作成し、レポートとダッシュボードのアクセスを管理し、レコードやアプリケーション上にデータを表示します。このデータを活用することで、チームは太陽光発電事業に関してよりいっそう明るい意思決定を行うことができるでしょう。
 
@@ -165,9 +166,9 @@ Ursa Major の全体的なビジネスの見通しは既に良かったのです
 Gabriela はセールスチームとともに、チームがあなたの作成したレポートが大好きであると言ってきましたが、いくつかの微修正を要求しています。営業担当者が地域別に通話リストを分割するのを支援するために、Billing State (都道府県(請求先)) で **Accounts Without SolarBot Opportunities** レポートを整理する必要があります。また、**SolarBot Warranty Call Sheet** レポートを拡張して、今後 45 日間に保証期間が終了する SolarBot を保有する顧客をレポートに追加で含めたいと考えています。チームはいくつかの重要な州に集中しているため、この SolarBot Warranty Call Sheet レポートにはネバダ州 (NV)、ユタ州 (UT)、カリフォルニア州 (CA) の顧客だけを含めてください。フィルタ管理のベストプラクティスは、Warranty Status (保証ステータス) や、Billing State (都道府県(請求先)) など同様の項目に対するフィルタ条件をグループ化することです。
 
 #### サポートレポートの改良
-進行中のサポートチームの Chatter 会話の中で、ちょうど Ada からサポートレポートについてメンションされました。**Top Case Drivers by SolarBot Ownership** レポートでは、SolarBot の顧客について、原因が Equipment Complexity のケースが増加を示しました。チームは、これらの顧客に手を差し伸べて教育を提供する予定であるため、電話番号とそのケースがオープンかどうかをレポートに追加したいと考えています。また、このレポートにはグラフが必要です。グラフは、Ownership のカテゴリごとにケースの原因の相対的な割合を示すことによって、SolarBot Ownership とケースの原因の関係を視覚化するのに役立ちます。たとえば、複数の SolarBotを所有している顧客は、SolarBot を所有していない顧客よりも原因が Equipment Complexity のケースが多いことがわかります。データ分析のベストプラクティスに従うには、Y軸に数値以外のカテゴリを配置して注意を引きます。そのカテゴリの件数を X軸に配置します。すべてのケースの原因を分析に含めます。
+進行中のサポートチームの Chatter 会話の中で、ちょうど Ada からサポートレポートについてメンションされました。**Top Case Drivers by SolarBot Ownership** レポートでは、SolarBot の顧客について、原因が Equipment Complexity のケースが増加を示しました。チームは、これらの顧客に手を差し伸べて教育を提供する予定であるため、電話番号とそのケースがオープンかどうかをレポートに追加したいと考えています。また、このレポートにはグラフが必要です。グラフは、Ownership のカテゴリごとにケースの原因の相対的な割合を示すことによって、SolarBot Ownership とケースの原因の関係を視覚化するのに役立ちます。たとえば、複数の SolarBotを所有している顧客は、SolarBot を所有していない顧客よりも原因が Equipment Complexity のケースが多いことがわかります。データ分析のベストプラクティスに従うには、Y軸に数値以外のカテゴリを配置して注意を引きます。そのカテゴリの件数を X 軸に配置します。すべてのケースの原因を分析に含めます。
 
-Adaは、**SolarBot Status Averages** レポートにいくつかの調整が必要であることも伝えています。最初に、サポートチームは時間の経過とともに傾向を把握したいので、レポートでは日単位ではなく週単位でデータを表示する必要があります。次に、**Weekly Panel Temperature and kWh** と呼ばれるこのレポートのグラフが必要で、平均の Panel Temperature (パネル温度) と平均の Kilowatt Hours(発電量) を線で、時間の経過に伴い表示します。続いて、彼らは SolarBot の各レコードページでこのグラフを見たいと思っています。**SolarBot Status Page With Chart** という名前でそのページを作成してください。グラフには、個々の SolarBot に関する情報だけを含めてください。
+Adaは、**SolarBot Status Averages** レポートにいくつかの調整が必要であることも伝えています。最初に、サポートチームは時間の経過とともに傾向を把握したいので、レポートでは日単位ではなく週単位でデータを表示する必要があります。次に、**Weekly Panel Temperature and kWh** と呼ばれるこのレポートのグラフが必要で、平均の Panel Temperature (パネル温度) と平均の Kilowatt Hours (発電量) を線で、時間の経過に伴い表示します。続いて、彼らは SolarBot の各レコードページでこのグラフを見たいと思っています。**SolarBot Status Page With Chart** という名前でそのページを作成してください。グラフには、個々の SolarBot に関する情報だけを含めてください。
 
 #### R&D レポートの改良
 R&Dチームは、**Temperature to kWh Research** レポートの変更を依頼するよう、音を鳴らしてあなたの机まで知らせるよう SolarBot にプログラムを組みました。Panel Temperature (パネル温度)と Kilowatt Hours (発電量)との全体的な関係は明らかになっていますが、チームは、各 SolarBot のモデルがパネルの発電効率に異なる影響を与えるという理論を持っています。チームは引き続き、平均のパネル温度と平均の発電量を Temperature Range(温度範囲) で分解して見たいと考えています。さらに、別の軸で SolarBot Model ごとの平均のパネル温度と平均の発電量を比較したいと考えています。また、レポートに固有のグラフが必要です。グラフには、Low から Very High に至るまでの 4つの温度範囲のカテゴリがあり、その中に、モデルごとに発電量の平均を表示します。X軸に温度範囲のカテゴリを置き、Y軸で値を表示します。あなたがレポートの改良作業を終了すると、SolarBot は元気に鳴いて R&D チームの方へに戻っていきます。いいロボットです。
@@ -175,10 +176,10 @@ R&Dチームは、**Temperature to kWh Research** レポートの変更を依頼
 ### SolarBot の影響ダッシュボードを設計する
 SolarBot が対象のソーラーパネルの効率を向上させるように、よく設計されたダッシュボードはレポートの有用性を高めます。Sita は、SolarBot の買収が Ursa Major に及ぼす影響を追跡できるダッシュボードを 1つ依頼しました。ダッシュボードには**SolarBot Impact Dashboard** と名前を付け、**SolarBot Dashboards** という新しいフォルダに保存します。すべての内部ユーザがフォルダを表示できるようにし、Report and Dashboard Administrators がフォルダを管理できるようにしてください。以下のコンポーネントをダッシュボードに含めます。コンポーネントには、Usra Major のチームが既に作成を依頼したレポートのみを使用してください。
 
-* 最初のコンポーネント**SolarBot Pipeline by Stage** は、リーダーシップチームに SolarBot の商談の価値を示すために作成した、商談のレポートを使用します。Expected revenue (期待収益)と Adjusted expected revenue の合計を、商談のフェーズごとに、隣同士に縦棒グラフで並べます。表示単位を千として、フェーズは Qualification から始めて Closed Won で終わるように表示します。6X4のサイズでダッシュボードの左上に配置します。
-* 2番目のコンポーネント**Case Drivers and SolarBot Ownership** は、顧客が保有する SolarBot の数(No SolarBots, Some SolarBots, Several SolarBots) に応じてそれぞれケースがどのように分布しているかのビューを与えます。このコンポーネントは高さのある 3X8のサイズとし、この高さをうまく利用できるグラフを選択し、各分類で、ケースの原因がそれぞれ全体の何パーセントを占めているかを表示してください。
-* 次のコンポーネント**Temperature and Kilowatt Hour Relationship** は、様々な Temperature Range (温度範囲) の中でどの SolarBotのモデルが最も効率的であるかというビューを提供します。4つのモデルでそれぞれ線を表示し、温度の上昇に伴う平均の Kilowatt Hours (発電量) を表示する必要があります。4X4の大きさで、SolarBot Pipeline by Stage コンポーネントの下に配置します。
-* **SolarBot Evangelism Countdown** コンポーネントは、すべての取引先に少なくとも 1つの SolarBot の商談があるという目標に対する進捗をトラッキングします。これは 2X4のサイズで **Temperature and Kilowatt Hour Relationship** と **Case Drivers and SolarBot Ownership** の間に配置します。次に示す範囲ごとに、指定した色を利用してください。
+* 最初のコンポーネント**SolarBot Pipeline by Stage** は、リーダーシップチームに SolarBot の商談の価値を示すために作成した、商談のレポートを使用します。Expected revenue (期待収益)と Adjusted expected revenue の合計を、商談のフェーズごとに、隣同士に縦棒グラフで並べます。表示単位を千として、フェーズは Qualification から始めて Closed Won で終わるように表示します。6X4 のサイズでダッシュボードの左上に配置します。
+* 2番目のコンポーネント**Case Drivers and SolarBot Ownership** は、顧客が保有する SolarBot の数(No SolarBots, Some SolarBots, Several SolarBots) に応じてそれぞれケースがどのように分布しているかのビューを与えます。このコンポーネントは高さのある 3X8 のサイズとし、この高さをうまく利用できるグラフを選択し、各分類で、ケースの原因がそれぞれ全体の何パーセントを占めているかを表示してください。
+* 次のコンポーネント**Temperature and Kilowatt Hour Relationship** は、様々な Temperature Range (温度範囲) の中でどの SolarBot のモデルが最も効率的であるかというビューを提供します。4 つのモデルでそれぞれ線を表示し、温度の上昇に伴う平均の Kilowatt Hours (発電量) を表示する必要があります。4X4 の大きさで、SolarBot Pipeline by Stage コンポーネントの下に配置します。
+* **SolarBot Evangelism Countdown** コンポーネントは、すべての取引先に少なくとも 1 つの SolarBot の商談があるという目標に対する進捗をトラッキングします。これは 2X4 のサイズで **Temperature and Kilowatt Hour Relationship** と **Case Drivers and SolarBot Ownership** の間に配置します。次に示す範囲ごとに、指定した色を利用してください。
   * 取引先の数が 0–5: 緑色
   * 取引先の数が 5-10: 黄色
   * 取引先の数が 10-15: 赤色
@@ -189,12 +190,12 @@ SolarBot が対象のソーラーパネルの効率を向上させるように�
   * Amount (金額)
   * Expected Revenue (期待収益)
   * Stage (フェーズ)
-    * データを商談のフェーズの早い順番から並ぶように整理します。金額の高い商談にスポットを当てやすくするため、金額が$20,000から$50,000の間の場合はグレーに、$50,000を上回る場合は青色にします。Sita はこの情報をダッシュボード上で視覚的に顕著に表示したいため、これを 9X4のサイズでダッシュボードの下部に配置してください。
+    * データを商談のフェーズの早い順番から並ぶように整理します。金額の高い商談にスポットを当てやすくするため、金額が $20,000 から $50,000 の間の場合はグレーに、$50,000 を上回る場合は青色にします。Sita はこの情報をダッシュボード上で視覚的に顕著に表示したいため、これを 9X4 のサイズでダッシュボードの下部に配置してください。
 
 ### 分析結果をより見やすく便利にする
 SolarBot が屋上で騒音を発したけれども、誰もそれを聞くことができなかった場合は、実際には音が鳴ったのでしょうか？たとえ最高のレポートやダッシュボードであっても、ユーザが見たり使ったりしなければ、影響を与えることはできません。あなたのレポートやダッシュボードがそれらにふさわしい注目を集めるのに役立つ、いくつかの提案が Maria からありました。
 
-1. Sita は、太陽エネルギーの利用促進のためのメタファーとして、またプレゼンテーション、パーカー、アートワークの配色として、夜明け(暗闇から日の出が少しずつ覗く)を利用することを好んでいます。**SolarBot Impact Dashboard**の全体的な配色が Sitaの色の好みと一致するように設定しましょう。唯一の例外は、**Opportunity Overview**コンポーネントであり、これらの商談は先が非常に明るいため、コンポーネントも完全に明るくなければなりません。
+1. Sita は、太陽エネルギーの利用促進のためのメタファーとして、またプレゼンテーション、パーカー、アートワークの配色として、夜明け(暗闇から日の出が少しずつ覗く)を利用することを好んでいます。**SolarBot Impact Dashboard** の全体的な配色が Sitaの色の好みと一致するように設定しましょう。唯一の例外は、**Opportunity Overview** コンポーネントであり、これらの商談は先が非常に明るいため、コンポーネントも完全に明るくなければなりません。
 
 2. Usra Major のセールス担当、太陽光の先駆的ユーザであるの 2つの著名な取引先をよく強調しています。Heinrich Technical Instruments または Big State Recycling の情報のみをダッシュボードで表示する方法を作成します。ビューを改善するこのソリューションには **Marquee Accounts** と名前をつけ、すべてのコンポーネントが設定した条件に従っていることを確認してください。
 
@@ -204,7 +205,7 @@ SolarBot が屋上で騒音を発したけれども、誰もそれを聞くこ�
 
 ## Challenge
 ### Challenge 1: フォルダを管理しレポートを整理する
-まだであれば、事前準備のセクションから未管理パッケージをインストールし、SolarBot のデータをインポートしてください。SolarBotの商談種別と公開グループを追加します。フォルダのアクセス権を設定し、既存のレポートの格納箇所を再編成し、ユーザがカスタムオブジェクトについてレポートする方法を構築してください。**SolarBots and Status Data** という名前のそのレポートソリューションでこの Challenge の検証が完了した後は、それを修正しないでください。
+まだであれば、事前準備のセクションから未管理パッケージをインストールし、SolarBot のデータをインポートしてください。SolarBot の商談種別と公開グループを追加します。フォルダのアクセス権を設定し、既存のレポートの格納箇所を再編成し、ユーザがカスタムオブジェクトについてレポートする方法を構築してください。**SolarBots and Status Data** という名前のそのレポートソリューションでこの Challenge の検証が完了した後は、それを修正しないでください。
 
 ### Challenge 2: セールスチームのレポートを作成する
 Accounts without SolarBot Opportunities、SolarBot High-Case Candidates、SolarBot Warranty Call Sheet のレポートを作成して、セールスチームがどの取引先にコールすべきかを理解できるようにしてください。
@@ -222,7 +223,7 @@ SolarBot Loyalty Revenue レポートとエグゼクティブチーム用のグ�
 セールス、サポート、R&D のレポートへの変更を、3つのグラフも含めて実装してください。
 
 ### Challenge 7: SolarBotのダッシュボードを作成する
-SolarBot Impact Dashboard を構築し、SolarBot のビジネスへの影響を Usra Major が評価できるようにしてください。Challengeを検証する直前にダッシュボードを更新してください。
+SolarBot Impact Dashboard を構築し、SolarBot のビジネスへの影響を Usra Major が評価できるようにしてください。Challenge を検証する直前にダッシュボードを更新してください。
 
 ### Challenge 8: レポートとダッシュボードをより見やすく便利にする
 SolarBot Impact Dashboard の有用性を色を用いて高め、著名な取引先を強調できるように、SolarBot App Page にダッシュボードを配置します。自身で Temperature to kWh Research レポートを受け取れるように登録してください。
