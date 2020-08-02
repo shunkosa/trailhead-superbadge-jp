@@ -26,12 +26,12 @@
 所用時間 : 推定 10 時間 
 
 ## 事前準備とメモ
-* 詳細なリソースとドキュメントについては、この [Help 記事](https://trailhead.salesforce.com/ja/help?article=Financial-Services-Cloud-Specialist-Trailhead-Challenge-Help) を参照してください。
+* 詳細なリソースとドキュメントについては、この [Help 記事](https://trailhead.salesforce.com/ja/help?article=Financial-Services-Cloud-Specialist-Trailhead-Challenge-Help)を参照してください。
 * このスーパーバッジで利用される用語のいくつかは、UI に表示される設定上の名称と完全に一致しない場合があります。これは、Salesforce の機能に関する知識と、ビジネス上のニーズを満たす正しい機能を選択する能力をテストするためです。
 * **ポイント**: メタデータおよびレコードデータを設定するために示されている値は手動で入力せず、コピー・ペーストしてください。これにより、Challenge の失敗を引き起こすタイプミスやスペルミスの可能性が減ります。
 
 ### Financial Services Cloud を備える Developer Edition 組織の作成
-このスーパーバッジを完了するには、Salesforce Financial Services Cloud、専用の設定、サンプルデータを含む特別な Developer Edition 組織が必要です。特別に Financial Services Cloud が有効化された Developer Edition 組織に最近サインアップした場合でも、このスーパーバッジのために新しい組織にサインアップしてください。**また、管理パッケージは 30日後に期限切れになることに注意してください。**
+このスーパーバッジを完了するには、Salesforce Financial Services Cloud、専用の設定、サンプルデータを含む特別な Developer Edition 組織が必要です。特別に Financial Services Cloud が有効化された Developer Edition 組織に最近サインアップした場合でも、このスーパーバッジのために新しい組織にサインアップしてください。**また、管理パッケージは 30 日後に期限切れになることに注意してください。**
 
 1. [こちら](https://developer.salesforce.com/promotions/orgs/fscspecialist)から、Salesforce Financial Services Cloud を備える無料の Developer Edition 組織にサインアップします。
 2. フォームに入力します。Email の欄には、有効な電子メールアドレスを入力します。Username の欄には、メールアドレス形式の一意のユーザ名を入力しますが、有効な電子メールアカウントと一致している必要はありません。(例: `yourname@fsc4ever.sample.com`) 
@@ -135,7 +135,7 @@ Hank は、Vivian の退職後の計画について詳しく知るための打�
 
 Kotori Mizono としてログインし、リレーションシップマップ (リレーションの対応付け) とグループビルダーで、Related Accounts (関連取引先) と Related Contacts (関連取引先責任者) が表示されていないことをテストしてください。
 
-Scott と Vivian の住宅購入計画は急速に進んでいます。Hank は不動産業者の Carolyn Kane を追加したいと考えており、その結果 Sue Berry は主要な関係者をすぐに参照できるようになります。リレーションシップマップを使用して、不動産業者の Carolyn を表示しましょう。Torres-Adams Household と 不動産業者 `Caroline Kane - Lakeshore Realty` との間に、取引先間リレーションを作成して下さい。関連ロールは、`Retalor` (Torres-Adams Household から見て) と `Customer` (Caroline Kane - Lakeshore Realty から見て) としてください。
+Scott と Vivian の住宅購入計画は急速に進んでいます。Hank は不動産業者の Carolyn Kane を追加したいと考えており、その結果 Sue Berry は主要な関係者をすぐに参照できるようになります。リレーションシップマップを使用して、不動産業者の Carolyn を表示しましょう。Torres-Adams Household と不動産業者 `Caroline Kane - Lakeshore Realty` との間に、取引先間リレーションを作成して下さい。関連ロールは、`Retalor` (Torres-Adams Household から見て) と `Customer` (Caroline Kane - Lakeshore Realty から見て) としてください。
 
 また、Scott と Vivian は、家の購入にあたり弁護士を必要としており、Scott の母親である Rachael Adams は、彼女の弁護士である Ivan M. Kohl と一緒に仕事をしてほしいと考えています。Vivian は弁護士として Ivan に依頼して物件の取引を成立させます。Torres-Adams Household に関連する取引先責任者として Ivan を追加し、相互ロール (関連ロール) に **Lawyer** (弁護士) を設定します。Ivan の取引先責任者と関連ロールの Lawyer は既に作成されていることに注意してください。
 
