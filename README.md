@@ -27,6 +27,7 @@
 | [Selling with Sales Cloud Specialist](src/sales-cloud-specialist/sales-cloud-specialist.md)| Sales Cloud全般|
 | [Advanced Billing Specialist](src/advanced-billing-specialist/advanced-billing-specialist.md)|Salesforce CPQ<br>Salesforce Billing|
 | [Lightning Web Components Specialist](src/lwc-specialist/lwc-specialist.md)|Lightning Web コンポーネント|
+| [Financial Services Cloud Specialist](src/fsc-specialist/fsc-specialist.md)|Financial Services Cloud 基礎|
 
 ## どのスーパーバッジから取り組むべきか
 資格試験と関連性が高いと思われるスーパーバッジは以下の通りです。
