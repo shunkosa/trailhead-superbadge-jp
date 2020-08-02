@@ -11,11 +11,11 @@
 * [Data Integration Specialist](https://developer.salesforce.com/jpblogs/2018/06/data_integration_superbadge/)
 * [Einstein Analytics Data Preparation Specialist](src/analytics-integration-specialist/analytics-integration-specialist.md)
 * [Einstein Analytics and Discovery Insights Specialist](src/analytics-insights-specialist/analytics-insights-specialist.md)
-* [Financial Services Cloud Specialist](src/fsc-specialist/fsc-specialist.md)
+* 🆕 [Financial Services Cloud Specialist](src/fsc-specialist/fsc-specialist.md)
 * [Lightning Experience Reports and Dashboards Specialist](src/lex-reports-dashboards-specialist/lex-reports-dashboards-specialist.md)
 * [Lightning Experience Rollout Specialist](src/lex-rollout-specialist/lex-rollout-specialist.md)
 * [Lightning Experience Specialist](https://developer.salesforce.com/jpblogs/2018/10/lex_specialist_superbadge/)
-* 🆕[Lightning Web Components Specialist](src/lwc-specialist/lwc-specialist.md)
+* 🆕 [Lightning Web Components Specialist](src/lwc-specialist/lwc-specialist.md)
 * [Process Automation Specialist](src/process-automation-specialist/process-automation-specialist.md)
 * ~~[Reports and Dashboards Specialist](https://developer.salesforce.com/jpblogs/2018/04/reports_and_dashboards_superbadge/)~~
 * [Selling with Sales Cloud Specialist](src/sales-cloud-specialist/sales-cloud-specialist.md)
