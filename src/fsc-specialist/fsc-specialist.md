@@ -119,7 +119,7 @@ Hank は、富裕層の顧客レコード上に特定の情報とコンポーネ
 ### 個人取引先を扱う
 設定が完了すると、チームが魔法を働かせるのを飛び込んで助けることができます。
 
-Rachael Adams は、15 年以上にわたって CGB で資産を保有しています。Rachael は、息子である Scott Adams との共同当座預金口座を開設したいと考えています。Rachel は、息子のための当座預金口座を開設するためにバンカーの Hunk Burton に会います。Hunk としてログインし、Scott のための新しい個人取引先を作成し、種別を **Customer - Direct** とし、Adams の Household (世帯) に彼を追加します。Hank は、Scott Adams に対して、10,000 ドルの新しい Financial Account (金融口座) `Primary Checking Account` (レコードタイプを Bank Accounts として) を作成します。Racheal Adams を **Joint Owner** (共同所有者) として追加します。
+Rachel Adams は、15 年以上にわたって CGB で資産を保有しています。Rachel は、息子である Scott Adams との共同当座預金口座を開設したいと考えています。Rachel は、息子のための当座預金口座を開設するためにバンカーの Hunk Burton に会います。Hunk としてログインし、Scott のための新しい個人取引先を作成し、種別を **Customer - Direct** とし、Adams の Household (世帯) に彼を追加します。Hank は、Scott Adams に対して、10,000 ドルの新しい Financial Account (金融口座) `Primary Checking Account` (レコードタイプを Bank Accounts として) を作成します。Rachel Adams を **Joint Owner** (共同所有者) として追加します。
 
 Scott はパートナーの Vivian Torres と将来を計画しています。彼は Hank に Vivian を新規顧客として紹介します。彼らの銀行業務をより良くサポートするために、Hank は新しく **Torres-Adams Household** の世帯レコードを作成し、Vivian の個人取引先レコードを作成します。Torres-Adams Household が Vivian と Scott の両方の **Primary Group** となるようにしてください。また、Vivian が世帯の **Primary Member** となるようにします。
 
@@ -137,7 +137,7 @@ Kotori Mizono としてログインし、リレーションシップマップ (�
 
 Scott と Vivian の住宅購入計画は急速に進んでいます。Hank は不動産業者の Carolyn Kane を追加したいと考えており、その結果 Sue Berry は主要な関係者をすぐに参照できるようになります。リレーションシップマップを使用して、不動産業者の Carolyn を表示しましょう。Torres-Adams Household と不動産業者 `Caroline Kane - Lakeshore Realty` との間に、取引先間リレーションを作成して下さい。関連ロールは、`Retalor` (Torres-Adams Household から見て) と `Customer` (Caroline Kane - Lakeshore Realty から見て) としてください。
 
-また、Scott と Vivian は、家の購入にあたり弁護士を必要としており、Scott の母親である Rachael Adams は、彼女の弁護士である Ivan M. Kohl と一緒に仕事をしてほしいと考えています。Vivian は弁護士として Ivan に依頼して物件の取引を成立させます。Torres-Adams Household に関連する取引先責任者として Ivan を追加し、相互ロール (関連ロール) に **Lawyer** (弁護士) を設定します。Ivan の取引先責任者と関連ロールの Lawyer は既に作成されていることに注意してください。
+また、Scott と Vivian は、家の購入にあたり弁護士を必要としており、Scott の母親である Rachel Adams は、彼女の弁護士である Ivan M. Kohl と一緒に仕事をしてほしいと考えています。Vivian は弁護士として Ivan に依頼して物件の取引を成立させます。Torres-Adams Household に関連する取引先責任者として Ivan を追加し、相互ロール (関連ロール) に **Lawyer** (弁護士) を設定します。Ivan の取引先責任者と関連ロールの Lawyer は既に作成されていることに注意してください。
 
 ### ライフイベント
 Scott と Vivian の新居は湖の上にあり、2 人はボートを購入する計画を立てたいと考えています。新しい Person Life Event (個人ライフイベント) の種別として **Boat** を追加します。 次に、その新しい個人ライフイベントの種別に対して画像をアップロードします。ボートのライフイベント用の SVG ファイルをこちらの [boat.zip](https://developer.salesforce.com/files/boat.zip) からダウンロードしてください。
