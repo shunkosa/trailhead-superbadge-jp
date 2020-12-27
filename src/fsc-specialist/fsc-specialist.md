@@ -135,7 +135,7 @@ Hank は、Vivian の退職後の計画について詳しく知るための打�
 
 Kotori Mizono としてログインし、リレーションシップマップ (リレーションの対応付け) とグループビルダーで、Related Accounts (関連取引先) と Related Contacts (関連取引先責任者) が表示されていないことをテストしてください。
 
-Scott と Vivian の住宅購入計画は急速に進んでいます。Hank は不動産業者の Carolyn Kane を追加したいと考えており、その結果 Sue Berry は主要な関係者をすぐに参照できるようになります。リレーションシップマップを使用して、不動産業者の Carolyn を表示しましょう。Torres-Adams Household と不動産業者 `Caroline Kane - Lakeshore Realty` との間に、取引先間リレーションを作成して下さい。関連ロールは、`Retalor` (Torres-Adams Household から見て) と `Customer` (Caroline Kane - Lakeshore Realty から見て) としてください。
+Scott と Vivian の住宅購入計画は急速に進んでいます。Hank は不動産業者の Carolyn Kane を追加したいと考えており、その結果 Sue Berry は主要な関係者をすぐに参照できるようになります。リレーションシップマップを使用して、不動産業者の Carolyn を表示しましょう。Torres-Adams Household と不動産業者 `Caroline Kane - Lakeshore Realty` との間に、取引先間リレーションを作成して下さい。関連ロールは、`Realtor` (Torres-Adams Household から見て) と `Customer` (Caroline Kane - Lakeshore Realty から見て) としてください。
 
 また、Scott と Vivian は、家の購入にあたり弁護士を必要としており、Scott の母親である Rachel Adams は、彼女の弁護士である Ivan M. Kohl と一緒に仕事をしてほしいと考えています。Vivian は弁護士として Ivan に依頼して物件の取引を成立させます。Torres-Adams Household に関連する取引先責任者として Ivan を追加し、相互ロール (関連ロール) に **Lawyer** (弁護士) を設定します。Ivan の取引先責任者と関連ロールの Lawyer は既に作成されていることに注意してください。
 
