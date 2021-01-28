@@ -625,7 +625,7 @@ export default class BoatsNearMe extends LightningElement {
 ### コンポーネントを作成する
 最新のコンポーネント `fiveStarRating` には、public な `value` プロパティと public な `readOnly` プロパティがあります。静的リソース `fivestar` をインポートして `fivestar` という名前で使用します。`loadScript()` 関数を使って `fivestar` 静的リソースから `rating.css` と `rating.js` ファイルをロードしてください。
 
-スクリプトがロードされたら、`initializeRating()`という名前の関数を呼び出します。この処理中にエラーが発生した場合は、トーストにエラーメッセージを表示します。`title` に `Error loading five-star` を指定します。ベストプラクティスに従い、この文字列を `TOAST_ERROR_TITLE` という定数に格納し、エラーの種類を `ERROR_VARIANT` という定数に格納してください。
+スクリプトがロードされたら、`initializeRating()`という名前の関数を呼び出します。この処理中にエラーが発生した場合は、トーストにエラーメッセージを表示します。`title` に `Error loading five-star` を指定します。ベストプラクティスに従い、この文字列を `ERROR_TITLE` という定数に格納し、エラーの種類を `ERROR_VARIANT` という定数に格納してください。
 
 HTML ファイルには `<ul>` タグがあり、クラス属性を getter 関数 `starClass` にバインドしていることに注目してください。この関数は `readOnly` 属性の値に応じて `c-rating` または `readonly c-rating` のいずれかを返すために三項演算子を使用しなければなりません。ベストプラクティスに従い、これらの文字列をそれぞれ `EDITABLE_CLASS` と `READ_ONLY_CLASS` という名前の定数に格納するようにしてください。
 
