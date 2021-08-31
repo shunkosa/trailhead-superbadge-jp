@@ -96,7 +96,7 @@ Hank は、富裕層の顧客レコード上に特定の情報とコンポーネ
 * Accounts (取引先)
 * Contacts (取引先責任者)
 * Leads and Referrals (リード)
-* Assets and Liabilities (試算と負債)
+* Assets and Liabilities (資産と負債)
 * Analytics (分析)
 * Financial Accounts (金融口座)
 * Financial Goals (投資運用ゴール)
@@ -165,7 +165,7 @@ FSC Lending アプリケーションを使用して、Ryan は Scott の個人�
 Hank としてログインし、Loan Referral Queue に割り当てられた紹介を確認し、リードを受け入れてください。Hank は、Scott に融資を開始するにあたり詳細を確認するため、彼に連絡を取ります。この会話の情報を記録するために、Scott に活動を記録 (件名を "Call" とする) します。引き続き Hank としてログインし、リードを変換し、既存の Scott Adams の取引先を使用して、`Scott Adams-Boat Loan` という名前の新しい商談を作成します。
 
 ### ドキュメントの追跡と承認
-ドキュメントタイプは、ビジネスプロセスを完了するために一般的に必要なドキュメントを定義します。個人向け銀行ローンのために、顧客から必要とされる各ファイルをリストアップした Document Checklist Item (ドキュメントチェックリスト項目) を作成します。当社のバンカーである Hunk Barton は、ローンを組む顧客のために関連するチェックリストファイルを作成し、承認プロセスを通じてファイルを追跡することができます。Scott Adams のような顧客は、ドキュメントをアップロードし、ドキュメントが受け入れられたか拒否されたかを確認し、アップロードされたドキュメントの提出から承認までの進捗状況を追跡することができます。
+ドキュメントタイプは、ビジネスプロセスを完了するために一般的に必要なドキュメントを定義します。個人向け銀行ローンのために、顧客から必要とされる各ファイルをリストアップした Document Checklist Item (ドキュメントチェックリスト項目) を作成します。当社のバンカーである Hank Burton は、ローンを組む顧客のために関連するチェックリストファイルを作成し、承認プロセスを通じてファイルを追跡することができます。Scott Adams のような顧客は、ドキュメントをアップロードし、ドキュメントが受け入れられたか拒否されたかを確認し、アップロードされたドキュメントの提出から承認までの進捗状況を追跡することができます。
 
 商談と個人取引先のページレイアウトに、関連リストとして Document Checklist Item (ドキュメントチェックリスト項目) コンポーネントを追加します。
 
@@ -180,7 +180,7 @@ Hank としてログインし、Loan Referral Queue に割り当てられた紹�
 
 FSC Personal Banker、FSC Mortgage Officer、および FSC Wealth Advisor の各プロファイルに、ドキュメントチェックリスト項目への作成、参照、編集のアクセス権 (だけ) があることを確認してください。
 
-Hunk Barton は、Scott Adams のボート購入のための個人ローン申請に対するドキュメントチェックリストを作成する必要があります。Hank としてログインして、Employer Tax Form、Pay Stub、Driver License、Vehicle Title を含むチェックリストを作成してください。
+Hank Burton は、Scott Adams のボート購入のための個人ローン申請に対するドキュメントチェックリストを作成する必要があります。Hank としてログインして、Employer Tax Form、Pay Stub、Driver License、Vehicle Title を含むチェックリストを作成してください。
 
 ### レポート
 最後に、住宅ローンの融資担当達は、紹介活動を追跡したいと考えています。Sue Berry は、成約率の上昇にワクワクしており、トップの紹介者 (Referrer) についてもっと知りたいと思っています。また、彼女は、紹介者がどこから来て、誰が最高の紹介を作成するのかを知りたいと思っています。**WealthHome** の Lightning ページをコピーして、 `FSC Retail Banking Console Home` という名前をつけます。ページに、**[Internal] Referrals Made** と **[Internal] Referrer Score** の 2 つのレポートグラフを追加します。新しく作成したこのホームページをアプリケーションのデフォルトとして割り当てることで、FSC Retail Banking Console アプリケーションでその情報が表示されるようにしてください。
