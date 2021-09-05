@@ -1,6 +1,6 @@
-# Einstein Analytics and Discovery Insights Specialist
+# Tableau CRM and Discovery Insights Specialist
 [![](https://img.shields.io/badge/-view%20on%20gitbook-blue?logo=markdown)](https://shunkosa.gitbook.io/trailhead-superbadge-jp/analytics-insights-specialist) [![](https://img.shields.io/badge/-view%20on%20github-black?logo=github)](https://github.com/shunkosa/trailhead-superbadge-jp/blob/master/src/analytics-insights-specialist/analytics-insights-specialist.md)
-* Trailhead のスーパーバッジ、[Einstein Analytics and Discovery Insights Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_analytics_insights_specialist) の日本語訳(**非公式**)です。
+* Trailhead のスーパーバッジ、[Tableau CRM and Discovery Insights Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_analytics_insights_specialist) の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
 ---
@@ -31,7 +31,7 @@
   * 変数と射影の名前にはキャメルケースのスペルを使用します。つまり、``lastName`` のように設定します<sup>[1](#footnote1)</sup>。
   * 項目名にはタイトルケースを使用します。つまり、``Last Name`` のように設定します。
   * スペースを含むステップや項目、データセットの API名はアンダースコア (_) を使用します。つまり、``Last_Name`` のように設定します。
-* この Challenge に対して [Einstein Analytics Developer Edition (DE)](https://developer.salesforce.com/promotions/orgs/analytics-de) 組織を作成します。この環境は Einstein Analytics が有効になっており、Challenge で使用されるサンプルデータが含まれています (注 : この Challenge では DTC Default App は使用しません) 。 
+* この Challenge に対して [Tableau CRM Developer Edition (DE)](https://developer.salesforce.com/promotions/orgs/analytics-de) 組織を作成します。この環境は Tableau CRM が有効になっており、Challenge で使用されるサンプルデータが含まれています (注 : この Challenge では Default App は使用しません) 。 
 * [未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000003qbmx)をインストールして、サービス加入者 (Subscriber) オブジェクトを実装します。この未管理パッケージはカスタムオブジェクトのタブを作成しないため、[手順](https://help.salesforce.com/articleView?id=creating_custom_object_tabs.htm&type=5&language=ja)に従って、組織にタブを作成しておくことを推奨します。もし管理・未管理パッケージ、または AppExchange アプリケーションをインストールする際に問題が発生した場合は、この[記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)の手順に従ってください。
 * Challenge を完了するためには、Beattie Subs.csv、Beattie OEM Survey.csv、Beattie Dashboard.json のファイルをアップロードする必要があります。
 * [data-insights-specialist.zip](https://developer.salesforce.com/files/data-insight-specialist-data.zip) をダウンロードして解凍してください。
@@ -39,7 +39,7 @@
 
 #### リファレンス
 * SAQLの構文については、[Analytics SAQL リファレンス](https://developer.salesforce.com/docs/atlas.ja-jp.218.0.bi_dev_guide_saql.meta/bi_dev_guide_saql/bi_saql_intro.htm)を参照してください。
-* Einstein Analytics Learning Adventure アプリケーションには、Challenge に役立つかもしれない例が含まれています。新しく作成した Analytics Developer Edition 組織にはこのアプリケーションが備わっています。Analytics Studio で、**作成 | アプリケーション | テンプレートからアプリケーションを作成 | Learning Adventure** をクリックします。
+* Tableau CRM Learning Adventure アプリケーションには、Challenge に役立つかもしれない例が含まれています。新しく作成した Analytics Developer Edition 組織にはこのアプリケーションが備わっています。Analytics Studio で、**作成 | アプリケーション | テンプレートからアプリケーションを作成 | Learning Adventure** をクリックします。
 * [Let's Play Salesforce](https://www.youtube.com/channel/UCkNDwCEl-BbAsaGSQ7I6Xtg/playlists)の Youtubeチャンネルにも役立つ動画があります。
 
 #### Subscriber オブジェクトにレコードをインポートする
@@ -52,7 +52,7 @@
 7. **OK** をクリックします。
 
 #### Beattie Subs.csv と Beattie OEM Survey.csv ファイルをそれぞれアップロードする
-1. Analytics Studio で、Challenge のために、Beattie という名前で空白のアプリケーションを作成します。(注 : 作成ボタンが表示されていない場合は、「Einstein Analytics Plus の管理者権限を自分のユーザ ID に割り当てる」セクションに進んでください。)
+1. Analytics Studio で、Challenge のために、Beattie という名前で空白のアプリケーションを作成します。(注 : 作成ボタンが表示されていない場合は、「Tableau CRM Plus の管理者権限を自分のユーザ ID に割り当てる」セクションに進んでください。)
 2. **作成** ボタンをクリックし、**データセット** を選択します。
 3. 次のページで **CSV ファイル** をクリックします。
 4. **ファイルを選択するか、ここにファイルをドラッグしてください** をクリックし、解凍した CSV ファイルを選択します。
@@ -73,9 +73,9 @@
 7. ダッシュボードを Beattie アプリケーションに保存します。
 8. **X** をクリックしてタブを閉じ、Analytics Studio のホームページに戻ります。
 
-#### Einstein Analytics Plus の管理者権限を自分のユーザ ID に割り当てる
+#### Tableau CRM Plus の管理者権限を自分のユーザ ID に割り当てる
 1. 設定で、クイック検索ボックスに``権限セット``と入力し、**権限セット** を選択します。  
-2. **Einstein Analytics Plus 管理者 (Admin)** をクリックします。  
+2. **Tableau CRM Plus 管理者 (Admin)** をクリックします。  
 3. **割り当ての管理** ボタンをクリックしてから、**割り当ての追加** ボタンをクリックします。  
 4. ユーザのリストの中から自分の名前を見つけて、その横にチェックマークを付けます。  
 5. **割り当て** ボタンをクリックしてから **完了** をクリックします。
@@ -98,7 +98,7 @@ Arnas と Olivia は電話、インターネット、ストリーミングサー
 
 銀行は Beattie Media が大きな可能性を秘めていると考えており、そしてより安定した収益を達成するための計画を考え出すために Arnas と Olivia に助言しています。
 
-Arnas と Olivia は、Salesforce の長年の顧客であり、Einstein Analytics から得られる可視性と洞察について耳にしています。彼らのオンサイトの Salesforce 管理者は、組織に Einstein Analytics をセットアップし、Subscriber カスタムオブジェクトをデータセットとしてインポートしました。Beattie Media の BI チームの一員として、Einstein Analytics のトレーニングに送りこまれたあなたは、今戻ってきて、顧客の解約を管理しやすくするエグゼクティブダッシュボードを構築することを Arnas と Olivia から依頼されています。Analytics のスキルを活用することで、Arnas と Olivia が新しい洞察を発見し、顧客を積極的に維持していくためのソリューションを作成しましょう。
+Arnas と Olivia は、Salesforce の長年の顧客であり、Tableau CRM から得られる可視性と洞察について耳にしています。彼らのオンサイトの Salesforce 管理者は、組織に Tableau CRM をセットアップし、Subscriber カスタムオブジェクトをデータセットとしてインポートしました。Beattie Media の BI チームの一員として、Tableau CRM のトレーニングに送りこまれたあなたは、今戻ってきて、顧客の解約を管理しやすくするエグゼクティブダッシュボードを構築することを Arnas と Olivia から依頼されています。Analytics のスキルを活用することで、Arnas と Olivia が新しい洞察を発見し、顧客を積極的に維持していくためのソリューションを作成しましょう。
 
 Beattie Media はあなたを頼りにしています。さあ始めましょう！
 
