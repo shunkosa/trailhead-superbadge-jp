@@ -23,7 +23,7 @@
 ## 事前準備とメモ
 * ペンと紙を準備して、要件を読み進める際にメモを取ってください。
 * このスーパーバッジ用に、新しい Trailhead Playground を作成してください。この組織をほかの目的で使用すると、課題について検証する際に問題を引き起こす可能性があります。
-* Residential Sales の資産を実装するために[未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t34000001IqqV)をインストールしてください。( パッケージ ID: 04t34000001IqqV ) 管理パッケージ、未管理パッケージ、アプリケーションを AppExchangeからインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
+* Residential Sales の資産を実装するために[未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t34000001IqqV)をインストールしてください。(パッケージ ID: 04t34000001IqqV) 管理パッケージ、未管理パッケージ、アプリケーションを AppExchangeからインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
 * このスーパーバッジで利用される用語のいくつかは、UI に表示される設定上の名称名と完全に一致しない場合があります。これは、Salesforce の機能に関する知識と、ビジネス上のニーズを満たす正しい機能を選択する能力をテストするためです。
 
 ## ユースケース

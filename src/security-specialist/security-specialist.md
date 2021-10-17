@@ -21,7 +21,7 @@
 ## 事前準備とメモ
 * ペンと紙を準備して、要件を読み進める際にメモを取ってください。
 * このスーパーバッジ用に、新しい Trailhead Playground を作成してください。この組織をほかの目的で使用すると、課題について検証する際に問題を引き起こす可能性があります。
-* [Security スーパーバッジの管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t36000000jWht)をインストールしてください。( パッケージ ID: 04t36000000jWht ) 管理パッケージ、未管理パッケージ、アプリケーションを AppExchange からインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
+* [Security スーパーバッジの管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t36000000jWht)をインストールしてください。(パッケージ ID: 04t36000000jWht) 管理パッケージ、未管理パッケージ、アプリケーションを AppExchange からインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
 * Trailhead Playground 組織では 1人のユーザしか新規作成できませんが、このスーパーバッジの Challenge を完了するために、多くの権限 (プロファイル、ロール、公開グループ、等) を作成することができます。様々なセキュリティ設定をテストするためのユーザを作成することをお勧めします。Samantha Cordero という名前のユーザをこの目的のために作成してください。
 
 ## ユースケース

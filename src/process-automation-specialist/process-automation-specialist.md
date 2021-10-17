@@ -24,7 +24,7 @@
 * ペンと紙を準備して、要件を読み進める際にメモを取ってください。
 * このスーパーバッジ用に、新しい Trailhead Playground を作成してください。新しい組織には、必要となるすべての正しいデータがあります。(通常の Developer Edition ではなく、必ず Trailhead Playground を作成してください。Trailhead Playground だけにこのスーパーバッジのチャレンジに必要となる正しいデータがあります。)この組織をほかの目的で使用すると、課題について検証する際に問題を引き起こす可能性があります。
 * Lightning Experience を利用してください。
-* [Process Automationスーパーバッジの未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t46000001Zch4)をインストールしてください。( パッケージ ID: 04t46000001Zch4 ) 管理パッケージ、未管理パッケージ、アプリケーションを AppExchange からインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
+* [Process Automationスーパーバッジの未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t46000001Zch4)をインストールしてください。(パッケージ ID: 04t46000001Zch4) 管理パッケージ、未管理パッケージ、アプリケーションを AppExchange からインストールする際に問題が発生した場合は、[この記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)に示す手順に従ってください。
 * Trailhead Playground 組織では 1 人のユーザしか新規作成できませんが、このスーパーバッジのチャレンジを完了するために、多くの権限(プロファイル、ロール、公開グループ、等)を作成することができます。様々な自動化をテストするためのユーザを作成することをお勧めします。Nushi Davoud という名前のユーザをこの目的のために作成してください。Nushi を承認プロセスのためのあなたのマネージャに設定してください。
 * このスーパーバッジでは通貨に USD を利用するため、必要に応じて個人設定を更新してください。個人設定から、個人 | 言語とタイムゾーン | で、ロケールを英語(アメリカ合衆国)にし、言語を英語に変更して保存します。
 * **どのチャレンジに対しても、ワークフロールールは利用しないでください。**

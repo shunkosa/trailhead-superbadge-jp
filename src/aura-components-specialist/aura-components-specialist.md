@@ -33,8 +33,10 @@
 ## 事前準備とメモ
 - 紙とペンを用意して、要件を読み進める際にメモを取ってください。
 - このスーパーバッジのために新しい Trailhead Playground を作成してください。この組織を他のモジュールやタスクに利用すると Challenge の検証のために問題を引き起こす可能性があります。Trailhead Playground では既に私のドメインが有効になっていることに注意してください。私のドメインの設定は編集しないでください。Trailhead Playground にログインできなくなる可能性があります。
+<!-- textlint-disable jtf-style/4.3.7.山かっこ<> -->
 -  **設定 > セキュリティ > セッションの設定** セクションで、**パフォーマンスを向上させるためにブラウザの安全で永続的なキャッシュを有効にする** のチェックをオフにすることで、コンポーネントのキャッシュを無効化してください。
--  [この未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000Q3CM)をインストールしてください。( パッケージ ID: 04tB0000000Q3CM ) このパッケージには、チャレンジを完了するために必要となる Apex ロジックに対する全てのスキーマが含まれます。未管理パッケージのインストールに問題が発生した場合は [Trailhead Playground Management](https://trailhead.salesforce.com/modules/trailhead_playground_management) の手順に従ってください。
+<!-- textlint-enable jtf-style/4.3.7.山かっこ<> -->
+-  [この未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000Q3CM)をインストールしてください。(パッケージ ID: 04tB0000000Q3CM) このパッケージには、チャレンジを完了するために必要となる Apex ロジックに対する全てのスキーマが含まれます。未管理パッケージのインストールに問題が発生した場合は [Trailhead Playground Management](https://trailhead.salesforce.com/modules/trailhead_playground_management) の手順に従ってください。
 - Challenge 1 で未管理パッケージのインストールを検証した後、サンプルデータが自動的に組織に追加されます。最初の Challenge を検証後、何らかの理由で組織を変更する場合は、`GenerateData.apxc` の静的メソッド`initData()` を実行してください。
 - リリースを確実に成功させるため、要件ドキュメントに指定される命名規則を利用してください。
 - 以下の詳細な要件を読みながら、設定された組織のデータスキーマを確認してください。
@@ -266,7 +268,7 @@ HowWeRoll自身がすべてのボートを所有しているわけではない�
 ![](figure6.jpg)<br>図 6 : Add Reviewタブのフォーム
 
 ### フォームを構築する
-`BoatDetails`コンポーネントの Add Reviews (レビューの追加)タブでは、新しいコンポーネント`AddBoatReview`をインスタンス化し、コンポーネントの Boat__c型の public属性`boat`を使用してボートのデータを渡します。コンポーネントは SLDSを使用してすべてのフォーム項目が垂直に配置されるようにフォームレイアウトを定義します。Title項目と Description項目は適切な Auraコンポーネントを使用し、コンポーネントの`BoatReview__c`型のprivate属性`boatReview`の`Name`プロパティと`Comment__c`プロパティにバインドされます。Description項目のリッチテキストエディタでは、フォント選択オプションは表示されないようにしてください。送信ボタンは`utility:save`アイコンを使用してコントローラメソッド`onSave`を呼び出します。Rating(評価)項目は、「**サードパーティスクリプトの統合**」フェーズまで追加しません。
+`BoatDetails` コンポーネントの Add Reviews (レビューの追加) タブでは、新しいコンポーネント `AddBoatReview` をインスタンス化し、コンポーネントの Boat__c 型の public 属性 `boat` を使用してボートのデータを渡します。コンポーネントは SLDS を使用してすべてのフォーム項目が垂直に配置されるようにフォームレイアウトを定義します。Title 項目と Description 項目は適切な Aura コンポーネントを使用し、コンポーネントの `BoatReview__c` 型の private 属性 `boatReview` の `Name` プロパティと `Comment__c` プロパティにバインドされます。Description 項目のリッチテキストエディタでは、フォント選択オプションは表示されないようにしてください。送信ボタンは `utility:save` アイコンを使用してコントローラメソッド `onSave` を呼び出します。Rating (評価) 項目は、「**サードパーティスクリプトの統合**」フェーズまで追加しません。
 
 ### 新しいBoatReviewレコードを作成する
 このコンポーネントは、Lightning Data Serviceを利用して BoatReview__cレコードを作成します。データサービスの呼び出しには`force:recordData`の targetFields構文を使用し、aura:idに`service`と設定し、`boatReview`属性を参照します。boatReview属性の対象の項目は Id、Name、Comment__c、Boat__cです。レコードが更新されると、このセクションの後半で詳しく説明するように`onRecordUpdated`という名前のコントローラ関数が呼び出され、`recordError`という名前の privateコンポーネント属性を使用してデータサービスのエラーを書き込みます。

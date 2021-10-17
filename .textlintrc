@@ -4,6 +4,8 @@
     "preset-jtf-style": {
       // 全角文字と半角文字の間にスペースを入れるので無効化
       "3.1.1.全角文字と半角文字の間": false,
+      // 外側の半角スペース許容が実装されるまで無効化
+      "3.3.かっこ類と隣接する文字の間のスペースの有無": false,
       // 括弧内の句点を許可する
       "4.1.1.句点(。)": false,
       // コロンは半角を使用する
@@ -17,7 +19,9 @@
       "ja-space-between-half-and-full-width": {
           "space": "always",
           "exceptPunctuation": true
-      }
+      },
+      // 外側の半角スペース許容が実装されるまで無効化
+      "ja-no-space-around-parentheses": false
     }
   },
   "filters": {
