@@ -18,7 +18,10 @@
 * データの修正
 * データフロージョブのトラブルシューティング
 
-所要時間 : 推定 4時間 - 6時間
+所要時間 : 推定 4 時間 - 6 時間
+
+### 注意
+Challenge を始める前に、[Tableau CRM Data Preparation Specialist: Trailhead Challenge Help (英語)](https://trailhead.salesforce.com/ja/help?article=Tableau-CRM-Data-Preparation-Specialist-Superbadge-Trailhead-Challenge-Help) を確認してください。
 
 ## 事前準備とメモ
 * ペンや鉛筆を用意して、要件を読み進める際にメモを取ってください。
@@ -35,8 +38,8 @@
 * 以下の詳細な要件を読みながら、エンティティリレーション図を確認してください。
 
 #### リファレンス
-* SAQL の構文については、[Analytics SAQL リファレンス](https://developer.salesforce.com/docs/atlas.ja-jp.218.0.bi_dev_guide_saql.meta/bi_dev_guide_saql/bi_saql_intro.htm)を参照してください。
-* Tableau CRM Learning Adventure アプリケーションには、Challenge に役立つかもしれない例が含まれています。新しく作成した Analytics Developer Edition 組織にはこのアプリケーションが備わっています。Analytics Studio で、**作成 | アプリケーション | テンプレートからアプリケーションを作成 | Learning Adventure** をクリックします。
+* SAQL の構文については、[Analytics SAQL リファレンス](https://developer.salesforce.com/docs/atlas.ja-jp.bi_dev_guide_saql.meta/bi_dev_guide_saql/bi_saql_intro.htm)を参照してください。
+* Tableau CRM Learning Adventure アプリケーションには、Challenge に役立つかもしれない例が含まれています。新しく作成した DE 組織にはこのアプリケーションが備わっています。Analytics Studio で、**作成 | アプリケーション | テンプレートからアプリケーションを作成 | Learning Adventure** をクリックします。
 * [Let's Play Salesforce](https://www.youtube.com/channel/UCkNDwCEl-BbAsaGSQ7I6Xtg/playlists) の Youtubeチャンネルにも役立つ動画があります。
 
 Challenge を完了するには、このスーパーバッジに関連しているデータを、取引先オブジェクトに事前に入力する必要があります。Agency Data.txt ファイルを Tableau CRM DE 組織の取引先オブジェクトにインポートします。取引先オブジェクトへインポートしたら、課題に取り組む準備が整います。
@@ -128,7 +131,7 @@ Mosaic のプロジェクトのボランティアには全員、レポートや�
 
 Mosaic が最適なパフォーマンスでデータ準備を運用できるようにするため、Mosaic の Salesforce 組織でデータ同期を有効化してください。
 
-### Seed Bank Agencies (種子銀行の代理機関)のデータセットを作成する
+### Seed Bank Agencies (種子銀行の代理機関) のデータセットを作成する
 Mosaic は、プログラムに参加している農家に対して種子の配布を担当している国際機関と直接協力しています。Yasmine は Tonya にプロジェクトのこの部分を管理するように依頼しました。
 
 ![](Agency-data.png)
@@ -173,7 +176,7 @@ Tonyaは、Danielle と Philip がフラットなファイルである Agency Da
 2. **Seed Bank Agencies** データセットをクリックします。
 3. 横棒 (Bars) の下にある **+** ボタンをクリックして、**Account Name** (取引先名) を選択します。
 4. グラフのヘッダーにある **[行 計数:]** (Count of Rows) をクリックして、一覧の値を降順に並べます。
-5. 先頭の 5件をクリックしてハイライトします。
+5. 先頭の 5 件をクリックしてハイライトします。
 6. レンズの右上にある **フォーカス** (Focus) ボタンをクリックします。
 7. **保存** ボタンをクリックし、タイトルに **Top 5 Agencies** を追加し、アプリケーションに Mosaic を選択します。
 8. 完了したら **保存** ボタンをクリックします。**X** をクリックしてタブを閉じます。
@@ -222,7 +225,7 @@ Hadiqa はまた、種子の間隔を記録する Spacing 項目についても�
 3. 棒の長さ (Bar Length) の下にある、**[行 計数:]** (Count of Rows) をクリックして、**合計 | Acreage** (Sum | Acreage) の順に選択します。
 4. 横棒 (Bars) の下にある **+** ボタンをクリックして、**Seed** を選択します。
 5. グラフのヘッダーにある **Acreage 合計** (Sum of Acreage) をクリックして、一覧の値を降順に並べます。
-6. 先頭の 5件をクリックしてハイライトします。
+6. 先頭の 5 件をクリックしてハイライトします。
 7. レンズの右上にある **フォーカス** (Focus) ボタンをクリックします。
 8. **保存** ボタンをクリックし、タイトルに **Top 5 Crop Seeds** を追加し、アプリケーションに Mosaic を選択します。
 9. 完了したら **保存** ボタンをクリックします。**X** をクリックしてタブを閉じます。
@@ -237,7 +240,7 @@ Mosaic は種子銀行プロジェクトのスタッフを増やしています�
 
 彼女の指導の下、Philip は組織内にデータセキュリティを設定して、これらのロールの人たちが、割り当てられた地域内の代理機関のみを表示できるようにしました。また、Seed Bank Orders データセットからは自身の地域の注文だけが参照できるようにする必要があります。Yasmine、Tonya、Hadiqa はすべての注文と代理機関を参照できます。
 
-### 最適な気温を決定する
+### 最適な気候を決定する
 Hadiqa は、各種子が繁栄するのに最適な環境について Mosaic の種子ベンダーと話し合っています。在庫ファイルの各種子には、華氏で気温の範囲がリストされています。日光と湿気を多く必要とする作物は、涼しい地域ではうまく育たないので、これは重要な情報です。結果的に、リクエストが入ったとき、Mosaic はリクエストされた種子の種別が地域で順応できるかどうかを知りたがっています。
 
 Hadiqa は、地元の大学で勉強している Danielle に、彼女が通う大学の大気科学科から気候データを入手できるかどうか尋ねました。 Danielle は、年、気温、国を含む CSVファイルを持ってきました。大学は彼女にデータを 1991 年までさかのぼって提供してくれましたが、種子のベンダーは今回の目的には 1 年間のデータがあれば十分であると言っています。
@@ -371,11 +374,11 @@ Tonya と Hadiqa が分析で行うクエリの種類は次のとおりです。
 ### Challenge 1: チームを組む
 シナリオに記載されているように、ロールに基づいてユーザが Tableau CRM を利用できるようにしてください。
 
-### Challenge 2: データ読み込みのパフォーマンスを向上させる
-複数のデータフロー操作が最適化されるように Salesforce 組織を設定してください。
+### Challenge 2: Analytics 組織を検証する
+この Challenge のために、Einstein Analytics の Developer Edition (DE) 組織にサインアップしてください。
 
 ### Challenge 3: Seed Bank Agencies データセットを作成する
-Salesforce のオブジェクトと外部のファイルを使用して、Seed Bank Agencies データセットを作成してください。
+Salesforce のオブジェクトと外部のファイルを使用して、Seed Bank Agencies データセットとレンズを作成してください。
 
 ### Challenge 4: Seed Bank データセットを作成する
 外部ファイルを読み込んで、Seed Bank データセットを作成してください。
@@ -383,7 +386,7 @@ Salesforce のオブジェクトと外部のファイルを使用して、Seed B
 ### Challenge 5: 誰が何を見られるかを制御する
 Tableau CRM で Seed Bank Agencies と Seed Bank Order オブジェクトに対してセキュリティルールを適用してください。
 
-### Challenge 6: 最適な気温を決定する
+### Challenge 6: 最適な気候を決定する
 データフローを構築して Seed Bank Agencies と Seed Bank データセットに Temperature Class (気温クラス) を追加してください。
 
 ### Challenge 7: 失敗したデータロードを診断しトラブルシューティングする
