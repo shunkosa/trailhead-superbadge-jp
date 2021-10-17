@@ -23,24 +23,32 @@
 
 所要時間 : 推定 8 時間 - 12 時間
 
+### 注意
+Challenge を始める前に、[Tableau CRM and Einstein Discovery Insights Specialist: Trailhead Challenge Help](https://trailhead.salesforce.com/help?article=Health-Cloud-Specialist-Superbadge-Trailhead-Challenge-Help) を確認してください。
+
+以前のバージョンの `Beattie Dashboard.json` ファイルは、互換性を高めるためにいくつかの調整が行われました。Summer '21 リリース以前に zip ファイルをダウンロードした場合は、新しいバージョンの [data-insight-specialist.zip](https://developer.salesforce.com/files/sb-files/superbadge_analytics_insights_specialist/data-insight-specialist.zip) をダウンロードしてください。そうすれば、このスーパーバッジに必要な JSON ファイルの最新バージョンを使用することができます。
 ## 事前準備とメモ
 * ペンや鉛筆を用意して、要件を読み進める際にメモを取ってください。
 * 解約率を測定およびレポートするための多くの計算および指標があります。以降のシナリオと Challenge において、解約率は、現在の四半期の解約数を現在の四半期のサービス加入者数で割ったものとして計算されます。
-* Challenge を検証する際に使用されるため、ステップや項目、射影の名前については、シナリオで指定されている命名規則に慎重に従ってください。
-  * Challenge で使用されるダッシュボードにステップを作成したり、ウィジェットを追加したりする際は、検証に必要となるため、ステップの名前を Challenge で指定された名前で更新してください。
+* Challenge を検証する際に使用されるため、クエリや項目、射影の名前については、シナリオで指定されている命名規則に慎重に従ってください。
+  * Challenge で使用されるダッシュボードにクエリを作成したり、ウィジェットを追加したりする際は、検証に必要となるため、クエリ名を Challenge で指定された名前で更新してください。
   * 変数と射影の名前にはキャメルケースのスペルを使用します。つまり、``lastName`` のように設定します<sup>[1](#footnote1)</sup>。
   * 項目名にはタイトルケースを使用します。つまり、``Last Name`` のように設定します。
-  * スペースを含むステップや項目、データセットの API名はアンダースコア (_) を使用します。つまり、``Last_Name`` のように設定します。
+  * スペースを含むクエリや項目、データセットの API名はアンダースコア (_) を使用します。つまり、``Last_Name`` のように設定します。
+* Challenge が正しく検証されるようにするため、クエリやトリガにコメントやメモを追加しないことを推奨します。
 * この Challenge に対して [Tableau CRM Developer Edition (DE)](https://developer.salesforce.com/promotions/orgs/analytics-de) 組織を作成します。この環境は Tableau CRM が有効になっており、Challenge で使用されるサンプルデータが含まれています (注 : この Challenge では Default App は使用しません) 。 
 * [未管理パッケージ](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf4000003qbmx)をインストールして、サービス加入者 (Subscriber) オブジェクトを実装します。この未管理パッケージはカスタムオブジェクトのタブを作成しないため、[手順](https://help.salesforce.com/articleView?id=creating_custom_object_tabs.htm&type=5&language=ja)に従って、組織にタブを作成しておくことを推奨します。もし管理・未管理パッケージ、または AppExchange アプリケーションをインストールする際に問題が発生した場合は、この[記事](https://force.desk.com/customer/en/portal/articles/2710899-installing-a-package-or-app-to-complete-a-trailhead-challenge?b_id=13478)の手順に従ってください。
 * Challenge を完了するためには、Beattie Subs.csv、Beattie OEM Survey.csv、Beattie Dashboard.json のファイルをアップロードする必要があります。
-* [data-insights-specialist.zip](https://developer.salesforce.com/files/data-insight-specialist-data.zip) をダウンロードして解凍してください。
+* [data-insights-specialist.zip](https://developer.salesforce.com/files/sb-files/superbadge_analytics_insights_specialist/data-insight-specialist.zip) をダウンロードして解凍してください。
 * CSV ファイルには、米国フォーマットの日付項目が含まれています。組織のロケールが米国以外の場合は、次の[手順](https://help.salesforce.com/articleView?id=000004999&type=1&language=ja)に従って変更するか、組織のロケールに基づいて Subscription Date (サービスの加入日) および Churn Date (サービスの解約日) 項目の形式を変更することを検討してください。
 
 #### リファレンス
 * SAQLの構文については、[Analytics SAQL リファレンス](https://developer.salesforce.com/docs/atlas.ja-jp.218.0.bi_dev_guide_saql.meta/bi_dev_guide_saql/bi_saql_intro.htm)を参照してください。
 * Tableau CRM Learning Adventure アプリケーションには、Challenge に役立つかもしれない例が含まれています。新しく作成した Analytics Developer Edition 組織にはこのアプリケーションが備わっています。Analytics Studio で、**作成 | アプリケーション | テンプレートからアプリケーションを作成 | Learning Adventure** をクリックします。
-* [Let's Play Salesforce](https://www.youtube.com/channel/UCkNDwCEl-BbAsaGSQ7I6Xtg/playlists)の Youtubeチャンネルにも役立つ動画があります。
+* [Let's Play Salesforce](https://www.youtube.com/channel/UCkNDwCEl-BbAsaGSQ7I6Xtg/playlists)の Youtubeチャンネルにも SAQL やバインディングの例を多く使った参考になる動画があります。
+
+#### データをインポートする
+Challenge のために、複数のアップロード処理が求められます。スーパーバッジの検証では、以下に示す手順に従うことが推奨されます。Tableau CRM にデータをアップロードするために、データフローを使用することを選択できますが、データ同期 (レプリケーション) は使用しません。データ同期では、データセットの項目名に接頭語が追加されるため、Challenge が正しく検証ができなくなります。
 
 #### Subscriber オブジェクトにレコードをインポートする
 1. Salesforce データインポートウィザードを使用します。設定で、クイック検索ボックスに``データインポートウィザード``と入力し、**データインポートウィザード** を選択します。
@@ -52,21 +60,21 @@
 7. **OK** をクリックします。
 
 #### Beattie Subs.csv と Beattie OEM Survey.csv ファイルをそれぞれアップロードする
-1. Analytics Studio で、Challenge のために、Beattie という名前で空白のアプリケーションを作成します。(注 : 作成ボタンが表示されていない場合は、「Tableau CRM Plus の管理者権限を自分のユーザ ID に割り当てる」セクションに進んでください。)
+1. Analytics Studio で、Challenge のために、`Beattie` という名前で空白のアプリケーションを作成します。(注 : 作成ボタンが表示されていない場合は、「Tableau CRM Plus の管理者権限を自分のユーザ ID に割り当てる」セクションに進んでください。)
 2. **作成** ボタンをクリックし、**データセット** を選択します。
 3. 次のページで **CSV ファイル** をクリックします。
 4. **ファイルを選択するか、ここにファイルをドラッグしてください** をクリックし、解凍した CSV ファイルを選択します。
 5. **次へ** をクリックします。
-5. アプリケーションが Beattie になっていることを確認します。
-6. **次へ** をクリックします。
-7. [項目属性の編集] はそのままにします。
-8. **ファイルをアップロード** ボタンをクリックします。
-9. **閉じる** をクリックします。
+6. アプリケーションで Beattie アプリケーションを選択します。
+7. **次へ** をクリックします。
+8. デフォルトのメタデータ設定のままにします。
+9. 右下にある **ファイルをアップロード** ボタンをクリックします。
+10. **閉じる** をクリックします。
 
 #### Beattie Dashboard.json ファイルをアップロードする
 1. JSON ファイルをテキストエディタで開き、コピーします。
 2. Analytics Studio のホームページで、**作成 | ダッシュボード | 空白のダッシュボードを作成** の順にクリックします。
-3. JSON エディタを開きます。Ctrl+E (Mac は Cmd+E)キーを押下します。
+3. JSON エディタを開きます。 `Ctrl+E` (Mac は `Cmd+E`)キーを押下します。
 4. 既存のダッシュボードの JSON を、全選択し削除します。
 5. JSON エディタの 1行目をクリックし、コピーした JSON を貼り付けます。
 6. **完了** ボタンを押下します。
@@ -173,12 +181,12 @@ Beattie Media はあなたを頼りにしています。さあ始めましょう
 1. Beattie Media ダッシュボードを開き、**編集** モードに入ります。
 2. ``CHALLENGE 1`` というラベルのダッシュボードセクションを見つけて、グラフウィジェットで置き換えます。
 3. **Beattie Subs** データセットを使用します。
-4. **Churn Rate** という名前のステップを追加します。
+4. `Churn Rate` という名前のクエリを追加します。
 5. 四半期中にサービスを解約した顧客の割合を示す Churn Rate 項目を作成します。Beattie Media での定義は以下の通りです。
 
 ![](churn_rate.png)
 
-* 解約率を計算するには、四半期ごとの顧客の活動(加入と解約)ごとにデータを整理する必要があります。たとえば、``ActivityDate_Year``や``ActivityDate_Quarter``などの射影を使用して、サービスの加入日と解約日でデータをグループ化することができます。
+* 解約率を計算するには、四半期ごとの顧客の活動 (加入と解約) ごとにデータを整理する必要があります。たとえば、``ActivityDate_Year``や``ActivityDate_Quarter``などの射影を使用して、サービスの加入日と解約日でデータをグループ化することができます。
 * Beattie Subs ファイルには、1種類の活動のみを含む四半期があります。たとえば、サービスの加入がなく、解約だけがある場合です。データストリームを group や cogroup、または union するときには、この点に留意してください。
 * この Challenge であなたが作成しようとしている計算は大変ですが、Arnas と Olivia はあなたを信頼しています！上記の解約率の表を使用して、この Challenge に対する計算式を考案してください。
 
@@ -193,7 +201,7 @@ Beattie Media はあなたを頼りにしています。さあ始めましょう
 新しい顧客を幸せにするための Beattie Media の精力的な働きもまた、初めの頃からサービスに加入していたロイヤリティの高い顧客に対して犠牲を払っていました。Arnas と Olivia は、長年サービスに加入している顧客が無視されているように感じロイヤリティを失い始めていると聞いて落胆しています。これらのかつて安定していた顧客はまた、より良いお買い得情報を求めてサービスを解約しています。Arnas と Olivia は、加入期間内の解約をモニタリングしたいと考えています。たとえば、2 年以上契約が続いていてキャンセルされた顧客の数を測定します。彼らは、加入期間別の解約率を示すグラフを求めており、すべての顧客に対して、より戦略的になり、より的を絞るようにしたいと考えています。
 
 1. ``CHALLENGE 2`` というラベルのダッシュボードセクションを見つけて、グラフウィジェットに置き換えます。  
-2. ``Churn Tenure`` という名前のステップを追加します。  
+2. ``Churn Tenure`` という名前のクエリを追加します。  
 3. 解約した顧客 (条件は ``Churn = "Yes"``) の数を顧客の総数で割る計算を追加します。解約した顧客の数が分子になり、総顧客数が分母になります。  
 4. Churn Tenure グラフの上に切り替えウィジェットを追加します。  
 5. 表示ラベルとして、``Tenure Length`` を追加します  
@@ -215,9 +223,9 @@ Beattie Media は無制限のサービスプランを提供していますが、
 Arnas と Olivia から、州別の顧客からの収益および、彼らが失った顧客を埋め合わせるために費やした損失コストを表示するグラフを作成するように依頼されています。加入期間を分類することができたので、彼らはまた、加入期間によって損失コストがファセットで絞り込まれる様子も見たいと思っています。
 
 1. ``CHALLENGE 3`` というラベルのダッシュボードセクションを見つけて、グラフウィジェットに置き換えます。
-2. ``Subscriber Revenue`` という名前のステップを追加します。
+2. ``Subscriber Revenue`` という名前のクエリを追加します。
 3. この手順では、``TotalCharges`` 項目を合計して ``Region`` 項目でグループ化する棒グラフを作成します。
-4. ``Attrition Cost`` という名前でステップをもう 1つ作成します。このステップでは顧客の損失コストを次の式で計算します。[ 解約した顧客の数 (条件は Churn = 'Yes') × 950.00ドル (USD) ]
+4. ``Attrition Cost`` という名前でクエリをもう 1つ作成します。このクエリでは顧客の損失コストを次の式で計算します。[ 解約した顧客の数 (条件は Churn = 'Yes') × 950.00ドル (USD) ]
 5. 前の手順での計算には、射影の名前に ``attrCost`` を使用してください。
 6. Subscriber Revenue グラフに基準線を追加します。
 7. 基準線に損失コストを表示する結果バインドを作成します。また、基準線の値を Tenure Length のトグルウィジェットを用いて、加入期間の長さでフィルタリングできるようにします。
@@ -231,9 +239,9 @@ Beattie Media の顧客基盤の大部分は、PC とテレビの製造業者を
 Beattie Media はこれらの顧客に対して、ストリーミングサービスに対する満足度をランク付け(1 = 非常に不満 から 10 = 非常に満足 まで)するように依頼しました。Arnas と Oliviaは、CSAT (顧客満足度) スコアが低かったり、加入期間が短かったりする地域や OEM メーカーを見ることに興味があります。
 
 1. ``CHALLENGE 4`` というラベルのダッシュボードセクションを、2つのグラフウィジェットに置き換えます。
-2. 1つ目のグラフで、``Beattie Survey`` という名前のステップを追加します。
+2. 1つ目のグラフで、``Beattie Survey`` という名前のクエリを追加します。
 3. Beattie Subs データセットの Tenure (加入期間) 項目を使用して平均の Tenure を計算し、Beattie OEM Survey データセットの CSAT項目を使用して平均 CSAT を計算します。
-4. 2つ目のグラフで、``OEM`` という名前のステップを追加します。
+4. 2つ目のグラフで、``OEM`` という名前のクエリを追加します。
 5. Beattie OEM Survey データセットのデータを OEM 項目別にグループ化し、[行 計数] (Count of Rows) の基準 (Measure) を追加してツリーマップグラフとして表示します。
 6. ファセットを使用して、ピラミッドグラフでの選択によりツリーマップグラフが絞り込まれることを確認します。
 7. 平均 CSATスコアが最も低い**最初**の州の Beattie Survey グラフにグラフマーカーを追加します。Challenge を検証する際に作成したソリューションが正しく評価されるように、マーカーはハードコーディングしてください。
@@ -259,29 +267,47 @@ Beattie Media が雇った投資銀行は、少なくとも 2年の契約がよ�
 あなたの仕事はデータセットを分析して加入期間を増やすためのおすすめを作成することです。
 
 #### Einstein Discovery でストーリーを作成する
-1. Beattie Subs データセットを使用してストーリーを作成し、顧客の加入期間を改善するためのおすすめを生成します。
-2. ストーリーを確認し、調整して、解約の原因を示す関連情報を取得します。  
-3. おすすめがが完成したら、これらの[手順](https://help.salesforce.com/articleView?id=bi_edd_wb_native.htm&type=5&language=ja)を実行して Subscriber カスタムオブジェクトにストーリーのおすすめを表示します。注 : 手順には、複数のタブを開く管理パッケージのインストールが含まれます。 インストールが完了したら、余計なタブは必ず閉じてください。  
+1. 「インサイトと予測」のストーリーを手動モードで、Beattie Subs データセットを使用して作成します。顧客の加入期間を最大化することをストーリーの目標に設定します。
+2. ストーリーで使用されるすべての項目を確認し、データリーケージの原因となりそうな項目を削除し、新しいストーリーバージョンを作成します。ヒントとして、レコードが終了状態になったときのみに入力されるため、予測モデルでは使用すべきでない項目が 1 つあります。
+3. おすすめが完成したら、これらの[手順](https://help.salesforce.com/articleView?id=bi_edd_wb_native.htm&type=5&language=ja)を実行して Subscriber カスタムオブジェクトにストーリーのおすすめを表示します。注 : 手順には、複数のタブを開く管理パッケージのインストールが含まれます。 インストールが完了したら、余計なタブは必ず閉じてください。  
 4. 作成した最終的な予測に Predicted Tenure と名前を付けます。
 
-#### Salesforce のオブジェクトにおすすめを追加する
-|項目名|データ型|説明|
-|-|-|-|
-|Tenure Outcome|数値|Einstein Discovery outcome information.|
-|Tenure Explanation|ロングテキストエリア|Einstein Discovery explanation information.|
-|Tenure Prescription|ロングテキストエリア|Einstein Discovery prescription information.|
-  
-1. 結果 (Outcome)、説明 (Explanation)、処方箋 (Prescription) のおすすめを表示するために使用するカスタム項目については、上記の項目名を使用してください。 Salesforce オブジェクトにカスタム項目を追加する手順については、この[リンク](https://help.salesforce.com/articleView?id=adding_fields.htm&type=5&language=ja)を使用してください。  
-2. Einstein Discovery をカスタム項目に接続します。カスタム設定の Einstein Discovery - Write Back Detail で、エントリーの名前として Tenure を使用します。  
-3. Subscriber レコードが更新されたときに起動する Apex トリガを作成します。上記のリンクにあるヘルプ記事には、コードのテンプレートが用意されています。要求されたパラメータを埋め、トリガーの名前は変更しないようにしてください。  
-4. Cancelled Subscribers (解約した顧客) のリストビューから 1件レコードを編集し、変更を加えずにレコードを保存します。  
-5. 作成したおすすめ項目にストーリーの結果が表示されていることを確認します。結果は以下の例のようになります。
+#### Einstein Discovery の予測をリリースする
+1. ストーリーを調整してから、この[手順](https://help.salesforce.com/articleView?id=bi_edd_model_deploy.htm&type=5)を使用して新しい予測をリリースし、予測を Subscriber オブジェクトに関連付けます。
+2. 予測の名前を `Predicted Tenure` にします。
+3. Subscriber オブジェクトに予測を関連付けます。
+4. ストーリーのすべての項目を Subscriber オブジェクトに対応付けます。
+5. 新しい予測項目を作成し、`Predicted Tenure` という名前を付けます。
+6. Contract (契約期間) と Payment Method (支払方法) をアクション可能な変数として選択します。
+7. モデルを確認しリリースします。
 
-![](challenge_5.png)
+#### Einstein Prediction の Lightning カードを Subscriber レコードの Lightning ページに追加する
+1. Lightning アプリケーションビルダーを使用して、Subscriber オブジェクトのレコードページを作成します。
+2. ページの名前を `Default` にします。
+3. Salesforce のデフォルトのページをコピーし、
+4. 右サイドパネルに、Einstein 予測の Lightning コンポーネントをドラッグアンドドロップします。
+5. Einstein 予測の設定パネルで、`Predicted Tenure` を選択します。
+6. ページを有効化し、デスクトップの組織のデフォルトとして割り当てます。
+
+#### Subscriber リストビューに予測の項目を追加する
+1. オブジェクトマネージャを使用して、Subscriber オブジェクトに移動して、`Predicted Tenure` 項目を開きます。
+2. この項目を自身のプロファイルから参照できるように、項目レベルセキュリティを設定します。
+3. Subscriber タブに移動します。
+4. `All Subscribers` という名前の新しいリストビューを作成します。
+5. Subscriber Name、`Predicted Tenure` および表示したい他の任意の項目を含めて、リストビューを保存します。
+6. `Predicted Tenure` 項目は空になっています。これは、新しい予測がレコードを作成または更新された後にのみ生成されるためです。
+
+#### 予測を表示し、新しい予測を生成する
+1. 任意の Subscriber レコードに移動します。
+2. Lightning カードに表示される予測を確認します。
+3. 上位 5 件の予測因子のうち、1 つの項目値を変更しレコードを保存します。
+4. リストビューに戻り、更新したレコードの `Predicted Tenure` 項目の値を確認します。
 
 ## Challenge
 ### Challenge 1: 解約率を計算する
 四半期の解約率を表示する折れ線グラフを作成してください。
+
+注: Summer '21 リリースから、このスーパーバッジの Challenge をパスするために、[data-insight-specialist.zip](https://developer.salesforce.com/files/sb-files/superbadge_analytics_insights_specialist/data-insight-specialist.zip) に含まれる、新しいバージョンの "Beattie Dashboard.json" ファイルが必要になります。 
 
 ### Challenge 2: 加入期間別の解約率を表示する
 加入期間別の解約率を表示する評価グラフを作成してください。加入期間の長さでグラフをフィルタできるように設定してください。
@@ -293,7 +319,7 @@ Beattie Media が雇った投資銀行は、少なくとも 2年の契約がよ�
 OEM 契約を通して獲得した顧客に対して 2つのグラフを作成してください。1つ目は、地域別に平均の顧客満足度スコアと加入期間を表示するピラミッドグラフです。2つ目は、OEM パートナ毎に顧客の数を表示するツリーマップグラフです。
 
 ### Challenge 5: サービスの解約を減らすためのソリューションを提供する
-データセットを分析し、ストーリーを作成し、おすすめを Salesforce のオブジェクトのページレイアウトに追加してください。
+**注: この Challenge の要件は、最近のリリースで導入された新機能のために変更されました。**データセットを分析し、ストーリーを作成し、おすすめを Salesforce のオブジェクトのページレイアウトに追加してください。
 
 ## 訳注
 * <a name="footnote1">[1]</a> : 原文には記載がありませんが、厳密に言うと <a href="https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%A1%E3%83%AB%E3%82%B1%E3%83%BC%E3%82%B9">Lower Camel Case</a> ということです。
