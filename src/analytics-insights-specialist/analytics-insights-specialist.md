@@ -1,6 +1,6 @@
-# Tableau CRM and Discovery Insights Specialist
+# Tableau CRM and Einstein Discovery Insights Specialist
 [![](https://img.shields.io/badge/-view%20on%20gitbook-blue?logo=markdown)](https://shunkosa.gitbook.io/trailhead-superbadge-jp/analytics-insights-specialist) [![](https://img.shields.io/badge/-view%20on%20github-black?logo=github)](https://github.com/shunkosa/trailhead-superbadge-jp/blob/master/src/analytics-insights-specialist/analytics-insights-specialist.md)
-* Trailhead のスーパーバッジ、[Tableau CRM and Discovery Insights Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_analytics_insights_specialist) の日本語訳(**非公式**)です。
+* Trailhead のスーパーバッジ、[Tableau CRM and Einstein Discovery Insights Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_analytics_insights_specialist) の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
 ---
@@ -27,6 +27,7 @@
 Challenge を始める前に、[Tableau CRM and Einstein Discovery Insights Specialist: Trailhead Challenge Help (英語)](https://trailhead.salesforce.com/help?article=Health-Cloud-Specialist-Superbadge-Trailhead-Challenge-Help) を確認してください。
 
 以前のバージョンの `Beattie Dashboard.json` ファイルは、互換性を高めるためにいくつかの調整が行われました。Summer '21 リリース以前に zip ファイルをダウンロードした場合は、新しいバージョンの [data-insight-specialist.zip](https://developer.salesforce.com/files/sb-files/superbadge_analytics_insights_specialist/data-insight-specialist.zip) をダウンロードしてください。そうすれば、このスーパーバッジに必要な JSON ファイルの最新バージョンを使用することができます。
+
 ## 事前準備とメモ
 * ペンや鉛筆を用意して、要件を読み進める際にメモを取ってください。
 * 解約率を測定およびレポートするための多くの計算および指標があります。以降のシナリオと Challenge において、解約率は、現在の四半期の解約数を現在の四半期のサービス加入者数で割ったものとして計算されます。
@@ -43,12 +44,12 @@ Challenge を始める前に、[Tableau CRM and Einstein Discovery Insights Spec
 * CSV ファイルには、米国フォーマットの日付項目が含まれています。組織のロケールが米国以外の場合は、次の[手順](https://help.salesforce.com/articleView?id=000004999&type=1&language=ja)に従って変更するか、組織のロケールに基づいて Subscription Date (サービスの加入日) および Churn Date (サービスの解約日) 項目の形式を変更することを検討してください。
 
 #### リファレンス
-* SAQLの構文については、[Analytics SAQL リファレンス](https://developer.salesforce.com/docs/atlas.ja-jp.218.0.bi_dev_guide_saql.meta/bi_dev_guide_saql/bi_saql_intro.htm)を参照してください。
+* SAQL クエリの構造と文法については、[Analytics SAQL リファレンス](https://developer.salesforce.com/docs/atlas.ja-jp.218.0.bi_dev_guide_saql.meta/bi_dev_guide_saql/bi_saql_intro.htm)を参照してください。
 * Tableau CRM Learning Adventure アプリケーションには、Challenge に役立つかもしれない例が含まれています。新しく作成した Analytics Developer Edition 組織にはこのアプリケーションが備わっています。Analytics Studio で、**作成 | アプリケーション | テンプレートからアプリケーションを作成 | Learning Adventure** をクリックします。
 * [Let's Play Salesforce](https://www.youtube.com/channel/UCkNDwCEl-BbAsaGSQ7I6Xtg/playlists)の Youtubeチャンネルにも SAQL やバインディングの例を多く使った参考になる動画があります。
 
 #### データをインポートする
-Challenge のために、複数のアップロード処理が求められます。スーパーバッジの検証では、以下に示す手順に従うことが推奨されます。Tableau CRM にデータをアップロードするために、データフローを使用することを選択できますが、データ同期 (レプリケーション) は使用しません。データ同期では、データセットの項目名に接頭語が追加されるため、Challenge が正しく検証ができなくなります。
+Challenge のために、複数のアップロード処理が求められます。スーパーバッジの検証では、以下に示す手順に従うことが推奨されます。Tableau CRM にデータをアップロードするために、データフローを使用することを選択できますが、データ同期 (レプリケーション) は使用しません。データ同期では、データセットの項目名に接尾辞が追加されるため、Challenge が正しく検証できなくなります。
 
 #### Subscriber オブジェクトにレコードをインポートする
 1. Salesforce データインポートウィザードを使用します。設定で、クイック検索ボックスに``データインポートウィザード``と入力し、**データインポートウィザード** を選択します。
@@ -58,6 +59,14 @@ Challenge のために、複数のアップロード処理が求められます�
 5. **CSV** をクリックします。**ファイルを選択** を選択して、解凍した Beattie Subs.csv を選択します。**次へ** をクリックしてください。<sup>[*2](#footnote2)</sup>
 6. **次へ** をクリックしてから **インポートの開始** をクリックします。
 7. **OK** をクリックします。
+
+
+#### Tableau CRM Plus Admin 権限を自身のユーザ Id に割り当てる
+1. 設定のクイック検索ボックスに `権限セット` と入力し、**権限セット**を選択します。
+2. **Tableau CRM Plus Admin** 権限をクリックします。
+3. **割り当ての管理**ボタンをクリックし、**割り当てを追加**ボタンをクリックします。
+4. ユーザのリストの中から自分の名前を探し、その横にチェックを入れます。
+5. **割り当て** ボタンをクリックし、**完了**をクリックします。
 
 #### Beattie Subs.csv と Beattie OEM Survey.csv ファイルをそれぞれアップロードする
 1. Analytics Studio で、Challenge のために、`Beattie` という名前で空白のアプリケーションを作成します。(注 : 作成ボタンが表示されていない場合は、「Tableau CRM Plus の管理者権限を自分のユーザ ID に割り当てる」セクションに進んでください。)
@@ -269,8 +278,8 @@ Beattie Media が雇った投資銀行は、少なくとも 2年の契約がよ�
 #### Einstein Discovery でストーリーを作成する
 1. 「インサイトと予測」のストーリーを手動モードで、Beattie Subs データセットを使用して作成します。顧客の加入期間を最大化することをストーリーの目標に設定します。
 2. ストーリーで使用されるすべての項目を確認し、データリーケージの原因となりそうな項目を削除し、新しいストーリーバージョンを作成します。ヒントとして、レコードが終了状態になったときのみに入力されるため、予測モデルでは使用すべきでない項目が 1 つあります。
-3. おすすめが完成したら、これらの[手順](https://help.salesforce.com/articleView?id=bi_edd_wb_native.htm&type=5&language=ja)を実行して Subscriber カスタムオブジェクトにストーリーのおすすめを表示します。注 : 手順には、複数のタブを開く管理パッケージのインストールが含まれます。 インストールが完了したら、余計なタブは必ず閉じてください。  
-4. 作成した最終的な予測に Predicted Tenure と名前を付けます。
+3. モデルで使用されるすべての日付項目を確認します。年を含める必要はありますか？このモデルでスコアリングされる新しいレコードを検討します。予測モデルは年をどのように処理するか知っていますか？「曜日」または「年の月」にフォーカスすることを検討します。 
+4. モデルの評価基準を検討し、このモデルがリリースするのに十分なものであることを確認します。
 
 #### Einstein Discovery の予測をリリースする
 1. ストーリーを調整してから、この[手順](https://help.salesforce.com/articleView?id=bi_edd_model_deploy.htm&type=5)を使用して新しい予測をリリースし、予測を Subscriber オブジェクトに関連付けます。

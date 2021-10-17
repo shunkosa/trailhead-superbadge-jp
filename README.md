@@ -15,7 +15,7 @@
 | [Business Administration Specialist](src/business-administration-specialist/business-administration-specialist.md) | データ管理<br>メールテンプレート<br>UI設定|
 | [Data Integration Specialist](https://developer.salesforce.com/jpblogs/2018/06/data_integration_superbadge/) ☁️ | Apex Webサービス<br>コールアウト|
 | [Tableau CRM Data Preparation Specialist](src/analytics-integration-specialist/analytics-integration-specialist.md) | データフロー|
-| [Tableau CRM and Discovery Insights Specialist](src/analytics-insights-specialist/analytics-insights-specialist.md)| SAQL<br>動的バインド|
+| [Tableau CRM and Einstein Discovery Insights Specialist](src/analytics-insights-specialist/analytics-insights-specialist.md)| SAQL<br>動的バインド|
 | [Lightning Experience Reports and Dashboards Specialist](src/lex-reports-dashboards-specialist/lex-reports-dashboards-specialist.md) | レポート・ダッシュボード全般|
 | [Lightning Experience Rollout Specialist](src/lex-rollout-specialist/lex-rollout-specialist.md) | Lightning移行全般|
 | [Lightning Experience Specialist](https://developer.salesforce.com/jpblogs/2018/10/lex_specialist_superbadge/) ☁️ | プロセスビルダー|
