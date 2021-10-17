@@ -4,7 +4,7 @@
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
 ## このスーパーバッジを取得するためにすること
-* Salesforce CPQ, Billing, CIG を備えた Developer Edition 組織のサインアップ
+* Revenue Cloud を備えた Developer Edition 組織のサインアップ
 * UMS の US 法人レコードの作成と商談商品の自動化
 * UMS の US 財務帳簿と財務期間の作成 (会計と収益)
 * 総勘定元帳の情報で Salesforce Billing のトランザクションを向上させる
@@ -12,7 +12,6 @@
 * Major Solar Panel の 1 回限りの商品およびサブスクリプション商品に対して、完全および按分の収益認識を設定する
 * 口座残高スナップショットとカスタムの請求レポートを使用して口座残高情報を評価する
 * 自動化プロセスを作成して、支払期日を過ぎた請求書残高を顧客に警告する
-* Conga Invoice Generation を用いて、UMS の現在の請求書を改善する
 * 契約の修正を通した Cloud Kicks のアップセル
 * 知識のチェック (クイズ)
 
@@ -21,7 +20,6 @@
 * 収益認識を設定して完全および按分の商品要件に対応する
 * プロセスビルダーの自動化を使用して法人の入力を自動化する
 * 得意客に対する注文の修正とキャンセルを処理する
-* CIG を使用して顧客への請求書を出力し送付する
 * 口座残高スナップショットを生成しカスタムの請求レポートを作成する
 * ベストプラクティスに従い請求書を修正し調整する
 * Cloud Kicks に対して契約の修正を実施する
@@ -29,7 +27,7 @@
 
 ## 事前準備とメモ
 ### Salesforce Billing と Salesforce CPQ を備えるDeveloper Edition 組織の作成
-このスーパーバッジを完了するには、Salesforce CPQ、Salesforce Billing、Conga Invoice Generation、サンプルデータを含む特別な Developer Edition 組織が必要です。無料の Developer Edition を入手して Trailhead に接続すると、このスーパーバッジの Challenge を完了することができます。
+このスーパーバッジを完了するには、Salesforce CPQ、Salesforce Billing、サンプルデータを含む特別な Developer Edition 組織が必要です。無料の Developer Edition を入手して Trailhead に接続すると、このスーパーバッジの Challenge を完了することができます。
 
 特別に Saleseforce Billing が有効化された Developer Edition 組織に最近サインアップした場合でも、このスーパーバッジのために新しい組織にサインアップしてください。常に新しいデータが追加されています。また、管理パッケージは 90 日後に期限切れになるため、新しい組織が必要になる場合があることにも注意してください。
 
@@ -56,18 +54,7 @@
 * 最後の Challenge 用に、商談と見積レコード (Q-00007) があらかじめ作成されています。これらのレコードを事前に使用しないでください。使用すると、Challenge が失敗する可能性があります。
 * **ポイント**: メタデータおよびレコードデータを設定するために示されている値は手動で入力せず、コピー・ペーストしてください。これにより、Challenge の失敗を引き起こすタイプミスやスペルミスの可能性が減ります。
 
-### Conga Invoice Generation (CIG) の設定:
-
-* CIG を使用する際は、ブラウザのポップアップブロックをオフにします。
-* Conga Invoice Generation アプリケーションに移動します。
-* **Quick Start** タブを選択し、**Launch Quick Start** ボタンを選択します。
-* **Generate Invoice** を選択します。
-* サイトを追加するための確認のポップアップに従います。**Add Site** ボタンをそれぞれ選択してサイトを追加し、指示に従って別のタブで開くサイトレコードを保存し、タブを閉じます。
-* 設定から Invoice オブジェクトへ移動します。
-* Invoice Layout のページレイアウトを更新して Generate Invoice Lightning アクションを追加します。
-* **Conga Composer Setup** タブを選択して、ポップアップウィンドウで **Allow** を選択し、Conga Composer を認証します。
-
-#### 重要な注意事項:
+#### 備考:
 Challenge を始める前に、[Advanced Billing Specialist: Trailhead Challenge Help (英語)](https://trailhead.salesforce.com/help?article=Advanced-Billing-Specialist-Superbadge-Challenge-Help) の記事を参照してください。
 
 ## ユースケース
@@ -118,10 +105,6 @@ Ursa Major Solar, Inc. (UMS) は、1年以上前に Salesforce Billing を実装
 - Account Balance Snapshot (口座残高スナップショット)
 
 ![](02_BSSSFBConfig.png)
-
-### 管理パッケージのカスタムオブジェクト - Conga Invoice Generation
-
-![](03_CongaSchemaBSS2.png)
 
 ### カスタムオブジェクト
 * このスーパーバッジには必要ありません (管理パッケージのカスタムオブジェクトのみ)
@@ -338,20 +321,6 @@ Solange はまた、ユーザが期日超過日数でグループ化された未
    </tbody>
 </table>
 
-### Conga Invoice Generation を用いて顧客の請求書の出力を改善する
-UMS には、電子請求書ドキュメントの出力と送付のソリューションが必要です。現在、Solange のチームは Word ですべての請求書ドキュメントを作成し、郵送で顧客に請求書を届けています。UMS では、顧客が請求書を受け取るまでの時間を短縮し、顧客からの支払いを受け取るまでの時間を短縮する必要があります。UMS は、Salesforce Billing のソリューションの一部として Conga Invoice Generation を実装することを決定し、ビジネス要件を満たすため、機能の一部を強化するための支援が求められています。
-
-Solange と Maria は CIG の大部分を設定しましたが、最後の 2 つの要件を完了するにはあなたの専門知識が必要です。最初のビジネス要件は、ユーザが請求書の生成ボタンを選択したときに、CIG によって作成された ToDo レコードの件名に日付情報を含めることです。2 番目は、特定の請求書レコードに対して請求書ドキュメントが生成された最後の日付をキャプチャすることです。これにより、顧客に請求書が送付された際に監査チェックと検証を行うにあたり、Solange のチームの可視性が向上します。
-
-**ヒント:** Conga Invoice Generation に必要な認証プロセスのため、CIG の Challenge にはブラウザのシークレットウィンドウを使用することをお勧めします。詳細およびその他のトラブルシューティングのヒントについては、[Advanced Billing Specialist: Trailhead Challenge Help (英語)](https://trailhead.salesforce.com/help?article=Advanced-Billing-Specialist-Superbadge-Challenge-Help) の記事を参照してください。
-
-|Conga Solution Parameter Name | Parameter Value|
-|-|-|
-|AC1|Invoice+Generated+on+{!Today()}|
-|UF0|1|
-|MFTSValue0|TODAY|
-|MFTS0|Last_Document_Generated_Date__c|
-
 ### 契約の修正を通した Cloud Kicks のアップセル
 UMS の顧客である Cloud Kicks は、6 か月前に UMS から購入した商品に満足しています。UMS にとって非常に喜ばしいことに、Cloud Kicks は 2 枚のパネルを追加して合計 12 枚のソーラーパネルを借りたいと思い、Lincoln に電話しました。
 
@@ -403,13 +372,10 @@ UMS の ERP システムの総勘定元帳勘定を表す 3 つの GL 勘定を�
 ### Challenge 7: 延滞残高の取引先所有者に警告する自動化を作成する
 請求書の期日から 30 日を過ぎており、請求書の未払い額が $0 を超えている場合、Past Due Invoice Notifications (期限を過ぎた請求書の通知) メールテンプレートを使用してメールを送信するワークフロールールとメールアラートを作成してください。取引先の所有者と請求書の作成者の両方がこのメールを受信する必要があります。
 
-### Challenge 8: Conga Invoice Generation を用いて顧客の請求書の出力を改善する
-Generate Invoice という既存の Conga ソリューションを更新します。最初の要件を達成するには、AC1 と呼ばれる既存のソリューションパラメータを利用する必要があります。2番目の要件を達成するには、パラメータでカスタマイズし、3つの新しいソリューションパラメータを作成する必要があります。設定ごとに、提示されたパラメータの値をコピー・ペーストします。**ヒント:** CIG パッケージを設定するときは、ポップアップのブロックがオフになっていることを確認してください。
-
-### Challenge 9: 契約の修正を通した Cloud Kicks のアップセル
+### Challenge 8: 契約の修正を通した Cloud Kicks のアップセル
 ビジネス要件に記載されている、Cloud Kicks へのアップセルシナリオの処理で UMS を支援してください。Bright Sneakers の取引先で、INV-0042 に関連する支払いを割り当て解除してから、請求書をキャンセルします。Cloud Kicks に関連する契約を修正し、リクエストに従ってパネルのレンタルを追加します。Challenge を完了するには、1 つの統合された請求書を作成し、Bright Sneakers へ請求書ドキュメントを作成します。
 
-### Challenge 10: クイズ
+### Challenge 9: クイズ
 サンプルデータ、インテグレーション、Quote-to-Cash、法人などに関するクイズに回答してください。
 
 ## 補足とヒント
