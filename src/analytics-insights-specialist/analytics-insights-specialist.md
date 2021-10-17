@@ -24,7 +24,7 @@
 所要時間 : 推定 8 時間 - 12 時間
 
 ### 注意
-Challenge を始める前に、[Tableau CRM and Einstein Discovery Insights Specialist: Trailhead Challenge Help](https://trailhead.salesforce.com/help?article=Health-Cloud-Specialist-Superbadge-Trailhead-Challenge-Help) を確認してください。
+Challenge を始める前に、[Tableau CRM and Einstein Discovery Insights Specialist: Trailhead Challenge Help (英語)](https://trailhead.salesforce.com/help?article=Health-Cloud-Specialist-Superbadge-Trailhead-Challenge-Help) を確認してください。
 
 以前のバージョンの `Beattie Dashboard.json` ファイルは、互換性を高めるためにいくつかの調整が行われました。Summer '21 リリース以前に zip ファイルをダウンロードした場合は、新しいバージョンの [data-insight-specialist.zip](https://developer.salesforce.com/files/sb-files/superbadge_analytics_insights_specialist/data-insight-specialist.zip) をダウンロードしてください。そうすれば、このスーパーバッジに必要な JSON ファイルの最新バージョンを使用することができます。
 ## 事前準備とメモ
