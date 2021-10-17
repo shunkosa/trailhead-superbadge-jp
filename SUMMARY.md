@@ -1,6 +1,6 @@
 # Summary
 
-* [トップページ](README.md)
+* [Trailhead Superbadge 日本語訳について](README.md)
 * [Advanced Apex Specialist](src/advanced-apex-specialist/advanced-apex-specialist.md)
 * [Advanced Billing Specialist](src/advanced-billing-specialist/advanced-billing-specialist.md)
 * [Apex Specialist](https://developer.salesforce.com/jpblogs/2018/05/apex_specialist_superbadge/)
