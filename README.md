@@ -3,7 +3,7 @@
 
 * Salesforce の Trailhead Superbadge (スーパーバッジ) の日本語訳です。公式の日本語訳(☁️)へのリンクも含みます。
 * 原文のアップデートは予告なく行われるため、翻訳が追いつかない場合がありますがご容赦ください。
-* フィードバックや質問、誤訳やタイプミスなどの報告は大歓迎です。些細なものでも構いません。[Issue](https://github.com/shunkosa/trailhead-superbadge-jp/issues/new) や Pull Request、[メール](mailto:shun.kosaka.102@gmail.com)等でお知らせください。
+* フィードバックや質問、誤訳やタイプミスなどの報告は大歓迎です。些細なものでも構いません。[Issue](https://github.com/shunkosa/trailhead-superbadge-jp/issues/) や [Pull Request](https://github.com/shunkosa/trailhead-superbadge-jp/pulls/)、[Twitter](https://www.twitter.com/shunkosa)等でお知らせください。
 
 
 | スーパーバッジ | キーワード |
