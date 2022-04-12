@@ -127,18 +127,18 @@ Ursa Major Solar の住宅向けセールスチームは顧客を愛し、顧客
 
 |タイトル|サブタイトル|ソースレポート|グラフの詳細|
 |-|-|-|-|
-|Account Distribution|Number of Accounts by Industry Type|Accounts by Market|<ul><li>ドーナツグラフ</li><li>スライスの基準: Market</li><li>表示ラベルの昇順でソート</li><li>表示する最大件数: 2</li><li>グラフのサイズ:幅 5、高さ 5</li><li>左上に配置</li>|
-|Top Accounts|Top 10 High Value Residential Accounts|High Value Residential|<ul><li>Lightningテーブル</li><li>値の降順でソート</li><li>表示する最大グループ数: 10</li><li>グラフのサイズ: 幅 4、高さ 5</li><li>右上に配置</li></ul>|
-|Ratings by State|Rated Distribution of Accounts by State|Rated Accounts by State|<ul><li>積み上げ縦棒グラフ</li><li>表示する最大グループ数: 15</li><li>グラフのサイズ: 幅 9、高さ 3</li><li></li>他のコンポーネントの下に配置</ul>|
+|Account Distribution|Number of Accounts by Industry Type|Accounts by Market|<ul><li>ドーナツグラフ</li><li>スライスの基準: Market</li><li>表示ラベルの昇順でソート</li><li>表示する最大件数: 2</li><li>グラフのサイズ:幅 6、高さ 11</li></ul>|
+|Top Accounts|Top 10 High Value Residential Accounts|High Value Residential|<ul><li>Lightningテーブル</li><li>値の降順でソート</li><li>表示する値の最大数: 10</li><li>グラフのサイズ: 幅 6、高さ 11</li></ul>|
+|Ratings by State|Rated Distribution of Accounts by State|Rated Accounts by State|<ul><li>積み上げ縦棒グラフ</li><li>表示する値の最大数: 15</li><li>グラフのサイズ: 幅 12、高さ 8</li></ul>|
 
 #### Rep Scoreboard Dashboard
 「チーム (Team)」という言葉の中には「私 (I)」の文字はありませんが、「個人の責任 (Individual Responsibility)」の中には 6 つあります。**Rep Scoreboard**というこのダッシュボードには、評価の高い取引先のリスト、州ごとの評価の分布、オープンのサポートケースのリストがあります。このダッシュボードを表示しているユーザは、以下の 3 つのコンポーネントに関する自分自身のデータだけが見えている必要があります。
 
 |タイトル|サブタイトル|ソースレポート|グラフの詳細|
 |-|-|-|-|
-|My Top Accounts|Top 5 High Value Residential Accounts|High Value Residential|<ul><li>Lightning テーブル</li><li>値の降順でソート</li><li>表示する最大グループ数: 5</li><li>グラフのサイズ: 幅 4、高さ 3</li><li>左上に配置</li>|
-|Open Support Cases|My Customers’ Open Support Cases|Open Support Cases|<ul><li>Lightning テーブル</li><li>表示する最大グループ数: 15</li><li>値の降順でソート</li><li>グラフのサイズ: 幅 5、高さ 7</li><li>右側に配置</li></ul>|
-|My Accounts by State|Distribution of My Accounts by State|Rated Accounts by State|<ul><li>積み上げ縦棒グラフ</li><li>表示する最大グループ数: 10</li><li>グラフのサイズ: 幅 4、高さ 4</li><li>左下に配置</li></ul>|
+|My Top Accounts|Top 5 High Value Residential Accounts|High Value Residential|<ul><li>Lightning テーブル</li><li>値の降順でソート</li><li>表示する値の最大数: 5</li><li>グラフのサイズ: 幅 4、高さ 7</li></ul>|
+|Open Support Cases|My Customers’ Open Support Cases|Open Support Cases|<ul><li>Lightning テーブル</li><li>表示する値の最大数: 15</li><li>グラフのサイズ: 幅 4、高さ 7</li></ul>|
+|My Accounts by State|Distribution of My Accounts by State|Rated Accounts by State|<ul><li>積み上げ縦棒グラフ</li><li>表示する値の最大数: 10</li><li>グラフのサイズ: 幅 4、高さ 7</li></ul>|
 
 ### マーケティングの使命
 1996年に Sita Nagappan-Alvarez と夫の Roberto が会社を設立して以来、Ursa Major Solar は誇り高いブランドを築いてきました。使命は変わっていませんが、会社の戦略とロゴは長年にわたって進化してきました。April とマーケティングチームは、住宅向けセールスチームのメールのやりとりに関する現在のグラフィックとメッセージングの要件を送ってきました。潜在的な顧客と現在の顧客の受信トレイを照らし出すために、メールの署名を設定し、チームのために 2つの事前設定済みのメールを設定します。
