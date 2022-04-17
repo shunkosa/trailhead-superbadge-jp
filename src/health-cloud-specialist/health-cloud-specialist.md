@@ -58,6 +58,88 @@
 
 ## ビジネス要件
 
+早速、プロジェクトに参加して設定を始めます。まず、各地域のケアコーディネータ用のカスタムプロファイルを作成します。 **Health Cloud Admin** プロファイルをコピーして、新しいプロファイル `Care Coordinator Admin` を作成します。Care Coordinator Admin プロファイルで、新しいユーザ `Dania Thurayya` を作成します。Dania に以下の権限セットを割り当ててください。
+* Health Cloud Foundation
+* Health Cloud Permission Set License
+
+適切なオブジェクトに、`Patient` (患者) という名前のカスタムレコードタイプを作成します。説明には `Represents an individual patient or participant` (個人の患者または参加者を表す) と入力します。レコードタイプは Care Coordinator Admin、Health Cloud Admin、システム管理者プロファイルで利用可能にしてください。Health Cloud で個々の患者を表現する方法はたくさんあります。ベストプラクティスに従い患者のレコードタイプを作成してください。
+
+チームはリレーションのマッピングを使用したくなるでしょう。作成したレコードタイプをカスタムメタデータで正しく設定します。新しい機能のデモンストレーションのために、`Shankar Suman` の患者レコードを作成します。
+
+これまでの経験から、コンソールビューはチームが効率的にケアを提供するのに役立つと判断しました。コンソールナビゲーションを使用して、Care Coordination Console という名前の Lightning アプリケーションを作成します。これらのプロファイルに対してアプリケーションを有効にします。
+
+* Care Coordinator Admin
+* System Administrator
+* Health Cloud Admin
+
+アプリケーションのナビゲーション項目に以下を含めます。
++ Home (ホーム)
+* Patients (稲妻アイコン)
+* Leads (リード)
+* Accounts (取引先)
+* Cases(ケース)
+* Care Plan Templates
+
+**Patient Console with Pinned Leftbar** の Lightning レコードページをコピーして、`Care Coordination Account Page` という名前でレコードページを作成します。API 参照名が `Care_Coordination_Account_Page` となっていることを確認してください。このページを Care Coordination Console アプリケーションのデフォルトとして設定します。
+
+## ケアコーディネーションの設定
+基本的な設定が完了したら、続いてチームごとの要件を確認します。ケアコーディネータは、特定の標準的なケアをすばやく再現する方法が必要です。糖尿病患者の標準的な目標を含むケアプランテンプレートを作成したいと思います。新しいアプリを使用して、`Diabetes Care Plan Template` (糖尿病のケアプランテンプレート) という名前のケアプランテンプレートを作成します。このモデルに従ってください。
+以下のモデルに従います。
+
+![](data_model.png)
+
+ケアプランテンプレートには、これらの要素がこの順序で含まれていることを確認してください。
+
+* ケアプランテンプレートの問題
+
+* ケアプランテンプレートの目標 1
+  * High Blood Sugar
+  *
+* ケアプランテンプレートの目標 2
+
+
+## タイムラインビュー、患者プロファイル、ソーシャルデターミナントの設定
+
+
+### システム管理のレビュー
+
+
+## 患者のデバイスの管理
+パイロットプログラムの一部として、Shankar は SmartScale を受け取ることになりました。以下の情報で納入商品レコードを作成して、デバイスを追跡する方法をデモしてみましょう。
+
+* Asset Name (納入商品名): `Shankar Suman's SmartScale 2.0`
+* Product (商品): **SmartScale 2.0**
+* Account (取引先): **Shankar Suman**
+* Serial Number (シリアルナンバー): `PMSS2020001`
+* Unique Identifier (一意の識別子): `PM_SS_JF001`
+* Description (説明): `SmartScale shipped to Shankar Suman`
+* Price (価格): `$299`
+* Quantity (数量): `1`
+
+あらかじめ設定された自動化機能を使って、個々の患者への機器登録を効率化したいです。患者のレコードページに、**Register Device and Create Shipping Request** (デバイスの登録と出荷依頼の作成) というクイックアクションを追加します。Shakar の SmartScale の出荷依頼を作成してください。
+
+機器の出荷情報として次の情報を利用します。
+
+* Street: `1 Market Street`
+* City (市区郡): `San Francisco`
+* State/Province (都道府県): `CA`
+* ZipCode (郵便番号): `94105`
+* Country (国): `US`
+
+Shankar が体重計を受け取った後、彼のケアコーディネーターは Shankar のレコードページの **Remote Monitoring** (リモート監視) タブでケア指標目標を作成することができます。次の情報を入力して、Shankar のケア指標目標を追加してください。
+
+* Name (名前): `Individual Body Weight - Shankar Suman`
+* Patient (患者): `Shankar Suman`
+* Type (種別): MAX (最大)
+* Numeric Value (数値): `210`
+* Code (コード): `Body Weight Code Set`
+* Units of Measure (測定単位): **lbs**
+* Start Date (開始日): 本日から1ヶ月前の日付
+* End Date (終了日): 本日から1年後の日付
+
+最後に、患者のレコードの Remote Monigoring (リモート監視) タブの下にリモート監視グラフを表示し、デバイスデータに簡単にアクセスできるようにします。リモート監視グラフのデモを行うため、いくつかのケア観察レコードを作成してください。
+
+やりました！デモは大成功でした。おめでとうございます。この成果は、財団を成長させ、世界中の地域社会にポジティブな健康成果をもたらすでしょう。
 ## Challenge
 
 ## 補足とヒント
