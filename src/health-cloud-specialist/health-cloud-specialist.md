@@ -103,7 +103,37 @@
 
 ## タイムラインビュー、患者プロファイル、ソーシャルデターミナントの設定
 
+## ケア要請と利用管理を設定する
+Cumulus Health には、ケアの妥当性をレビューするステップを合理化するという第二の目的があります。以前のシステムには十分な情報がなく、ビジネスニーズが変わったときに再設定するのは簡単ではありませんでした。あなたの目標は、Health Cloud がどのように合理化された利用管理を提供するかを実証することです。
 
+Start by configuring  request customization. Create a Care Request record type with the label `Diabetes Care` (糖尿病の治療). Associate it with the Care Request's page layout. Make sure the record type is active and available for the user profiles you set up. Repeat these steps for the additional objects, using the Diabetes Care label for each object:
+
+ケア要請のカスタマイズ設定から始めます。`Diabetes Care` (糖尿病の治療) という表示ラベルでケア要請のレコードタイプを作成します。それを Care Request (ケア要請) のページレイアウトと関連づけます。レコードタイプは有効にし、これまでに設定したプロファイルで利用可能になるようにしてください。追加のオブジェクトについてもこの手順を繰り返し、各オブジェクトにも Diabetes Care の表示ラベルを使用します。
+
+* Caes (ケース) : Care Request のページレイアウトに関連づけます。
+* Care Diagnosis (ケア診断) : Care Diagnosis のページレイアウトに関連づけます。
+* Care Request Item (ケア要請品目)  Care Request Item のページレイアウトに関連づけます。
+
+ケア要請の設定で、`Diabetes Care` という表示ラベルと、ケア要請種別を `Service Request` としたケア要請の構成レコードを作成します。Care Request Item と Care Diagnosis オブジェクトを利用可能にしてください。
+
+新しいケア要請の構成の作成が完了したら、**Care Coordination Console Home** ページ (前の Challenge で作成したページ) に **Create Care Request** (ケア要請の作成) コンポーネントを追加します。
+
+Care Coordination Console Home ページからケア要請を作成することで新しい機能をデモしましょう。次の情報を入力します。
+
+* Case (ケース):
+  * Case Origin (ケース 発生源): **Phone** (電話)
+* Care Request (ケア要請):
+  * Member (メンバー): **Shankar Suman**
+  * Name (名前): `Diabetes care request`
+* Care Request Item (ケア要請品目):
+  * Name (名前): `Blood Glucose Monitor`
+* Care Diagnosis (ケア診断):
+ * Name (名前): `Type 2 Diabetes`
+ * Discharge Diagnosis code (退院診断コード): **E11.22, Type 2 diabetes mellitus with diabetic chronic kidney disease**
+ * Modified Diagnosis code (変更済み診断コード): **E11.22, Type 2 diabetes mellitus with diabetic chronic kidney disease**
+ * Diagnosis Code (診断コード): **E11.65, Type 2 diabetes mellitus with hyperglycemia**
+
+レコードを保存し、新しいケア要請を確認してください。
 ## インテリジェントなセールスを使用して生産性を最大化する
 医療技術企業である Vance Laboratories は、財団への主要な寄付者です。同社の支援により、Cumulus Health グローバル財団は当初の予定よりも早く成長することができました。あなたは、Vance のチームメンバ数人と何度か会話を交わし、医療技術営業におけるペインポイントを聞いてきました。あなたの洞察は次の通りです。Vance の売上が増えれば、財団の資金も増える。そこで、Health Cloud のインテリジェントなセールス機能のデモを提案することになりました。
 
