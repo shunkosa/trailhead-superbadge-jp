@@ -58,6 +58,8 @@
 
 ## ビジネス要件
 
+### システム管理をレビューする
+
 早速、プロジェクトに参加して設定を始めます。まず、各地域のケアコーディネータ用のカスタムプロファイルを作成します。 **Health Cloud Admin** プロファイルをコピーして、新しいプロファイル `Care Coordinator Admin` を作成します。Care Coordinator Admin プロファイルで、新しいユーザ `Dania Thurayya` を作成します。Dania に以下の権限セットを割り当ててください。
 * Health Cloud Foundation
 * Health Cloud Permission Set License
@@ -82,7 +84,7 @@
 
 **Patient Console with Pinned Leftbar** の Lightning レコードページをコピーして、`Care Coordination Account Page` という名前でレコードページを作成します。API 参照名が `Care_Coordination_Account_Page` となっていることを確認してください。このページを Care Coordination Console アプリケーションのデフォルトとして設定します。
 
-## ケアコーディネーションの設定
+## ケアコーディネーションを設定する
 基本的な設定が完了したら、続いてチームごとの要件を確認します。ケアコーディネータは、特定の標準的なケアをすばやく再現する方法が必要です。糖尿病患者の標準的な目標を含むケアプランテンプレートを作成したいと思います。新しいアプリを使用して、`Diabetes Care Plan Template` (糖尿病のケアプランテンプレート) という名前のケアプランテンプレートを作成します。このモデルに従ってください。
 以下のモデルに従います。
 
@@ -95,16 +97,64 @@
 * ケアプランテンプレートの目標 1
   * High Blood Sugar
   *
+
 * ケアプランテンプレートの目標 2
 
 
 ## タイムラインビュー、患者プロファイル、ソーシャルデターミナントの設定
 
 
-### システム管理のレビュー
+## インテリジェントなセールスを使用して生産性を最大化する
+医療技術企業である Vance Laboratories は、財団への主要な寄付者です。同社の支援により、Cumulus Health グローバル財団は当初の予定よりも早く成長することができました。あなたは、Vance のチームメンバ数人と何度か会話を交わし、医療技術営業におけるペインポイントを聞いてきました。あなたの洞察は次の通りです。Vance の売上が増えれば、財団の資金も増える。そこで、Health Cloud のインテリジェントなセールス機能のデモを提案することになりました。
 
+最初のステップは在庫のロケーションの設定です。ミネソタ州から始めましょう。
 
-## 患者のデバイスの管理
+* Name (ロケーション名): `Minnesota Medical Supplies`
+* Location Type (ロケーション種別): **Inventory Location**
+* Inventory Location (在庫のロケーション): **True**
+
+Visitor Address (訪問者住所) は、ユーザが近くの在庫を探したり、商品の転送を依頼するのに役立ちます。訪問者住所を作成して、訪問者住所項目で選択できるようにします。
+
+* Address (町名・番地): `7255 Minnesota 61`
+* City (市区郡): `Tofte`
+* State (都道府県): `MN`
+* Zip/Postal Code (郵便番号): `55615`
+* Country (国): `United States`
+* Location Type (ロケーション種別): `Warehouse`
+* Address Type (住所種別): `Mailing`
+
+次に、在庫を定義しましょう。`Hip Prosthesis` という名前の商品を、Minnesota Medical Supplies のロケーションに対して作成します。このデモでは、在庫数量を `50`、数量測定単位を `Each` とします。
+
+最後に、商品履行場所を作成します。
+
+* Name (商品履行場所名): `Minnesota Hip Devices`
+* Product (商品): `Hip Prosthesis`
+* Fulfillment Location (履行場所): `Minnesota Medical Supplies`
+* Responsible User (担当ユーザ): `Janet Campbell`
+* Account (取引先): `Cumulus Health Hospital`
+* Account Location (取引先所在地): `Cleveland`
+
+Set up an action plan template to have a predefined list of tasks that med tech sales executives must execute during a surgical case visit. Create an action plan template:
+
+アクションプランテンプレートを設定し、医療技術営業のエグゼクティブが外科症例訪問時に実行しなければならないタスクを、事前定義したリストとして管理します。次のアクションプランテンプレートを作成しましょう。
+
+* Name (名前): `Surgical Visit`
+* Action Plan Type (アクションプラン種別): **Visit Execution** (訪問実行)
+* Target Object (対象オブジェクト): **Visit** (訪問)
+
+次に **Order Authorization** フローを追加し、必須にします。Surgical Visit アクションプランてプレートを公開します。
+
+アプリケーションのホームページ上の **My Visits** (私の訪問) コンポーネントから、外科症例訪問を作成して、**Intelligent Sales** (インテリジェントなセールス) アプリケーションのでデモをしましょう。次の情報を含めます。
+
+* Visit Location (場所): **Minnesota Medical Supplies**
+* Visit Type (訪問種別): **Replenish Hip repair devices**
+* Primary Visitor (プライマリの訪問者): **Janet Campbell**
+* Account to Visit (取引先): **Cumulus Health Hospital**
+* Product (商品): **Hip Prosthesis**
+* Product Quantity (数量): `2`
+* Action Plan Template (アクションプランテンプレート): **Surgical Visit**
+
+## 患者のデバイスを管理する
 パイロットプログラムの一部として、Shankar は SmartScale を受け取ることになりました。以下の情報で納入商品レコードを作成して、デバイスを追跡する方法をデモしてみましょう。
 
 * Asset Name (納入商品名): `Shankar Suman's SmartScale 2.0`
