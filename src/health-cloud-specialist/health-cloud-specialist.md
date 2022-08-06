@@ -84,29 +84,211 @@
 
 **Patient Console with Pinned Leftbar** の Lightning レコードページをコピーして、`Care Coordination Account Page` という名前でレコードページを作成します。API 参照名が `Care_Coordination_Account_Page` となっていることを確認してください。このページを Care Coordination Console アプリケーションのデフォルトとして設定します。
 
-## ケアコーディネーションを設定する
-基本的な設定が完了したら、続いてチームごとの要件を確認します。ケアコーディネータは、特定の標準的なケアをすばやく再現する方法が必要です。糖尿病患者の標準的な目標を含むケアプランテンプレートを作成したいと思います。新しいアプリを使用して、`Diabetes Care Plan Template` (糖尿病のケアプランテンプレート) という名前のケアプランテンプレートを作成します。このモデルに従ってください。
-以下のモデルに従います。
+### ケアコーディネーションを設定する
+基本的な設定が完了したら、続いてチームごとの要件を確認します。ケアコーディネータは、特定の標準的なケアをすばやく再現する方法が必要としています。糖尿病患者の標準的な目標を含むケアプランテンプレートを作成したいと思います。新しいアプリを使用して、`Diabetes Care Plan Template` (糖尿病のケアプランテンプレート) という名前のケアプランテンプレートを作成します。以下のモデルに従います。
 
 ![](data_model.png)
 
 ケアプランテンプレートには、これらの要素がこの順序で含まれていることを確認してください。
 
 * ケアプランテンプレートの問題
-
+  * `High Blood Sugar` (高血圧)
+  * `Sedentary Lifestyle` (座りっぱなしの生活)
+  * `Lack of Diabetes Self-Care Awareness` (糖尿病のセルフケアに対する意識の低さ)
+  * `Labwork` (研究職)
 * ケアプランテンプレートの目標 1
-  * High Blood Sugar
-  *
-
+  * Related Problem (関連する問題): **High Blood Sugar**
+  * Name (ToDo): `Control Glucose Levels`
+  * Tasks (ToDo):
+    * `Order Labs` をケアコーディネータに割り当てます。
+    * `Self-Care: Daily Glucose Self-Check` を患者に割り当てます。
 * ケアプランテンプレートの目標 2
+  * Related Problem (関連する問題): **Lack of Diabetes Self-Care Awareness**
+  * Name (名前): `Diabetes Self-Care`
+  * Tasks (ToDo):
+    * `Schedule Education Enrollment` をケアコーディネータに割り当てます。
+    * `Exercise: Daily Walk` を患者に割り当てます。
 
+財団は、適切な食生活が、糖尿病と同時に起こっている問題だと地域社会から聞いています。追加のケアプランテンプレートを、`Care Plan Template for Nutrition Education` (栄養指導のためのケアプランテンプレート) という名前で作成します。そのケアプランテンプレートに `Nutrition Education` のケアプランテンプレートの問題を含めてください。
+#### メモ
+Shankar Suman に対して複数のケアプランを作成しようとしています。組織の設定で、患者に対して複数のケアプランが作成できるようにしてください。
 
-## タイムラインビュー、患者プロファイル、ソーシャルデターミナントの設定
+Shankar Suman はパイロットプログラムへの 1 人目の参加者です。彼のケアコーディネータは Dania Thurayya です。Diabetes Care Plan Template に基づいて、`Diabetes Education Care Plan` という名前のケアプランを作成します。次の問題を含めてください。
+
+* High Blood Sugar
+* Sedentary Lifestyle
+* Lack of Diabetes Self-Care Awareness
+
+件名項目には `Diabetes Education Care Plan` と入力してください。Dania Thurayya をケアコーディネータとして、Shankar Suman を患者として追加してください。
+
+次に、Nutrition Education のケアプランテンプレートに基づいて、`Nutrition Education` という名前のケアプランを Shankar に作成します。件名には `Nutrition Education` と入力し、Dania Thurayya をケアコーディネータにしてください。
+
+それぞれの患者ケアの 360 度ビューを得るために、Cumulus Health は分野 (ソーシャルワーカ、栄養士、専門家など) に応じてケースチームのメンバーを割り当てる方法を求めています。
+Martha Ortiz と Adam Burke はケースでよく協業します。 `Diabetes Education` という名前のケースチームを作成し、Martha を Primary Care Physician の役割として、Adam を Diabetes Educator の役割としてチームに加えます。このチームを Shankar の両方のケアプランに関連づけてください。
+
+## タイムラインビュー、患者プロファイル、社会的決定要因の設定
+包括的なケアを提供するためには、チームメンバーは患者に関連する出来事を縦断的に見られる必要があります。患者のタイムラインでは、臨床医は以下を確認することができようになるはずです。
+
+* Clinical encounters (臨床受診)
+* Health conditions (健康状態)
+* Medication Statements (薬剤ステートメント)
+* Patient immunizations (患者免疫付与)
+
+また、既存の Diabetes_Coaching_Session__c カスタムオブジェクトで追跡できる、糖尿病のコーチングセッションに患者がいつ参加したかについても見られるようにすべきです。チームは、糖尿病のコーチングセッションがなぜ患者のタイムラインに表示されないのかと思っています。コーチングセッションが Shankar の臨床データに追加できることを確認します。Diabetes_Coaching_Session__c カスタムオブジェクトを有効にして、患者のタイムラインに表示されるようにします。ユーザが糖尿病のコーチングセッションの上にカーソルを置いたときに、Coaching Description (コーチングの説明) 項目がタイムラインに表示されるようにしてください。
+
+タイムラインを設定している間、ケアプランの ToDo がタイムラインに表示されることに注意してください。Shankar Suman の各オブジェクトの臨床データの例を 1 つ、次のように入力します。
+
+* Clinical Encounters
+  * Status: **Finished**
+  * Start Date: choose a date and time within the last 30 days
+  * End Date: 開始日から 1 時間後
+  * Category: **Home Health**
+  * Service Type: **Homoeopathy**
+* Health Conditions
+  * Condition Code: **Type 2 Diabetes**
+  * Onset Period Start: 約 1 年前の日付と時間を選択してください。
+* Medication Statement
+  * Medication: **Metformin**
+  * Status: **Completed**
+  * Start Date: 過去 30 日以内の日付と時間を選択してください。
+* Patient Immunization
+  * Vaccine Code: **Pfizer-BioNTech COVID-19**
+  * Status: **Completed**
+  * Vaccination Date: 過去の任意の日付と時間を選択してください。
+* Diabetes Coaching Session
+  * Coaching Description: `Initial coaching session, with resources and plan`
+  * Session Type: **Extended**
+  * Coaching Date: 本日の日付
+
+Diabetes Education Care Plan のケアプランの下に Shankar Suman に対して以下の ToDo を追加します。
+
+* 件名が `Education on daily management` で期日が本日より 1 週間後
+* 件名が `Fasting blood glucose check` で期日が明日
+
+Shankar のタイムラインタブを参照し、ToDo、臨床受診、健康状態、薬剤ステートメント、患者免疫付与、糖尿病のコーチングセッションのレコードが表示されていることを確認します。
+
+ケアコーディネータは、大切な情報を素早く見つけるために、患者の情報のスナップショットビューを必要としています。C患者カードを設定して、参加者に関する以下の関連情報を表示します。組織内には、すでに非アクティブな設定レコードがいくつかあります。それらを自由に使ってください。
+
+* Address
+* Contact Preferences
+* Medications
+* Conditions
+* Insurance Plan
+* Member Id
+* Allergies
+
+ケアコーディネータは患者に関連する様々な人々とコミュニケーションをとります；。Shankar の人間関係を追跡するため、世帯と適切なロールを設定します。それらの個人のレコードは既にシステムに存在しますが、Shankar とまだ関連づけられていません。(Shankar を患者のロールで自身の世帯に関連づけることを忘れないでください。) 以下に対してリレーションを設定します。
+
+* **Karpani Burman** (spouse / 配偶者) 
+* **Get Cloudy Consulting** (employee / 従業員)
+* **Anna Jones**
+  * Role: `Transportation Coordinator`
+  * Inverse Role: `Patient`
+
+ケアコーデネーションの土台はほぼ全て整っています。最後の課題は、患者の健康に影響を与える社会経済的な要因を財団がすべて理解することです。プログラム参加への重要な障壁の 1 つが交通手段であることをチームは既に知っています。プログラムチームは、この障壁を克服するための介入策をブレインストーミングしました。このソリューションをモデル化するるために、`Transportation Program` という名前のケア介入種別と、`Inadequate Transportation` という名前のケア障壁種別を作成します。両方のレコードを有効にしてください。
+
+Shankar Suman にケア障壁のエントリを作成することで新しい機能をデモします。
+
+* Tab (タブ): Social Determinants (社会的決定要因)
+* Name (名前): `No Automobile` (自動車を保有していない)
+* Type (ケア障害種別): **Inadequate Transportation** (交通手段の不足)
+* Start and End Dates (開始日と終了日): 任意の日付を入力してください
+
+最後に、以下の名前で 2 つの介入を追加します。
+* `Call patient to arrange transportation` (移動を手配するために患者に電話する)
+* `Provide public transportation resources` (公共交通機関の情報を提供する)
+
+## ケアプログラムを設定する
+財団は、ケアプログラムの提供を標準化することを目標としています。チームは、患者の転帰を改善するためのケアプログラムの例を見たいと考えています。`Diabetes Management` という名前で、`Care Program to help patients manage diabetes conditions` という説明のあるケアプログラムを作成します。親プログラム項目は空白のままにしてください。開始日と終了日には任意の日付を入力してください。
+
+Shankar のケアコーディネータである Dania は、彼に糖尿病のケアプログラムに登録してもらいたいと考えています。しかし初めに、チームはプログラムに参加するための対象資格と規則を設定する必要があります。以下の3つの、登録対象資格基準レコードを作成してください。
+
+1. 名前: `Confirm Type 2 diabetes`
+2. 名前: `Confirm low income household band`
+3. 名前: `Confirm physician referral or prescription received`
+
+* ケアプログラム: **Diabetes Management**
+  * 登録対象資格基準: **Confirm Type 2 diabetes**
+* ケアプログラム: **Diabetes Management**
+  * 登録対象資格基準: **Confirm low income household band**
+* ケアプログラム: **Diabetes Management**
+  * 登録対象資格基準: **Confirm physician referral or prescription received**
+
+ケアプログラムの目的に合わせて、プログラム目標を設定しましょう。チームは、糖尿病管理ケアプログラムの目標を以下のように設定しました。
+
+* `Adhere to treatment protocol` (治療プロトコルを遵守する)
+* `Maintain healthy lifestyle` (健康的なライフスタイルを維持する)
+* `Exercise 30 minutes each day` (毎日30分運動する)
+* `Improve quality of life` (生活の質を改善する)
+
+プログラム参加者に特典を提供しようと、チームは張り切っています。現在、いくつかの商品が利用可能です。以下の商品を Diabetes Management のケアプログラムに関連付けてください。
+
+* 名前: `Monthly consultation with a nutritionist`
+  * 商品: **Nutritionist Services**
+* 名前: `Weekly coaching with care coordinator`
+  * 商品: **Coaching**
+
+このプログラムは、まず 2 つのプロバイダーから展開されます。次のステップは、ケアプログラム提供者を設定することです。以下の詳細に基づいて 2 つのケアプログラム提供者レコードを作成してください。
+
+|名前|アカウント(取引先)|ケアプログラム商品|
+|-|-|-|
+|Cumulus Health Nutritionist|Cumulus Health Physician Group|Monthly consultation with nutritionist|
+|Cumulus Health Wellness Clinic|Cumulus Health Hospital|Weekly coaching with care coordinator|
+
+リーダーシップチームは、特定のケアプログラムへの募集活動をどのように追跡すればよいかと考えています。`Initial outreach: radio spots` という名前のキャンペーンを作成します。ケアプログラムのキャンペーンを定義し、**Initial outreach: radio spots** キャンペーンと Diabetes Management ケアプログラムを関連付けます。
+
+次に、同意ドキュメントをケアプログラムに関連付けて、参加者の同意を追跡できるようにします。Diabetes Management ケアプログラムに対して、以下のデータ使用目的レコードを作成します。
+
+* 名前: `Diabetes Management Care Program Consent Forms`
+* 目的 (ケアプログラムオブジェクトを選択): **Diabetes Management**
+
+**注意:** データ型として、目的項目でケアプログラムを選択する必要があります。
+
+次の認証フォームを作成します。
+
+* 認証フォーム名: `Authorization to Disclose PHI`
+* リビジョン番号: `1.0`
+* 有効開始日: 本日から一週間後の日付
+* 有効終了日: 本日から一年後の日付
+* 署名が必要: **True**
+
+次の認証フォームテキストを作成します。
+
+* 名前: `Authorization to Disclose PHI`
+* 認証フォーム: **Authorization to Disclose PHI**
+* コンテンツドキュメント: **AUTHORIZATION TO DISCLOSE PERSONAL AND HEALTH INFORMATION**
+* ロケール: ユーザのロケールレコードに合わせます
+* 有効: **True**
+
+Authorization to Disclose PHI の認証フォームを編集します。
+
+* デフォルトの認証フォームテキスト: **Authorization to Disclose PHI**
+
+次の情報で認証フォームデータの使用レコードを作成します。
+
+* 名前: `Authorization to Disclose PHI`
+* 認証フォーム: 作成した認証フォームを選択します
+* データ使用目的: 作成したデータ使用目的を選択します
+
+財団は、これまでの作業をとても心強く思っており、ケアプログラムへの参加と同意ですべてがうまくいくことを望んでいます。
+最初のステップは、参加者を迅速に登録するために、プログラムへの登録の標準的な自動化を調整することです。**Program Enrollment** という名前のフローを使用したアクションを作成します。作成したアクションは患者のレコードページで利用できるようにしてください。
+
+* 表示ラベル: `Enroll in Care Program`
+* 名前: `Enroll_in_Care_Program`
+* 説明: `Enroll in Program flow with care plan selection`
+
+デモでは、Shankar の登録の自動化をユーザがどのように素早く起動できるかを示しましょう。患者レコード上の自動化を使用して、Shankar をDiabetes Management のケアプログラムに登録してください。
+
+* 商品を選択してください
+  * **Monthly consultation with a nutritionist**
+  * **Weekly coaching with care coordinator**
+* 商品に関連する提供者を選択してください
+
+登録を完了し、同意の取得に進みます。同意書を確認し、(これはデモであることを忘れないでください)、署名欄で署名し、同意を完了します。
+## プロバイダのプロファイルを定義する
 
 ## ケア要請と利用管理を設定する
 Cumulus Health には、ケアの妥当性をレビューするステップを合理化するという第二の目的があります。以前のシステムには十分な情報がなく、ビジネスニーズが変わったときに再設定するのは簡単ではありませんでした。あなたの目標は、Health Cloud がどのように合理化された利用管理を提供するかを実証することです。
-
-Start by configuring  request customization. Create a Care Request record type with the label `Diabetes Care` (糖尿病の治療). Associate it with the Care Request's page layout. Make sure the record type is active and available for the user profiles you set up. Repeat these steps for the additional objects, using the Diabetes Care label for each object:
 
 ケア要請のカスタマイズ設定から始めます。`Diabetes Care` (糖尿病の治療) という表示ラベルでケア要請のレコードタイプを作成します。それを Care Request (ケア要請) のページレイアウトと関連づけます。レコードタイプは有効にし、これまでに設定したプロファイルで利用可能になるようにしてください。追加のオブジェクトについてもこの手順を繰り返し、各オブジェクトにも Diabetes Care の表示ラベルを使用します。
 
