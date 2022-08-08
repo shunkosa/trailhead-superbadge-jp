@@ -1,6 +1,6 @@
 # Summary
 
-* [トップページ](README.md)
+* [Trailhead Superbadge 日本語訳について](README.md)
 * [Advanced Apex Specialist](src/advanced-apex-specialist/advanced-apex-specialist.md)
 * [Advanced Billing Specialist](src/advanced-billing-specialist/advanced-billing-specialist.md)
 * [Apex Specialist](https://developer.salesforce.com/jpblogs/2018/05/apex_specialist_superbadge/)
@@ -9,8 +9,8 @@
 * [Billing Specialist](src/billing-specialist/billing-specialist.md)
 * [Business Administration Specialist](src/business-administration-specialist/business-administration-specialist.md)
 * [Data Integration Specialist](https://developer.salesforce.com/jpblogs/2018/06/data_integration_superbadge/)
-* [Einstein Analytics Data Preparation Specialist](src/analytics-integration-specialist/analytics-integration-specialist.md)
-* [Einstein Analytics and Discovery Insights Specialist](src/analytics-insights-specialist/analytics-insights-specialist.md)
+* [Tableau CRM Data Preparation Specialist](src/analytics-integration-specialist/analytics-integration-specialist.md)
+* [Tableau CRM and Einstein Discovery Insights Specialist](src/analytics-insights-specialist/analytics-insights-specialist.md)
 * 🆕 [Financial Services Cloud Specialist](src/fsc-specialist/fsc-specialist.md)
 * [Lightning Experience Reports and Dashboards Specialist](src/lex-reports-dashboards-specialist/lex-reports-dashboards-specialist.md)
 * [Lightning Experience Rollout Specialist](src/lex-rollout-specialist/lex-rollout-specialist.md)

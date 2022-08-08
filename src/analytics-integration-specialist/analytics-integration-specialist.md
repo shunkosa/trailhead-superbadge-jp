@@ -1,24 +1,27 @@
-# Einstein Analytics Data Preparation Specialist
+# Tableau CRM Data Preparation Specialist
 [![](https://img.shields.io/badge/-view%20on%20gitbook-blue?logo=markdown)](https://shunkosa.gitbook.io/trailhead-superbadge-jp/analytics-integration-specialist) [![](https://img.shields.io/badge/-view%20on%20github-black?logo=github)](https://github.com/shunkosa/trailhead-superbadge-jp/blob/master/src/analytics-integration-specialist/analytics-integration-specialist.md)
-* Trailhead のスーパーバッジ、[Einstein Analytics Data Preparation Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_analytics_integration_specialist) の日本語訳(**非公式**)です。
+* Trailhead のスーパーバッジ、[Tableau CRM Data Preparation Specialist](https://trailhead.salesforce.com/content/learn/superbadges/superbadge_analytics_integration_specialist) の日本語訳(**非公式**)です。
 * 各カスタマイズ要素のラベル部分には補足として日本語を括弧内に記載している場合がありますが、正解チェックは英語のラベルを元に行われるため、実際のチャレンジには日本語表記を含めず、英語表記のみを使用して行って下さい。また、チャレンジ前にユーザと組織の言語・ロケールを英語に切り替えておくことを推奨します。
 
 ---
 ## このスーパーバッジを取得するためにすること
-1. Einstein Analytics でデータを抽出、ロード、変換するためのユーザ権限を設定する
-2. Einstein Analytics での分析に備えて、Salesforce および Salesforce 以外のデータを抽出してロードする
+1. Tableau CRM でデータを抽出、ロード、変換するためのユーザ権限を設定する
+2. Tableau CRM での分析に備えて、Salesforce および Salesforce 以外のデータを抽出してロードする
 3. データロードのパフォーマンスを改善する
-4. Einstein Analytics でデータアクセスを管理する
-5. 失敗したデータアップロードの診断しトラブルシューティングする
+4. Tableau CRM でデータアクセスを管理する
+5. 失敗したデータアップロードを診断しトラブルシューティングする
 
 ## このスーパーバッジでテストする概念
-* Einstein Analytics のセキュリティ
+* Tableau CRM のセキュリティ
 * アセットの組織と役割
 * データの読み込み
 * データの修正
 * データフロージョブのトラブルシューティング
 
-所要時間 : 推定 4時間 - 6時間
+所要時間 : 推定 4 時間 - 6 時間
+
+### 注意
+Challenge を始める前に、[Tableau CRM Data Preparation Specialist: Trailhead Challenge Help (英語)](https://trailhead.salesforce.com/ja/help?article=Tableau-CRM-Data-Preparation-Specialist-Superbadge-Trailhead-Challenge-Help) を確認してください。
 
 ## 事前準備とメモ
 * ペンや鉛筆を用意して、要件を読み進める際にメモを取ってください。
@@ -30,16 +33,16 @@
     * データセット名：Seed Bank
     * データセットエイリアス：seed_bank（小文字のスペル）
 <!-- textlint-enable jtf-style/1.1.3.箇条書き -->
-* この Challenge に対して [Einstein Analytics Developer Edition (DE)](https://developer.salesforce.com/promotions/orgs/analytics-de) 組織を作成します。この環境は Einstein Analytics が有効になっており、Challengeで使用されるサンプルデータが含まれています (注 : この Challenge では DTC Default App は使用しません) 。 
+* この Challenge に対して [Tableau CRM Developer Edition (DE)](https://developer.salesforce.com/promotions/orgs/analytics-de) 組織を作成します。この環境は Tableau CRM が有効になっており、Challengeで使用されるサンプルデータが含まれています (注 : この Challenge では DTC Default App は使用しません) 。 
 * Challenge の一部として、レンズを作成するように依頼されるでしょう。表示される結果数を制限することは上位の N件を分析する際のベストプラクティスであり、SAQL クエリを試したいと思うかもしれません。しかし、このスーパーバッジにおける Challenge の検証では、単純にデータをフォーカスしたりフィルタすることが要求されます。
 * 以下の詳細な要件を読みながら、エンティティリレーション図を確認してください。
 
 #### リファレンス
-* SAQL の構文については、[Analytics SAQL リファレンス](https://developer.salesforce.com/docs/atlas.ja-jp.218.0.bi_dev_guide_saql.meta/bi_dev_guide_saql/bi_saql_intro.htm)を参照してください。
-* Einstein Analytics Learning Adventure アプリケーションには、Challenge に役立つかもしれない例が含まれています。新しく作成した Analytics Developer Edition 組織にはこのアプリケーションが備わっています。Analytics Studio で、**作成 | アプリケーション | テンプレートからアプリケーションを作成 | Learning Adventure** をクリックします。
+* SAQL の構文については、[Analytics SAQL リファレンス](https://developer.salesforce.com/docs/atlas.ja-jp.bi_dev_guide_saql.meta/bi_dev_guide_saql/bi_saql_intro.htm)を参照してください。
+* Tableau CRM Learning Adventure アプリケーションには、Challenge に役立つかもしれない例が含まれています。新しく作成した DE 組織にはこのアプリケーションが備わっています。Analytics Studio で、**作成 | アプリケーション | テンプレートからアプリケーションを作成 | Learning Adventure** をクリックします。
 * [Let's Play Salesforce](https://www.youtube.com/channel/UCkNDwCEl-BbAsaGSQ7I6Xtg/playlists) の Youtubeチャンネルにも役立つ動画があります。
 
-Challenge を完了するには、このスーパーバッジに関連しているデータを、取引先オブジェクトに事前に入力する必要があります。Agency Data.txt ファイルを Einstein Analytics DE 組織の取引先オブジェクトにインポートします。取引先オブジェクトへインポートしたら、課題に取り組む準備が整います。
+Challenge を完了するには、このスーパーバッジに関連しているデータを、取引先オブジェクトに事前に入力する必要があります。Agency Data.txt ファイルを Tableau CRM DE 組織の取引先オブジェクトにインポートします。取引先オブジェクトへインポートしたら、課題に取り組む準備が整います。
 
 1. [ea-data-preparation-specialist-data.zip](https://developer.salesforce.com/files/ea-data-preparation-specialist-data.zip) をダウンロードしてデスクトップに保存してください。
 2. zip ファイルを解凍します。
@@ -66,15 +69,8 @@ Challenge を完了するには、このスーパーバッジに関連してい�
 
 #### Challenge のためのアプリを作成する  
 1. **Analytics Studio** を開きます。  
-2. **作成** | **アプリケーション** | **空白のアプリケーション** | **空白のアプリケーションを作成** をクリックします。(注 : 作成ボタンが表示されていない場合は、「Einstein Analytics Plus の管理者権限を自分のユーザ ID に割り当てる」セクションに進んでください。)
+2. **作成** | **アプリケーション** | **空白のアプリケーション** | **空白のアプリケーションを作成** をクリックします。
 3. アプリケーションの名前に **Mosaic** と入力して **作成** ボタンをクリックします。 
-
-#### Einstein Analytics Plus の管理者権限を自分のユーザ ID に割り当てる
-1. 設定で、クイック検索ボックスに``権限セット``と入力し、**権限セット** を選択します。  
-2. **Einstein Analytics Plus 管理者 (Admin)** をクリックします。  
-3. **割り当ての管理** ボタンをクリックしてから、**割り当ての追加** ボタンをクリックします。  
-4. ユーザのリストの中から自分の名前を見つけて、その横にチェックマークを付けます。  
-5. **割り当て** ボタンをクリックしてから **完了** をクリックします。
 
 ## ユースケース
 Mosaic Council が始まってからの 5 年間で、この非営利団体はより良い世界を創造しやすくするというその使命において印象的な進歩を遂げました。Mosaic は、慈愛は家庭から始まるという格言を重視し、地域社会のための仕事に注力しています。Mosaic は全体的な使命を果たすために、国際的に活動する人道支援機関とも提携しています。Mosaic がより成功した地域のプログラムの 1 つに、果樹園や菜園を始めることに興味を持っている地域社会を支援するという活動があります。近隣を美化し、共同体意識を築くことに加えて、果樹園や菜園がその地域のフードバンクやシェルターに新鮮な食材を提供します。
@@ -83,7 +79,7 @@ Mosaic Council が始まってからの 5 年間で、この非営利団体は�
 
 Mosaic が、以前に行われたことがない新しいプロジェクトを行っていることを知りました。見逃すにはもったいないほど興奮する機会です。これまでの地域社会の果樹園・菜園での成功に基づいて、Mosaic は、種子の信託を形成し管理し、世界中の小規模農場への種子の分配を監督するよう求められています。Mosaic は、プログラムに参加する農家に対して種子の提供を担当している国際的な代理機関と直接連携しています。
 
-企画会議では、そのプログラムとそれに対する Mosaic の目標について話し合う時間がありました。Mosaic は既にプログラムを試験運用しており、実際に開始するために利用できるデータを蓄積しています。また、Mosaic は、このプロジェクトの拡大を妨げうる未知の要素がいくつかあることを認識しています。プロジェクトに参画するにあたり、あなたは Einstein Analytics で Mosaic が現在抱えるデータをより良く理解でき、将来の計画を立てられると考えています。Yasmine は Einstein Analytics に精通していませんが、彼女に概要を説明したところ、それを試すことには積極的です。
+企画会議では、そのプログラムとそれに対する Mosaic の目標について話し合う時間がありました。Mosaic は既にプログラムを試験運用しており、実際に開始するために利用できるデータを蓄積しています。また、Mosaic は、このプロジェクトの拡大を妨げうる未知の要素がいくつかあることを認識しています。プロジェクトに参画するにあたり、あなたは Tableau CRM で Mosaic が現在抱えるデータをより良く理解でき、将来の計画を立てられると考えています。Yasmine は Tableau CRM に精通していませんが、彼女に概要を説明したところ、それを試すことには積極的です。
 
 ## 主要なステークホルダ
 Mosaic のステークホルダは、要求を推進し、データニーズを定義し、そして何が起こるべきかを指示することに関して重要な役割を果たしています。加えて、彼らは質問をしたり承認を得るために頼りになる人々です。
@@ -124,7 +120,7 @@ Mosaic のステークホルダは、要求を推進し、データニーズを�
 ### チームを組む
 Mosaic のプロジェクトのボランティアには全員、レポートやダッシュボードの作成や操作、データベースに関する機能的な知識など、それぞれ Salesforce の専門知識があります。皆興奮していて、腕まくりしてすぐに飛び込む準備ができています。あなたの仕事は、それぞれのボランティアがテーブルに持ってきたものを受け取り、彼らが Eisntein Analytics と協力して Mosaic の種子配布の目標を現実のものにできるようにすることです。
 
-あなたは、皆に手助けをする機会を与えたいと思っており、それにより結果として彼らが最善を尽くすことになります。しかし、最初に、Einstein Analytics と連携する新しい役割に必要な権限を決定する際に、それぞれに何ができるかを確認する必要があります。Philip、Danielle、そして Benito は、この機会に最高に興奮していました。
+あなたは、皆に手助けをする機会を与えたいと思っており、それにより結果として彼らが最善を尽くすことになります。しかし、最初に、Tableau CRM と連携する新しい役割に必要な権限を決定する際に、それぞれに何ができるかを確認する必要があります。Philip、Danielle、そして Benito は、この機会に最高に興奮していました。
 
 * Benito は、Mosaic の Salesforce のレポート作成に関する、頼りになるエキスパートです。あなたは彼がダッシュボードの構築とデータセットの検証に理想的だと考えました。
 * Danielle と Philip は、Salesforce のコアとデータベース全般に慣れているため、データセット検証の支援ができ、あなたの仕事が終わったときにはデータの準備とシステム管理のタスクを引き継ぐことになるでしょう。
@@ -135,14 +131,14 @@ Mosaic のプロジェクトのボランティアには全員、レポートや�
 
 Mosaic が最適なパフォーマンスでデータ準備を運用できるようにするため、Mosaic の Salesforce 組織でデータ同期を有効化してください。
 
-### Seed Bank Agencies (種子銀行の代理機関)のデータセットを作成する
+### Seed Bank Agencies (種子銀行の代理機関) のデータセットを作成する
 Mosaic は、プログラムに参加している農家に対して種子の配布を担当している国際機関と直接協力しています。Yasmine は Tonya にプロジェクトのこの部分を管理するように依頼しました。
 
 ![](Agency-data.png)
 
 Tonyaは、Danielle と Philip がフラットなファイルである Agency Data.txt から取引先オブジェクトにレコードをインポートしたため、手作業によるデータ入力にかかる時間を大幅に節約できたと説明しています。しかし、データインポート以降に、Mosaic は代理機関とそれらが担当する地域に関連する、報告目的のための追加のデータを集めなければなりませんでした。彼らは Agency Detail.txt に最新の更新情報を文書化していますが、まだその項目を取引先オブジェクトに追加していません。
 
-あなたはオブジェクトにカスタム項目は必要ではななく、種子銀行用の新しいデータセットを作成する際に Einstein Analytics に項目を追加できることを説明しました。Tonya は、追加された項目が種子銀行に固有のものであり、Einstein Analytics に送信されるレコードを種子銀行に関係するレコードだけに制限したかったため、この説明を受けて嬉しく思っています。
+あなたはオブジェクトにカスタム項目は必要ではななく、種子銀行用の新しいデータセットを作成する際に Tableau CRM に項目を追加できることを説明しました。Tonya は、追加された項目が種子銀行に固有のものであり、Tableau CRM に送信されるレコードを種子銀行に関係するレコードだけに制限したかったため、この説明を受けて嬉しく思っています。
 
 項目を調べていくと、とても具体的に見える 1つの項目、Acres (エーカー数) がありました。Tonya の説明によると、地元の代理機関が、プログラムに参加している農場の平均サイズをエーカー単位で文書化するプロセスを既に完了しているため、ある農場が特定の作物を栽培するのに十分な土地を持っているかどうかを決定するために Acres 項目が使用されます。
 
@@ -180,13 +176,13 @@ Tonyaは、Danielle と Philip がフラットなファイルである Agency Da
 2. **Seed Bank Agencies** データセットをクリックします。
 3. 横棒 (Bars) の下にある **+** ボタンをクリックして、**Account Name** (取引先名) を選択します。
 4. グラフのヘッダーにある **[行 計数:]** (Count of Rows) をクリックして、一覧の値を降順に並べます。
-5. 先頭の 5件をクリックしてハイライトします。
+5. 先頭の 5 件をクリックしてハイライトします。
 6. レンズの右上にある **フォーカス** (Focus) ボタンをクリックします。
 7. **保存** ボタンをクリックし、タイトルに **Top 5 Agencies** を追加し、アプリケーションに Mosaic を選択します。
 8. 完了したら **保存** ボタンをクリックします。**X** をクリックしてタブを閉じます。
 
 ### Seed Bank データセットを作成する
-Mosaic には、種子銀行に種子を寄付しアドバイスを行うことを約束してくれている地元の種子ベンダーがいます。また、Mosaic には、寄付された種子についてベンダーの在庫ファイルがあります。Hadiqa はベンダーとの関係を管理しています。それに加えて、彼女は Mosaic に住み込みで働いている園芸の第一人者です。Einstein Analytics で種子銀行を構築するにあたり、彼女は商品の専門知識で支援してくれるでしょう。Hadiqa はあなたと相談している間に一緒に種子のファイルを調べます。
+Mosaic には、種子銀行に種子を寄付しアドバイスを行うことを約束してくれている地元の種子ベンダーがいます。また、Mosaic には、寄付された種子についてベンダーの在庫ファイルがあります。Hadiqa はベンダーとの関係を管理しています。それに加えて、彼女は Mosaic に住み込みで働いている園芸の第一人者です。Tableau CRM で種子銀行を構築するにあたり、彼女は商品の専門知識で支援してくれるでしょう。Hadiqa はあなたと相談している間に一緒に種子のファイルを調べます。
 
 ![](Seed-chart.png)
 
@@ -229,7 +225,7 @@ Hadiqa はまた、種子の間隔を記録する Spacing 項目についても�
 3. 棒の長さ (Bar Length) の下にある、**[行 計数:]** (Count of Rows) をクリックして、**合計 | Acreage** (Sum | Acreage) の順に選択します。
 4. 横棒 (Bars) の下にある **+** ボタンをクリックして、**Seed** を選択します。
 5. グラフのヘッダーにある **Acreage 合計** (Sum of Acreage) をクリックして、一覧の値を降順に並べます。
-6. 先頭の 5件をクリックしてハイライトします。
+6. 先頭の 5 件をクリックしてハイライトします。
 7. レンズの右上にある **フォーカス** (Focus) ボタンをクリックします。
 8. **保存** ボタンをクリックし、タイトルに **Top 5 Crop Seeds** を追加し、アプリケーションに Mosaic を選択します。
 9. 完了したら **保存** ボタンをクリックします。**X** をクリックしてタブを閉じます。
@@ -244,7 +240,7 @@ Mosaic は種子銀行プロジェクトのスタッフを増やしています�
 
 彼女の指導の下、Philip は組織内にデータセキュリティを設定して、これらのロールの人たちが、割り当てられた地域内の代理機関のみを表示できるようにしました。また、Seed Bank Orders データセットからは自身の地域の注文だけが参照できるようにする必要があります。Yasmine、Tonya、Hadiqa はすべての注文と代理機関を参照できます。
 
-### 最適な気温を決定する
+### 最適な気候を決定する
 Hadiqa は、各種子が繁栄するのに最適な環境について Mosaic の種子ベンダーと話し合っています。在庫ファイルの各種子には、華氏で気温の範囲がリストされています。日光と湿気を多く必要とする作物は、涼しい地域ではうまく育たないので、これは重要な情報です。結果的に、リクエストが入ったとき、Mosaic はリクエストされた種子の種別が地域で順応できるかどうかを知りたがっています。
 
 Hadiqa は、地元の大学で勉強している Danielle に、彼女が通う大学の大気科学科から気候データを入手できるかどうか尋ねました。 Danielle は、年、気温、国を含む CSVファイルを持ってきました。大学は彼女にデータを 1991 年までさかのぼって提供してくれましたが、種子のベンダーは今回の目的には 1 年間のデータがあれば十分であると言っています。
@@ -376,21 +372,21 @@ Tonya と Hadiqa が分析で行うクエリの種類は次のとおりです。
 
 ## Challenge
 ### Challenge 1: チームを組む
-シナリオに記載されているように、ロールに基づいてユーザが Einstein Analytics を利用できるようにしてください。
+シナリオに記載されているように、ロールに基づいてユーザが Tableau CRM を利用できるようにしてください。
 
-### Challenge 2: データ読み込みのパフォーマンスを向上させる
-複数のデータフロー操作が最適化されるように Salesforce 組織を設定してください。
+### Challenge 2: Analytics 組織を検証する
+この Challenge のために、Einstein Analytics の Developer Edition (DE) 組織にサインアップしてください。
 
 ### Challenge 3: Seed Bank Agencies データセットを作成する
-Salesforce のオブジェクトと外部のファイルを使用して、Seed Bank Agencies データセットを作成してください。
+Salesforce のオブジェクトと外部のファイルを使用して、Seed Bank Agencies データセットとレンズを作成してください。
 
 ### Challenge 4: Seed Bank データセットを作成する
 外部ファイルを読み込んで、Seed Bank データセットを作成してください。
 
 ### Challenge 5: 誰が何を見られるかを制御する
-Einstein Analytics で Seed Bank Agencies と Seed Bank Order オブジェクトに対してセキュリティルールを適用してください。
+Tableau CRM で Seed Bank Agencies と Seed Bank Order オブジェクトに対してセキュリティルールを適用してください。
 
-### Challenge 6: 最適な気温を決定する
+### Challenge 6: 最適な気候を決定する
 データフローを構築して Seed Bank Agencies と Seed Bank データセットに Temperature Class (気温クラス) を追加してください。
 
 ### Challenge 7: 失敗したデータロードを診断しトラブルシューティングする

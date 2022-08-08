@@ -1,9 +1,9 @@
 # Trailhead Superbadge 日本語訳
-![textlint](https://github.com/shunkosa/trailhead-superbadge-jp/workflows/textlint/badge.svg) ![contributers](https://img.shields.io/badge/contributers-8-orange)
+[![textlint](https://github.com/shunkosa/trailhead-superbadge-jp/actions/workflows/textlint.yml/badge.svg)](https://github.com/shunkosa/trailhead-superbadge-jp/actions/workflows/textlint.yml) [![contributers](https://img.shields.io/badge/contributers-11-orange)](#謝辞)
 
 * Salesforce の Trailhead Superbadge (スーパーバッジ) の日本語訳です。公式の日本語訳(☁️)へのリンクも含みます。
 * 原文のアップデートは予告なく行われるため、翻訳が追いつかない場合がありますがご容赦ください。
-* フィードバックや質問、誤訳やタイプミスなどの報告は大歓迎です。些細なものでも構いません。[Issue](https://github.com/shunkosa/trailhead-superbadge-jp/issues/new) や Pull Request、[メール](mailto:shun.kosaka.102@gmail.com)等でお知らせください。
+* フィードバックや質問、誤訳やタイプミスなどの報告は大歓迎です。些細なものでも構いません。[Issue](https://github.com/shunkosa/trailhead-superbadge-jp/issues/) や [Pull Request](https://github.com/shunkosa/trailhead-superbadge-jp/pulls/)、[Twitter](https://www.twitter.com/shunkosa)等でお知らせください。
 
 
 | スーパーバッジ | キーワード |
@@ -14,8 +14,8 @@
 | [Aura Components Specialist](src/aura-components-specialist/aura-components-specialist.md) | Auraコンポーネント全般 |
 | [Business Administration Specialist](src/business-administration-specialist/business-administration-specialist.md) | データ管理<br>メールテンプレート<br>UI設定|
 | [Data Integration Specialist](https://developer.salesforce.com/jpblogs/2018/06/data_integration_superbadge/) ☁️ | Apex Webサービス<br>コールアウト|
-| [Einstein Analytics Data Preparation Specialist](src/analytics-integration-specialist/analytics-integration-specialist.md) | データフロー|
-| [Einstein Analytics and Discovery Insights Specialist](src/analytics-insights-specialist/analytics-insights-specialist.md)| SAQL<br>動的バインド|
+| [Tableau CRM Data Preparation Specialist](src/analytics-integration-specialist/analytics-integration-specialist.md) | データフロー|
+| [Tableau CRM and Einstein Discovery Insights Specialist](src/analytics-insights-specialist/analytics-insights-specialist.md)| SAQL<br>動的バインド|
 | [Lightning Experience Reports and Dashboards Specialist](src/lex-reports-dashboards-specialist/lex-reports-dashboards-specialist.md) | レポート・ダッシュボード全般|
 | [Lightning Experience Rollout Specialist](src/lex-rollout-specialist/lex-rollout-specialist.md) | Lightning移行全般|
 | [Lightning Experience Specialist](https://developer.salesforce.com/jpblogs/2018/10/lex_specialist_superbadge/) ☁️ | プロセスビルダー|
@@ -51,3 +51,6 @@
 * Tomoko Nakayama ([@atatomoko](https://github.com/atatomoko))
 * Tomokazu Imai ([@bobbyjam99](https://github.com/bobbyjam99))
 * [@az-ak](https://github.com/az-ak)
+* Rie Okubo
+* [@mihokoaz](https://github.com/mihokoaz)
+* Hiroki Iida ([@murphyfox](https://github.com/murphyfox))
