@@ -138,6 +138,7 @@ Martha Ortiz と Adam Burke はケースでよく協業します。 `Diabetes Ed
 
 タイムラインを設定している間、ケアプランの ToDo がタイムラインに表示されることに注意してください。Shankar Suman の各オブジェクトの臨床データの例を 1 つ、次のように入力します。
 
+<!-- textlint-disable jtf-style/1.1.3.箇条書き -->   
 * Clinical Encounters
   * Status: **Finished**
   * Start Date: choose a date and time within the last 30 days
@@ -159,6 +160,7 @@ Martha Ortiz と Adam Burke はケースでよく協業します。 `Diabetes Ed
   * Coaching Description: `Initial coaching session, with resources and plan`
   * Session Type: **Extended**
   * Coaching Date: 本日の日付
+<!-- textlint-enable jtf-style/1.1.3.箇条書き -->
 
 Diabetes Education Care Plan のケアプランの下に Shankar Suman に対して以下の ToDo を追加します。
 
@@ -201,7 +203,7 @@ Shankar Suman にケア障壁のエントリを作成することで新しい機
 ## ケアプログラムを設定する
 財団は、ケアプログラムの提供を標準化することを目標としています。チームは、患者の転帰を改善するためのケアプログラムの例を見たいと考えています。`Diabetes Management` という名前で、`Care Program to help patients manage diabetes conditions` という説明のあるケアプログラムを作成します。親プログラム項目は空白のままにしてください。開始日と終了日には任意の日付を入力してください。
 
-Shankar のケアコーディネータである Dania は、彼に糖尿病のケアプログラムに登録してもらいたいと考えています。しかし初めに、チームはプログラムに参加するための対象資格と規則を設定する必要があります。以下の3つの、登録対象資格基準レコードを作成してください。
+Shankar のケアコーディネータである Dania は、彼に糖尿病のケアプログラムに登録してもらいたいと考えています。しかし初めに、チームはプログラムに参加するための対象資格と規則を設定する必要があります。以下の 3つの、登録対象資格基準レコードを作成してください。
 
 1. 名前: `Confirm Type 2 diabetes`
 2. 名前: `Confirm low income household band`
@@ -218,7 +220,7 @@ Shankar のケアコーディネータである Dania は、彼に糖尿病の�
 
 * `Adhere to treatment protocol` (治療プロトコルを遵守する)
 * `Maintain healthy lifestyle` (健康的なライフスタイルを維持する)
-* `Exercise 30 minutes each day` (毎日30分運動する)
+* `Exercise 30 minutes each day` (毎日 30 分運動する)
 * `Improve quality of life` (生活の質を改善する)
 
 プログラム参加者に特典を提供しようと、チームは張り切っています。現在、いくつかの商品が利用可能です。以下の商品を Diabetes Management のケアプログラムに関連付けてください。
@@ -277,7 +279,7 @@ Authorization to Disclose PHI の認証フォームを編集します。
 * 名前: `Enroll_in_Care_Program`
 * 説明: `Enroll in Program flow with care plan selection`
 
-デモでは、Shankar の登録の自動化をユーザがどのように素早く起動できるかを示しましょう。患者レコード上の自動化を使用して、Shankar をDiabetes Management のケアプログラムに登録してください。
+デモでは、Shankar の登録の自動化をユーザがどのように素早く起動できるかを示しましょう。患者レコード上の自動化を使用して、Shankar を Diabetes Management のケアプログラムに登録してください。
 
 * 商品を選択してください
   * **Monthly consultation with a nutritionist**
@@ -303,7 +305,7 @@ Cumulus Health には、ケアの妥当性をレビューするステップを�
 Care Coordination Console Home ページからケア要請を作成することで新しい機能をデモしましょう。次の情報を入力します。
 
 * Case (ケース):
-  * Case Origin (ケース 発生源): **Phone** (電話)
+  * Case Origin (ケース発生源): **Phone** (電話)
 * Care Request (ケア要請):
   * Member (メンバー): **Shankar Suman**
   * Name (名前): `Diabetes care request`
@@ -396,8 +398,8 @@ Shankar が体重計を受け取った後、彼のケアコーディネーター
 * Numeric Value (数値): `210`
 * Code (コード): `Body Weight Code Set`
 * Units of Measure (測定単位): **lbs**
-* Start Date (開始日): 本日から1ヶ月前の日付
-* End Date (終了日): 本日から1年後の日付
+* Start Date (開始日): 本日から 1 ヶ月前の日付
+* End Date (終了日): 本日から 1 年後の日付
 
 最後に、患者のレコードの Remote Monigoring (リモート監視) タブの下にリモート監視グラフを表示し、デバイスデータに簡単にアクセスできるようにします。リモート監視グラフのデモを行うため、いくつかのケア観察レコードを作成してください。
 
