@@ -260,7 +260,7 @@ Shankar のケアコーディネータである Dania は、彼に糖尿病の�
 * 認証フォーム: **Authorization to Disclose PHI**
 * コンテンツドキュメント: **AUTHORIZATION TO DISCLOSE PERSONAL AND HEALTH INFORMATION**
 * ロケール: ユーザのロケールレコードに合わせます
-* 有効: **True**
+* Active (有効 **True**
 
 Authorization to Disclose PHI の認証フォームを編集します。
 
@@ -287,7 +287,139 @@ Authorization to Disclose PHI の認証フォームを編集します。
 * 商品に関連する提供者を選択してください
 
 登録を完了し、同意の取得に進みます。同意書を確認し、(これはデモであることを忘れないでください)、署名欄で署名し、同意を完了します。
-## プロバイダのプロファイルを定義する
+## プロバイダのプロファイルをさらに定義する
+組織には **Hospital Record Page** という名前の Lightning レコードページがあります。このページを Care Coordination Console アプリケーションとその業務に該当するレコードタイプに割り当ててください。
+
+Cumulus Health 社は、医療施設と医師グループの買収により、地域拠点の健康増進に挑戦しています。既に 2 つの取引先がシステムに登録されています。Cumulus Health Hospital と Cumulus Health Physician Group です。チームは、異なる取引先がどのように関連しているかを示したいと考えています。標準機能を使って、Cumulus Health Physician Group をより大きな Cumulus Health Hospital とどのように関連付けることができるかを示してください。
+
+チームは、施設の標準的な営業時間をその施設のレコード上で確認したいと考えています。Cumulus Health Physician Group と Cumulus Health Hospital の両方に営業時間を設定してください (取引先オブジェクトの営業時間項目を使用します)。
+
+* 月曜から金曜
+* 9:00 AM から 5:00 PM
+* 太平洋標準時 (アメリカ合衆国 / ロサンゼルス)
+
+2 人の臨床医がチームに加わったので、Health Cloud でそれを設定する必要があります。組織には、あらかじめ設定された Provider レコードタイプがあります。Provider Record Page という Lightning ページを Care Coordination Console アプリケーションと Provider レコードタイプに割り当ててください。
+
+Provider レコードタイプで、`Magaly Rivera` と `Matthew Watkins` という 2 つの個人取引先レコードを作成します。Magaly Rivera を連絡先として病院に関連付け、Provider の役割を持たせます。Matthew Watkins は Provider の役割を持つ連絡先として、医師グループに関連付けます。
+
+その後、プロバイダの検索を設定します。これを機能させるには、Magaly のデータが検索されるように設定する必要があります。Magaly Rivera の**関連**タブに移動し、以下のレコードを作成します。
+
+Healthcare Provider (ヘルスケア提供者) レコードを作成します。
+
+* Name (ヘルスケア提供者名): Magaly Rivera
+* Practitioner (医師): **Magaly Rivera**
+* Practitioner Type (提供者種別): **Medical Doctor**
+* Practitioner Class (提供者クラス): **Solo Practitioner**
+* Initial Start Date (最初の開始日): 現在から 2 週間前の日付
+
+Healthcare Provider Specialty (ヘルスケア提供者の専門分野) レコードを設定します。
+
+* Name (名前): `Physician/Endocrinology`
+* Practitioner (医師): **Magaly Rivera**
+* Specialty (専門分野): **Endocrinology**
+* Specialty Role (専門分野ロール): **Specialist**
+* Active (有効): **True**
+
+Healthcare Practitioner Facility (ヘルスケア担当医師の施設) レコードを設定します。
+
+* Name (医師の施設名): `Cumulus Health Hospital`
+* Account (アカウント): **Cumulus Health Hospital**
+* Practitioner (医師): **Magaly Rivera**
+* Primary Facility (主施設): **True**
+* Active (有効): **True**
+
+Care Provider Facility Specialty (ケア提供者施設の専門分野) レコードを設定します。
+
+* Name (提供者施設の専門分野名): `Endocrinology`
+* Specialty (専門分野): **Endocrinology**
+* Practitioner Facility (医師の施設): **Cumulus Health Hospital**
+* Account (アカウント): **Magaly Rivera**
+* Primary Specialty (主な専門分野): **True**
+* Active (有効): **True**
+
+Cumulus Health のチームメンバーは、医師に専門分野や領域分類がある場合、それを知る必要があります。パイロットプログラムは糖尿病ケアであるため、内分泌学の専門分野と分類学コードを設定します。以下の設定を完了し、Magaly のレコードを更新して、この医師の専門分野と領域分類を反映させてください。
+
+Care Taxonomy (ケア分類) レコードを作成します。
+
+* Name (名前): `Internal Medicine, Endocrinology, Diabetes & Metabolism`
+* Taxonomy Code (分類コード): `207RE0101X`
+* Taxonomy type (分類タイプ): **Allopathic and Osteopathic Physicians**
+* Active (有効): **True**
+
+Healthcare Provider Taxonomies (ヘルスケア提供者の分類) レコードを次の通り設定します。
+
+* Taxonomy name (分類名): `Internal Medicine, Endocrinology, Diabetes & Metabolism`
+* Taxonomy (分類): **Internal Medicine, Endocrinology, Diabetes & Metabolism**
+* Primary Taxonomy (主分類): **True**
+* Practitioner (医師): **Magaly Rivera**
+* Active (有効): **True**
+
+Cumulus Health Business Office は、全国プロバイダー識別子 (NPI) を使用して適切な報告および請求を行えるようにしたいと考えています。以下の取引先に関連する、2 つのヘルスケア提供者 NPI レコードを作成します。
+
+* Cumulus Health Hospital に対して
+  * Name (名前): `1345677600`
+  * NPI type (NPI の種別): **Organization**
+  * NPI: `1345677600`
+* Cumulus Health Physician Group に対して
+  * Name (名前): `1245678201`
+  * NPI type (NPI の種別): **Organization**
+  * NPI: `1245678201`
+
+ローカルサイトに最高のサービスを提供するために、Cumulus Health チームは、医師の資格と免許のステータスを追跡しています。以下の資格と医師を関連付けます。
+
+Magaly Rivera のレコードに以下の資格情報を追加します。
+
+* Board certification name (専門委員会による認可名): `ABMS Board Certification`
+* Board name (委員会名): `American Board of Endocrinology Specialties`
+* Expiration Date (有効期限): 現在から 1 年後の日付
+
+Matthew Watkins のレコードに以下の資格情報を追加します。
+
+* Board certification name (専門委員会による認可名): `AOA Board Certification`
+* Board name (委員会名): `Bureau of Diabetes Specialists`
+* Expiration Date (有効期限): 現在から 1 年後の日付
+
+Cumulus Health Patient Services は、医師の施設に関する追加情報に素早くアクセスしたいと考えています。医師のレコードに、勤務しているすべての施設が表示されるように、提供者リレーションカードを設定します。
+
+* Card Reference Name (参照名): `PractitionersRelationshipCard`
+* Card Developer Name (API 参照名): `PractitionersRelationshipCard`
+* Displayed on (表示するページ): Provider レコードタイプの取引先オブジェクト
+* ページとカードの関連: **Directly** (直接的)
+* 情報を表示したいオブジェクト: **Healthcare Practitioner Facility**
+  * ソースオブジェクトとして PractitionerId を選択
+* Card Fields (項目):
+  * Facility name (取引先名)
+  * Specialties provided by doctor at that facility
+  * Provider’s Facility NPI
+
+医師のリレーションカードが作成できたので、それが Provider Record Page の Facilities (施設) タブにあるリレーションカードコンポーネントに表示されるようにしてください。
+
+Cumulus Health には、専門医療についてや、患者の近くにいる医師を見つけることについての問い合わせがよく寄せられます。提供者検索を含む Care Coordination Console のホームページを作成します。
+
+* Page Name (表示ラベル): `Care Coordination Console Home`
+* Developer Name (API 参照名): `Care_Coordination_Console_Home`
+* Layout (テンプレート): ホームテンプレート - 1 つの範囲
+
+Provider Search (提供者検索) コンポーネントをページにドロップします。
+
+Admitting Privileges (入院特権、医師が患者を救命を通さずに治療のために入院させる権利のこと) という名前で 2 つのカスタム項目を作成します。
+
+Healthcare Practitioner Facility (ヘルスケア担当医師の施設) オブジェクト:
+
+* 型: 選択リスト
+* 表示ラベル: `Admitting Privileges`
+* 値: Yes または No
+
+Care Provider Searchable Field (ケア提供者検索可能項目) オブジェクト:
+
+* 型: テキスト
+* 表示ラベル: `Admitting Privileges`
+
+この新しいカスタム項目に関連するマッピングを 2 つのエンティティで表示するために、**Care Provider Search Config** (ケア提供者検索設定) に新しいレコードを作成します。
+
+チームが **Care Coordination Console Home** ページでプロバイダ検索を使用できるようにします。検索パネルに **Admitting Privileges** (入院特権) 項目が表示されるようにしてください。その他の項目を自由に追加することもできます。Magaly Rivera のケア提供者施設レコードを更新し、彼女の入院特権を反映させることで、検索機能をチームに示すことができます。
+
+任意: プロバイダ検索がどのように機能するかを実際に試すことができます (検索の実演は Challenge では検証されませんが、もし試してみたければご自身で確認できます)。ある患者が、自宅から 50 マイル以内にある、入院特権を持つ内分泌学者について問い合わせるために、Cumulus Health のコールセンターに電話をかけてきました。患者の住所と 50 マイルの距離と、Specialty Type を **Specialist** にして、距離ベースの検索を行います。結果レコードには Magaly Rivera だけが含まれることを確認してください。
 
 ## ケア要請と利用管理を設定する
 Cumulus Health には、ケアの妥当性をレビューするステップを合理化するという第二の目的があります。以前のシステムには十分な情報がなく、ビジネスニーズが変わったときに再設定するのは簡単ではありませんでした。あなたの目標は、Health Cloud がどのように合理化された利用管理を提供するかを実証することです。
@@ -404,6 +536,3 @@ Shankar が体重計を受け取った後、彼のケアコーディネーター
 最後に、患者のレコードの Remote Monigoring (リモート監視) タブの下にリモート監視グラフを表示し、デバイスデータに簡単にアクセスできるようにします。リモート監視グラフのデモを行うため、いくつかのケア観察レコードを作成してください。
 
 やりました！デモは大成功でした。おめでとうございます。この成果は、財団を成長させ、世界中の地域社会にポジティブな健康成果をもたらすでしょう。
-## Challenge
-
-## 補足とヒント
