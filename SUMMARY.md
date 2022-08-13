@@ -9,6 +9,7 @@
 * [Billing Specialist](src/billing-specialist/billing-specialist.md)
 * [Business Administration Specialist](src/business-administration-specialist/business-administration-specialist.md)
 * [Data Integration Specialist](https://developer.salesforce.com/jpblogs/2018/06/data_integration_superbadge/)
+* [Health Cloud Specialist](src/health-cloud-specialist/health-cloud-specialist.md)
 * [Tableau CRM Data Preparation Specialist](src/analytics-integration-specialist/analytics-integration-specialist.md)
 * [Tableau CRM and Einstein Discovery Insights Specialist](src/analytics-insights-specialist/analytics-insights-specialist.md)
 * 🆕 [Financial Services Cloud Specialist](src/fsc-specialist/fsc-specialist.md)
