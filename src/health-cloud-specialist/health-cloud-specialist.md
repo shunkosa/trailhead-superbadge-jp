@@ -25,9 +25,9 @@
 所用時間 : 推定 8 時間 
 
 ## 事前準備とメモ
-
 ### Health Cloud を備える Developer Edition 組織の作成
-このスーパーバッジを完了するには、Salesforce Health Cloud、専用の設定、サンプルデータを含む特別な Salesforce 環境が必要です。特別に Health Cloud が有効化された Developer Edition 組織に最近サインアップした場合でも、このスーパーバッジのために新しい組織にサインアップしてください。**また、Health Cloud 管理パッケージは 30 日後に期限切れになることに注意してください。**
+#### 注意
+このスーパーバッジを完了するには、Salesforce Health Cloud、専用の設定、サンプルデータを含む特別な Salesforce 環境が必要です。**特別に Health Cloud が有効化された Developer Edition 組織に最近サインアップした場合でも、このスーパーバッジのために新しい組織にサインアップしてください。また、Health Cloud 管理パッケージは 30 日後に期限切れになることに注意してください。**
 
 1. [こちら](https://trailhead.salesforce.com/en/promo/orgs/healthcloudspecialist)から、Health Cloud を備える無料のテスト環境にサインアップします。
 2. フォームに入力します。Email の欄には、有効な電子メールアドレスを入力します。Username の欄には、メールアドレス形式の一意のユーザ名を入力しますが、有効な電子メールアカウントと一致している必要はありません。(例: `@hc4ever.sample.com`) 
@@ -39,53 +39,54 @@
 次に、新しい Developer Edition 組織を Trailhead に接続します。
 
 1. Trailhead アカウントにログインしていることを確認してください。
-2. このページの下部にある **Challenge** セクションで、選択リストから **Log into a Developer Edition** (Developer Edition にログイン) を選択します。
+2. このページの下部にある **Challenge** セクションで、選択リストから **Connect Org** (組織を接続) を選択します。
 3. ログイン画面で、先ほど設定した Developer Edition のユーザ名とパスワードを入力します。
 4. Allow Access? (アクセスを許可しますか？) の画面で、**Allow** (許可) をクリックします。
 5. Want to connect this org for hands-on challenges? (この組織をハンズオンの Challenge 用に保存しますか？) の画面で、**Yes! Save it** (はい、保存します) をクリックします。Challenge のページにリダイレクトされ、新しい Developer Edition を使用してこのスーパーバッジを獲得する準備が整います。
 6. 専用の管理パッケージがインストールおよび有効化された Salesforce 組織ができたので、準備完了です。
 
-### 備考
-* Challenge を始める前に、[このスーパーバッジの Help 記事](https://trailhead.salesforce.com/help?article=Health-Cloud-Specialist-Superbadge-Trailhead-Challenge-Help)を確認してください。このドキュメントは、このスーパーバッジを完了させるのに役立つリソースを見つけたり、よくある質問をサポートしたりするのに役立ちます。
-* 他のスーパーバッジと同様に、正しく設定するための要件が詳しく説明されています。ブラウザのタブを 2 つ使用することをお勧めします。1 つはシナリオを進めるために表示し、もう 1 つは Challenge をチェックするために表示します。これにより、スーパーバッジのコンテンツをスクロールする手間を省くことができます。
+#### 注意
+* Challenge を始める前に、[このスーパーバッジの Help 記事](https://trailhead.salesforce.com/help?article=Health-Cloud-Specialist-Superbadge-Trailhead-Challenge-Help)を確認してください。Health Cloud を備えた **Developer Edition** 組織をこのスーパーバッジの Challenge に使用するようにしてください。他の作業に使用した組織を使用すると、このスーパーバッジの Challenge に失敗する可能性があります。
+* Salesforce 認定資格プログラムの情報および、スーパーバッジの行動規範については、[スーパーバッジ Challenge の Help 記事](https://trailhead.salesforce.com/help?article=Superbadge-Challenge-Help) を確認してください。
 
 ## ユースケース
-医療イノベーションのリーダーである Cumulus Health は、2 型糖尿病の発生を減少させるための重要なインフルエンサーとなることを約束しました。新設された Cumulus Health グローバル財団 (以下、財団) は、世界中で個人のウェルビーイングを促進し、健康格差を減らすことを目的としています。
+医療イノベーションのリーダーである Cumulus Health は、2 型糖尿病の発生を減少させるための重要なインフルエンサーとなることに力を注いでいます。新設された Cumulus Health グローバル財団 (以下、財団) は、世界中で個人のウェルビーイングを促進し、健康格差を減らすことを目的としています。
 
 主な取り組みの 1 つとして、新しい健康アドボカシー・教育プログラムによる、個人の教育と能力向上の支援があります。この財団は、そのビジョンを実現するために、いくつかの異なる地域のコミュニティや医療従事者と提携しています。そのためには、世界各地のプログラムをサポートできるシステムが必要です。来月には、糖尿病予防・教育プログラム (Diabetes Prevention and Education Program, DPEP) の効果を実証するためのパイロットプログラムを展開したいと考えています。
 
-各地域のサイトには、主任ケアコーディネータとパイロットプログラムの患者たちがいます。あなたは、新しいプログラムのニーズを満たすために、新しい Health Cloud の実装が適切に設定されていることを確認する責任があります。一部の設定はすでに実施されていますが、チームはそれが最も効果的な方法で機能しているかどうか確信が持てていません。また、可能な限り **FHIR R4 に準拠した医療データモデル** を活用するなど、Health Cloud を使用するための最新のベストプラクティスに従っていることを確認したいと考えています。チームの要件を確認し、プログラムのロールアウトをサポートするための戦略を定義しましょう。
+各地域の拠点には、主任ケアコーディネータとパイロットプログラムの患者たちがいます。あなたには、新しいプログラムのニーズを満たすために、新しい Health Cloud の実装が適切に設定されていることを確認する責任があります。一部の設定はすでに実施されていますが、チームはそれが最も効果的な方法で機能しているかどうか確信が持てていません。また、可能な限り **FHIR R4 に準拠した医療データモデル** を活用するなど、Health Cloud を使用するための最新のベストプラクティスに従っていることを確認したいと考えています。チームの要件を確認し、プログラムのロールアウトをサポートするための戦略を定義しましょう。
 
 ## ビジネス要件
 
 ### システム管理をレビューする
 
-早速、プロジェクトに参加して設定を始めます。まず、各地域のケアコーディネータ用のカスタムプロファイルを作成します。 **Health Cloud Admin** プロファイルをコピーして、新しいプロファイル `Care Coordinator Admin` を作成します。Care Coordinator Admin プロファイルで、新しいユーザ `Dania Thurayya` を作成します。Dania に以下の権限セットを割り当ててください。
+早速、プロジェクトに参加して設定を始めます。まず、各地域の拠点にいるケアコーディネータ用にカスタムプロファイルを作成します。 **Health Cloud Admin** プロファイルをコピーして、新しいプロファイル `Care Coordinator Admin` を作成します。Care Coordinator Admin プロファイルで、新しいユーザ `Dania Thurayya` を作成します。Dania に以下の権限セットを割り当ててください。
+
 * Health Cloud Foundation
 * Health Cloud Permission Set License
 
 適切なオブジェクトに、`Patient` (患者) という名前のカスタムレコードタイプを作成します。説明には `Represents an individual patient or participant` (個人の患者または参加者を表す) と入力します。レコードタイプは Care Coordinator Admin、Health Cloud Admin、システム管理者プロファイルで利用可能にしてください。Health Cloud で個々の患者を表現する方法はたくさんあります。ベストプラクティスに従い患者のレコードタイプを作成してください。
 
-チームはリレーションのマッピングを使用したくなるでしょう。作成したレコードタイプをカスタムメタデータで正しく設定します。新しい機能のデモンストレーションのために、`Shankar Suman` の患者レコードを作成します。
+チームはリレーションのマッピングを使用したくなるでしょう。作成したレコードタイプをカスタムメタデータで正しく設定します。新しい機能をデモするために、`Shankar Suman` の患者レコードを作成します。
 
-これまでの経験から、コンソールビューはチームが効率的にケアを提供するのに役立つと判断しました。コンソールナビゲーションを使用して、Care Coordination Console という名前の Lightning アプリケーションを作成します。これらのプロファイルに対してアプリケーションを有効にします。
+これまでの経験から、チームが効率的にケアを提供するのにコンソールビューが役立つと判断しました。**コンソールナビゲーション**を使用して、`Care Coordination Console` という名前の Lightning アプリケーションを作成します。以下のプロファイルに対してアプリケーションを有効にします。
 
 * Care Coordinator Admin
 * System Administrator
 * Health Cloud Admin
 
 アプリケーションのナビゲーション項目に以下を含めます。
-+ Home (ホーム)
++ Home (標準のホームページアイコン)
 * Patients (稲妻アイコン)
 * Leads (リード)
 * Accounts (取引先)
 * Cases(ケース)
-* Care Plan Templates
+* Care Plan Templates (ケアプランテンプレート)
 
 **Patient Console with Pinned Leftbar** の Lightning レコードページをコピーして、`Care Coordination Account Page` という名前でレコードページを作成します。API 参照名が `Care_Coordination_Account_Page` となっていることを確認してください。このページを Care Coordination Console アプリケーションのデフォルトとして設定します。
 
 ### ケアコーディネーションを設定する
-基本的な設定が完了したら、続いてチームごとの要件を確認します。ケアコーディネータは、特定の標準的なケアをすばやく再現する方法が必要としています。糖尿病患者の標準的な目標を含むケアプランテンプレートを作成したいと思います。新しいアプリを使用して、`Diabetes Care Plan Template` (糖尿病のケアプランテンプレート) という名前のケアプランテンプレートを作成します。以下のモデルに従います。
+基本的な設定が完了したら、続いてチームごとの要件を確認します。ケアコーディネータは、特定の標準的なケアをすばやく再現する方法を必要としています。糖尿病患者の標準的な目標を含むケアプランテンプレートを作成したいと思います。新しいアプリケーションを使用して、`Diabetes Care Plan Template` (糖尿病のケアプランテンプレート) という名前のケアプランテンプレートを作成します。以下のモデルに従います。
 
 ![](data_model.png)
 
@@ -110,8 +111,9 @@
     * `Exercise: Daily Walk` を患者に割り当てます。
 
 財団は、適切な食生活が、糖尿病と同時に起こっている問題だと地域社会から聞いています。追加のケアプランテンプレートを、`Care Plan Template for Nutrition Education` (栄養指導のためのケアプランテンプレート) という名前で作成します。そのケアプランテンプレートに `Nutrition Education` のケアプランテンプレートの問題を含めてください。
-#### メモ
-Shankar Suman に対して複数のケアプランを作成しようとしています。組織の設定で、患者に対して複数のケアプランが作成できるようにしてください。
+
+#### 注意
+Shankar Suman に対して複数のケアプランを作成しようとしています。組織の設定で、患者に対して複数のケアプランを作成できるようにしてください。
 
 Shankar Suman はパイロットプログラムへの 1 人目の参加者です。彼のケアコーディネータは Dania Thurayya です。Diabetes Care Plan Template に基づいて、`Diabetes Education Care Plan` という名前のケアプランを作成します。次の問題を含めてください。
 
@@ -124,7 +126,7 @@ Shankar Suman はパイロットプログラムへの 1 人目の参加者です
 次に、Nutrition Education のケアプランテンプレートに基づいて、`Nutrition Education` という名前のケアプランを Shankar に作成します。件名には `Nutrition Education` と入力し、Dania Thurayya をケアコーディネータにしてください。
 
 それぞれの患者ケアの 360 度ビューを得るために、Cumulus Health は分野 (ソーシャルワーカ、栄養士、専門家など) に応じてケースチームのメンバーを割り当てる方法を求めています。
-Martha Ortiz と Adam Burke はケースでよく協業します。 `Diabetes Education` という名前のケースチームを作成し、Martha を Primary Care Physician の役割として、Adam を Diabetes Educator の役割としてチームに加えます。このチームを Shankar の両方のケアプランに関連づけてください。
+Martha Ortiz と Adam Burke はケースでよく協業します。 `Diabetes Education` という名前のケースチームを作成し、Martha を Primary Care Physician の役割として、Adam を Diabetes Educator の役割としてチームに加えます。このチームを Shankar の両方のケアプランに関連付けてください。
 
 ## タイムラインビュー、患者プロファイル、社会的決定要因の設定
 包括的なケアを提供するためには、チームメンバーは患者に関連する出来事を縦断的に見られる必要があります。患者のタイムラインでは、臨床医は以下を確認することができようになるはずです。
@@ -140,22 +142,22 @@ Martha Ortiz と Adam Burke はケースでよく協業します。 `Diabetes Ed
 
 <!-- textlint-disable jtf-style/1.1.3.箇条書き -->   
 * Clinical Encounters
-  * Status: **Finished**
-  * Start Date: choose a date and time within the last 30 days
-  * End Date: 開始日から 1 時間後
-  * Category: **Home Health**
-  * Service Type: **Homoeopathy**
+  * Status (状況): **Finished**
+  * Start Date (開始日): 過去 30 日以内の日付と時間を選択してください。
+  * End Date (終了日): 開始日から 1 時間後
+  * Category (カテゴリ): **Home Health**
+  * Service Type (サービス種別): **Homoeopathy**
 * Health Conditions
-  * Condition Code: **Type 2 Diabetes**
-  * Onset Period Start: 約 1 年前の日付と時間を選択してください。
+  * Condition Code (状態コード): **Type 2 Diabetes**
+  * Onset Period Start (発症期間開始): 約 1 年前の日付と時間を選択してください。
 * Medication Statement
-  * Medication: **Metformin**
-  * Status: **Completed**
-  * Start Date: 過去 30 日以内の日付と時間を選択してください。
+  * Medication (薬剤): **Metformin**
+  * Status (状況): **Completed**
+  * Start Date (開始日): 過去 30 日以内の日付と時間を選択してください。
 * Patient Immunization
-  * Vaccine Code: **Pfizer-BioNTech COVID-19**
-  * Status: **Completed**
-  * Vaccination Date: 過去の任意の日付と時間を選択してください。
+  * Vaccine Code (ワクチンコード): **Pfizer-BioNTech COVID-19**
+  * Status (状況): **Completed**
+  * Vaccination Date (ワクチン接種日): 過去の任意の日付と時間を選択してください。
 * Diabetes Coaching Session
   * Coaching Description: `Initial coaching session, with resources and plan`
   * Session Type: **Extended**
@@ -169,7 +171,7 @@ Diabetes Education Care Plan のケアプランの下に Shankar Suman に対し
 
 Shankar のタイムラインタブを参照し、ToDo、臨床受診、健康状態、薬剤ステートメント、患者免疫付与、糖尿病のコーチングセッションのレコードが表示されていることを確認します。
 
-ケアコーディネータは、大切な情報を素早く見つけるために、患者の情報のスナップショットビューを必要としています。C患者カードを設定して、参加者に関する以下の関連情報を表示します。組織内には、すでに非アクティブな設定レコードがいくつかあります。それらを自由に使ってください。
+ケアコーディネータは、大切な情報を素早く見つけるために、患者の情報のスナップショットビューを必要としています。患者カードを設定して、参加者に関する以下の関連情報を表示します。組織内には、すでに非アクティブな設定レコードがいくつかあります。それらを自由に使ってください。
 
 * Address
 * Contact Preferences
@@ -179,7 +181,7 @@ Shankar のタイムラインタブを参照し、ToDo、臨床受診、健康�
 * Member Id
 * Allergies
 
-ケアコーディネータは患者に関連する様々な人々とコミュニケーションをとります；。Shankar の人間関係を追跡するため、世帯と適切なロールを設定します。それらの個人のレコードは既にシステムに存在しますが、Shankar とまだ関連づけられていません。(Shankar を患者のロールで自身の世帯に関連づけることを忘れないでください。) 以下に対してリレーションを設定します。
+ケアコーディネータは患者に関連する様々な人々とコミュニケーションをとります。Shankar の人間関係を追跡するため、世帯と適切なロールを設定します。それらの個人のレコードは既にシステムに存在しますが、Shankar とまだ関連付けられていません。(Shankar を患者のロールで自身の世帯に関連付けることを忘れないでください。) 以下に対してリレーションを設定します。
 
 * **Karpani Burman** (spouse / 配偶者) 
 * **Get Cloudy Consulting** (employee / 従業員)
@@ -187,7 +189,7 @@ Shankar のタイムラインタブを参照し、ToDo、臨床受診、健康�
   * Role: `Transportation Coordinator`
   * Inverse Role: `Patient`
 
-ケアコーデネーションの土台はほぼ全て整っています。最後の課題は、患者の健康に影響を与える社会経済的な要因を財団がすべて理解することです。プログラム参加への重要な障壁の 1 つが交通手段であることをチームは既に知っています。プログラムチームは、この障壁を克服するための介入策をブレインストーミングしました。このソリューションをモデル化するるために、`Transportation Program` という名前のケア介入種別と、`Inadequate Transportation` という名前のケア障壁種別を作成します。両方のレコードを有効にしてください。
+ケアコーデネーションの土台がほぼ全て整いました。最後の課題は、患者の健康に影響を与える社会経済的な要因を財団がすべて理解することです。プログラム参加への重要な障壁の 1 つが交通手段であることをチームは既に知っています。プログラムチームは、この障壁を克服するための介入策をブレインストーミングしました。この機能に対するソリューションをモデル化するるために、`Transportation Program` という名前のケア介入種別と、`Inadequate Transportation` という名前のケア障壁種別を作成します。両方のレコードを有効にしてください。
 
 Shankar Suman にケア障壁のエントリを作成することで新しい機能をデモします。
 
@@ -203,11 +205,13 @@ Shankar Suman にケア障壁のエントリを作成することで新しい機
 ## ケアプログラムを設定する
 財団は、ケアプログラムの提供を標準化することを目標としています。チームは、患者の転帰を改善するためのケアプログラムの例を見たいと考えています。`Diabetes Management` という名前で、`Care Program to help patients manage diabetes conditions` という説明のあるケアプログラムを作成します。親プログラム項目は空白のままにしてください。開始日と終了日には任意の日付を入力してください。
 
-Shankar のケアコーディネータである Dania は、彼に糖尿病のケアプログラムに登録してもらいたいと考えています。しかし初めに、チームはプログラムに参加するための対象資格と規則を設定する必要があります。以下の 3つの、登録対象資格基準レコードを作成してください。
+Shankar のケアコーディネータである Dania は、彼に糖尿病のケアプログラムに登録してもらいたいと考えています。しかし初めに、チームはプログラムに参加するための対象資格と規則を設定する必要があります。以下の 3 つの、登録対象資格基準レコードを作成してください。
 
 1. 名前: `Confirm Type 2 diabetes`
 2. 名前: `Confirm low income household band`
 3. 名前: `Confirm physician referral or prescription received`
+
+財団は、プログラムの初期展開において、適格な患者のみが登録されるようにしたいと考えています。これらの登録対象資格基準レコードをケアプログラム対象資格規則に関連付けます。
 
 * ケアプログラム: **Diabetes Management**
   * 登録対象資格基準: **Confirm Type 2 diabetes**
@@ -230,7 +234,7 @@ Shankar のケアコーディネータである Dania は、彼に糖尿病の�
 * 名前: `Weekly coaching with care coordinator`
   * 商品: **Coaching**
 
-このプログラムは、まず 2 つのプロバイダーから展開されます。次のステップは、ケアプログラム提供者を設定することです。以下の詳細に基づいて 2 つのケアプログラム提供者レコードを作成してください。
+このプログラムは、まず 2 つのプロバイダから展開されます。次のステップは、ケアプログラム提供者を設定することです。以下の詳細に基づいて 2 つのケアプログラム提供者レコードを作成してください。
 
 |名前|アカウント(取引先)|ケアプログラム商品|
 |-|-|-|
@@ -248,32 +252,31 @@ Shankar のケアコーディネータである Dania は、彼に糖尿病の�
 
 次の認証フォームを作成します。
 
-* 認証フォーム名: `Authorization to Disclose PHI`
-* リビジョン番号: `1.0`
-* 有効開始日: 本日から一週間後の日付
-* 有効終了日: 本日から一年後の日付
-* 署名が必要: **True**
+* Authorization Form Name (認証フォーム名): `Authorization to Disclose PHI`
+* Revision Number (リビジョン番号): `1.0`
+* Effective From (有効開始日): 本日から一週間後の日付
+* Effective To Date (有効終了日): 本日から一年後の日付
+* Is Signature Required (署名が必要): **True**
 
 次の認証フォームテキストを作成します。
 
-* 名前: `Authorization to Disclose PHI`
-* 認証フォーム: **Authorization to Disclose PHI**
-* コンテンツドキュメント: **AUTHORIZATION TO DISCLOSE PERSONAL AND HEALTH INFORMATION**
-* ロケール: ユーザのロケールレコードに合わせます
-* Active (有効 **True**
+* Name (名前): `Authorization to Disclose PHI`
+* Authorization Form (認証フォーム): **Authorization to Disclose PHI**
+* Content Document (コンテンツドキュメント): **AUTHORIZATION TO DISCLOSE PERSONAL AND HEALTH INFORMATION**
+* Locale (ロケール): ユーザのロケールレコードに合わせます
+* Active (有効): **True**
 
 Authorization to Disclose PHI の認証フォームを編集します。
 
-* デフォルトの認証フォームテキスト: **Authorization to Disclose PHI**
+* Default Auth Form Text (デフォルトの認証フォームテキスト): **Authorization to Disclose PHI**
 
 次の情報で認証フォームデータの使用レコードを作成します。
 
-* 名前: `Authorization to Disclose PHI`
-* 認証フォーム: 作成した認証フォームを選択します
-* データ使用目的: 作成したデータ使用目的を選択します
+* Authorization Form Data Use Name (名前): `Authorization to Disclose PHI`
+* Authorization Form (認証フォーム): 作成した認証フォームを選択します
+* Data Use Purpose (データ使用目的): 作成したデータ使用目的を選択します
 
-財団は、これまでの作業をとても心強く思っており、ケアプログラムへの参加と同意ですべてがうまくいくことを望んでいます。
-最初のステップは、参加者を迅速に登録するために、プログラムへの登録の標準的な自動化を調整することです。**Program Enrollment** という名前のフローを使用したアクションを作成します。作成したアクションは患者のレコードページで利用できるようにしてください。
+財団は、これまでのあなたの仕事をとても心強く思っており、ケアプログラムへの参加と同意ですべてがうまくいくことを望んでいます。最初のステップは、参加者を迅速に登録するために、プログラムへの登録の標準的な自動化を調整することです。**Program Enrollment** という名前のフローを使用したアクションを作成します。作成したアクションは患者のレコードページで利用できるようにしてください。
 
 * 表示ラベル: `Enroll in Care Program`
 * 名前: `Enroll_in_Care_Program`
@@ -287,6 +290,7 @@ Authorization to Disclose PHI の認証フォームを編集します。
 * 商品に関連する提供者を選択してください
 
 登録を完了し、同意の取得に進みます。同意書を確認し、(これはデモであることを忘れないでください)、署名欄で署名し、同意を完了します。
+
 ## プロバイダのプロファイルをさらに定義する
 組織には **Hospital Record Page** という名前の Lightning レコードページがあります。このページを Care Coordination Console アプリケーションとその業務に該当するレコードタイプに割り当ててください。
 
@@ -302,7 +306,7 @@ Cumulus Health 社は、医療施設と医師グループの買収により、�
 
 Provider レコードタイプで、`Magaly Rivera` と `Matthew Watkins` という 2 つの個人取引先レコードを作成します。Magaly Rivera を連絡先として病院に関連付け、Provider の役割を持たせます。Matthew Watkins は Provider の役割を持つ連絡先として、医師グループに関連付けます。
 
-その後、プロバイダの検索を設定します。これを機能させるには、Magaly のデータが検索されるように設定する必要があります。Magaly Rivera の**関連**タブに移動し、以下のレコードを作成します。
+後ほど、プロバイダの検索を設定します。これを機能させるには、Magaly のデータが検索されるように設定する必要があります。Magaly Rivera の**関連**タブに移動し、以下のレコードを作成します。
 
 Healthcare Provider (ヘルスケア提供者) レコードを作成します。
 
@@ -354,7 +358,7 @@ Healthcare Provider Taxonomies (ヘルスケア提供者の分類) レコード�
 * Practitioner (医師): **Magaly Rivera**
 * Active (有効): **True**
 
-Cumulus Health Business Office は、全国プロバイダー識別子 (NPI) を使用して適切な報告および請求を行えるようにしたいと考えています。以下の取引先に関連する、2 つのヘルスケア提供者 NPI レコードを作成します。
+Cumulus Health Business Office は、全国プロバイダ識別子 (NPI) を使用して適切な報告および請求を行えるようにしたいと考えています。以下の取引先に関連する、2 つのヘルスケア提供者 NPI レコードを作成します。
 
 * Cumulus Health Hospital に対して
   * Name (名前): `1345677600`
@@ -365,7 +369,7 @@ Cumulus Health Business Office は、全国プロバイダー識別子 (NPI) を
   * NPI type (NPI の種別): **Organization**
   * NPI: `1245678201`
 
-ローカルサイトに最高のサービスを提供するために、Cumulus Health チームは、医師の資格と免許のステータスを追跡しています。以下の資格と医師を関連付けます。
+地域の拠点に最高のサービスを提供するために、Cumulus Health チームは、医師の資格と免許のステータスを追跡しています。以下の資格と医師を関連付けます。
 
 Magaly Rivera のレコードに以下の資格情報を追加します。
 
@@ -419,16 +423,16 @@ Care Provider Searchable Field (ケア提供者検索可能項目) オブジェ�
 
 チームが **Care Coordination Console Home** ページでプロバイダ検索を使用できるようにします。検索パネルに **Admitting Privileges** (入院特権) 項目が表示されるようにしてください。その他の項目を自由に追加することもできます。Magaly Rivera のケア提供者施設レコードを更新し、彼女の入院特権を反映させることで、検索機能をチームに示すことができます。
 
-任意: プロバイダ検索がどのように機能するかを実際に試すことができます (検索の実演は Challenge では検証されませんが、もし試してみたければご自身で確認できます)。ある患者が、自宅から 50 マイル以内にある、入院特権を持つ内分泌学者について問い合わせるために、Cumulus Health のコールセンターに電話をかけてきました。患者の住所と 50 マイルの距離と、Specialty Type を **Specialist** にして、距離ベースの検索を行います。結果レコードには Magaly Rivera だけが含まれることを確認してください。
+任意: プロバイダ検索がどのように機能するかを実際に試すことができます (検索のデモは Challenge では検証されませんが、もし試してみたければご自身で確認できます)。ある患者が、自宅から 50 マイル以内にある、入院特権を持つ内分泌学者について問い合わせるために、Cumulus Health のコールセンターに電話をかけてきました。患者の住所と 50 マイルの距離と、Specialty Type を **Specialist** にして、距離ベースの検索を行います。結果レコードには Magaly Rivera だけが含まれることを確認してください。
 
 ## ケア要請と利用管理を設定する
 Cumulus Health には、ケアの妥当性をレビューするステップを合理化するという第二の目的があります。以前のシステムには十分な情報がなく、ビジネスニーズが変わったときに再設定するのは簡単ではありませんでした。あなたの目標は、Health Cloud がどのように合理化された利用管理を提供するかを実証することです。
 
-ケア要請のカスタマイズ設定から始めます。`Diabetes Care` (糖尿病の治療) という表示ラベルでケア要請のレコードタイプを作成します。それを Care Request (ケア要請) のページレイアウトと関連づけます。レコードタイプは有効にし、これまでに設定したプロファイルで利用可能になるようにしてください。追加のオブジェクトについてもこの手順を繰り返し、各オブジェクトにも Diabetes Care の表示ラベルを使用します。
+ケア要請のカスタマイズ設定から始めます。`Diabetes Care` (糖尿病の治療) という表示ラベルでケア要請のレコードタイプを作成します。それを Care Request (ケア要請) のページレイアウトと関連付けます。レコードタイプは有効にし、これまでに設定したプロファイルで利用可能になるようにしてください。追加のオブジェクトについてもこの手順を繰り返し、各オブジェクトにも Diabetes Care の表示ラベルを使用します。
 
-* Caes (ケース) : Care Request のページレイアウトに関連づけます。
-* Care Diagnosis (ケア診断) : Care Diagnosis のページレイアウトに関連づけます。
-* Care Request Item (ケア要請品目)  Care Request Item のページレイアウトに関連づけます。
+* Caes (ケース) : Care Request のページレイアウトに関連付けます。
+* Care Diagnosis (ケア診断) : Care Diagnosis のページレイアウトに関連付けます。
+* Care Request Item (ケア要請品目)  Care Request Item のページレイアウトに関連付けます。
 
 ケア要請の設定で、`Diabetes Care` という表示ラベルと、ケア要請種別を `Service Request` としたケア要請の構成レコードを作成します。Care Request Item と Care Diagnosis オブジェクトを利用可能にしてください。
 
@@ -450,6 +454,7 @@ Care Coordination Console Home ページからケア要請を作成すること�
  * Diagnosis Code (診断コード): **E11.65, Type 2 diabetes mellitus with hyperglycemia**
 
 レコードを保存し、新しいケア要請を確認してください。
+
 ## インテリジェントなセールスを使用して生産性を最大化する
 医療技術企業である Vance Laboratories は、財団への主要な寄付者です。同社の支援により、Cumulus Health グローバル財団は当初の予定よりも早く成長することができました。あなたは、Vance のチームメンバ数人と何度か会話を交わし、医療技術営業におけるペインポイントを聞いてきました。あなたの洞察は次の通りです。Vance の売上が増えれば、財団の資金も増える。そこで、Health Cloud のインテリジェントなセールス機能のデモを提案することになりました。
 
@@ -480,8 +485,6 @@ Visitor Address (訪問者住所) は、ユーザが近くの在庫を探した�
 * Account (取引先): `Cumulus Health Hospital`
 * Account Location (取引先所在地): `Cleveland`
 
-Set up an action plan template to have a predefined list of tasks that med tech sales executives must execute during a surgical case visit. Create an action plan template:
-
 アクションプランテンプレートを設定し、医療技術営業のエグゼクティブが外科症例訪問時に実行しなければならないタスクを、事前定義したリストとして管理します。次のアクションプランテンプレートを作成しましょう。
 
 * Name (名前): `Surgical Visit`
@@ -490,7 +493,7 @@ Set up an action plan template to have a predefined list of tasks that med tech 
 
 次に **Order Authorization** フローを追加し、必須にします。Surgical Visit アクションプランてプレートを公開します。
 
-アプリケーションのホームページ上の **My Visits** (私の訪問) コンポーネントから、外科症例訪問を作成して、**Intelligent Sales** (インテリジェントなセールス) アプリケーションのでデモをしましょう。次の情報を含めます。
+アプリケーションのホームページ上の **My Visits** (私の訪問) コンポーネントから、外科症例訪問を作成して、**Intelligent Sales** (インテリジェントなセールス) アプリケーションでデモをしましょう。次の情報を含めます。
 
 * Visit Location (場所): **Minnesota Medical Supplies**
 * Visit Type (訪問種別): **Replenish Hip repair devices**
@@ -525,8 +528,8 @@ Set up an action plan template to have a predefined list of tasks that med tech 
 Shankar が体重計を受け取った後、彼のケアコーディネーターは Shankar のレコードページの **Remote Monitoring** (リモート監視) タブでケア指標目標を作成することができます。次の情報を入力して、Shankar のケア指標目標を追加してください。
 
 * Name (名前): `Individual Body Weight - Shankar Suman`
-* Patient (患者): `Shankar Suman`
-* Type (種別): MAX (最大)
+* Patient (患者): **Shankar Suman**
+* Type (種別): **MAX** (最大)
 * Numeric Value (数値): `210`
 * Code (コード): `Body Weight Code Set`
 * Units of Measure (測定単位): **lbs**

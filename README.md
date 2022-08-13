@@ -14,6 +14,7 @@
 | [Aura Components Specialist](src/aura-components-specialist/aura-components-specialist.md) | Auraコンポーネント全般 |
 | [Business Administration Specialist](src/business-administration-specialist/business-administration-specialist.md) | データ管理<br>メールテンプレート<br>UI設定|
 | [Data Integration Specialist](https://developer.salesforce.com/jpblogs/2018/06/data_integration_superbadge/) ☁️ | Apex Webサービス<br>コールアウト|
+| [Health Cloud Specialist](src/health-cloud-specialist/health-cloud-specialist.md) ☁️ | Health Cloud 全般|
 | [Tableau CRM Data Preparation Specialist](src/analytics-integration-specialist/analytics-integration-specialist.md) | データフロー|
 | [Tableau CRM and Einstein Discovery Insights Specialist](src/analytics-insights-specialist/analytics-insights-specialist.md)| SAQL<br>動的バインド|
 | [Lightning Experience Reports and Dashboards Specialist](src/lex-reports-dashboards-specialist/lex-reports-dashboards-specialist.md) | レポート・ダッシュボード全般|
@@ -22,9 +23,9 @@
 | [Process Automation Specialist](src/process-automation-specialist/process-automation-specialist.md) | 入力規則<br>プロセスビルダー・フロー<br>クイックアクション|
 | ~~[Reports and Dashboards Specialist](https://developer.salesforce.com/jpblogs/2018/04/reports_and_dashboards_superbadge/)~~ ☁️ | レポート・ダッシュボード全般|
 | [Security Specialist](src/security-specialist/security-specialist.md) | データセキュリティ<br>ユーザ認証|
-| [Service Cloud Specialist](src/service-cloud-admin-specialist/service-cloud-admin-specialist.md) | Service Cloud全般|
+| [Service Cloud Specialist](src/service-cloud-admin-specialist/service-cloud-admin-specialist.md) | Service Cloud 全般|
 | [Billing Specialist](src/billing-specialist/billing-specialist.md)| Salesforce CPQ<br>Salesforce Billing|
-| [Selling with Sales Cloud Specialist](src/sales-cloud-specialist/sales-cloud-specialist.md)| Sales Cloud全般|
+| [Selling with Sales Cloud Specialist](src/sales-cloud-specialist/sales-cloud-specialist.md)| Sales Cloud 全般|
 | [Advanced Billing Specialist](src/advanced-billing-specialist/advanced-billing-specialist.md)|Salesforce CPQ<br>Salesforce Billing|
 | [Lightning Web Components Specialist](src/lwc-specialist/lwc-specialist.md)|Lightning Web コンポーネント|
 | [Financial Services Cloud Specialist](src/fsc-specialist/fsc-specialist.md)|Financial Services Cloud 基礎|
